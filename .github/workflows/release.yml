@@ -1,0 +1,150 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  check-versions:
+    runs-on: ubuntu-latest
+    outputs:
+      cli-version: ${{ steps.cli.outputs.version }}
+      cli-release-exists: ${{ steps.cli-check.outputs.exists }}
+      mcp-version: ${{ steps.mcp.outputs.version }}
+      mcp-published: ${{ steps.mcp-check.outputs.published }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get CLI version
+        id: cli
+        run: |
+          VERSION=$(grep '<Version>' cli/psecsapi.Console.csproj | sed 's/.*<Version>\(.*\)<\/Version>.*/\1/')
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Check if CLI release exists
+        id: cli-check
+        run: |
+          if gh release view "v${{ steps.cli.outputs.version }}" &>/dev/null; then
+            echo "exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "exists=false" >> "$GITHUB_OUTPUT"
+          fi
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Get MCP version
+        id: mcp
+        run: |
+          VERSION=$(node -p "require('./mcp/package.json').version")
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+
+      - name: Check if MCP version is published
+        id: mcp-check
+        run: |
+          if npm view "@psecs/mcp@${{ steps.mcp.outputs.version }}" version &>/dev/null; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+          fi
+
+  build-cli:
+    needs: check-versions
+    if: needs.check-versions.outputs.cli-release-exists == 'false'
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - rid: win-x64
+            output: papi-win-x64.exe
+          - rid: win-arm64
+            output: papi-win-arm64.exe
+          - rid: osx-x64
+            output: papi-osx-x64
+          - rid: osx-arm64
+            output: papi-osx-arm64
+          - rid: linux-x64
+            output: papi-linux-x64
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '9.0.x'
+
+      - name: Publish
+        run: |
+          dotnet publish cli/psecsapi.Console.csproj \
+            -c Release \
+            -r ${{ matrix.rid }} \
+            --self-contained true \
+            -p:PublishSingleFile=true \
+            -p:IncludeNativeLibrariesForSelfExtract=true \
+            -o ./artifacts
+
+      - name: Rename output
+        run: |
+          cd artifacts
+          if [ -f "papi" ]; then
+            mv papi ../${{ matrix.output }}
+          elif [ -f "papi.exe" ]; then
+            mv papi.exe ../${{ matrix.output }}
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.output }}
+          path: ${{ matrix.output }}
+
+  release-cli:
+    needs: [check-versions, build-cli]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Download all artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: ./release-assets
+
+      - name: Create GitHub Release
+        run: |
+          # Flatten artifacts from subdirectories
+          mkdir -p ./assets
+          find ./release-assets -type f -exec mv {} ./assets/ \;
+
+          gh release create "v${{ needs.check-versions.outputs.cli-version }}" \
+            --title "v${{ needs.check-versions.outputs.cli-version }}" \
+            --generate-notes \
+            ./assets/*
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  publish-mcp:
+    needs: check-versions
+    if: needs.check-versions.outputs.mcp-published == 'false'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          registry-url: 'https://registry.npmjs.org'
+
+      - name: Install and build
+        run: |
+          cd mcp
+          npm ci
+          npm run build
+
+      - name: Publish to npm
+        run: |
+          cd mcp
+          npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
