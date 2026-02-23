@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "8JbaNbvxjas=",
+  "success": true,
+  "projectFilePath": "/Users/ryan/Repos/psecsapi-public/cli/psecsapi.Console.csproj",
+  "expectedPackageFiles": [
+    "/Users/ryan/.nuget/packages/microsoft.extensions.dependencyinjection/9.0.0/microsoft.extensions.dependencyinjection.9.0.0.nupkg.sha512",
+    "/Users/ryan/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.0/microsoft.extensions.dependencyinjection.abstractions.9.0.0.nupkg.sha512",
+    "/Users/ryan/.nuget/packages/system.commandline/2.0.0-beta4.22272.1/system.commandline.2.0.0-beta4.22272.1.nupkg.sha512"
+  ],
+  "logs": []
+}

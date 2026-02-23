@@ -1,0 +1,12 @@
+/Users/ryan/Repos/psecsapi-public/shared/bin/Debug/net9.0/psecsapi.Shared.deps.json
+/Users/ryan/Repos/psecsapi-public/shared/bin/Debug/net9.0/psecsapi.Shared.dll
+/Users/ryan/Repos/psecsapi-public/shared/bin/Debug/net9.0/psecsapi.Shared.pdb
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/psecsapi.Shared.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/psecsapi.Shared.AssemblyInfoInputs.cache
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/psecsapi.Shared.AssemblyInfo.cs
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/psecsapi.Shared.csproj.CoreCompileInputs.cache
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/psecsapi.Shared.sourcelink.json
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/psecsapi.Shared.dll
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/refint/psecsapi.Shared.dll
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/psecsapi.Shared.pdb
+/Users/ryan/Repos/psecsapi-public/shared/obj/Debug/net9.0/ref/psecsapi.Shared.dll

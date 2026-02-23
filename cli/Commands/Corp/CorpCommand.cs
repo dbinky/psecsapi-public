@@ -1,0 +1,188 @@
+using System.CommandLine;
+using System.Text.Json;
+using psecsapi.Console.Infrastructure.Configuration;
+using psecsapi.Console.Infrastructure.Http;
+
+namespace psecsapi.Console.Commands.Corp
+{
+    public class CorpCommand : ICommand
+    {
+        private readonly AuthenticatedHttpClient _client;
+        private readonly CliConfig _config;
+        private static readonly JsonSerializerOptions JsonOptions = new() { PropertyNameCaseInsensitive = true };
+
+        public CorpCommand(AuthenticatedHttpClient client, CliConfig config)
+        {
+            _client = client;
+            _config = config;
+        }
+
+        public Command Build()
+        {
+            var command = new Command("corp", "Corporation management commands");
+
+            command.AddCommand(BuildGetCommand());
+            command.AddCommand(BuildFleetsCommand());
+
+            return command;
+        }
+
+        private Command BuildGetCommand()
+        {
+            var corpIdOption = new Option<Guid?>("--id", "Corporation ID (uses default if not specified)");
+            corpIdOption.AddAlias("-i");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+            var command = new Command("get", "Get corporation details") { corpIdOption, jsonOption };
+            command.SetHandler(async (corpId, json) =>
+            {
+                var id = corpId ?? _config.User.DefaultCorpId;
+                if (!id.HasValue)
+                {
+                    System.Console.WriteLine("Error: No corp ID specified and no default corp ID set.");
+                    return;
+                }
+
+                var response = await _client.GetAsync($"/api/Corp/{id}");
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine($"Error: {response.StatusCode}");
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                FormatCorpDetail(content);
+            }, corpIdOption, jsonOption);
+
+            return command;
+        }
+
+        private Command BuildFleetsCommand()
+        {
+            var corpIdOption = new Option<Guid?>("--id", "Corporation ID (uses default if not specified)");
+            corpIdOption.AddAlias("-i");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+            var command = new Command("fleets", "Get corporation fleets") { corpIdOption, jsonOption };
+            command.SetHandler(async (corpId, json) =>
+            {
+                var id = corpId ?? _config.User.DefaultCorpId;
+                if (!id.HasValue)
+                {
+                    System.Console.WriteLine("Error: No corp ID specified and no default corp ID set.");
+                    return;
+                }
+
+                var response = await _client.GetAsync($"/api/Corp/{id}/Fleets");
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine($"Error: {response.StatusCode}");
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                FormatCorpFleets(content);
+            }, corpIdOption, jsonOption);
+
+            return command;
+        }
+
+        private static void FormatCorpDetail(string json)
+        {
+            var corp = JsonSerializer.Deserialize<JsonElement>(json, JsonOptions);
+
+            var entityId = corp.GetProperty("entityId").GetString() ?? "";
+            var corpName = corp.GetProperty("name").GetString() ?? "Unknown";
+
+            System.Console.WriteLine();
+            System.Console.WriteLine($"=== {corpName} ===");
+            System.Console.WriteLine($"  ID:      {entityId}");
+            System.Console.WriteLine($"  Created: {corp.GetProperty("createTimestamp").GetDateTime():yyyy-MM-dd HH:mm:ss}");
+
+            if (corp.TryGetProperty("lastUpdateTimestamp", out var lut) && lut.ValueKind != JsonValueKind.Null)
+                System.Console.WriteLine($"  Updated: {lut.GetDateTime():yyyy-MM-dd HH:mm:ss}");
+
+            if (corp.TryGetProperty("credits", out var credits) && credits.ValueKind != JsonValueKind.Null)
+                System.Console.WriteLine($"  Credits: {credits.GetDecimal():N2}");
+
+            // Access levels (members and their roles)
+            if (corp.TryGetProperty("accessLevels", out var access) && access.ValueKind == JsonValueKind.Object)
+            {
+                var members = access.EnumerateObject().ToList();
+                if (members.Count > 0)
+                {
+                    System.Console.WriteLine();
+                    System.Console.WriteLine("Members:");
+                    foreach (var member in members)
+                    {
+                        var userId = member.Name;
+                        var role = member.Value.ValueKind == JsonValueKind.Number
+                            ? GetRoleName(member.Value.GetInt32())
+                            : member.Value.GetString() ?? "Unknown";
+                        System.Console.WriteLine($"  {userId}  ({role})");
+                    }
+                }
+            }
+
+            System.Console.WriteLine();
+        }
+
+        private static void FormatCorpFleets(string json)
+        {
+            var data = JsonSerializer.Deserialize<JsonElement>(json, JsonOptions);
+
+            if (!data.TryGetProperty("corpFleets", out var fleets) || fleets.ValueKind != JsonValueKind.Array)
+            {
+                System.Console.WriteLine("No fleet data.");
+                return;
+            }
+
+            System.Console.WriteLine();
+            if (fleets.GetArrayLength() == 0)
+            {
+                System.Console.WriteLine("No fleets owned by this corporation.");
+                System.Console.WriteLine();
+                return;
+            }
+
+            System.Console.WriteLine($"Fleets: {fleets.GetArrayLength()}");
+            System.Console.WriteLine();
+
+            var index = 1;
+            foreach (var fleet in fleets.EnumerateArray())
+            {
+                System.Console.WriteLine($"  [{index}] {fleet.GetString()}");
+                index++;
+            }
+
+            System.Console.WriteLine();
+            System.Console.WriteLine("Use 'fleet get <fleet-id>' for fleet details.");
+            System.Console.WriteLine();
+        }
+
+        private static string GetRoleName(int level) => level switch
+        {
+            0 => "Anonymous",
+            1 => "Member",
+            2 => "Officer",
+            3 => "Owner",
+            _ => $"Level {level}"
+        };
+    }
+}

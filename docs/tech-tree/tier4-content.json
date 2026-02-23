@@ -1,0 +1,2284 @@
+{
+  "tier": 4,
+  "researchCost": 1500,
+  "technologies": [
+    {
+      "id": "BB4",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "B",
+      "tier": 4,
+      "name": "Directed Evolution",
+      "description": "Artificially accelerating evolutionary processes for custom organism design",
+      "researchCost": 1500,
+      "prerequisites": ["BB3"]
+    },
+    {
+      "id": "BC4",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "C",
+      "tier": 4,
+      "name": "Xenosymbiotic Synthesis",
+      "description": "Merging alien and terrestrial biochemistry for hybrid molecular systems",
+      "researchCost": 1500,
+      "prerequisites": ["BC3", "BB4", "CC4"]
+    },
+    {
+      "id": "BE4",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "E",
+      "tier": 4,
+      "name": "Bioelectric Reactors",
+      "description": "Living organisms engineered as self-sustaining power generation systems",
+      "researchCost": 1500,
+      "prerequisites": ["BE3", "BB4", "EE4"]
+    },
+    {
+      "id": "BI4",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "I",
+      "tier": 4,
+      "name": "Living Computation",
+      "description": "Biological neural networks functioning as massively parallel processors",
+      "researchCost": 1500,
+      "prerequisites": ["BI3", "BB4", "II4"]
+    },
+    {
+      "id": "BM4",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "M",
+      "tier": 4,
+      "name": "Organomechanical Fusion",
+      "description": "Seamless integration of biological and mechanical systems at the cellular level",
+      "researchCost": 1500,
+      "prerequisites": ["BM3", "BB4", "MM4"]
+    },
+    {
+      "id": "BP4",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "P",
+      "tier": 4,
+      "name": "Subatomic Biology",
+      "description": "Manipulating biological processes at the quantum and subatomic scale",
+      "researchCost": 1500,
+      "prerequisites": ["BP3", "BB4", "PP4"]
+    },
+    {
+      "id": "BS4",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "S",
+      "tier": 4,
+      "name": "Collective Biome",
+      "description": "Ship-wide biological networks enhancing crew coordination and health",
+      "researchCost": 1500,
+      "prerequisites": ["BS3", "BB4", "SS4"]
+    },
+    {
+      "id": "CB4",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "B",
+      "tier": 4,
+      "name": "Metabolic Engineering",
+      "description": "Designing custom metabolic pathways for industrial chemical production",
+      "researchCost": 1500,
+      "prerequisites": ["CB3", "CC4", "BB4"]
+    },
+    {
+      "id": "CC4",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "C",
+      "tier": 4,
+      "name": "Exotic Matter Chemistry",
+      "description": "Chemical manipulation of strange matter and exotic atomic configurations",
+      "researchCost": 1500,
+      "prerequisites": ["CC3"]
+    },
+    {
+      "id": "CE4",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "E",
+      "tier": 4,
+      "name": "Singularity Fuel",
+      "description": "Chemical compounds leveraging micro-singularity phenomena for energy density",
+      "researchCost": 1500,
+      "prerequisites": ["CE3", "CC4", "EE4"]
+    },
+    {
+      "id": "CI4",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "I",
+      "tier": 4,
+      "name": "Autonomous Synthesis",
+      "description": "AI-directed molecular assembly creating novel compounds on demand",
+      "researchCost": 1500,
+      "prerequisites": ["CI3", "CC4", "II4"]
+    },
+    {
+      "id": "CM4",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "M",
+      "tier": 4,
+      "name": "Programmable Matter",
+      "description": "Materials that reconfigure their molecular structure on command",
+      "researchCost": 1500,
+      "prerequisites": ["CM3", "CC4", "MM4"]
+    },
+    {
+      "id": "CP4",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "P",
+      "tier": 4,
+      "name": "Dimensional Chemistry",
+      "description": "Chemical reactions occurring across multiple spatial dimensions",
+      "researchCost": 1500,
+      "prerequisites": ["CP3", "CC4", "PP4"]
+    },
+    {
+      "id": "CS4",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "S",
+      "tier": 4,
+      "name": "Swarm Chemistry",
+      "description": "Distributed chemical processing across networked micro-reactors",
+      "researchCost": 1500,
+      "prerequisites": ["CS3", "CC4", "SS4"]
+    },
+    {
+      "id": "EB4",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "B",
+      "tier": 4,
+      "name": "Stellar Photosynthesis",
+      "description": "Engineered organisms harvesting energy directly from stellar radiation",
+      "researchCost": 1500,
+      "prerequisites": ["EB3", "EE4", "BB4"]
+    },
+    {
+      "id": "EC4",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "C",
+      "tier": 4,
+      "name": "Antimatter Catalysis",
+      "description": "Controlled antimatter reactions for ultimate energy release",
+      "researchCost": 1500,
+      "prerequisites": ["EC3", "EE4", "CC4"]
+    },
+    {
+      "id": "EE4",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "E",
+      "tier": 4,
+      "name": "Zero-Point Dynamics",
+      "description": "Extracting usable energy from quantum vacuum fluctuations",
+      "researchCost": 1500,
+      "prerequisites": ["EE3"]
+    },
+    {
+      "id": "EI4",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "I",
+      "tier": 4,
+      "name": "Precognitive Power",
+      "description": "Temporal prediction algorithms anticipating power needs before they arise",
+      "researchCost": 1500,
+      "prerequisites": ["EI3", "EE4", "II4"]
+    },
+    {
+      "id": "EM4",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "M",
+      "tier": 4,
+      "name": "Phase Engine Systems",
+      "description": "Mechanical systems operating partially out of phase with normal space",
+      "researchCost": 1500,
+      "prerequisites": ["EM3", "EE4", "MM4"]
+    },
+    {
+      "id": "EP4",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "P",
+      "tier": 4,
+      "name": "Stellar Core Engineering",
+      "description": "Replicating stellar core conditions for controlled energy extraction",
+      "researchCost": 1500,
+      "prerequisites": ["EP3", "EE4", "PP4"]
+    },
+    {
+      "id": "ES4",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "S",
+      "tier": 4,
+      "name": "Infinite Sustainability",
+      "description": "Power infrastructure that generates more energy than it consumes",
+      "researchCost": 1500,
+      "prerequisites": ["ES3", "EE4", "SS4"]
+    },
+    {
+      "id": "IB4",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "B",
+      "tier": 4,
+      "name": "Symbiotic Interface",
+      "description": "Permanent biological-digital fusion for instantaneous data exchange",
+      "researchCost": 1500,
+      "prerequisites": ["IB3", "II4", "BB4"]
+    },
+    {
+      "id": "IC4",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "C",
+      "tier": 4,
+      "name": "Atomic Computation",
+      "description": "Individual atoms functioning as computational elements",
+      "researchCost": 1500,
+      "prerequisites": ["IC3", "II4", "CC4"]
+    },
+    {
+      "id": "IE4",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "E",
+      "tier": 4,
+      "name": "Sentient Grids",
+      "description": "Power networks with emergent intelligence and self-optimization",
+      "researchCost": 1500,
+      "prerequisites": ["IE3", "II4", "EE4"]
+    },
+    {
+      "id": "II4",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "I",
+      "tier": 4,
+      "name": "Transcendent Intelligence",
+      "description": "AI systems exceeding human cognitive capabilities across all domains",
+      "researchCost": 1500,
+      "prerequisites": ["II3"]
+    },
+    {
+      "id": "IM4",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "M",
+      "tier": 4,
+      "name": "Reality Fabrication",
+      "description": "Manufacturing systems that assemble matter from fundamental particles",
+      "researchCost": 1500,
+      "prerequisites": ["IM3", "II4", "MM4"]
+    },
+    {
+      "id": "IP4",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "P",
+      "tier": 4,
+      "name": "Dimensional Computation",
+      "description": "Processing information across multiple spatial dimensions simultaneously",
+      "researchCost": 1500,
+      "prerequisites": ["IP3", "II4", "PP4"]
+    },
+    {
+      "id": "IS4",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "S",
+      "tier": 4,
+      "name": "Hive Intellect",
+      "description": "Networked consciousness enabling instantaneous knowledge transfer",
+      "researchCost": 1500,
+      "prerequisites": ["IS3", "II4", "SS4"]
+    },
+    {
+      "id": "MB4",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "B",
+      "tier": 4,
+      "name": "Living Ships",
+      "description": "Spacecraft hulls grown from engineered biological materials",
+      "researchCost": 1500,
+      "prerequisites": ["MB3", "MM4", "BB4"]
+    },
+    {
+      "id": "MC4",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "C",
+      "tier": 4,
+      "name": "Transmutation Forges",
+      "description": "Converting base materials into exotic elements at industrial scale",
+      "researchCost": 1500,
+      "prerequisites": ["MC3", "MM4", "CC4"]
+    },
+    {
+      "id": "ME4",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "E",
+      "tier": 4,
+      "name": "Phase-Shift Engines",
+      "description": "Propulsion systems utilizing dimensional phase transitions",
+      "researchCost": 1500,
+      "prerequisites": ["ME3", "MM4", "EE4"]
+    },
+    {
+      "id": "MI4",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "I",
+      "tier": 4,
+      "name": "Nanite Collectives",
+      "description": "Self-aware nanomachine swarms with emergent manufacturing capabilities",
+      "researchCost": 1500,
+      "prerequisites": ["MI3", "MM4", "II4"]
+    },
+    {
+      "id": "MM4",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "M",
+      "tier": 4,
+      "name": "Subatomic Fabrication",
+      "description": "Manufacturing at the quark level for ultimate material control",
+      "researchCost": 1500,
+      "prerequisites": ["MM3"]
+    },
+    {
+      "id": "MP4",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "P",
+      "tier": 4,
+      "name": "Reality Anchors",
+      "description": "Mechanical systems that lock physical constants in local space",
+      "researchCost": 1500,
+      "prerequisites": ["MP3", "MM4", "PP4"]
+    },
+    {
+      "id": "MS4",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "S",
+      "tier": 4,
+      "name": "Perfect Manufacturing",
+      "description": "Zero-defect production through total organizational integration",
+      "researchCost": 1500,
+      "prerequisites": ["MS3", "MM4", "SS4"]
+    },
+    {
+      "id": "PB4",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "B",
+      "tier": 4,
+      "name": "Quantum Lifeforms",
+      "description": "Organisms existing in superposition states across multiple dimensions",
+      "researchCost": 1500,
+      "prerequisites": ["PB3", "PP4", "BB4"]
+    },
+    {
+      "id": "PC4",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "C",
+      "tier": 4,
+      "name": "Element Synthesis",
+      "description": "Creating stable superheavy elements and exotic atomic structures",
+      "researchCost": 1500,
+      "prerequisites": ["PC3", "PP4", "CC4"]
+    },
+    {
+      "id": "PE4",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "E",
+      "tier": 4,
+      "name": "Singularity Reactors",
+      "description": "Harnessing controlled micro-singularities for near-infinite power",
+      "researchCost": 1500,
+      "prerequisites": ["PE3", "PP4", "EE4"]
+    },
+    {
+      "id": "PI4",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "I",
+      "tier": 4,
+      "name": "Reality Encoding",
+      "description": "Information storage in the fabric of spacetime itself",
+      "researchCost": 1500,
+      "prerequisites": ["PI3", "PP4", "II4"]
+    },
+    {
+      "id": "PM4",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "M",
+      "tier": 4,
+      "name": "Dimensional Engineering",
+      "description": "Mechanical systems operating across parallel dimensional planes",
+      "researchCost": 1500,
+      "prerequisites": ["PM3", "PP4", "MM4"]
+    },
+    {
+      "id": "PP4",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "P",
+      "tier": 4,
+      "name": "Unified Field Mastery",
+      "description": "Complete understanding of all fundamental forces as one unified field",
+      "researchCost": 1500,
+      "prerequisites": ["PP3"]
+    },
+    {
+      "id": "PS4",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "S",
+      "tier": 4,
+      "name": "Discovery Singularity",
+      "description": "Research acceleration creating exponential breakthrough cascades",
+      "researchCost": 1500,
+      "prerequisites": ["PS3", "PP4", "SS4"]
+    },
+    {
+      "id": "SB4",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "B",
+      "tier": 4,
+      "name": "Biological Transcendence",
+      "description": "Organizational frameworks for post-biological crew enhancement",
+      "researchCost": 1500,
+      "prerequisites": ["SB3", "SS4", "BB4"]
+    },
+    {
+      "id": "SC4",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "C",
+      "tier": 4,
+      "name": "Atomic Logistics",
+      "description": "Tracking and managing individual atoms across supply networks",
+      "researchCost": 1500,
+      "prerequisites": ["SC3", "SS4", "CC4"]
+    },
+    {
+      "id": "SE4",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "E",
+      "tier": 4,
+      "name": "Eternal Power",
+      "description": "Self-perpetuating energy infrastructure requiring zero maintenance",
+      "researchCost": 1500,
+      "prerequisites": ["SE3", "SS4", "EE4"]
+    },
+    {
+      "id": "SI4",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "I",
+      "tier": 4,
+      "name": "Instantaneous Learning",
+      "description": "Direct knowledge transfer bypassing traditional learning processes",
+      "researchCost": 1500,
+      "prerequisites": ["SI3", "SS4", "II4"]
+    },
+    {
+      "id": "SM4",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "M",
+      "tier": 4,
+      "name": "Unified Operations",
+      "description": "Perfect synchronization between human intention and machine execution",
+      "researchCost": 1500,
+      "prerequisites": ["SM3", "SS4", "MM4"]
+    },
+    {
+      "id": "SP4",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "P",
+      "tier": 4,
+      "name": "Breakthrough Synthesis",
+      "description": "Organizational structures optimized for revolutionary discoveries",
+      "researchCost": 1500,
+      "prerequisites": ["SP3", "SS4", "PP4"]
+    },
+    {
+      "id": "SS4",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "S",
+      "tier": 4,
+      "name": "Collective Harmony",
+      "description": "Perfect alignment of individual and organizational goals across fleets",
+      "researchCost": 1500,
+      "prerequisites": ["SS3"]
+    }
+  ],
+  "applications": [
+    {
+      "id": "BC4a",
+      "technologyId": "BC4",
+      "letter": "a",
+      "name": "Xenosymbiotic Harvesting",
+      "description": "Hybrid alien-terrestrial enzymes achieve unprecedented organic extraction",
+      "researchCost": 1500,
+      "prerequisites": ["BC3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "BC4b",
+      "technologyId": "BC4",
+      "letter": "b",
+      "name": "Xenobiome Chamber Assembly",
+      "description": "Self-sustaining alien ecosystem for advanced organic processing",
+      "researchCost": 1500,
+      "prerequisites": ["BC3b", "BI3b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "xenobiome-chamber",
+        "outputType": "component",
+        "outputId": "XenobiomeChamber",
+        "baseWorkUnits": 300,
+        "qualityProperties": { "Vitality": 1.6, "Responsiveness": 1.3 },
+        "inputResources": [
+          { "label": "exotic-containment", "qualifier": "order", "value": "Radioactive", "quantity": 60, "propertyMapping": { "PE": "Vitality" } },
+          { "label": "xenoenzyme-solution", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": { "FL": "Responsiveness" } }
+        ],
+        "inputComponents": [
+          { "label": "bioreactor-base", "componentType": "BioreactorChamber", "quantity": 3, "propertyMapping": { "Vitality": "Vitality" } },
+          { "label": "thermal-control", "componentType": "ActiveThermalArray", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "BE4a",
+      "technologyId": "BE4",
+      "letter": "a",
+      "name": "Living Power Cells",
+      "description": "Engineered organisms generate power while enhancing extraction yield",
+      "researchCost": 1500,
+      "prerequisites": ["BE3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "BI4a",
+      "technologyId": "BI4",
+      "letter": "a",
+      "name": "Neural Extraction Networks",
+      "description": "Living computational substrates optimize biological harvesting in real-time",
+      "researchCost": 1500,
+      "prerequisites": ["BI3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "BI4b",
+      "technologyId": "BI4",
+      "letter": "b",
+      "name": "Living Processor Array Assembly",
+      "description": "Biological neural networks functioning as organic supercomputers",
+      "researchCost": 1500,
+      "prerequisites": ["BI3b", "IS3b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "living-processor-array",
+        "outputType": "module",
+        "outputId": "LivingProcessorArray",
+        "baseWorkUnits": 550,
+        "capabilities": [{ "type": "BiologicalExtraction", "baseValue": 35, "qualitySource": "Responsiveness" }],
+        "inputResources": [
+          { "label": "neural-housing", "qualifier": "class", "value": "Metal", "quantity": 120, "propertyMapping": {} },
+          { "label": "growth-medium", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "bio-matrix", "componentType": "XenobiomeChamber", "quantity": 3, "propertyMapping": { "Responsiveness": "Responsiveness" } },
+          { "label": "quantum-interface", "componentType": "QuantumLattice", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "ZeroPointCore", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "BM4a",
+      "technologyId": "BM4",
+      "letter": "a",
+      "name": "Cellular Machinery",
+      "description": "Biological mechanisms integrated with mechanical extractors at cellular level",
+      "researchCost": 1500,
+      "prerequisites": ["BM3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "BP4a",
+      "technologyId": "BP4",
+      "letter": "a",
+      "name": "Subatomic Harvesting",
+      "description": "Quantum-level manipulation extracts biological compounds atom by atom",
+      "researchCost": 1500,
+      "prerequisites": ["BP3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 6.0 }
+    },
+    {
+      "id": "BS4a",
+      "technologyId": "BS4",
+      "letter": "a",
+      "name": "Biome Synchronization",
+      "description": "Crew connected through biological networks achieve perfect coordination",
+      "researchCost": 1500,
+      "prerequisites": ["BS3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "CrewEfficiency", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "BS4b",
+      "technologyId": "BS4",
+      "letter": "b",
+      "name": "Regeneration Bay Assembly",
+      "description": "Advanced biological facility for complete crew restoration",
+      "researchCost": 1500,
+      "prerequisites": ["BS3b", "SB3a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "regeneration-bay",
+        "outputType": "module",
+        "outputId": "RegenerationBay",
+        "baseWorkUnits": 520,
+        "capabilities": [{ "type": "CrewEfficiency", "baseValue": 25, "qualitySource": "Vitality" }],
+        "inputResources": [
+          { "label": "bio-housing", "qualifier": "class", "value": "Metal", "quantity": 120, "propertyMapping": {} },
+          { "label": "regenerative-fluid", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "bio-systems", "componentType": "XenobiomeChamber", "quantity": 3, "propertyMapping": { "Vitality": "Vitality" } },
+          { "label": "neural-interface", "componentType": "QuantumLattice", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "ZeroPointCore", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CB4a",
+      "technologyId": "CB4",
+      "letter": "a",
+      "name": "Metabolic Manufacturing",
+      "description": "Custom biological pathways eliminate manufacturing waste entirely",
+      "researchCost": 1500,
+      "prerequisites": ["CB3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "CE4a",
+      "technologyId": "CE4",
+      "letter": "a",
+      "name": "Singularity Storage",
+      "description": "Micro-singularity energy storage achieves near-infinite density",
+      "researchCost": 1500,
+      "prerequisites": ["CE3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "CE4b",
+      "technologyId": "CE4",
+      "letter": "b",
+      "name": "Singularity Core Assembly",
+      "description": "Contained micro-singularity providing virtually unlimited energy storage",
+      "researchCost": 1500,
+      "prerequisites": ["CE3b", "PE3b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "singularity-core",
+        "outputType": "component",
+        "outputId": "SingularityCore",
+        "baseWorkUnits": 380,
+        "qualityProperties": { "EnergyDensity": 1.7, "Efficiency": 1.3 },
+        "inputResources": [
+          { "label": "exotic-matter", "qualifier": "order", "value": "Radioactive", "quantity": 60, "propertyMapping": { "PE": "EnergyDensity" } },
+          { "label": "containment-alloy", "qualifier": "order", "value": "Ferromagnetic", "quantity": 80, "propertyMapping": { "UT": "Efficiency" } }
+        ],
+        "inputComponents": [
+          { "label": "power-cells", "componentType": "ZeroPointCore", "quantity": 4, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
+          { "label": "field-coils", "componentType": "QuantumConduit", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CI4a",
+      "technologyId": "CI4",
+      "letter": "a",
+      "name": "Autonomous Molecular Design",
+      "description": "AI synthesizes optimal molecular structures without human input",
+      "researchCost": 1500,
+      "prerequisites": ["CI3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "CM4a",
+      "technologyId": "CM4",
+      "letter": "a",
+      "name": "Programmable Efficiency",
+      "description": "Self-reconfiguring materials adapt to minimize manufacturing waste",
+      "researchCost": 1500,
+      "prerequisites": ["CM3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "CM4b",
+      "technologyId": "CM4",
+      "letter": "b",
+      "name": "Morphic Matrix Assembly",
+      "description": "Self-reconfiguring structural framework adapting to any requirement",
+      "researchCost": 1500,
+      "prerequisites": ["CM3b", "IM3b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "morphic-matrix",
+        "outputType": "component",
+        "outputId": "MorphicMatrix",
+        "baseWorkUnits": 340,
+        "qualityProperties": { "Integrity": 1.7, "Flexibility": 1.2 },
+        "inputResources": [
+          { "label": "programmable-alloy", "qualifier": "order", "value": "Precious", "quantity": 60, "propertyMapping": { "UT": "Integrity" } },
+          { "label": "activation-fluid", "qualifier": "class", "value": "Liquid", "quantity": 50, "propertyMapping": { "SR": "Flexibility" } }
+        ],
+        "inputComponents": [
+          { "label": "lattice-base", "componentType": "CrystallineLattice", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
+          { "label": "control-circuits", "componentType": "QuantumLattice", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CP4a",
+      "technologyId": "CP4",
+      "letter": "a",
+      "name": "Dimensional Catalysis",
+      "description": "Cross-dimensional reactions achieve impossible reaction speeds",
+      "researchCost": 1500,
+      "prerequisites": ["CP3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "CS4a",
+      "technologyId": "CS4",
+      "letter": "a",
+      "name": "Distributed Chemistry",
+      "description": "Swarm micro-reactors parallelize all chemical processing",
+      "researchCost": 1500,
+      "prerequisites": ["CS3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "EB4a",
+      "technologyId": "EB4",
+      "letter": "a",
+      "name": "Stellar Organism Integration",
+      "description": "Engineered organisms power extraction equipment directly from starlight",
+      "researchCost": 1500,
+      "prerequisites": ["EB3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "EC4a",
+      "technologyId": "EC4",
+      "letter": "a",
+      "name": "Antimatter Acceleration",
+      "description": "Controlled antimatter reactions provide unlimited manufacturing energy",
+      "researchCost": 1500,
+      "prerequisites": ["EC3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "EC4b",
+      "technologyId": "EC4",
+      "letter": "b",
+      "name": "Antimatter Injector Assembly",
+      "description": "Controlled antimatter propulsion for ultimate thrust capability",
+      "researchCost": 1500,
+      "prerequisites": ["EC3b", "PE3a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "antimatter-injector",
+        "outputType": "component",
+        "outputId": "AntimatterInjector",
+        "baseWorkUnits": 320,
+        "qualityProperties": { "ThrustRatio": 1.7, "FuelEfficiency": 1.3 },
+        "inputResources": [
+          { "label": "magnetic-containment", "qualifier": "order", "value": "Ferromagnetic", "quantity": 100, "propertyMapping": { "HR": "ThrustRatio" } },
+          { "label": "antimatter-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 40, "propertyMapping": { "PE": "FuelEfficiency" } }
+        ],
+        "inputComponents": [
+          { "label": "plasma-base", "componentType": "PlasmaNozzle", "quantity": 4, "propertyMapping": { "ThrustRatio": "ThrustRatio" } },
+          { "label": "field-containment", "componentType": "QuantumConduit", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "EI4a",
+      "technologyId": "EI4",
+      "letter": "a",
+      "name": "Temporal Power Prediction",
+      "description": "Time-shifted algorithms prepare power before demand exists",
+      "researchCost": 1500,
+      "prerequisites": ["EI3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "EM4a",
+      "technologyId": "EM4",
+      "letter": "a",
+      "name": "Phase Engine Efficiency",
+      "description": "Out-of-phase machinery operates without friction or energy loss",
+      "researchCost": 1500,
+      "prerequisites": ["EM3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "EM4b",
+      "technologyId": "EM4",
+      "letter": "b",
+      "name": "Phase Conduit Assembly",
+      "description": "Power transmission through phase-shifted dimensional channels",
+      "researchCost": 1500,
+      "prerequisites": ["EM3b", "PM3b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "phase-conduit",
+        "outputType": "component",
+        "outputId": "PhaseConduit",
+        "baseWorkUnits": 280,
+        "qualityProperties": { "Conductivity": 1.8, "Capacity": 1.3 },
+        "inputResources": [
+          { "label": "phase-material", "qualifier": "order", "value": "Precious", "quantity": 50, "propertyMapping": { "CN": "Conductivity" } },
+          { "label": "dimensional-medium", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "HR": "Capacity" } }
+        ],
+        "inputComponents": [
+          { "label": "quantum-base", "componentType": "QuantumConduit", "quantity": 5, "propertyMapping": { "Conductivity": "Conductivity" } },
+          { "label": "field-emitters", "componentType": "FieldEmitter", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "EP4a",
+      "technologyId": "EP4",
+      "letter": "a",
+      "name": "Stellar Core Replication",
+      "description": "Miniature stellar conditions provide unlimited warp field power",
+      "researchCost": 1500,
+      "prerequisites": ["EP3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "ES4a",
+      "technologyId": "ES4",
+      "letter": "a",
+      "name": "Perpetual Power",
+      "description": "Self-sustaining energy systems free manufacturing from power constraints",
+      "researchCost": 1500,
+      "prerequisites": ["ES3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "IB4a",
+      "technologyId": "IB4",
+      "letter": "a",
+      "name": "Symbiotic Extraction",
+      "description": "Permanent bio-digital fusion enables thought-speed harvesting coordination",
+      "researchCost": 1500,
+      "prerequisites": ["IB3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "IC4a",
+      "technologyId": "IC4",
+      "letter": "a",
+      "name": "Atomic Analysis",
+      "description": "Individual atom computation enables perfect mineral identification",
+      "researchCost": 1500,
+      "prerequisites": ["IC3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "IC4b",
+      "technologyId": "IC4",
+      "letter": "b",
+      "name": "Subatomic Scanner Assembly",
+      "description": "Scanning at the quark level for complete resource analysis",
+      "researchCost": 1500,
+      "prerequisites": ["IC3b", "PI3a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "subatomic-scanner",
+        "outputType": "module",
+        "outputId": "SubatomicScanner",
+        "baseWorkUnits": 500,
+        "capabilities": [{ "type": "SensorRange", "baseValue": 80, "qualitySource": "Sensitivity" }],
+        "inputResources": [
+          { "label": "scanner-housing", "qualifier": "class", "value": "Metal", "quantity": 100, "propertyMapping": {} },
+          { "label": "quantum-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 70, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "phase-optics", "componentType": "FieldEmitter", "quantity": 5, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "quantum-processor", "componentType": "QuantumLattice", "quantity": 3, "propertyMapping": {} },
+          { "label": "power", "componentType": "ZeroPointCore", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "IE4a",
+      "technologyId": "IE4",
+      "letter": "a",
+      "name": "Sentient Grid Management",
+      "description": "Self-aware power networks optimize manufacturing without input",
+      "researchCost": 1500,
+      "prerequisites": ["IE3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "IM4a",
+      "technologyId": "IM4",
+      "letter": "a",
+      "name": "Particle Assembly",
+      "description": "Constructing matter from fundamental particles achieves perfect quality",
+      "researchCost": 1500,
+      "prerequisites": ["IM3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "IM4b",
+      "technologyId": "IM4",
+      "letter": "b",
+      "name": "Dimensional Lattice Fabrication",
+      "description": "Processing circuits operating across multiple dimensions simultaneously",
+      "researchCost": 1500,
+      "prerequisites": ["IM3b", "IP3a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "dimensional-lattice",
+        "outputType": "component",
+        "outputId": "DimensionalLattice",
+        "baseWorkUnits": 300,
+        "qualityProperties": { "ComputeCapacity": 1.7, "Stability": 1.3 },
+        "inputResources": [
+          { "label": "dimensional-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 70, "propertyMapping": { "OQ": "ComputeCapacity" } },
+          { "label": "phase-fluid", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "FL": "Stability" } }
+        ],
+        "inputComponents": [
+          { "label": "quantum-base", "componentType": "QuantumLattice", "quantity": 4, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "field-stabilizers", "componentType": "FieldEmitter", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "IP4a",
+      "technologyId": "IP4",
+      "letter": "a",
+      "name": "Dimensional Navigation",
+      "description": "Computing across dimensions enables perfect warp trajectory optimization",
+      "researchCost": 1500,
+      "prerequisites": ["IP3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "IS4a",
+      "technologyId": "IS4",
+      "letter": "a",
+      "name": "Collective Insight",
+      "description": "Networked consciousness enables instantaneous research breakthroughs",
+      "researchCost": 1500,
+      "prerequisites": ["IS3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityFloor", "bonusPercent": 4.0 }
+    },
+    {
+      "id": "IS4b",
+      "technologyId": "IS4",
+      "letter": "b",
+      "name": "Transcendent Lab Assembly",
+      "description": "Research facility with access to transcendent computational resources",
+      "researchCost": 1500,
+      "prerequisites": ["IS3b", "PI3a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "transcendent-lab",
+        "outputType": "module",
+        "outputId": "TranscendentLab",
+        "baseWorkUnits": 600,
+        "capabilities": [{ "type": "Research", "baseValue": 25, "qualitySource": "ComputeCapacity" }],
+        "inputResources": [
+          { "label": "lab-housing", "qualifier": "class", "value": "Metal", "quantity": 100, "propertyMapping": {} },
+          { "label": "dimensional-crystals", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "dimensional-processor", "componentType": "DimensionalLattice", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "power-supply", "componentType": "SingularityCore", "quantity": 1, "propertyMapping": {} },
+          { "label": "thermal", "componentType": "ActiveThermalArray", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "MB4a",
+      "technologyId": "MB4",
+      "letter": "a",
+      "name": "Living Hull Extraction",
+      "description": "Biological spacecraft components self-optimize extraction systems",
+      "researchCost": 1500,
+      "prerequisites": ["MB3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "MC4a",
+      "technologyId": "MC4",
+      "letter": "a",
+      "name": "Elemental Transmutation",
+      "description": "Converting base materials to rare elements maximizes extraction yield",
+      "researchCost": 1500,
+      "prerequisites": ["MC3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "MC4b",
+      "technologyId": "MC4",
+      "letter": "b",
+      "name": "Transmutation Drill Assembly",
+      "description": "Extraction beam that transmutes materials during collection",
+      "researchCost": 1500,
+      "prerequisites": ["MC3b", "PC3a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "transmutation-drill",
+        "outputType": "module",
+        "outputId": "TransmutationDrill",
+        "baseWorkUnits": 580,
+        "capabilities": [{ "type": "ResourceExtraction", "baseValue": 40, "qualitySource": "Sensitivity" }],
+        "inputResources": [
+          { "label": "drill-housing", "qualifier": "class", "value": "Metal", "quantity": 130, "propertyMapping": {} },
+          { "label": "transmutation-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 60, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "particle-lance", "componentType": "ParticleLanceCore", "quantity": 2, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "field-emitters", "componentType": "FieldEmitter", "quantity": 4, "propertyMapping": {} },
+          { "label": "power", "componentType": "SingularityCore", "quantity": 1, "propertyMapping": {} },
+          { "label": "thermal", "componentType": "ActiveThermalArray", "quantity": 4, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "ME4a",
+      "technologyId": "ME4",
+      "letter": "a",
+      "name": "Phase-Shift Propulsion",
+      "description": "Dimensional phase transitions enable maximum manufacturing throughput",
+      "researchCost": 1500,
+      "prerequisites": ["ME3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "ME4b",
+      "technologyId": "ME4",
+      "letter": "b",
+      "name": "Phase Thermal Array Assembly",
+      "description": "Heat dissipation through dimensional phase-shifting",
+      "researchCost": 1500,
+      "prerequisites": ["ME3b", "PM3b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "phase-thermal-array",
+        "outputType": "component",
+        "outputId": "PhaseThermalArray",
+        "baseWorkUnits": 280,
+        "qualityProperties": { "Dissipation": 1.7, "Tolerance": 1.3 },
+        "inputResources": [
+          { "label": "phase-alloy", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 110, "propertyMapping": { "CN": "Dissipation" } },
+          { "label": "dimensional-coolant", "qualifier": "class", "value": "Liquid", "quantity": 60, "propertyMapping": { "HR": "Tolerance" } }
+        ],
+        "inputComponents": [
+          { "label": "thermal-base", "componentType": "ActiveThermalArray", "quantity": 5, "propertyMapping": { "Dissipation": "Dissipation" } },
+          { "label": "phase-emitters", "componentType": "FieldEmitter", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "MI4a",
+      "technologyId": "MI4",
+      "letter": "a",
+      "name": "Nanite Collective Precision",
+      "description": "Self-aware nanomachine swarms achieve perfect manufacturing accuracy",
+      "researchCost": 1500,
+      "prerequisites": ["MI3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "MI4b",
+      "technologyId": "MI4",
+      "letter": "b",
+      "name": "Reality Forge Assembly",
+      "description": "Manufacturing facility that assembles matter from fundamental particles",
+      "researchCost": 1500,
+      "prerequisites": ["MI3b", "IM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "reality-forge",
+        "outputType": "module",
+        "outputId": "RealityForge",
+        "baseWorkUnits": 650,
+        "capabilities": [{ "type": "Manufacturing", "baseValue": 35, "qualitySource": "Integrity" }],
+        "inputResources": [
+          { "label": "forge-housing", "qualifier": "class", "value": "Metal", "quantity": 150, "propertyMapping": {} },
+          { "label": "particle-substrate", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "morphic-frame", "componentType": "MorphicMatrix", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
+          { "label": "dimensional-controller", "componentType": "DimensionalLattice", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "SingularityCore", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "MP4a",
+      "technologyId": "MP4",
+      "letter": "a",
+      "name": "Reality Anchor Stabilization",
+      "description": "Locked physical constants enable perfect warp field geometry",
+      "researchCost": 1500,
+      "prerequisites": ["MP3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "MS4a",
+      "technologyId": "MS4",
+      "letter": "a",
+      "name": "Zero-Defect Production",
+      "description": "Perfect organizational integration eliminates all manufacturing errors",
+      "researchCost": 1500,
+      "prerequisites": ["MS3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "PB4a",
+      "technologyId": "PB4",
+      "letter": "a",
+      "name": "Quantum Biological Extraction",
+      "description": "Superposition organisms harvest from multiple locations simultaneously",
+      "researchCost": 1500,
+      "prerequisites": ["PB3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "PC4a",
+      "technologyId": "PC4",
+      "letter": "a",
+      "name": "Element Synthesis Catalysis",
+      "description": "Creating exotic elements during fabrication achieves perfect quality",
+      "researchCost": 1500,
+      "prerequisites": ["PC3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 6.0 }
+    },
+    {
+      "id": "PE4a",
+      "technologyId": "PE4",
+      "letter": "a",
+      "name": "Singularity Power",
+      "description": "Controlled singularities provide unlimited manufacturing energy",
+      "researchCost": 1500,
+      "prerequisites": ["PE3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 6.0 }
+    },
+    {
+      "id": "PE4b",
+      "technologyId": "PE4",
+      "letter": "b",
+      "name": "Singularity Reactor Assembly",
+      "description": "Harnessing a contained singularity for virtually unlimited power",
+      "researchCost": 1500,
+      "prerequisites": ["PE3b", "EP4a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "singularity-reactor",
+        "outputType": "module",
+        "outputId": "SingularityReactor",
+        "baseWorkUnits": 700,
+        "capabilities": [{ "type": "Power", "baseValue": 400, "qualitySource": "EnergyDensity" }],
+        "inputResources": [
+          { "label": "containment-vessel", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
+          { "label": "exotic-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 80, "propertyMapping": {} },
+          { "label": "phase-moderator", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "singularity-cores", "componentType": "SingularityCore", "quantity": 3, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
+          { "label": "thermal", "componentType": "PhaseThermalArray", "quantity": 4, "propertyMapping": {} },
+          { "label": "field-coils", "componentType": "PhaseConduit", "quantity": 4, "propertyMapping": {} },
+          { "label": "control", "componentType": "DimensionalLattice", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "PI4a",
+      "technologyId": "PI4",
+      "letter": "a",
+      "name": "Spacetime Encoding",
+      "description": "Research data stored in spacetime itself enables unlimited discovery",
+      "researchCost": 1500,
+      "prerequisites": ["PI3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityCeiling", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "PM4a",
+      "technologyId": "PM4",
+      "letter": "a",
+      "name": "Dimensional Warp Fields",
+      "description": "Fields operating across dimensions achieve maximum warp efficiency",
+      "researchCost": 1500,
+      "prerequisites": ["PM3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 6.0 }
+    },
+    {
+      "id": "PM4b",
+      "technologyId": "PM4",
+      "letter": "b",
+      "name": "Conduit Harmonizer Assembly",
+      "description": "Field generator optimizing warp conduit traversal",
+      "researchCost": 1500,
+      "prerequisites": ["PM3b", "EP4a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "conduit-harmonizer",
+        "outputType": "component",
+        "outputId": "ConduitHarmonizer",
+        "baseWorkUnits": 280,
+        "qualityProperties": { "Sensitivity": 1.7, "Resolution": 1.4 },
+        "inputResources": [
+          { "label": "harmonic-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 90, "propertyMapping": { "OQ": "Sensitivity" } },
+          { "label": "phase-medium", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "SR": "Resolution" } }
+        ],
+        "inputComponents": [
+          { "label": "field-base", "componentType": "FieldEmitter", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "phase-conduits", "componentType": "PhaseConduit", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "PS4a",
+      "technologyId": "PS4",
+      "letter": "a",
+      "name": "Discovery Cascade",
+      "description": "Breakthrough acceleration creates exponential research improvement",
+      "researchCost": 1500,
+      "prerequisites": ["PS3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityFloor", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "PS4b",
+      "technologyId": "PS4",
+      "letter": "b",
+      "name": "Breakthrough Networks",
+      "description": "Cascading discoveries dramatically accelerate all research",
+      "researchCost": 1500,
+      "prerequisites": ["PS3b"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SB4a",
+      "technologyId": "SB4",
+      "letter": "a",
+      "name": "Transcendent Crew",
+      "description": "Post-biological enhancement enables perfect crew performance",
+      "researchCost": 1500,
+      "prerequisites": ["SB3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "CrewEfficiency", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SB4b",
+      "technologyId": "SB4",
+      "letter": "b",
+      "name": "Transcendent Bio-Hazard Systems",
+      "description": "Complete biological immunity for any extraction environment",
+      "researchCost": 1500,
+      "prerequisites": ["SB3b"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SC4a",
+      "technologyId": "SC4",
+      "letter": "a",
+      "name": "Atomic Supply Networks",
+      "description": "Tracking individual atoms eliminates all logistical waste",
+      "researchCost": 1500,
+      "prerequisites": ["SC3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SE4a",
+      "technologyId": "SE4",
+      "letter": "a",
+      "name": "Eternal Grids",
+      "description": "Perpetual power systems free manufacturing from energy constraints",
+      "researchCost": 1500,
+      "prerequisites": ["SE3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SI4a",
+      "technologyId": "SI4",
+      "letter": "a",
+      "name": "Direct Knowledge Transfer",
+      "description": "Instantaneous skill acquisition eliminates training time entirely",
+      "researchCost": 1500,
+      "prerequisites": ["SI3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityFloor", "bonusPercent": 4.0 }
+    },
+    {
+      "id": "SI4b",
+      "technologyId": "SI4",
+      "letter": "b",
+      "name": "Transcendent Training",
+      "description": "Direct neural skill transfer creates ultimate crew capabilities",
+      "researchCost": 1500,
+      "prerequisites": ["SI3b"],
+      "type": "modifier",
+      "modifier": { "operationType": "CrewEfficiency", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SM4a",
+      "technologyId": "SM4",
+      "letter": "a",
+      "name": "Perfect Synchronization",
+      "description": "Human intention instantaneously translated to machine action",
+      "researchCost": 1500,
+      "prerequisites": ["SM3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SM4b",
+      "technologyId": "SM4",
+      "letter": "b",
+      "name": "Unified Command Center Assembly",
+      "description": "Central hub for perfect fleet coordination across any distance",
+      "researchCost": 1500,
+      "prerequisites": ["SM3b", "IS4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "unified-command-center",
+        "outputType": "module",
+        "outputId": "UnifiedCommandCenter",
+        "baseWorkUnits": 580,
+        "capabilities": [{ "type": "FleetCommand", "baseValue": 15, "qualitySource": "ComputeCapacity" }],
+        "inputResources": [
+          { "label": "command-housing", "qualifier": "class", "value": "Metal", "quantity": 100, "propertyMapping": {} },
+          { "label": "dimensional-arrays", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "dimensional-processor", "componentType": "DimensionalLattice", "quantity": 4, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "phase-comm", "componentType": "ConduitHarmonizer", "quantity": 3, "propertyMapping": {} },
+          { "label": "power", "componentType": "SingularityCore", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "SP4a",
+      "technologyId": "SP4",
+      "letter": "a",
+      "name": "Revolutionary Organization",
+      "description": "Organizational structures optimized for paradigm-shifting discoveries",
+      "researchCost": 1500,
+      "prerequisites": ["SP3a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchSpeed", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "SP4b",
+      "technologyId": "SP4",
+      "letter": "b",
+      "name": "Ultimate Verification",
+      "description": "Perfect verification standards maximize discovery potential",
+      "researchCost": 1500,
+      "prerequisites": ["SP3b"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityCeiling", "bonusPercent": 5.0 }
+    },
+    {
+      "id": "PM4c",
+      "technologyId": "PM4",
+      "letter": "c",
+      "name": "Phase Shield Assembly",
+      "description": "Defensive system that shifts damage into alternate dimensions",
+      "researchCost": 1500,
+      "prerequisites": ["PM4b", "EM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "phase-shield",
+        "outputType": "module",
+        "outputId": "PhaseShield",
+        "baseWorkUnits": 550,
+        "capabilities": [{ "type": "ShieldStrength", "baseValue": 200, "qualitySource": "Sensitivity" }],
+        "inputResources": [
+          { "label": "shield-housing", "qualifier": "class", "value": "Metal", "quantity": 120, "propertyMapping": {} },
+          { "label": "phase-crystals", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "harmonizers", "componentType": "ConduitHarmonizer", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "phase-emitters", "componentType": "PhaseConduit", "quantity": 3, "propertyMapping": {} },
+          { "label": "power", "componentType": "SingularityCore", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "PP4a",
+      "technologyId": "PP4",
+      "letter": "a",
+      "name": "Unified Field Application",
+      "description": "Complete field mastery enables perfect warp efficiency",
+      "researchCost": 1500,
+      "prerequisites": ["PM4a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 6.0 }
+    },
+    {
+      "id": "PP4b",
+      "technologyId": "PP4",
+      "letter": "b",
+      "name": "Particle Lance Core Assembly",
+      "description": "Focused particle beam emitter for weapons and industrial applications",
+      "researchCost": 1500,
+      "prerequisites": ["PM4b", "PE4a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "particle-lance-core",
+        "outputType": "component",
+        "outputId": "ParticleLanceCore",
+        "baseWorkUnits": 300,
+        "qualityProperties": { "Sensitivity": 1.7, "Resolution": 1.4 },
+        "inputResources": [
+          { "label": "lance-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 80, "propertyMapping": { "OQ": "Sensitivity" } },
+          { "label": "focusing-medium", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "SR": "Resolution" } }
+        ],
+        "inputComponents": [
+          { "label": "field-base", "componentType": "FieldEmitter", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "power-conduits", "componentType": "QuantumConduit", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "EP4b",
+      "technologyId": "EP4",
+      "letter": "b",
+      "name": "Warp Drive Assembly",
+      "description": "Advanced propulsion system for rapid conduit traversal",
+      "researchCost": 1500,
+      "prerequisites": ["EP4a", "PM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "warp-drive",
+        "outputType": "module",
+        "outputId": "WarpDrive",
+        "baseWorkUnits": 600,
+        "capabilities": [{ "type": "ConduitTravelSpeed", "baseValue": 50, "qualitySource": "Sensitivity" }],
+        "inputResources": [
+          { "label": "drive-housing", "qualifier": "class", "value": "Metal", "quantity": 150, "propertyMapping": {} },
+          { "label": "exotic-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 60, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "harmonizers", "componentType": "ConduitHarmonizer", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "power", "componentType": "SingularityCore", "quantity": 2, "propertyMapping": {} },
+          { "label": "thermal", "componentType": "PhaseThermalArray", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CB4b",
+      "technologyId": "CB4",
+      "letter": "b",
+      "name": "Metabolic Forge Assembly",
+      "description": "Living manufacturing systems producing components through biological processes",
+      "researchCost": 1500,
+      "prerequisites": ["CB3a", "BI4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "metabolic-forge",
+        "outputType": "module",
+        "outputId": "MetabolicForge",
+        "baseWorkUnits": 520,
+        "capabilities": [{ "type": "Manufacturing", "baseValue": 28, "qualitySource": "Vitality" }],
+        "inputResources": [
+          { "label": "bio-housing", "qualifier": "class", "value": "Metal", "quantity": 100, "propertyMapping": {} },
+          { "label": "growth-medium", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "xenobiome", "componentType": "XenobiomeChamber", "quantity": 4, "propertyMapping": { "Vitality": "Vitality" } },
+          { "label": "control", "componentType": "QuantumLattice", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "ZeroPointCore", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "BE4b",
+      "technologyId": "BE4",
+      "letter": "b",
+      "name": "Bioelectric Core Assembly",
+      "description": "Living organisms generating power through engineered metabolic reactions",
+      "researchCost": 1500,
+      "prerequisites": ["BE3a", "CE4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "bioelectric-core",
+        "outputType": "component",
+        "outputId": "BioelectricCore",
+        "baseWorkUnits": 340,
+        "qualityProperties": { "EnergyDensity": 1.6, "Efficiency": 1.2 },
+        "inputResources": [
+          { "label": "bio-containment", "qualifier": "class", "value": "Metal", "quantity": 70, "propertyMapping": {} },
+          { "label": "organism-culture", "qualifier": "class", "value": "Liquid", "quantity": 60, "propertyMapping": { "FL": "Efficiency" } }
+        ],
+        "inputComponents": [
+          { "label": "xenobiome", "componentType": "XenobiomeChamber", "quantity": 3, "propertyMapping": { "Vitality": "EnergyDensity" } },
+          { "label": "power-conduits", "componentType": "QuantumConduit", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "BM4b",
+      "technologyId": "BM4",
+      "letter": "b",
+      "name": "Organomechanical Frame Assembly",
+      "description": "Structural framework integrating biological and mechanical systems",
+      "researchCost": 1500,
+      "prerequisites": ["BM3a", "CM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "organomechanical-frame",
+        "outputType": "component",
+        "outputId": "OrganomechanicalFrame",
+        "baseWorkUnits": 320,
+        "qualityProperties": { "Integrity": 1.6, "Flexibility": 1.3 },
+        "inputResources": [
+          { "label": "bio-metal", "qualifier": "order", "value": "Ferromagnetic", "quantity": 100, "propertyMapping": { "UT": "Integrity" } },
+          { "label": "growth-medium", "qualifier": "class", "value": "Liquid", "quantity": 50, "propertyMapping": { "FL": "Flexibility" } }
+        ],
+        "inputComponents": [
+          { "label": "morphic-base", "componentType": "MorphicMatrix", "quantity": 3, "propertyMapping": { "Integrity": "Integrity" } },
+          { "label": "bio-matrix", "componentType": "XenobiomeChamber", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CI4b",
+      "technologyId": "CI4",
+      "letter": "b",
+      "name": "Synthesis Control Core Assembly",
+      "description": "AI-directed molecular assembly achieving perfect compound creation",
+      "researchCost": 1500,
+      "prerequisites": ["CI3a", "IM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "synthesis-control-core",
+        "outputType": "component",
+        "outputId": "SynthesisControlCore",
+        "baseWorkUnits": 280,
+        "qualityProperties": { "ComputeCapacity": 1.6, "Stability": 1.3 },
+        "inputResources": [
+          { "label": "quantum-substrate", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 60, "propertyMapping": { "OQ": "ComputeCapacity" } },
+          { "label": "control-medium", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "FL": "Stability" } }
+        ],
+        "inputComponents": [
+          { "label": "dimensional-core", "componentType": "DimensionalLattice", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "power", "componentType": "ZeroPointCore", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CS4b",
+      "technologyId": "CS4",
+      "letter": "b",
+      "name": "Swarm Reactor Bay Assembly",
+      "description": "Distributed micro-reactor network for parallel chemical processing",
+      "researchCost": 1500,
+      "prerequisites": ["CS3a", "MI4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "swarm-reactor-bay",
+        "outputType": "module",
+        "outputId": "SwarmReactorBay",
+        "baseWorkUnits": 540,
+        "capabilities": [{ "type": "Manufacturing", "baseValue": 30, "qualitySource": "Integrity" }],
+        "inputResources": [
+          { "label": "reactor-housing", "qualifier": "class", "value": "Metal", "quantity": 120, "propertyMapping": {} },
+          { "label": "catalyst-medium", "qualifier": "class", "value": "Liquid", "quantity": 70, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "morphic-structure", "componentType": "MorphicMatrix", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
+          { "label": "control-core", "componentType": "SynthesisControlCore", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "SingularityCore", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "EB4b",
+      "technologyId": "EB4",
+      "letter": "b",
+      "name": "Stellar Collector Array Assembly",
+      "description": "Bio-mechanical arrays harvesting stellar radiation for power",
+      "researchCost": 1500,
+      "prerequisites": ["EB3a", "PE4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "stellar-collector-array",
+        "outputType": "module",
+        "outputId": "StellarCollectorArray",
+        "baseWorkUnits": 580,
+        "capabilities": [{ "type": "Power", "baseValue": 300, "qualitySource": "Vitality" }],
+        "inputResources": [
+          { "label": "collector-housing", "qualifier": "class", "value": "Metal", "quantity": 140, "propertyMapping": {} },
+          { "label": "bio-medium", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "xenobiome", "componentType": "XenobiomeChamber", "quantity": 4, "propertyMapping": { "Vitality": "Vitality" } },
+          { "label": "field-emitters", "componentType": "FieldEmitter", "quantity": 4, "propertyMapping": {} },
+          { "label": "power-conduits", "componentType": "PhaseConduit", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "EI4b",
+      "technologyId": "EI4",
+      "letter": "b",
+      "name": "Precognitive Grid Controller Assembly",
+      "description": "Power network controller predicting and preparing for future demands",
+      "researchCost": 1500,
+      "prerequisites": ["EI3a", "IS4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "precognitive-grid-controller",
+        "outputType": "component",
+        "outputId": "PrecognitiveGridController",
+        "baseWorkUnits": 300,
+        "qualityProperties": { "ComputeCapacity": 1.6, "Stability": 1.3 },
+        "inputResources": [
+          { "label": "temporal-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 70, "propertyMapping": { "OQ": "ComputeCapacity" } },
+          { "label": "stabilizer-medium", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "FL": "Stability" } }
+        ],
+        "inputComponents": [
+          { "label": "dimensional-core", "componentType": "DimensionalLattice", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "phase-conduits", "componentType": "PhaseConduit", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "ES4b",
+      "technologyId": "ES4",
+      "letter": "b",
+      "name": "Eternal Power Grid Assembly",
+      "description": "Self-perpetuating power infrastructure requiring zero maintenance",
+      "researchCost": 1500,
+      "prerequisites": ["ES3a", "PE4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "eternal-power-grid",
+        "outputType": "module",
+        "outputId": "EternalPowerGrid",
+        "baseWorkUnits": 620,
+        "capabilities": [{ "type": "Power", "baseValue": 350, "qualitySource": "EnergyDensity" }],
+        "inputResources": [
+          { "label": "grid-housing", "qualifier": "class", "value": "Metal", "quantity": 160, "propertyMapping": {} },
+          { "label": "phase-medium", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "singularity-cores", "componentType": "SingularityCore", "quantity": 3, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
+          { "label": "grid-controller", "componentType": "PrecognitiveGridController", "quantity": 2, "propertyMapping": {} },
+          { "label": "phase-conduits", "componentType": "PhaseConduit", "quantity": 4, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "IB4b",
+      "technologyId": "IB4",
+      "letter": "b",
+      "name": "Symbiotic Interface Assembly",
+      "description": "Permanent bio-digital fusion for instantaneous crew-ship coordination",
+      "researchCost": 1500,
+      "prerequisites": ["IB3a", "BI4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "symbiotic-interface",
+        "outputType": "module",
+        "outputId": "SymbioticInterface",
+        "baseWorkUnits": 500,
+        "capabilities": [{ "type": "CrewEfficiency", "baseValue": 30, "qualitySource": "Responsiveness" }],
+        "inputResources": [
+          { "label": "interface-housing", "qualifier": "class", "value": "Metal", "quantity": 80, "propertyMapping": {} },
+          { "label": "neural-medium", "qualifier": "class", "value": "Liquid", "quantity": 60, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "xenobiome", "componentType": "XenobiomeChamber", "quantity": 3, "propertyMapping": { "Responsiveness": "Responsiveness" } },
+          { "label": "dimensional-processor", "componentType": "DimensionalLattice", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "ZeroPointCore", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "MB4b",
+      "technologyId": "MB4",
+      "letter": "b",
+      "name": "Living Hull Segment Assembly",
+      "description": "Self-repairing biological spacecraft hull section",
+      "researchCost": 1500,
+      "prerequisites": ["MB3a", "BM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "living-hull-segment",
+        "outputType": "component",
+        "outputId": "LivingHullSegment",
+        "baseWorkUnits": 360,
+        "qualityProperties": { "Integrity": 1.7, "Flexibility": 1.3 },
+        "inputResources": [
+          { "label": "bio-alloy", "qualifier": "order", "value": "Ferromagnetic", "quantity": 120, "propertyMapping": { "UT": "Integrity" } },
+          { "label": "growth-medium", "qualifier": "class", "value": "Liquid", "quantity": 60, "propertyMapping": { "FL": "Flexibility" } }
+        ],
+        "inputComponents": [
+          { "label": "organomech-base", "componentType": "OrganomechanicalFrame", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
+          { "label": "xenobiome", "componentType": "XenobiomeChamber", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "PB4b",
+      "technologyId": "PB4",
+      "letter": "b",
+      "name": "Quantum Lifeform Chamber Assembly",
+      "description": "Containment for organisms existing in quantum superposition states",
+      "researchCost": 1500,
+      "prerequisites": ["PB3a", "BI4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "quantum-lifeform-chamber",
+        "outputType": "component",
+        "outputId": "QuantumLifeformChamber",
+        "baseWorkUnits": 380,
+        "qualityProperties": { "Vitality": 1.7, "Responsiveness": 1.4 },
+        "inputResources": [
+          { "label": "quantum-housing", "qualifier": "order", "value": "Radioactive", "quantity": 70, "propertyMapping": { "PE": "Vitality" } },
+          { "label": "superposition-medium", "qualifier": "class", "value": "Liquid", "quantity": 60, "propertyMapping": { "FL": "Responsiveness" } }
+        ],
+        "inputComponents": [
+          { "label": "xenobiome", "componentType": "XenobiomeChamber", "quantity": 3, "propertyMapping": { "Vitality": "Vitality" } },
+          { "label": "field-stabilizers", "componentType": "FieldEmitter", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "PC4b",
+      "technologyId": "PC4",
+      "letter": "b",
+      "name": "Element Forge Assembly",
+      "description": "Industrial system for creating stable superheavy elements",
+      "researchCost": 1500,
+      "prerequisites": ["PC3a", "PE4a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "element-forge",
+        "outputType": "module",
+        "outputId": "ElementForge",
+        "baseWorkUnits": 600,
+        "capabilities": [{ "type": "Manufacturing", "baseValue": 32, "qualitySource": "Integrity" }],
+        "inputResources": [
+          { "label": "forge-housing", "qualifier": "class", "value": "Metal", "quantity": 140, "propertyMapping": {} },
+          { "label": "transmutation-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 70, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "morphic-structure", "componentType": "MorphicMatrix", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
+          { "label": "particle-lance", "componentType": "ParticleLanceCore", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "SingularityCore", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "IE4b",
+      "technologyId": "IE4",
+      "letter": "b",
+      "name": "Sentient Grid Nexus Assembly",
+      "description": "Self-aware power network hub with emergent optimization",
+      "researchCost": 1500,
+      "prerequisites": ["IE3a", "EI4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "sentient-grid-nexus",
+        "outputType": "module",
+        "outputId": "SentientGridNexus",
+        "baseWorkUnits": 560,
+        "capabilities": [{ "type": "Power", "baseValue": 280, "qualitySource": "ComputeCapacity" }],
+        "inputResources": [
+          { "label": "nexus-housing", "qualifier": "class", "value": "Metal", "quantity": 120, "propertyMapping": {} },
+          { "label": "neural-medium", "qualifier": "class", "value": "Liquid", "quantity": 70, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "grid-controller", "componentType": "PrecognitiveGridController", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "singularity-cores", "componentType": "SingularityCore", "quantity": 2, "propertyMapping": {} },
+          { "label": "phase-conduits", "componentType": "PhaseConduit", "quantity": 4, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "IP4b",
+      "technologyId": "IP4",
+      "letter": "b",
+      "name": "Dimensional Navigator Assembly",
+      "description": "Navigation system computing across multiple dimensions for optimal routes",
+      "researchCost": 1500,
+      "prerequisites": ["IP3a", "PM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "dimensional-navigator",
+        "outputType": "module",
+        "outputId": "DimensionalNavigator",
+        "baseWorkUnits": 520,
+        "capabilities": [{ "type": "ConduitTravelSpeed", "baseValue": 40, "qualitySource": "Sensitivity" }],
+        "inputResources": [
+          { "label": "navigator-housing", "qualifier": "class", "value": "Metal", "quantity": 100, "propertyMapping": {} },
+          { "label": "dimensional-crystals", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 80, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "harmonizers", "componentType": "ConduitHarmonizer", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "dimensional-processor", "componentType": "DimensionalLattice", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "ZeroPointCore", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "SC4b",
+      "technologyId": "SC4",
+      "letter": "b",
+      "name": "Atomic Logistics Core Assembly",
+      "description": "System tracking and managing individual atoms across supply networks",
+      "researchCost": 1500,
+      "prerequisites": ["SC3a", "IC4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "atomic-logistics-core",
+        "outputType": "component",
+        "outputId": "AtomicLogisticsCore",
+        "baseWorkUnits": 280,
+        "qualityProperties": { "ComputeCapacity": 1.6, "Stability": 1.3 },
+        "inputResources": [
+          { "label": "scanner-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 60, "propertyMapping": { "OQ": "ComputeCapacity" } },
+          { "label": "tracking-medium", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "FL": "Stability" } }
+        ],
+        "inputComponents": [
+          { "label": "dimensional-processor", "componentType": "DimensionalLattice", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "field-emitters", "componentType": "FieldEmitter", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "SE4b",
+      "technologyId": "SE4",
+      "letter": "b",
+      "name": "Perpetual Energy Hub Assembly",
+      "description": "Power distribution center with zero maintenance requirements",
+      "researchCost": 1500,
+      "prerequisites": ["SE3a", "ES4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "perpetual-energy-hub",
+        "outputType": "module",
+        "outputId": "PerpetualEnergyHub",
+        "baseWorkUnits": 580,
+        "capabilities": [{ "type": "Power", "baseValue": 320, "qualitySource": "EnergyDensity" }],
+        "inputResources": [
+          { "label": "hub-housing", "qualifier": "class", "value": "Metal", "quantity": 140, "propertyMapping": {} },
+          { "label": "perpetual-medium", "qualifier": "class", "value": "Liquid", "quantity": 70, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "singularity-cores", "componentType": "SingularityCore", "quantity": 3, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
+          { "label": "grid-controller", "componentType": "PrecognitiveGridController", "quantity": 2, "propertyMapping": {} },
+          { "label": "phase-conduits", "componentType": "PhaseConduit", "quantity": 3, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CP4b",
+      "technologyId": "CP4",
+      "letter": "b",
+      "name": "Dimensional Catalyst Core Assembly",
+      "description": "Catalyst enabling cross-dimensional chemical reactions",
+      "researchCost": 1500,
+      "prerequisites": ["CP3a", "PM4b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "dimensional-catalyst-core",
+        "outputType": "component",
+        "outputId": "DimensionalCatalystCore",
+        "baseWorkUnits": 300,
+        "qualityProperties": { "Sensitivity": 1.6, "Resolution": 1.3 },
+        "inputResources": [
+          { "label": "catalyst-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 70, "propertyMapping": { "OQ": "Sensitivity" } },
+          { "label": "dimensional-medium", "qualifier": "class", "value": "Liquid", "quantity": 50, "propertyMapping": { "SR": "Resolution" } }
+        ],
+        "inputComponents": [
+          { "label": "field-emitters", "componentType": "FieldEmitter", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "phase-conduits", "componentType": "PhaseConduit", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    }
+  ],
+  "newComponents": [
+    {
+      "componentId": "XenobiomeChamber",
+      "name": "Xenobiome Chamber",
+      "description": "Self-sustaining alien ecosystem for advanced organic processing",
+      "category": "BioMatrices",
+      "tier": 4,
+      "mass": 5,
+      "qualityProperties": ["Vitality", "Responsiveness"]
+    },
+    {
+      "componentId": "SingularityCore",
+      "name": "Singularity Core",
+      "description": "Contained micro-singularity providing virtually unlimited energy storage",
+      "category": "PowerCells",
+      "tier": 4,
+      "mass": 6,
+      "qualityProperties": ["EnergyDensity", "Efficiency"]
+    },
+    {
+      "componentId": "MorphicMatrix",
+      "name": "Morphic Matrix",
+      "description": "Self-reconfiguring structural framework adapting to any requirement",
+      "category": "StructuralFrames",
+      "tier": 4,
+      "mass": 8,
+      "qualityProperties": ["Integrity", "Flexibility"]
+    },
+    {
+      "componentId": "AntimatterInjector",
+      "name": "Antimatter Injector",
+      "description": "Controlled antimatter propulsion for ultimate thrust capability",
+      "category": "PropellantSystems",
+      "tier": 4,
+      "mass": 7,
+      "qualityProperties": ["ThrustRatio", "FuelEfficiency"]
+    },
+    {
+      "componentId": "PhaseConduit",
+      "name": "Phase Conduit",
+      "description": "Power transmission through phase-shifted dimensional channels",
+      "category": "Conduits",
+      "tier": 4,
+      "mass": 4,
+      "qualityProperties": ["Conductivity", "Capacity"]
+    },
+    {
+      "componentId": "DimensionalLattice",
+      "name": "Dimensional Lattice",
+      "description": "Processing circuits operating across multiple dimensions simultaneously",
+      "category": "Circuits",
+      "tier": 4,
+      "mass": 4,
+      "qualityProperties": ["ComputeCapacity", "Stability"]
+    },
+    {
+      "componentId": "PhaseThermalArray",
+      "name": "Phase Thermal Array",
+      "description": "Heat dissipation through dimensional phase-shifting",
+      "category": "ThermalManagement",
+      "tier": 4,
+      "mass": 5,
+      "qualityProperties": ["Dissipation", "Tolerance"]
+    },
+    {
+      "componentId": "ConduitHarmonizer",
+      "name": "Conduit Harmonizer",
+      "description": "Field generator optimizing warp conduit traversal",
+      "category": "Optics",
+      "tier": 4,
+      "mass": 4,
+      "qualityProperties": ["Sensitivity", "Resolution"]
+    },
+    {
+      "componentId": "ParticleLanceCore",
+      "name": "Particle Lance Core",
+      "description": "Focused particle beam emitter for weapons and industrial applications",
+      "category": "Optics",
+      "tier": 4,
+      "mass": 5,
+      "qualityProperties": ["Sensitivity", "Resolution"]
+    },
+    {
+      "componentId": "BioelectricCore",
+      "name": "Bioelectric Core",
+      "description": "Living organisms generating power through engineered metabolic reactions",
+      "category": "PowerCells",
+      "tier": 4,
+      "mass": 5,
+      "qualityProperties": ["EnergyDensity", "Efficiency"]
+    },
+    {
+      "componentId": "OrganomechanicalFrame",
+      "name": "Organomechanical Frame",
+      "description": "Structural framework integrating biological and mechanical systems",
+      "category": "StructuralFrames",
+      "tier": 4,
+      "mass": 7,
+      "qualityProperties": ["Integrity", "Flexibility"]
+    },
+    {
+      "componentId": "SynthesisControlCore",
+      "name": "Synthesis Control Core",
+      "description": "AI-directed molecular assembly achieving perfect compound creation",
+      "category": "Circuits",
+      "tier": 4,
+      "mass": 4,
+      "qualityProperties": ["ComputeCapacity", "Stability"]
+    },
+    {
+      "componentId": "PrecognitiveGridController",
+      "name": "Precognitive Grid Controller",
+      "description": "Power network controller predicting and preparing for future demands",
+      "category": "Circuits",
+      "tier": 4,
+      "mass": 4,
+      "qualityProperties": ["ComputeCapacity", "Stability"]
+    },
+    {
+      "componentId": "LivingHullSegment",
+      "name": "Living Hull Segment",
+      "description": "Self-repairing biological spacecraft hull section",
+      "category": "StructuralFrames",
+      "tier": 4,
+      "mass": 9,
+      "qualityProperties": ["Integrity", "Flexibility"]
+    },
+    {
+      "componentId": "QuantumLifeformChamber",
+      "name": "Quantum Lifeform Chamber",
+      "description": "Containment for organisms existing in quantum superposition states",
+      "category": "BioMatrices",
+      "tier": 4,
+      "mass": 6,
+      "qualityProperties": ["Vitality", "Responsiveness"]
+    },
+    {
+      "componentId": "AtomicLogisticsCore",
+      "name": "Atomic Logistics Core",
+      "description": "System tracking and managing individual atoms across supply networks",
+      "category": "Circuits",
+      "tier": 4,
+      "mass": 4,
+      "qualityProperties": ["ComputeCapacity", "Stability"]
+    },
+    {
+      "componentId": "DimensionalCatalystCore",
+      "name": "Dimensional Catalyst Core",
+      "description": "Catalyst enabling cross-dimensional chemical reactions",
+      "category": "Optics",
+      "tier": 4,
+      "mass": 4,
+      "qualityProperties": ["Sensitivity", "Resolution"]
+    }
+  ],
+  "newModules": [
+    {
+      "moduleId": "LivingProcessorArray",
+      "name": "Living Processor Array",
+      "description": "Biological neural networks functioning as organic supercomputers",
+      "category": "Extraction",
+      "tier": 4,
+      "mass": 20,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "BiologicalExtraction", "baseValue": 35 }]
+    },
+    {
+      "moduleId": "RegenerationBay",
+      "name": "Regeneration Bay",
+      "description": "Advanced biological facility for complete crew restoration",
+      "category": "LifeSupport",
+      "tier": 4,
+      "mass": 24,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "CrewEfficiency", "baseValue": 25 }]
+    },
+    {
+      "moduleId": "SubatomicScanner",
+      "name": "Subatomic Scanner",
+      "description": "Scanning at the quark level for complete resource analysis",
+      "category": "Sensors",
+      "tier": 4,
+      "mass": 18,
+      "slotType": "External",
+      "baseCapabilities": [{ "type": "SensorRange", "baseValue": 80 }]
+    },
+    {
+      "moduleId": "TranscendentLab",
+      "name": "Transcendent Lab",
+      "description": "Research facility with access to transcendent computational resources",
+      "category": "Research",
+      "tier": 4,
+      "mass": 26,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Research", "baseValue": 25 }]
+    },
+    {
+      "moduleId": "TransmutationDrill",
+      "name": "Transmutation Drill",
+      "description": "Extraction beam that transmutes materials during collection",
+      "category": "Extraction",
+      "tier": 4,
+      "mass": 22,
+      "slotType": "External",
+      "baseCapabilities": [{ "type": "ResourceExtraction", "baseValue": 40 }]
+    },
+    {
+      "moduleId": "RealityForge",
+      "name": "Reality Forge",
+      "description": "Manufacturing facility that assembles matter from fundamental particles",
+      "category": "Manufacturing",
+      "tier": 4,
+      "mass": 35,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Manufacturing", "baseValue": 35 }]
+    },
+    {
+      "moduleId": "SingularityReactor",
+      "name": "Singularity Reactor",
+      "description": "Harnessing a contained singularity for virtually unlimited power",
+      "category": "Power",
+      "tier": 4,
+      "mass": 50,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Power", "baseValue": 400 }]
+    },
+    {
+      "moduleId": "UnifiedCommandCenter",
+      "name": "Unified Command Center",
+      "description": "Central hub for perfect fleet coordination across any distance",
+      "category": "FleetCommand",
+      "tier": 4,
+      "mass": 22,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "FleetCommand", "baseValue": 15 }]
+    },
+    {
+      "moduleId": "PhaseShield",
+      "name": "Phase Shield",
+      "description": "Defensive system that shifts damage into alternate dimensions",
+      "category": "Defense",
+      "tier": 4,
+      "mass": 20,
+      "slotType": "External",
+      "baseCapabilities": [{ "type": "ShieldStrength", "baseValue": 200 }]
+    },
+    {
+      "moduleId": "WarpDrive",
+      "name": "Warp Drive",
+      "description": "Advanced propulsion system for rapid conduit traversal",
+      "category": "Propulsion",
+      "tier": 4,
+      "mass": 28,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "ConduitTravelSpeed", "baseValue": 50 }]
+    },
+    {
+      "moduleId": "MetabolicForge",
+      "name": "Metabolic Forge",
+      "description": "Living manufacturing systems producing components through biological processes",
+      "category": "Manufacturing",
+      "tier": 4,
+      "mass": 28,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Manufacturing", "baseValue": 28 }]
+    },
+    {
+      "moduleId": "SwarmReactorBay",
+      "name": "Swarm Reactor Bay",
+      "description": "Distributed micro-reactor network for parallel chemical processing",
+      "category": "Manufacturing",
+      "tier": 4,
+      "mass": 30,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Manufacturing", "baseValue": 30 }]
+    },
+    {
+      "moduleId": "StellarCollectorArray",
+      "name": "Stellar Collector Array",
+      "description": "Bio-mechanical arrays harvesting stellar radiation for power",
+      "category": "Power",
+      "tier": 4,
+      "mass": 32,
+      "slotType": "External",
+      "baseCapabilities": [{ "type": "Power", "baseValue": 300 }]
+    },
+    {
+      "moduleId": "EternalPowerGrid",
+      "name": "Eternal Power Grid",
+      "description": "Self-perpetuating power infrastructure requiring zero maintenance",
+      "category": "Power",
+      "tier": 4,
+      "mass": 36,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Power", "baseValue": 350 }]
+    },
+    {
+      "moduleId": "SymbioticInterface",
+      "name": "Symbiotic Interface",
+      "description": "Permanent bio-digital fusion for instantaneous crew-ship coordination",
+      "category": "LifeSupport",
+      "tier": 4,
+      "mass": 18,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "CrewEfficiency", "baseValue": 30 }]
+    },
+    {
+      "moduleId": "ElementForge",
+      "name": "Element Forge",
+      "description": "Industrial system for creating stable superheavy elements",
+      "category": "Manufacturing",
+      "tier": 4,
+      "mass": 32,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Manufacturing", "baseValue": 32 }]
+    },
+    {
+      "moduleId": "SentientGridNexus",
+      "name": "Sentient Grid Nexus",
+      "description": "Self-aware power network hub with emergent optimization",
+      "category": "Power",
+      "tier": 4,
+      "mass": 30,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Power", "baseValue": 280 }]
+    },
+    {
+      "moduleId": "DimensionalNavigator",
+      "name": "Dimensional Navigator",
+      "description": "Navigation system computing across multiple dimensions for optimal routes",
+      "category": "Propulsion",
+      "tier": 4,
+      "mass": 22,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "ConduitTravelSpeed", "baseValue": 40 }]
+    },
+    {
+      "moduleId": "PerpetualEnergyHub",
+      "name": "Perpetual Energy Hub",
+      "description": "Power distribution center with zero maintenance requirements",
+      "category": "Power",
+      "tier": 4,
+      "mass": 34,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Power", "baseValue": 320 }]
+    }
+  ]
+}

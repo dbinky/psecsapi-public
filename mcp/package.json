@@ -1,0 +1,41 @@
+{
+  "name": "@psecs/mcp",
+  "version": "0.0.1",
+  "type": "module",
+  "description": "MCP server for AI agents to play PSECS",
+  "license": "MIT",
+  "main": "dist/server.js",
+  "bin": {
+    "psecs-mcp": "dist/server.js"
+  },
+  "files": ["dist", "content"],
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dbinky/psecsapi-public.git",
+    "directory": "mcp"
+  },
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "dev": "tsx src/server.ts",
+    "dev:http": "tsx src/server.ts --http",
+    "generate": "tsx scripts/generate.ts",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "express": "^4.21.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}

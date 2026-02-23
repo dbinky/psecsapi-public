@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "psecsapi.api.models/0.0.1": {
+        "dependencies": {
+          "psecsapi.Shared": "0.0.1"
+        },
+        "runtime": {
+          "psecsapi.api.models.dll": {}
+        }
+      },
+      "psecsapi.Shared/0.0.1": {
+        "runtime": {
+          "psecsapi.Shared.dll": {
+            "assemblyVersion": "0.0.1.0",
+            "fileVersion": "0.0.1.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "psecsapi.api.models/0.0.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "psecsapi.Shared/0.0.1": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

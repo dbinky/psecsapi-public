@@ -1,0 +1,36 @@
+namespace psecsapi.Grains.Interfaces.Resources.Models
+{
+    public enum RawResourceOrder
+    {
+        Ferromagnetic,
+        NonFerromagnetic,
+        Precious,
+        Radioactive,
+        NonRadioactive,
+        Rare,
+        CrystallineGemstone,
+        AmorphousGemstone,
+        ReactiveGas,
+        InertGas,
+        Water,
+        PetrochemicalLiquid,
+        LubricatingFluid,
+        Fruit,
+        Vegetable,
+        Grain,
+        HardWood,
+        SoftWood,
+        Fibrous,
+        SmoothMeat,
+        TexturedMeat,
+        SmoothHide,
+        TexturedHide,
+        CalcinatedBone,
+        ChitinousBone,
+        GreenAlgae,
+        BlueAlgae,
+        RedAlgae,
+        AerobicBacteria,
+        AnaerobicBacteria
+    }
+}

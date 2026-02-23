@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "psecsapi.Console": {
+      "commandName": "Project",
+      "commandLineArgs": "get-corp-fleets"
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/ryan/Repos/psecsapi-public/cli/psecsapi.Console.csproj": {}
+  },
+  "projects": {
+    "/Users/ryan/Repos/psecsapi-public/api-models/psecsapi.api.models.csproj": {
+      "version": "0.0.1",
+      "restore": {
+        "projectUniqueName": "/Users/ryan/Repos/psecsapi-public/api-models/psecsapi.api.models.csproj",
+        "projectName": "psecsapi.api.models",
+        "projectPath": "/Users/ryan/Repos/psecsapi-public/api-models/psecsapi.api.models.csproj",
+        "packagesPath": "/Users/ryan/.nuget/packages/",
+        "outputPath": "/Users/ryan/Repos/psecsapi-public/api-models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ryan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ryan/Repos/psecsapi-public/shared/psecsapi.Shared.csproj": {
+                "projectPath": "/Users/ryan/Repos/psecsapi-public/shared/psecsapi.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ryan/Repos/psecsapi-public/cli/psecsapi.Console.csproj": {
+      "version": "0.0.1",
+      "restore": {
+        "projectUniqueName": "/Users/ryan/Repos/psecsapi-public/cli/psecsapi.Console.csproj",
+        "projectName": "papi",
+        "projectPath": "/Users/ryan/Repos/psecsapi-public/cli/psecsapi.Console.csproj",
+        "packagesPath": "/Users/ryan/.nuget/packages/",
+        "outputPath": "/Users/ryan/Repos/psecsapi-public/cli/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ryan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/ryan/Repos/psecsapi-public/api-models/psecsapi.api.models.csproj": {
+                "projectPath": "/Users/ryan/Repos/psecsapi-public/api-models/psecsapi.api.models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "System.CommandLine": {
+              "target": "Package",
+              "version": "[2.0.0-beta4.22272.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/ryan/Repos/psecsapi-public/shared/psecsapi.Shared.csproj": {
+      "version": "0.0.1",
+      "restore": {
+        "projectUniqueName": "/Users/ryan/Repos/psecsapi-public/shared/psecsapi.Shared.csproj",
+        "projectName": "psecsapi.Shared",
+        "projectPath": "/Users/ryan/Repos/psecsapi-public/shared/psecsapi.Shared.csproj",
+        "packagesPath": "/Users/ryan/.nuget/packages/",
+        "outputPath": "/Users/ryan/Repos/psecsapi-public/shared/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/ryan/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "10.0.100"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.101/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

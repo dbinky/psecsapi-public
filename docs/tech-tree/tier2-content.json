@@ -1,0 +1,1521 @@
+{
+  "tier": 2,
+  "researchCost": 250,
+  "technologies": [
+    {
+      "id": "BB2",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "B",
+      "tier": 2,
+      "name": "Genetic Engineering",
+      "description": "Deeper understanding of complex biological systems and genetic manipulation",
+      "researchCost": 250,
+      "prerequisites": ["BB1"]
+    },
+    {
+      "id": "BC2",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "C",
+      "tier": 2,
+      "name": "Xenobiochemistry",
+      "description": "Chemical analysis techniques adapted for alien biological compounds",
+      "researchCost": 250,
+      "prerequisites": ["BC1", "BB2", "CC2"]
+    },
+    {
+      "id": "BE2",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "E",
+      "tier": 2,
+      "name": "Bioelectric Systems",
+      "description": "Harnessing electrical potentials in living organisms for power generation",
+      "researchCost": 250,
+      "prerequisites": ["BE1", "BB2", "EE2"]
+    },
+    {
+      "id": "BI2",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "I",
+      "tier": 2,
+      "name": "Genomic Analytics",
+      "description": "Advanced computational analysis of complete genetic sequences",
+      "researchCost": 250,
+      "prerequisites": ["BI1", "BB2", "II2"]
+    },
+    {
+      "id": "BM2",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "M",
+      "tier": 2,
+      "name": "Biomedical Engineering",
+      "description": "Precision mechanical systems for medical and biological applications",
+      "researchCost": 250,
+      "prerequisites": ["BM1", "BB2", "MM2"]
+    },
+    {
+      "id": "BP2",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "P",
+      "tier": 2,
+      "name": "Molecular Biophysics",
+      "description": "Physical forces governing molecular biology and protein folding",
+      "researchCost": 250,
+      "prerequisites": ["BP1", "BB2", "PP2"]
+    },
+    {
+      "id": "BS2",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "S",
+      "tier": 2,
+      "name": "Population Health",
+      "description": "Organizational strategies for crew health at scale",
+      "researchCost": 250,
+      "prerequisites": ["BS1", "BB2", "SS2"]
+    },
+    {
+      "id": "CB2",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "B",
+      "tier": 2,
+      "name": "Biochemical Synthesis",
+      "description": "Production of complex organic molecules using biological processes",
+      "researchCost": 250,
+      "prerequisites": ["CB1", "CC2", "BB2"]
+    },
+    {
+      "id": "CC2",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "C",
+      "tier": 2,
+      "name": "Molecular Synthesis",
+      "description": "Complex chemical reactions and advanced molecular synthesis",
+      "researchCost": 250,
+      "prerequisites": ["CC1"]
+    },
+    {
+      "id": "CE2",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "E",
+      "tier": 2,
+      "name": "Advanced Electrochemistry",
+      "description": "High-efficiency energy storage and advanced fuel cell design",
+      "researchCost": 250,
+      "prerequisites": ["CE1", "CC2", "EE2"]
+    },
+    {
+      "id": "CI2",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "I",
+      "tier": 2,
+      "name": "Molecular Simulation",
+      "description": "High-fidelity computational modeling of complex molecular interactions",
+      "researchCost": 250,
+      "prerequisites": ["CI1", "CC2", "II2"]
+    },
+    {
+      "id": "CM2",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "M",
+      "tier": 2,
+      "name": "Composite Materials",
+      "description": "Advanced multi-phase materials with superior properties",
+      "researchCost": 250,
+      "prerequisites": ["CM1", "CC2", "MM2"]
+    },
+    {
+      "id": "CP2",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "P",
+      "tier": 2,
+      "name": "Thermochemistry",
+      "description": "High-temperature chemical processes and energy transfer",
+      "researchCost": 250,
+      "prerequisites": ["CP1", "CC2", "PP2"]
+    },
+    {
+      "id": "CS2",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "S",
+      "tier": 2,
+      "name": "Chemical Logistics",
+      "description": "Large-scale chemical production management and safety systems",
+      "researchCost": 250,
+      "prerequisites": ["CS1", "CC2", "SS2"]
+    },
+    {
+      "id": "EB2",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "B",
+      "tier": 2,
+      "name": "Microbial Fuel Cells",
+      "description": "Harnessing microbial metabolism for sustained power generation",
+      "researchCost": 250,
+      "prerequisites": ["EB1", "EE2", "BB2"]
+    },
+    {
+      "id": "EC2",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "C",
+      "tier": 2,
+      "name": "Advanced Propellants",
+      "description": "High-performance chemical propellants for improved thrust",
+      "researchCost": 250,
+      "prerequisites": ["EC1", "EE2", "CC2"]
+    },
+    {
+      "id": "EE2",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "E",
+      "tier": 2,
+      "name": "Fusion Principles",
+      "description": "High-efficiency power systems and advanced energy storage",
+      "researchCost": 250,
+      "prerequisites": ["EE1"]
+    },
+    {
+      "id": "EI2",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "I",
+      "tier": 2,
+      "name": "Predictive Power Management",
+      "description": "AI-driven power allocation anticipating system demands",
+      "researchCost": 250,
+      "prerequisites": ["EI1", "EE2", "II2"]
+    },
+    {
+      "id": "EM2",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "M",
+      "tier": 2,
+      "name": "Turbomachinery",
+      "description": "High-performance rotating machinery for power generation",
+      "researchCost": 250,
+      "prerequisites": ["EM1", "EE2", "MM2"]
+    },
+    {
+      "id": "EP2",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "P",
+      "tier": 2,
+      "name": "Magnetic Confinement",
+      "description": "Advanced plasma containment using magnetic field geometries",
+      "researchCost": 250,
+      "prerequisites": ["EP1", "EE2", "PP2"]
+    },
+    {
+      "id": "ES2",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "S",
+      "tier": 2,
+      "name": "Power Grid Planning",
+      "description": "Strategic energy infrastructure development and optimization",
+      "researchCost": 250,
+      "prerequisites": ["ES1", "EE2", "SS2"]
+    },
+    {
+      "id": "IB2",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "B",
+      "tier": 2,
+      "name": "Biomarker Detection",
+      "description": "Advanced sensors for detecting specific biological signatures",
+      "researchCost": 250,
+      "prerequisites": ["IB1", "II2", "BB2"]
+    },
+    {
+      "id": "IC2",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "C",
+      "tier": 2,
+      "name": "Mass Spectrometry AI",
+      "description": "Automated analysis of molecular composition and structure",
+      "researchCost": 250,
+      "prerequisites": ["IC1", "II2", "CC2"]
+    },
+    {
+      "id": "IE2",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "E",
+      "tier": 2,
+      "name": "Power System Optimization",
+      "description": "Machine learning applied to power efficiency and distribution",
+      "researchCost": 250,
+      "prerequisites": ["IE1", "II2", "EE2"]
+    },
+    {
+      "id": "II2",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "I",
+      "tier": 2,
+      "name": "Neural Computing",
+      "description": "Sophisticated data processing and machine learning systems",
+      "researchCost": 250,
+      "prerequisites": ["II1"]
+    },
+    {
+      "id": "IM2",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "M",
+      "tier": 2,
+      "name": "Adaptive Manufacturing",
+      "description": "Self-adjusting fabrication systems responding to material variations",
+      "researchCost": 250,
+      "prerequisites": ["IM1", "II2", "MM2"]
+    },
+    {
+      "id": "IP2",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "P",
+      "tier": 2,
+      "name": "Field Computation",
+      "description": "Real-time modeling of complex physical field interactions",
+      "researchCost": 250,
+      "prerequisites": ["IP1", "II2", "PP2"]
+    },
+    {
+      "id": "IS2",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "S",
+      "tier": 2,
+      "name": "Collaborative Research",
+      "description": "Networked research systems enabling distributed discovery",
+      "researchCost": 250,
+      "prerequisites": ["IS1", "II2", "SS2"]
+    },
+    {
+      "id": "MB2",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "B",
+      "tier": 2,
+      "name": "Living Materials",
+      "description": "Self-repairing structures incorporating biological elements",
+      "researchCost": 250,
+      "prerequisites": ["MB1", "MM2", "BB2"]
+    },
+    {
+      "id": "MC2",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "C",
+      "tier": 2,
+      "name": "Industrial Refining",
+      "description": "Large-scale chemical processing for material purification",
+      "researchCost": 250,
+      "prerequisites": ["MC1", "MM2", "CC2"]
+    },
+    {
+      "id": "ME2",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "E",
+      "tier": 2,
+      "name": "High-Power Systems",
+      "description": "Mechanical systems designed for extreme power throughput",
+      "researchCost": 250,
+      "prerequisites": ["ME1", "MM2", "EE2"]
+    },
+    {
+      "id": "MI2",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "I",
+      "tier": 2,
+      "name": "Robotic Assembly",
+      "description": "Fully automated manufacturing with minimal human intervention",
+      "researchCost": 250,
+      "prerequisites": ["MI1", "MM2", "II2"]
+    },
+    {
+      "id": "MM2",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "M",
+      "tier": 2,
+      "name": "Precision Manufacturing",
+      "description": "Sophisticated mechanical systems and precision engineering",
+      "researchCost": 250,
+      "prerequisites": ["MM1"]
+    },
+    {
+      "id": "MP2",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "P",
+      "tier": 2,
+      "name": "Gravitic Engineering",
+      "description": "Mechanical systems incorporating gravitational manipulation",
+      "researchCost": 250,
+      "prerequisites": ["MP1", "MM2", "PP2"]
+    },
+    {
+      "id": "MS2",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "S",
+      "tier": 2,
+      "name": "Lean Manufacturing",
+      "description": "Waste elimination and continuous improvement in production",
+      "researchCost": 250,
+      "prerequisites": ["MS1", "MM2", "SS2"]
+    },
+    {
+      "id": "PB2",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "B",
+      "tier": 2,
+      "name": "Radiation Shielding",
+      "description": "Advanced protection systems using biological insights",
+      "researchCost": 250,
+      "prerequisites": ["PB1", "PP2", "BB2"]
+    },
+    {
+      "id": "PC2",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "C",
+      "tier": 2,
+      "name": "Exotic Matter Chemistry",
+      "description": "Chemical processes involving rare and exotic materials",
+      "researchCost": 250,
+      "prerequisites": ["PC1", "PP2", "CC2"]
+    },
+    {
+      "id": "PE2",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "E",
+      "tier": 2,
+      "name": "Fusion Engineering",
+      "description": "Practical implementation of controlled fusion reactions",
+      "researchCost": 250,
+      "prerequisites": ["PE1", "PP2", "EE2"]
+    },
+    {
+      "id": "PI2",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "I",
+      "tier": 2,
+      "name": "Quantum Algorithms",
+      "description": "Specialized algorithms leveraging quantum computing advantages",
+      "researchCost": 250,
+      "prerequisites": ["PI1", "PP2", "II2"]
+    },
+    {
+      "id": "PM2",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "M",
+      "tier": 2,
+      "name": "Field Generator Design",
+      "description": "Mechanical systems for generating and shaping force fields",
+      "researchCost": 250,
+      "prerequisites": ["PM1", "PP2", "MM2"]
+    },
+    {
+      "id": "PP2",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "P",
+      "tier": 2,
+      "name": "Quantum Mechanics",
+      "description": "Deep understanding of fundamental forces and exotic phenomena",
+      "researchCost": 250,
+      "prerequisites": ["PP1"]
+    },
+    {
+      "id": "PS2",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "S",
+      "tier": 2,
+      "name": "Research Institutions",
+      "description": "Organizational structures optimized for physics research",
+      "researchCost": 250,
+      "prerequisites": ["PS1", "PP2", "SS2"]
+    },
+    {
+      "id": "SB2",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "B",
+      "tier": 2,
+      "name": "Medical Systems",
+      "description": "Comprehensive healthcare infrastructure for crew populations",
+      "researchCost": 250,
+      "prerequisites": ["SB1", "SS2", "BB2"]
+    },
+    {
+      "id": "SC2",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "C",
+      "tier": 2,
+      "name": "Inventory Management",
+      "description": "Advanced tracking and optimization of material resources",
+      "researchCost": 250,
+      "prerequisites": ["SC1", "SS2", "CC2"]
+    },
+    {
+      "id": "SE2",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "E",
+      "tier": 2,
+      "name": "Energy Policy",
+      "description": "Strategic frameworks for energy allocation and conservation",
+      "researchCost": 250,
+      "prerequisites": ["SE1", "SS2", "EE2"]
+    },
+    {
+      "id": "SI2",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "I",
+      "tier": 2,
+      "name": "Learning Management",
+      "description": "Systematic approaches to organizational knowledge transfer",
+      "researchCost": 250,
+      "prerequisites": ["SI1", "SS2", "II2"]
+    },
+    {
+      "id": "SM2",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "M",
+      "tier": 2,
+      "name": "Workforce Optimization",
+      "description": "Data-driven approaches to labor allocation and productivity",
+      "researchCost": 250,
+      "prerequisites": ["SM1", "SS2", "MM2"]
+    },
+    {
+      "id": "SP2",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "P",
+      "tier": 2,
+      "name": "Scientific Academies",
+      "description": "Formalized institutions for advanced research collaboration",
+      "researchCost": 250,
+      "prerequisites": ["SP1", "SS2", "PP2"]
+    },
+    {
+      "id": "SS2",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "S",
+      "tier": 2,
+      "name": "Organizational Science",
+      "description": "Complex organizational dynamics and cultural engineering",
+      "researchCost": 250,
+      "prerequisites": ["SS1"]
+    }
+  ],
+  "applications": [
+    {
+      "id": "BC2a",
+      "technologyId": "BC2",
+      "letter": "a",
+      "name": "Xenoenzyme Processing",
+      "description": "Alien enzymes dramatically improve organic material yields",
+      "researchCost": 250,
+      "prerequisites": ["BC1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "BE2a",
+      "technologyId": "BE2",
+      "letter": "a",
+      "name": "Bioelectric Harvesting",
+      "description": "Extract electrical potential directly from living systems",
+      "researchCost": 250,
+      "prerequisites": ["BE1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "BI2a",
+      "technologyId": "BI2",
+      "letter": "a",
+      "name": "Deep Sequencing",
+      "description": "Complete genomic analysis identifies all valuable compounds",
+      "researchCost": 250,
+      "prerequisites": ["BI1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "BI2b",
+      "technologyId": "BI2",
+      "letter": "b",
+      "name": "Symbiotic Web Assembly",
+      "description": "Interconnected biological matrix for advanced cultivation",
+      "researchCost": 250,
+      "prerequisites": ["BI1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "symbiotic-web",
+        "outputType": "component",
+        "outputId": "SymbioticWeb",
+        "baseWorkUnits": 160,
+        "qualityProperties": { "Vitality": 1.2, "Responsiveness": 1.0 },
+        "inputResources": [
+          { "label": "bioreactive-gel", "qualifier": "class", "value": "Liquid", "quantity": 60, "propertyMapping": { "FL": "Vitality" } },
+          { "label": "neural-tissue", "qualifier": "order", "value": "SmoothMeat", "quantity": 40, "propertyMapping": { "OQ": "Responsiveness" } }
+        ],
+        "inputComponents": [
+          { "label": "culture-base", "componentType": "CultureVat", "quantity": 2, "propertyMapping": { "Vitality": "Vitality" } }
+        ]
+      }
+    },
+    {
+      "id": "BM2a",
+      "technologyId": "BM2",
+      "letter": "a",
+      "name": "Microsurgical Harvesters",
+      "description": "Microscale precision for extracting delicate biological samples",
+      "researchCost": 250,
+      "prerequisites": ["BM1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "BP2a",
+      "technologyId": "BP2",
+      "letter": "a",
+      "name": "Molecular Resonance",
+      "description": "Targeted resonance frequencies optimize molecular extraction",
+      "researchCost": 250,
+      "prerequisites": ["BP1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "BS2a",
+      "technologyId": "BS2",
+      "letter": "a",
+      "name": "Crew Conditioning",
+      "description": "Systematic physical and mental optimization programs",
+      "researchCost": 250,
+      "prerequisites": ["BS1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "CrewEfficiency", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "BS2b",
+      "technologyId": "BS2",
+      "letter": "b",
+      "name": "Habitation Pod Assembly",
+      "description": "Optimized living quarters for crew health and morale",
+      "researchCost": 250,
+      "prerequisites": ["BS2a", "BI1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "habitation-pod",
+        "outputType": "module",
+        "outputId": "HabitationPod",
+        "baseWorkUnits": 300,
+        "capabilities": [{ "type": "CrewEfficiency", "baseValue": 10, "qualitySource": "Vitality" }],
+        "inputResources": [
+          { "label": "hull-plating", "qualifier": "class", "value": "Metal", "quantity": 80, "propertyMapping": {} },
+          { "label": "atmosphere-mix", "qualifier": "order", "value": "InertGas", "quantity": 40, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "life-support", "componentType": "CultureVat", "quantity": 2, "propertyMapping": { "Vitality": "Vitality" } },
+          { "label": "climate-control", "componentType": "HeatSink", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "CB2a",
+      "technologyId": "CB2",
+      "letter": "a",
+      "name": "Biopolymer Synthesis",
+      "description": "Organic polymer production reduces manufacturing waste",
+      "researchCost": 250,
+      "prerequisites": ["CB1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "CE2a",
+      "technologyId": "CE2",
+      "letter": "a",
+      "name": "High-Density Electrolytes",
+      "description": "Advanced electrolyte chemistry improves power cell efficiency",
+      "researchCost": 250,
+      "prerequisites": ["CE1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "CE2b",
+      "technologyId": "CE2",
+      "letter": "b",
+      "name": "Fusion Cell Assembly",
+      "description": "High-capacity energy storage for demanding applications",
+      "researchCost": 250,
+      "prerequisites": ["CE1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "fusion-cell",
+        "outputType": "component",
+        "outputId": "FusionCell",
+        "baseWorkUnits": 180,
+        "qualityProperties": { "EnergyDensity": 1.3, "Efficiency": 0.9 },
+        "inputResources": [
+          { "label": "superconductor", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 50, "propertyMapping": { "CN": "EnergyDensity" } },
+          { "label": "containment-alloy", "qualifier": "class", "value": "Metal", "quantity": 40, "propertyMapping": { "HR": "Efficiency" } },
+          { "label": "deuterium", "qualifier": "order", "value": "ReactiveGas", "quantity": 30, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "base-cells", "componentType": "CapacitorBank", "quantity": 2, "propertyMapping": { "EnergyDensity": "EnergyDensity" } }
+        ]
+      }
+    },
+    {
+      "id": "CI2a",
+      "technologyId": "CI2",
+      "letter": "a",
+      "name": "Reaction Optimization",
+      "description": "Simulated reaction pathways improve manufacturing quality",
+      "researchCost": 250,
+      "prerequisites": ["CI1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "CM2a",
+      "technologyId": "CM2",
+      "letter": "a",
+      "name": "Composite Formulation",
+      "description": "Multi-phase materials reduce resource consumption",
+      "researchCost": 250,
+      "prerequisites": ["CM1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "CM2b",
+      "technologyId": "CM2",
+      "letter": "b",
+      "name": "Composite Matrix Fabrication",
+      "description": "Multi-layered structural component with superior strength-to-weight",
+      "researchCost": 250,
+      "prerequisites": ["CM1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "composite-matrix",
+        "outputType": "component",
+        "outputId": "CompositeMatrix",
+        "baseWorkUnits": 200,
+        "qualityProperties": { "Integrity": 1.3, "Flexibility": 0.85 },
+        "inputResources": [
+          { "label": "carbon-fiber", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 60, "propertyMapping": { "UT": "Integrity" } },
+          { "label": "binding-resin", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "SR": "Flexibility" } }
+        ],
+        "inputComponents": [
+          { "label": "frame-base", "componentType": "AlloyFrame", "quantity": 2, "propertyMapping": { "Integrity": "Integrity" } }
+        ]
+      }
+    },
+    {
+      "id": "CP2a",
+      "technologyId": "CP2",
+      "letter": "a",
+      "name": "Thermal Catalysis",
+      "description": "High-temperature reactions accelerate production",
+      "researchCost": 250,
+      "prerequisites": ["CP1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "CS2a",
+      "technologyId": "CS2",
+      "letter": "a",
+      "name": "Continuous Flow Processing",
+      "description": "Uninterrupted chemical production maximizes throughput",
+      "researchCost": 250,
+      "prerequisites": ["CS1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "EB2a",
+      "technologyId": "EB2",
+      "letter": "a",
+      "name": "Microbial Consortia",
+      "description": "Engineered microbial communities enhance organic extraction",
+      "researchCost": 250,
+      "prerequisites": ["EB1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "EC2a",
+      "technologyId": "EC2",
+      "letter": "a",
+      "name": "Hypergolic Fuels",
+      "description": "Self-igniting propellants for rapid manufacturing heat",
+      "researchCost": 250,
+      "prerequisites": ["EC1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "EC2b",
+      "technologyId": "EC2",
+      "letter": "b",
+      "name": "Plasma Injector Assembly",
+      "description": "High-performance plasma propulsion component",
+      "researchCost": 250,
+      "prerequisites": ["EC1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "plasma-injector",
+        "outputType": "component",
+        "outputId": "PlasmaInjector",
+        "baseWorkUnits": 180,
+        "qualityProperties": { "ThrustRatio": 1.3, "FuelEfficiency": 0.95 },
+        "inputResources": [
+          { "label": "refractory-metal", "qualifier": "order", "value": "Ferromagnetic", "quantity": 60, "propertyMapping": { "HR": "ThrustRatio" } },
+          { "label": "plasma-gas", "qualifier": "order", "value": "ReactiveGas", "quantity": 40, "propertyMapping": { "PE": "FuelEfficiency" } }
+        ],
+        "inputComponents": [
+          { "label": "chamber-base", "componentType": "IonChamber", "quantity": 2, "propertyMapping": { "ThrustRatio": "ThrustRatio" } }
+        ]
+      }
+    },
+    {
+      "id": "EI2a",
+      "technologyId": "EI2",
+      "letter": "a",
+      "name": "Predictive Load Scheduling",
+      "description": "AI anticipates power demands for optimal distribution",
+      "researchCost": 250,
+      "prerequisites": ["EI1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "EM2a",
+      "technologyId": "EM2",
+      "letter": "a",
+      "name": "Turbine Optimization",
+      "description": "High-efficiency turbines accelerate power-dependent manufacturing",
+      "researchCost": 250,
+      "prerequisites": ["EM1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "EM2b",
+      "technologyId": "EM2",
+      "letter": "b",
+      "name": "Superconductive Line Fabrication",
+      "description": "Zero-resistance power transmission for high-performance systems",
+      "researchCost": 250,
+      "prerequisites": ["EM1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "superconductive-line",
+        "outputType": "component",
+        "outputId": "SuperconductiveLine",
+        "baseWorkUnits": 140,
+        "qualityProperties": { "Conductivity": 1.4, "Capacity": 0.9 },
+        "inputResources": [
+          { "label": "superconductor", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 60, "propertyMapping": { "CN": "Conductivity" } },
+          { "label": "cryogenic-jacket", "qualifier": "class", "value": "Liquid", "quantity": 30, "propertyMapping": { "HR": "Capacity" } }
+        ],
+        "inputComponents": [
+          { "label": "conduit-base", "componentType": "CopperConduit", "quantity": 3, "propertyMapping": { "Conductivity": "Conductivity" } }
+        ]
+      }
+    },
+    {
+      "id": "EP2a",
+      "technologyId": "EP2",
+      "letter": "a",
+      "name": "Tokamak Geometry",
+      "description": "Toroidal plasma confinement improves warp field generation",
+      "researchCost": 250,
+      "prerequisites": ["EP1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "ES2a",
+      "technologyId": "ES2",
+      "letter": "a",
+      "name": "Strategic Reserves",
+      "description": "Planned power reserves ensure consistent manufacturing",
+      "researchCost": 250,
+      "prerequisites": ["ES1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "IB2a",
+      "technologyId": "IB2",
+      "letter": "a",
+      "name": "Biomarker Targeting",
+      "description": "Precise targeting of valuable biological compounds",
+      "researchCost": 250,
+      "prerequisites": ["IB1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "IC2a",
+      "technologyId": "IC2",
+      "letter": "a",
+      "name": "Isotope Analysis",
+      "description": "Precise isotopic identification improves mineral selection",
+      "researchCost": 250,
+      "prerequisites": ["IC1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "IC2b",
+      "technologyId": "IC2",
+      "letter": "b",
+      "name": "Scanner Array Assembly",
+      "description": "Multi-spectrum sensor module for resource detection",
+      "researchCost": 250,
+      "prerequisites": ["IC2a", "PM1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "scanner-array",
+        "outputType": "module",
+        "outputId": "ScannerArray",
+        "baseWorkUnits": 280,
+        "capabilities": [{ "type": "SensorRange", "baseValue": 30, "qualitySource": "Sensitivity" }],
+        "inputResources": [
+          { "label": "sensor-housing", "qualifier": "class", "value": "Metal", "quantity": 50, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "optics", "componentType": "LensArray", "quantity": 3, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "processor", "componentType": "LogicArray", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "IE2a",
+      "technologyId": "IE2",
+      "letter": "a",
+      "name": "Efficiency Algorithms",
+      "description": "Machine learning optimizes power-intensive manufacturing",
+      "researchCost": 250,
+      "prerequisites": ["IE1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "IM2a",
+      "technologyId": "IM2",
+      "letter": "a",
+      "name": "Adaptive Tolerancing",
+      "description": "Self-adjusting precision improves output quality",
+      "researchCost": 250,
+      "prerequisites": ["IM1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "IM2b",
+      "technologyId": "IM2",
+      "letter": "b",
+      "name": "Neural Pathway Fabrication",
+      "description": "Bio-inspired processing circuits with adaptive capabilities",
+      "researchCost": 250,
+      "prerequisites": ["IM1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "neural-pathway",
+        "outputType": "component",
+        "outputId": "NeuralPathway",
+        "baseWorkUnits": 160,
+        "qualityProperties": { "ComputeCapacity": 1.3, "Stability": 0.95 },
+        "inputResources": [
+          { "label": "bio-conductor", "qualifier": "order", "value": "Precious", "quantity": 20, "propertyMapping": { "CN": "ComputeCapacity" } },
+          { "label": "neural-gel", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": { "FL": "Stability" } }
+        ],
+        "inputComponents": [
+          { "label": "logic-base", "componentType": "LogicArray", "quantity": 2, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } }
+        ]
+      }
+    },
+    {
+      "id": "IP2a",
+      "technologyId": "IP2",
+      "letter": "a",
+      "name": "Warp Field Modeling",
+      "description": "Real-time field simulation optimizes conduit navigation",
+      "researchCost": 250,
+      "prerequisites": ["IP1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "IS2a",
+      "technologyId": "IS2",
+      "letter": "a",
+      "name": "Distributed Research",
+      "description": "Networked collaboration accelerates discovery",
+      "researchCost": 250,
+      "prerequisites": ["IS1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityFloor", "bonusPercent": 2.0 }
+    },
+    {
+      "id": "IS2b",
+      "technologyId": "IS2",
+      "letter": "b",
+      "name": "Analysis Lab Assembly",
+      "description": "Dedicated research facility for systematic investigation",
+      "researchCost": 250,
+      "prerequisites": ["IS2a", "IM1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "analysis-lab",
+        "outputType": "module",
+        "outputId": "AnalysisLab",
+        "baseWorkUnits": 320,
+        "capabilities": [{ "type": "Research", "baseValue": 8, "qualitySource": "ComputeCapacity" }],
+        "inputResources": [
+          { "label": "lab-equipment", "qualifier": "class", "value": "Metal", "quantity": 60, "propertyMapping": {} },
+          { "label": "optical-components", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 30, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "compute-core", "componentType": "LogicArray", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "power-supply", "componentType": "CapacitorBank", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "MB2a",
+      "technologyId": "MB2",
+      "letter": "a",
+      "name": "Regenerative Coatings",
+      "description": "Self-repairing surface treatments improve extraction durability",
+      "researchCost": 250,
+      "prerequisites": ["MB1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "MC2a",
+      "technologyId": "MC2",
+      "letter": "a",
+      "name": "Multi-Stage Refining",
+      "description": "Sequential processing maximizes mineral recovery",
+      "researchCost": 250,
+      "prerequisites": ["MC1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "MC2b",
+      "technologyId": "MC2",
+      "letter": "b",
+      "name": "Mining Laser Assembly",
+      "description": "High-power extraction beam for mineral collection",
+      "researchCost": 250,
+      "prerequisites": ["MC2a", "PM1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "mining-laser",
+        "outputType": "module",
+        "outputId": "MiningLaser",
+        "baseWorkUnits": 350,
+        "capabilities": [{ "type": "ResourceExtraction", "baseValue": 15, "qualitySource": "Sensitivity" }],
+        "inputResources": [
+          { "label": "focusing-chamber", "qualifier": "class", "value": "Metal", "quantity": 70, "propertyMapping": {} },
+          { "label": "coolant", "qualifier": "class", "value": "Liquid", "quantity": 30, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "optics", "componentType": "LensArray", "quantity": 2, "propertyMapping": { "Sensitivity": "Sensitivity" } },
+          { "label": "power-cells", "componentType": "CapacitorBank", "quantity": 2, "propertyMapping": {} },
+          { "label": "thermal", "componentType": "HeatSink", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "ME2a",
+      "technologyId": "ME2",
+      "letter": "a",
+      "name": "Power Surge Handling",
+      "description": "Robust systems maintain production through power fluctuations",
+      "researchCost": 250,
+      "prerequisites": ["ME1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "ME2b",
+      "technologyId": "ME2",
+      "letter": "b",
+      "name": "Radiator Array Fabrication",
+      "description": "Active thermal management for high-power systems",
+      "researchCost": 250,
+      "prerequisites": ["ME1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "radiator-array",
+        "outputType": "component",
+        "outputId": "RadiatorArray",
+        "baseWorkUnits": 150,
+        "qualityProperties": { "Dissipation": 1.3, "Tolerance": 0.9 },
+        "inputResources": [
+          { "label": "thermal-conductor", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 70, "propertyMapping": { "CN": "Dissipation" } },
+          { "label": "radiative-surface", "qualifier": "class", "value": "Ore", "quantity": 30, "propertyMapping": { "HR": "Tolerance" } }
+        ],
+        "inputComponents": [
+          { "label": "heat-base", "componentType": "HeatSink", "quantity": 3, "propertyMapping": { "Dissipation": "Dissipation" } }
+        ]
+      }
+    },
+    {
+      "id": "MI2a",
+      "technologyId": "MI2",
+      "letter": "a",
+      "name": "Robotic Precision",
+      "description": "Automated assembly improves component quality",
+      "researchCost": 250,
+      "prerequisites": ["MI1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "MI2b",
+      "technologyId": "MI2",
+      "letter": "b",
+      "name": "Nano-Forge Assembly",
+      "description": "Molecular-scale fabrication for precision manufacturing",
+      "researchCost": 250,
+      "prerequisites": ["MI1b", "IM2b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "nano-forge",
+        "outputType": "module",
+        "outputId": "NanoForge",
+        "baseWorkUnits": 400,
+        "capabilities": [{ "type": "Manufacturing", "baseValue": 12, "qualitySource": "Integrity" }],
+        "inputResources": [
+          { "label": "precision-housing", "qualifier": "class", "value": "Metal", "quantity": 100, "propertyMapping": {} },
+          { "label": "nano-substrate", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 40, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "frame", "componentType": "AlloyFrame", "quantity": 3, "propertyMapping": { "Integrity": "Integrity" } },
+          { "label": "controller", "componentType": "LogicArray", "quantity": 2, "propertyMapping": {} },
+          { "label": "power", "componentType": "CapacitorBank", "quantity": 2, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "MP2a",
+      "technologyId": "MP2",
+      "letter": "a",
+      "name": "Gravitic Dampening",
+      "description": "Gravitational field manipulation improves warp stability",
+      "researchCost": 250,
+      "prerequisites": ["MP1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "MS2a",
+      "technologyId": "MS2",
+      "letter": "a",
+      "name": "Waste Elimination",
+      "description": "Lean principles reduce material waste in production",
+      "researchCost": 250,
+      "prerequisites": ["MS1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "PB2a",
+      "technologyId": "PB2",
+      "letter": "a",
+      "name": "Radiation Hardening",
+      "description": "Bio-inspired shielding protects extraction equipment",
+      "researchCost": 250,
+      "prerequisites": ["PB1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "PC2a",
+      "technologyId": "PC2",
+      "letter": "a",
+      "name": "Exotic Catalysts",
+      "description": "Rare material catalysts dramatically improve quality",
+      "researchCost": 250,
+      "prerequisites": ["PC1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingQuality", "bonusPercent": 4.0 }
+    },
+    {
+      "id": "PE2a",
+      "technologyId": "PE2",
+      "letter": "a",
+      "name": "Sustained Ignition",
+      "description": "Continuous fusion reactions accelerate manufacturing",
+      "researchCost": 250,
+      "prerequisites": ["PE1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 4.0 }
+    },
+    {
+      "id": "PE2b",
+      "technologyId": "PE2",
+      "letter": "b",
+      "name": "Fission Core Assembly",
+      "description": "Compact nuclear power source for shipboard systems",
+      "researchCost": 250,
+      "prerequisites": ["PE2a", "CE2b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "fission-core",
+        "outputType": "module",
+        "outputId": "FissionCore",
+        "baseWorkUnits": 450,
+        "capabilities": [{ "type": "Power", "baseValue": 100, "qualitySource": "EnergyDensity" }],
+        "inputResources": [
+          { "label": "containment-vessel", "qualifier": "class", "value": "Metal", "quantity": 100, "propertyMapping": {} },
+          { "label": "fissile-material", "qualifier": "order", "value": "Radioactive", "quantity": 30, "propertyMapping": {} },
+          { "label": "moderator", "qualifier": "class", "value": "Liquid", "quantity": 40, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "power-cells", "componentType": "FusionCell", "quantity": 2, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
+          { "label": "thermal", "componentType": "RadiatorArray", "quantity": 2, "propertyMapping": {} },
+          { "label": "control", "componentType": "LogicArray", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "PI2a",
+      "technologyId": "PI2",
+      "letter": "a",
+      "name": "Quantum Optimization",
+      "description": "Quantum algorithms expand research outcome possibilities",
+      "researchCost": 250,
+      "prerequisites": ["PI1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityCeiling", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "PM2a",
+      "technologyId": "PM2",
+      "letter": "a",
+      "name": "Field Harmonics",
+      "description": "Harmonic field generation improves warp efficiency",
+      "researchCost": 250,
+      "prerequisites": ["PM1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ConduitTravelSpeed", "bonusPercent": 4.0 }
+    },
+    {
+      "id": "PM2b",
+      "technologyId": "PM2",
+      "letter": "b",
+      "name": "Photonic Guide Fabrication",
+      "description": "Light-based signal transmission for sensors and weapons",
+      "researchCost": 250,
+      "prerequisites": ["PM1b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "photonic-guide",
+        "outputType": "component",
+        "outputId": "PhotonicGuide",
+        "baseWorkUnits": 140,
+        "qualityProperties": { "Sensitivity": 1.3, "Resolution": 1.0 },
+        "inputResources": [
+          { "label": "optical-fiber", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 50, "propertyMapping": { "OQ": "Sensitivity" } },
+          { "label": "cladding", "qualifier": "class", "value": "Liquid", "quantity": 25, "propertyMapping": { "SR": "Resolution" } }
+        ],
+        "inputComponents": [
+          { "label": "lens-base", "componentType": "LensArray", "quantity": 2, "propertyMapping": { "Sensitivity": "Sensitivity" } }
+        ]
+      }
+    },
+    {
+      "id": "PS2a",
+      "technologyId": "PS2",
+      "letter": "a",
+      "name": "Institutional Review",
+      "description": "Formalized review processes improve research quality",
+      "researchCost": 250,
+      "prerequisites": ["PS1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityFloor", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "PS2b",
+      "technologyId": "PS2",
+      "letter": "b",
+      "name": "Research Accelerators",
+      "description": "Collaborative structures dramatically speed discovery",
+      "researchCost": 250,
+      "prerequisites": ["PS1b"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SB2a",
+      "technologyId": "SB2",
+      "letter": "a",
+      "name": "Preventive Medicine",
+      "description": "Proactive healthcare reduces crew downtime",
+      "researchCost": 250,
+      "prerequisites": ["SB1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "CrewEfficiency", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SB2b",
+      "technologyId": "SB2",
+      "letter": "b",
+      "name": "Bio-Hazard Protocols",
+      "description": "Safety systems improve organic extraction operations",
+      "researchCost": 250,
+      "prerequisites": ["SB1b"],
+      "type": "modifier",
+      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SC2a",
+      "technologyId": "SC2",
+      "letter": "a",
+      "name": "Just-In-Time Delivery",
+      "description": "Precise material scheduling reduces waste",
+      "researchCost": 250,
+      "prerequisites": ["SC1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SE2a",
+      "technologyId": "SE2",
+      "letter": "a",
+      "name": "Peak Shaving",
+      "description": "Load management maintains consistent production",
+      "researchCost": 250,
+      "prerequisites": ["SE1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ManufacturingSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SI2a",
+      "technologyId": "SI2",
+      "letter": "a",
+      "name": "Skill Matrices",
+      "description": "Comprehensive training frameworks improve competency",
+      "researchCost": 250,
+      "prerequisites": ["SI1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityFloor", "bonusPercent": 2.0 }
+    },
+    {
+      "id": "SI2b",
+      "technologyId": "SI2",
+      "letter": "b",
+      "name": "Cross-Functional Teams",
+      "description": "Diverse skill sets improve overall crew performance",
+      "researchCost": 250,
+      "prerequisites": ["SI1b"],
+      "type": "modifier",
+      "modifier": { "operationType": "CrewEfficiency", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SM2a",
+      "technologyId": "SM2",
+      "letter": "a",
+      "name": "Crew Specialization",
+      "description": "Dedicated mining teams maximize yield",
+      "researchCost": 250,
+      "prerequisites": ["SM1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SM2b",
+      "technologyId": "SM2",
+      "letter": "b",
+      "name": "Coordination Array Assembly",
+      "description": "Advanced fleet coordination for multi-ship operations",
+      "researchCost": 250,
+      "prerequisites": ["SM1b", "IM2b"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "coordination-array",
+        "outputType": "module",
+        "outputId": "CoordinationArray",
+        "baseWorkUnits": 350,
+        "capabilities": [{ "type": "FleetCommand", "baseValue": 4, "qualitySource": "ComputeCapacity" }],
+        "inputResources": [
+          { "label": "array-housing", "qualifier": "class", "value": "Metal", "quantity": 60, "propertyMapping": {} },
+          { "label": "comm-crystals", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 40, "propertyMapping": {} }
+        ],
+        "inputComponents": [
+          { "label": "neural-net", "componentType": "NeuralPathway", "quantity": 2, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
+          { "label": "power", "componentType": "FusionCell", "quantity": 1, "propertyMapping": {} }
+        ]
+      }
+    },
+    {
+      "id": "SP2a",
+      "technologyId": "SP2",
+      "letter": "a",
+      "name": "Peer Networks",
+      "description": "Cross-institutional collaboration improves research",
+      "researchCost": 250,
+      "prerequisites": ["SP1a"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchSpeed", "bonusPercent": 3.0 }
+    },
+    {
+      "id": "SP2b",
+      "technologyId": "SP2",
+      "letter": "b",
+      "name": "Publication Standards",
+      "description": "Rigorous standards expand maximum research quality",
+      "researchCost": 250,
+      "prerequisites": ["SP1b"],
+      "type": "modifier",
+      "modifier": { "operationType": "ResearchQualityCeiling", "bonusPercent": 3.0 }
+    }
+  ],
+  "newComponents": [
+    {
+      "componentId": "SymbioticWeb",
+      "name": "Symbiotic Web",
+      "description": "Interconnected biological matrix for advanced cultivation",
+      "category": "BioMatrices",
+      "tier": 2,
+      "mass": 3,
+      "qualityProperties": ["Vitality", "Responsiveness"]
+    },
+    {
+      "componentId": "FusionCell",
+      "name": "Fusion Cell",
+      "description": "High-capacity energy storage for demanding applications",
+      "category": "PowerCells",
+      "tier": 2,
+      "mass": 4,
+      "qualityProperties": ["EnergyDensity", "Efficiency"]
+    },
+    {
+      "componentId": "CompositeMatrix",
+      "name": "Composite Matrix",
+      "description": "Multi-layered structural component with superior strength-to-weight",
+      "category": "StructuralFrames",
+      "tier": 2,
+      "mass": 6,
+      "qualityProperties": ["Integrity", "Flexibility"]
+    },
+    {
+      "componentId": "PlasmaInjector",
+      "name": "Plasma Injector",
+      "description": "High-performance plasma propulsion component",
+      "category": "PropellantSystems",
+      "tier": 2,
+      "mass": 5,
+      "qualityProperties": ["ThrustRatio", "FuelEfficiency"]
+    },
+    {
+      "componentId": "SuperconductiveLine",
+      "name": "Superconductive Line",
+      "description": "Zero-resistance power transmission for high-performance systems",
+      "category": "Conduits",
+      "tier": 2,
+      "mass": 2,
+      "qualityProperties": ["Conductivity", "Capacity"]
+    },
+    {
+      "componentId": "NeuralPathway",
+      "name": "Neural Pathway",
+      "description": "Bio-inspired processing circuits with adaptive capabilities",
+      "category": "Circuits",
+      "tier": 2,
+      "mass": 2,
+      "qualityProperties": ["ComputeCapacity", "Stability"]
+    },
+    {
+      "componentId": "RadiatorArray",
+      "name": "Radiator Array",
+      "description": "Active thermal management for high-power systems",
+      "category": "ThermalManagement",
+      "tier": 2,
+      "mass": 3,
+      "qualityProperties": ["Dissipation", "Tolerance"]
+    },
+    {
+      "componentId": "PhotonicGuide",
+      "name": "Photonic Guide",
+      "description": "Light-based signal transmission for sensors and weapons",
+      "category": "Optics",
+      "tier": 2,
+      "mass": 2,
+      "qualityProperties": ["Sensitivity", "Resolution"]
+    }
+  ],
+  "newModules": [
+    {
+      "moduleId": "HabitationPod",
+      "name": "Habitation Pod",
+      "description": "Optimized living quarters for crew health and morale",
+      "category": "LifeSupport",
+      "tier": 2,
+      "mass": 15,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "CrewEfficiency", "baseValue": 10 }]
+    },
+    {
+      "moduleId": "ScannerArray",
+      "name": "Scanner Array",
+      "description": "Multi-spectrum sensor module for resource detection",
+      "category": "Sensors",
+      "tier": 2,
+      "mass": 10,
+      "slotType": "External",
+      "baseCapabilities": [{ "type": "SensorRange", "baseValue": 30 }]
+    },
+    {
+      "moduleId": "AnalysisLab",
+      "name": "Analysis Lab",
+      "description": "Dedicated research facility for systematic investigation",
+      "category": "Research",
+      "tier": 2,
+      "mass": 18,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Research", "baseValue": 8 }]
+    },
+    {
+      "moduleId": "MiningLaser",
+      "name": "Mining Laser",
+      "description": "High-power extraction beam for mineral collection",
+      "category": "Extraction",
+      "tier": 2,
+      "mass": 12,
+      "slotType": "External",
+      "baseCapabilities": [{ "type": "ResourceExtraction", "baseValue": 15 }]
+    },
+    {
+      "moduleId": "NanoForge",
+      "name": "Nano-Forge",
+      "description": "Molecular-scale fabrication for precision manufacturing",
+      "category": "Manufacturing",
+      "tier": 2,
+      "mass": 25,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Manufacturing", "baseValue": 12 }]
+    },
+    {
+      "moduleId": "FissionCore",
+      "name": "Fission Core",
+      "description": "Compact nuclear power source for shipboard systems",
+      "category": "Power",
+      "tier": 2,
+      "mass": 30,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "Power", "baseValue": 100 }]
+    },
+    {
+      "moduleId": "CoordinationArray",
+      "name": "Coordination Array",
+      "description": "Advanced fleet coordination for multi-ship operations",
+      "category": "FleetCommand",
+      "tier": 2,
+      "mass": 14,
+      "slotType": "Internal",
+      "baseCapabilities": [{ "type": "FleetCommand", "baseValue": 4 }]
+    }
+  ]
+}
