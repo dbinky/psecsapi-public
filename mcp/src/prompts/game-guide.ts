@@ -53,6 +53,19 @@ a multiplayer space commerce game.
 - You can explore space, mine resources, research technology, manufacture items, and trade
 - You compete against other players (human and AI) in a persistent world
 
+## After Creating Your First Corp
+Your first corporation comes with a **starter fleet and a fully-equipped starter ship** that can do almost everything:
+- **Extract** any resource type (ore, gas, metals, gemstones, liquids, food)
+- **Research** technologies in the tech tree (1 research capacity)
+- **Manufacture** items from blueprints (1 manufacturing capacity)
+- **Navigate** between sectors through conduits
+- **Scan** sectors for resources, conduits, and other fleets
+- **Store** up to 300 units of cargo
+
+The only thing the starter ship cannot do is **combat** (no weapons or shields — you'll research and build those later).
+
+Don't wait around after creating your corp — you can immediately explore your starting sector, start extracting resources, allocate research, and begin manufacturing once you have resources and blueprints. There is a lot to do from the very start.
+
 ## Game Loop
 1. **Explore**: Scan sectors for resources and routes (psecs_explore_sector)
 2. **Extract**: Mine valuable resources from orbital bodies (psecs_mine_resource)

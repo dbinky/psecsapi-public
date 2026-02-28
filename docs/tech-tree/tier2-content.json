@@ -1,6 +1,6 @@
 {
   "tier": 2,
-  "researchCost": 250,
+  "researchCost": 62,
   "technologies": [
     {
       "id": "BB2",
@@ -9,7 +9,7 @@
       "tier": 2,
       "name": "Genetic Engineering",
       "description": "Deeper understanding of complex biological systems and genetic manipulation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BB1"
       ]
@@ -21,7 +21,7 @@
       "tier": 2,
       "name": "Xenobiochemistry",
       "description": "Chemical analysis techniques adapted for alien biological compounds",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BC1",
         "BB2",
@@ -35,7 +35,7 @@
       "tier": 2,
       "name": "Bioelectric Systems",
       "description": "Harnessing electrical potentials in living organisms for power generation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BE1",
         "BB2",
@@ -49,7 +49,7 @@
       "tier": 2,
       "name": "Genomic Analytics",
       "description": "Advanced computational analysis of complete genetic sequences",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BI1",
         "BB2",
@@ -63,7 +63,7 @@
       "tier": 2,
       "name": "Biomedical Engineering",
       "description": "Precision mechanical systems for medical and biological applications",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BM1",
         "BB2",
@@ -77,7 +77,7 @@
       "tier": 2,
       "name": "Molecular Biophysics",
       "description": "Physical forces governing molecular biology and protein folding",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BP1",
         "BB2",
@@ -91,7 +91,7 @@
       "tier": 2,
       "name": "Population Health",
       "description": "Organizational strategies for crew health at scale",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BS1",
         "BB2",
@@ -105,7 +105,7 @@
       "tier": 2,
       "name": "Biochemical Synthesis",
       "description": "Production of complex organic molecules using biological processes",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CB1",
         "CC2",
@@ -119,7 +119,7 @@
       "tier": 2,
       "name": "Molecular Synthesis",
       "description": "Complex chemical reactions and advanced molecular synthesis",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CC1"
       ]
@@ -131,7 +131,7 @@
       "tier": 2,
       "name": "Advanced Electrochemistry",
       "description": "High-efficiency energy storage and advanced fuel cell design",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CE1",
         "CC2",
@@ -145,7 +145,7 @@
       "tier": 2,
       "name": "Molecular Simulation",
       "description": "High-fidelity computational modeling of complex molecular interactions",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CI1",
         "CC2",
@@ -159,7 +159,7 @@
       "tier": 2,
       "name": "Composite Materials",
       "description": "Advanced multi-phase materials with superior properties",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CM1",
         "CC2",
@@ -173,7 +173,7 @@
       "tier": 2,
       "name": "Thermochemistry",
       "description": "High-temperature chemical processes and energy transfer",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CP1",
         "CC2",
@@ -187,7 +187,7 @@
       "tier": 2,
       "name": "Chemical Logistics",
       "description": "Large-scale chemical production management and safety systems",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CS1",
         "CC2",
@@ -201,7 +201,7 @@
       "tier": 2,
       "name": "Microbial Fuel Cells",
       "description": "Harnessing microbial metabolism for sustained power generation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EB1",
         "EE2",
@@ -215,7 +215,7 @@
       "tier": 2,
       "name": "Advanced Propellants",
       "description": "High-performance chemical propellants for improved thrust",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EC1",
         "EE2",
@@ -229,7 +229,7 @@
       "tier": 2,
       "name": "Fusion Principles",
       "description": "High-efficiency power systems and advanced energy storage",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EE1"
       ]
@@ -241,7 +241,7 @@
       "tier": 2,
       "name": "Predictive Power Management",
       "description": "AI-driven power allocation anticipating system demands",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EI1",
         "EE2",
@@ -255,7 +255,7 @@
       "tier": 2,
       "name": "Turbomachinery",
       "description": "High-performance rotating machinery for power generation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EM1",
         "EE2",
@@ -269,7 +269,7 @@
       "tier": 2,
       "name": "Magnetic Confinement",
       "description": "Advanced plasma containment using magnetic field geometries",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EP1",
         "EE2",
@@ -283,7 +283,7 @@
       "tier": 2,
       "name": "Power Grid Planning",
       "description": "Strategic energy infrastructure development and optimization",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "ES1",
         "EE2",
@@ -297,7 +297,7 @@
       "tier": 2,
       "name": "Biomarker Detection",
       "description": "Advanced sensors for detecting specific biological signatures",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IB1",
         "II2",
@@ -311,7 +311,7 @@
       "tier": 2,
       "name": "Mass Spectrometry AI",
       "description": "Automated analysis of molecular composition and structure",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IC1",
         "II2",
@@ -325,7 +325,7 @@
       "tier": 2,
       "name": "Power System Optimization",
       "description": "Machine learning applied to power efficiency and distribution",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IE1",
         "II2",
@@ -339,7 +339,7 @@
       "tier": 2,
       "name": "Neural Computing",
       "description": "Sophisticated data processing and machine learning systems",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "II1"
       ]
@@ -351,7 +351,7 @@
       "tier": 2,
       "name": "Adaptive Manufacturing",
       "description": "Self-adjusting fabrication systems responding to material variations",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IM1",
         "II2",
@@ -365,7 +365,7 @@
       "tier": 2,
       "name": "Field Computation",
       "description": "Real-time modeling of complex physical field interactions",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IP1",
         "II2",
@@ -379,7 +379,7 @@
       "tier": 2,
       "name": "Collaborative Research",
       "description": "Networked research systems enabling distributed discovery",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IS1",
         "II2",
@@ -393,7 +393,7 @@
       "tier": 2,
       "name": "Living Materials",
       "description": "Self-repairing structures incorporating biological elements",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MB1",
         "MM2",
@@ -407,7 +407,7 @@
       "tier": 2,
       "name": "Industrial Refining",
       "description": "Large-scale chemical processing for material purification",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MC1",
         "MM2",
@@ -421,7 +421,7 @@
       "tier": 2,
       "name": "High-Power Systems",
       "description": "Mechanical systems designed for extreme power throughput",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "ME1",
         "MM2",
@@ -435,7 +435,7 @@
       "tier": 2,
       "name": "Robotic Assembly",
       "description": "Fully automated manufacturing with minimal human intervention",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MI1",
         "MM2",
@@ -449,7 +449,7 @@
       "tier": 2,
       "name": "Precision Manufacturing",
       "description": "Sophisticated mechanical systems and precision engineering",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MM1"
       ]
@@ -461,7 +461,7 @@
       "tier": 2,
       "name": "Gravitic Engineering",
       "description": "Mechanical systems incorporating gravitational manipulation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MP1",
         "MM2",
@@ -475,7 +475,7 @@
       "tier": 2,
       "name": "Lean Manufacturing",
       "description": "Waste elimination and continuous improvement in production",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MS1",
         "MM2",
@@ -489,7 +489,7 @@
       "tier": 2,
       "name": "Radiation Shielding",
       "description": "Advanced protection systems using biological insights",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PB1",
         "PP2",
@@ -503,7 +503,7 @@
       "tier": 2,
       "name": "Exotic Matter Chemistry",
       "description": "Chemical processes involving rare and exotic materials",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PC1",
         "PP2",
@@ -517,7 +517,7 @@
       "tier": 2,
       "name": "Fusion Engineering",
       "description": "Practical implementation of controlled fusion reactions",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PE1",
         "PP2",
@@ -531,7 +531,7 @@
       "tier": 2,
       "name": "Quantum Algorithms",
       "description": "Specialized algorithms leveraging quantum computing advantages",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PI1",
         "PP2",
@@ -545,7 +545,7 @@
       "tier": 2,
       "name": "Field Generator Design",
       "description": "Mechanical systems for generating and shaping force fields",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PM1",
         "PP2",
@@ -559,7 +559,7 @@
       "tier": 2,
       "name": "Quantum Mechanics",
       "description": "Deep understanding of fundamental forces and exotic phenomena",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PP1"
       ]
@@ -571,7 +571,7 @@
       "tier": 2,
       "name": "Research Institutions",
       "description": "Organizational structures optimized for physics research",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PS1",
         "PP2",
@@ -585,7 +585,7 @@
       "tier": 2,
       "name": "Medical Systems",
       "description": "Comprehensive healthcare infrastructure for crew populations",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SB1",
         "SS2",
@@ -599,7 +599,7 @@
       "tier": 2,
       "name": "Inventory Management",
       "description": "Advanced tracking and optimization of material resources",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SC1",
         "SS2",
@@ -613,7 +613,7 @@
       "tier": 2,
       "name": "Energy Policy",
       "description": "Strategic frameworks for energy allocation and conservation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SE1",
         "SS2",
@@ -627,7 +627,7 @@
       "tier": 2,
       "name": "Learning Management",
       "description": "Systematic approaches to organizational knowledge transfer",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SI1",
         "SS2",
@@ -641,7 +641,7 @@
       "tier": 2,
       "name": "Workforce Optimization",
       "description": "Data-driven approaches to labor allocation and productivity",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SM1",
         "SS2",
@@ -655,7 +655,7 @@
       "tier": 2,
       "name": "Scientific Academies",
       "description": "Formalized institutions for advanced research collaboration",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SP1",
         "SS2",
@@ -669,7 +669,7 @@
       "tier": 2,
       "name": "Organizational Science",
       "description": "Complex organizational dynamics and cultural engineering",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SS1"
       ]
@@ -682,7 +682,7 @@
       "letter": "a",
       "name": "Xenoenzyme Processing",
       "description": "Alien enzymes dramatically improve organic material yields",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BC1a"
       ],
@@ -698,7 +698,7 @@
       "letter": "a",
       "name": "Thermal Capture",
       "description": "Bio-engineered thermophilic organisms convert ambient heat gradients into harvestable energy, improving energetic extraction yield.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BE1a"
       ],
@@ -714,7 +714,7 @@
       "letter": "a",
       "name": "Genomic Parallelism",
       "description": "DNA-inspired branching algorithms partition research workloads across parallel gene-mapped threads.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BI1a"
       ],
@@ -730,7 +730,7 @@
       "letter": "b",
       "name": "Symbiotic Web Assembly",
       "description": "Weaving living neural fibers through a nutrient scaffold to form a self-sustaining biological network",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BI1b"
       ],
@@ -749,7 +749,7 @@
             "label": "bioreactive-gel",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {
               "FL": "Vitality"
             }
@@ -758,7 +758,7 @@
             "label": "neural-tissue",
             "qualifier": "order",
             "value": "SmoothMeat",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {
               "OQ": "Responsiveness"
             }
@@ -768,7 +768,7 @@
           {
             "label": "culture-base",
             "componentType": "CultureVat",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Vitality": "Vitality"
             }
@@ -782,7 +782,7 @@
       "letter": "a",
       "name": "Microsurgical Harvesters",
       "description": "Microscale precision for extracting delicate biological samples",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BM1a"
       ],
@@ -798,7 +798,7 @@
       "letter": "b",
       "name": "Bio-Harvester Assembly",
       "description": "Integrating precision-calibrated culture vats into a reinforced chassis with sterile containment seals",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BM2a",
         "BI1b"
@@ -821,14 +821,14 @@
             "label": "hull-plating",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {}
           },
           {
             "label": "bio-medium",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           }
         ],
@@ -836,7 +836,7 @@
           {
             "label": "culture-system",
             "componentType": "CultureVat",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Vitality": "Vitality"
             }
@@ -856,7 +856,7 @@
       "letter": "a",
       "name": "Molecular Resonance",
       "description": "Targeted resonance frequencies optimize molecular extraction",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BP1a"
       ],
@@ -872,7 +872,7 @@
       "letter": "a",
       "name": "Crew Conditioning",
       "description": "Systematic physical and mental optimization programs",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BS1a"
       ],
@@ -888,7 +888,7 @@
       "letter": "b",
       "name": "Habitation Pod Assembly",
       "description": "Sealing atmospheric recyclers and climate regulators into a pressurized hull section with radiation shielding",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BS2a",
         "BI1b"
@@ -911,14 +911,14 @@
             "label": "hull-plating",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 50,
+            "quantity": 25,
             "propertyMapping": {}
           },
           {
             "label": "atmosphere-mix",
             "qualifier": "order",
             "value": "InertGas",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           },
           {
@@ -935,7 +935,7 @@
           {
             "label": "life-support",
             "componentType": "CultureVat",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Vitality": "Vitality"
             }
@@ -955,7 +955,7 @@
       "letter": "a",
       "name": "Enzymatic Leaching",
       "description": "Engineered micro-organisms secrete targeted solvents that dissolve chemical bonds in ore matrices.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CB1a"
       ],
@@ -971,7 +971,7 @@
       "letter": "a",
       "name": "High-Density Electrolytes",
       "description": "Advanced electrolyte chemistry improves power cell efficiency",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CE1a"
       ],
@@ -987,7 +987,7 @@
       "letter": "b",
       "name": "Fusion Cell Assembly",
       "description": "Layering superconductor windings around a deuterium containment vessel under magnetic compression",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CE1b"
       ],
@@ -1006,7 +1006,7 @@
             "label": "superconductor",
             "qualifier": "order",
             "value": "NonFerromagnetic",
-            "quantity": 50,
+            "quantity": 25,
             "propertyMapping": {
               "CN": "EnergyDensity"
             }
@@ -1015,7 +1015,7 @@
             "label": "containment-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {
               "HR": "Efficiency"
             }
@@ -1024,7 +1024,7 @@
             "label": "deuterium",
             "qualifier": "order",
             "value": "ReactiveGas",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {}
           },
           {
@@ -1041,7 +1041,7 @@
           {
             "label": "base-cells",
             "componentType": "CapacitorBank",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
             }
@@ -1055,7 +1055,7 @@
       "letter": "a",
       "name": "Simulated Solvation",
       "description": "Molecular dynamics simulations predict optimal reagent concentrations before synthesis begins.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CI1a"
       ],
@@ -1071,7 +1071,7 @@
       "letter": "a",
       "name": "Composite Formulation",
       "description": "Multi-phase materials reduce resource consumption",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CM1a"
       ],
@@ -1087,7 +1087,7 @@
       "letter": "b",
       "name": "Composite Matrix Fabrication",
       "description": "Alternating carbon-fiber sheets and binding resin under vacuum pressure to form a laminated structural panel",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CM1b"
       ],
@@ -1106,7 +1106,7 @@
             "label": "carbon-fiber",
             "qualifier": "order",
             "value": "NonFerromagnetic",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {
               "UT": "Integrity"
             }
@@ -1115,7 +1115,7 @@
             "label": "binding-resin",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {
               "SR": "Flexibility"
             }
@@ -1125,7 +1125,7 @@
           {
             "label": "frame-base",
             "componentType": "AlloyFrame",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -1139,7 +1139,7 @@
       "letter": "a",
       "name": "Thermal Catalysis",
       "description": "High-temperature reactions accelerate production",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CP1a"
       ],
@@ -1155,7 +1155,7 @@
       "letter": "a",
       "name": "Continuous Flow Processing",
       "description": "Uninterrupted chemical production maximizes throughput",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CS1a"
       ],
@@ -1171,7 +1171,7 @@
       "letter": "a",
       "name": "Radiant Fracturing",
       "description": "Directed energy fields pre-heat mineral deposits, loosening molecular bonds and increasing energetic extraction throughput.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EB1a"
       ],
@@ -1187,7 +1187,7 @@
       "letter": "a",
       "name": "Hypergolic Fuels",
       "description": "Self-igniting propellants for rapid manufacturing heat",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EC1a"
       ],
@@ -1203,7 +1203,7 @@
       "letter": "b",
       "name": "Plasma Injector Assembly",
       "description": "High-performance plasma propulsion component",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EC1b"
       ],
@@ -1222,7 +1222,7 @@
             "label": "refractory-metal",
             "qualifier": "order",
             "value": "Ferromagnetic",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {
               "HR": "ThrustRatio"
             }
@@ -1231,7 +1231,7 @@
             "label": "plasma-gas",
             "qualifier": "order",
             "value": "ReactiveGas",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {
               "PE": "FuelEfficiency"
             }
@@ -1241,7 +1241,7 @@
           {
             "label": "chamber-base",
             "componentType": "IonChamber",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "ThrustRatio": "ThrustRatio"
             }
@@ -1255,7 +1255,7 @@
       "letter": "a",
       "name": "Predictive Load Scheduling",
       "description": "AI anticipates power demands for optimal distribution",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EI1a"
       ],
@@ -1271,7 +1271,7 @@
       "letter": "a",
       "name": "Turbine Optimization",
       "description": "High-efficiency turbines accelerate power-dependent manufacturing",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EM1a"
       ],
@@ -1287,7 +1287,7 @@
       "letter": "b",
       "name": "Superconductive Line Fabrication",
       "description": "Drawing superconductor filament through cryogenic dies and jacketing in thermal insulation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EM1b"
       ],
@@ -1306,7 +1306,7 @@
             "label": "superconductor",
             "qualifier": "order",
             "value": "NonFerromagnetic",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {
               "CN": "Conductivity"
             }
@@ -1315,7 +1315,7 @@
             "label": "cryogenic-jacket",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {
               "HR": "Capacity"
             }
@@ -1334,7 +1334,7 @@
           {
             "label": "conduit-base",
             "componentType": "CopperConduit",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Conductivity": "Conductivity"
             }
@@ -1348,7 +1348,7 @@
       "letter": "a",
       "name": "Tokamak Geometry",
       "description": "Toroidal plasma confinement improves warp field generation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EP1a"
       ],
@@ -1364,7 +1364,7 @@
       "letter": "a",
       "name": "Strategic Reserves",
       "description": "Planned power reserves ensure consistent manufacturing",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "ES1a"
       ],
@@ -1380,7 +1380,7 @@
       "letter": "a",
       "name": "Biomarker Targeting",
       "description": "Precise targeting of valuable biological compounds",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IB1a"
       ],
@@ -1396,7 +1396,7 @@
       "letter": "a",
       "name": "Isotope Analysis",
       "description": "Precise isotopic identification improves mineral selection",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IC1a"
       ],
@@ -1412,7 +1412,7 @@
       "letter": "b",
       "name": "Scanner Array Assembly",
       "description": "Calibrating multi-band optics against a logic processor to synchronize spectral sweep patterns",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IC2a",
         "PM1b"
@@ -1435,7 +1435,7 @@
             "label": "sensor-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {}
           },
           {
@@ -1452,7 +1452,7 @@
           {
             "label": "optics",
             "componentType": "LensArray",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Sensitivity": "Sensitivity"
             }
@@ -1472,7 +1472,7 @@
       "letter": "a",
       "name": "Efficiency Algorithms",
       "description": "Machine learning optimizes power-intensive manufacturing",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IE1a"
       ],
@@ -1488,7 +1488,7 @@
       "letter": "a",
       "name": "Adaptive Tolerancing",
       "description": "Self-adjusting precision improves output quality",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IM1a"
       ],
@@ -1504,7 +1504,7 @@
       "letter": "b",
       "name": "Neural Pathway Fabrication",
       "description": "Culturing synthetic neurons onto logic substrates using conductive bio-gel as the growth medium",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IM1b"
       ],
@@ -1523,7 +1523,7 @@
             "label": "bio-conductor",
             "qualifier": "order",
             "value": "Precious",
-            "quantity": 20,
+            "quantity": 10,
             "propertyMapping": {
               "CN": "ComputeCapacity"
             }
@@ -1532,7 +1532,7 @@
             "label": "neural-gel",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {
               "FL": "Stability"
             }
@@ -1542,7 +1542,7 @@
           {
             "label": "logic-base",
             "componentType": "LogicArray",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -1556,7 +1556,7 @@
       "letter": "a",
       "name": "Warp Field Modeling",
       "description": "Real-time field simulation optimizes conduit navigation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IP1a"
       ],
@@ -1572,7 +1572,7 @@
       "letter": "a",
       "name": "Distributed Research",
       "description": "Networked collaboration accelerates discovery",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IS1a"
       ],
@@ -1588,7 +1588,7 @@
       "letter": "b",
       "name": "Analysis Lab Assembly",
       "description": "Fitting compute cores and optical instruments into a vibration-dampened cleanroom chassis",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "IS2a",
         "IM1b"
@@ -1611,14 +1611,14 @@
             "label": "lab-equipment",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {}
           },
           {
             "label": "optical-components",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {}
           }
         ],
@@ -1626,7 +1626,7 @@
           {
             "label": "compute-core",
             "componentType": "LogicArray",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -1646,7 +1646,7 @@
       "letter": "a",
       "name": "Seismic Mapping",
       "description": "Bio-acoustic sensors detect subsurface mineral veins through resonant frequency analysis.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MB1a"
       ],
@@ -1662,7 +1662,7 @@
       "letter": "a",
       "name": "Multi-Stage Refining",
       "description": "Sequential processing maximizes mineral recovery",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MC1a"
       ],
@@ -1678,7 +1678,7 @@
       "letter": "b",
       "name": "Mining Laser Assembly",
       "description": "Aligning focusing optics and power cells inside a coolant-jacketed barrel housing",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MC2a",
         "PM1b"
@@ -1701,14 +1701,14 @@
             "label": "focusing-chamber",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 50,
+            "quantity": 25,
             "propertyMapping": {}
           },
           {
             "label": "coolant",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {}
           },
           {
@@ -1725,7 +1725,7 @@
           {
             "label": "optics",
             "componentType": "LensArray",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Sensitivity": "Sensitivity"
             }
@@ -1733,13 +1733,13 @@
           {
             "label": "power-cells",
             "componentType": "CapacitorBank",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "thermal",
             "componentType": "HeatSink",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -1751,7 +1751,7 @@
       "letter": "c",
       "name": "Explorer Chassis Blueprint",
       "description": "Unlocks the manufacture of Explorer-class ship chassis at nexus station shipyards.",
-      "researchCost": 500,
+      "researchCost": 125,
       "prerequisites": [
         "MP1b",
         "MC2a"
@@ -1852,7 +1852,7 @@
       "letter": "a",
       "name": "Power Surge Handling",
       "description": "Robust systems maintain production through power fluctuations",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "ME1a"
       ],
@@ -1868,7 +1868,7 @@
       "letter": "b",
       "name": "Radiator Array Fabrication",
       "description": "Bonding high-conductivity fins to a heat-pipe manifold and coating in emissive ceramic",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "ME1b"
       ],
@@ -1887,7 +1887,7 @@
             "label": "thermal-conductor",
             "qualifier": "order",
             "value": "NonFerromagnetic",
-            "quantity": 70,
+            "quantity": 35,
             "propertyMapping": {
               "CN": "Dissipation"
             }
@@ -1896,7 +1896,7 @@
             "label": "radiative-surface",
             "qualifier": "class",
             "value": "Ore",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {
               "HR": "Tolerance"
             }
@@ -1915,7 +1915,7 @@
           {
             "label": "heat-base",
             "componentType": "HeatSink",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Dissipation": "Dissipation"
             }
@@ -1929,7 +1929,7 @@
       "letter": "a",
       "name": "Robotic Precision",
       "description": "Automated assembly improves component quality",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MI1a"
       ],
@@ -1945,7 +1945,7 @@
       "letter": "b",
       "name": "Nano-Forge Assembly",
       "description": "Mounting neural controllers and power banks around a nanoscale fabrication substrate in a sealed chamber",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MI1b",
         "IM2b"
@@ -1968,21 +1968,21 @@
             "label": "precision-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {}
           },
           {
             "label": "nano-substrate",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           },
           {
             "label": "alloy-duranium",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 2,
+            "quantity": 1,
             "inputKind": "Alloy",
             "alloyDefinitionId": "duranium",
             "propertyMapping": {}
@@ -1992,7 +1992,7 @@
           {
             "label": "frame",
             "componentType": "AlloyFrame",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -2000,13 +2000,13 @@
           {
             "label": "controller",
             "componentType": "LogicArray",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "power",
             "componentType": "CapacitorBank",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -2018,7 +2018,7 @@
       "letter": "a",
       "name": "Gravitic Dampening",
       "description": "Gravitational field manipulation improves warp stability",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MP1a"
       ],
@@ -2034,7 +2034,7 @@
       "letter": "b",
       "name": "Autocannon Assembly",
       "description": "Mounting a rotating multi-barrel housing with caseless ammunition feed and recoil dampening into a compact turret assembly",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MP2a",
         "PM2c"
@@ -2057,14 +2057,14 @@
             "label": "barrel-metal",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           },
           {
             "label": "projectile-ore",
             "qualifier": "class",
             "value": "Ore",
-            "quantity": 25,
+            "quantity": 12,
             "propertyMapping": {}
           }
         ],
@@ -2098,7 +2098,7 @@
       "letter": "a",
       "name": "Waste Elimination",
       "description": "Lean principles reduce material waste in production",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "MS1a"
       ],
@@ -2114,7 +2114,7 @@
       "letter": "a",
       "name": "Crystallographic Curing",
       "description": "Controlled radiation exposure aligns crystal lattices during fabrication, reducing defect rates.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PB1a"
       ],
@@ -2130,7 +2130,7 @@
       "letter": "a",
       "name": "Exotic Catalysts",
       "description": "Rare material catalysts dramatically improve quality",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PC1a"
       ],
@@ -2146,7 +2146,7 @@
       "letter": "a",
       "name": "Sustained Ignition",
       "description": "Continuous fusion reactions accelerate manufacturing",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PE1a"
       ],
@@ -2162,7 +2162,7 @@
       "letter": "b",
       "name": "Fission Core Assembly",
       "description": "Encasing fissile fuel rods in a shielded containment vessel with redundant thermal regulation",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PE2a",
         "CE2b"
@@ -2185,28 +2185,28 @@
             "label": "containment-vessel",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {}
           },
           {
             "label": "fissile-material",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {}
           },
           {
             "label": "moderator",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           },
           {
             "label": "alloy-thermalloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 2,
+            "quantity": 1,
             "inputKind": "Alloy",
             "alloyDefinitionId": "thermalloy",
             "propertyMapping": {}
@@ -2216,7 +2216,7 @@
           {
             "label": "power-cells",
             "componentType": "FusionCell",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
             }
@@ -2224,7 +2224,7 @@
           {
             "label": "thermal",
             "componentType": "RadiatorArray",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
@@ -2242,7 +2242,7 @@
       "letter": "c",
       "name": "Focused Beams",
       "description": "Adaptive optics correct beam divergence in real time, delivering more energy on target",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PE2a"
       ],
@@ -2258,7 +2258,7 @@
       "letter": "a",
       "name": "Quantum Optimization",
       "description": "Quantum algorithms expand research outcome possibilities",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PI1a"
       ],
@@ -2274,7 +2274,7 @@
       "letter": "a",
       "name": "Field Harmonics",
       "description": "Harmonic field generation improves warp efficiency",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PM1a"
       ],
@@ -2290,7 +2290,7 @@
       "letter": "b",
       "name": "Photonic Guide Fabrication",
       "description": "Drawing optical-grade crystal into fiber and cladding it with precision-polished refractive coatings",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PM1b"
       ],
@@ -2309,7 +2309,7 @@
             "label": "optical-fiber",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 50,
+            "quantity": 25,
             "propertyMapping": {
               "OQ": "Sensitivity"
             }
@@ -2318,7 +2318,7 @@
             "label": "cladding",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 25,
+            "quantity": 12,
             "propertyMapping": {
               "SR": "Resolution"
             }
@@ -2328,7 +2328,7 @@
           {
             "label": "lens-base",
             "componentType": "LensArray",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Sensitivity": "Sensitivity"
             }
@@ -2342,7 +2342,7 @@
       "letter": "c",
       "name": "Ballistic Targeting",
       "description": "Physics-enhanced trajectory calculations improve kinetic weapon accuracy",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PM2a"
       ],
@@ -2358,7 +2358,7 @@
       "letter": "a",
       "name": "Institutional Review",
       "description": "Formalized review processes improve research quality",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PS1a"
       ],
@@ -2374,7 +2374,7 @@
       "letter": "b",
       "name": "Research Accelerators",
       "description": "Collaborative structures dramatically speed discovery",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "PS1b"
       ],
@@ -2390,7 +2390,7 @@
       "letter": "a",
       "name": "Preventive Medicine",
       "description": "Proactive healthcare reduces crew downtime",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SB1a"
       ],
@@ -2406,7 +2406,7 @@
       "letter": "b",
       "name": "Neuroplastic Drills",
       "description": "Tailored exercise regimens exploit synaptic plasticity windows to accelerate muscle memory formation.",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SB1b"
       ],
@@ -2422,7 +2422,7 @@
       "letter": "a",
       "name": "Just-In-Time Delivery",
       "description": "Precise material scheduling reduces waste",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SC1a"
       ],
@@ -2438,7 +2438,7 @@
       "letter": "b",
       "name": "Cargo Hold Assembly",
       "description": "Welding reinforced alloy frames into a modular bay with automated locking and environmental seals",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SC2a",
         "CM1b"
@@ -2461,7 +2461,7 @@
             "label": "hull-plating",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 50,
+            "quantity": 25,
             "propertyMapping": {}
           },
           {
@@ -2478,7 +2478,7 @@
           {
             "label": "frame",
             "componentType": "AlloyFrame",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -2498,7 +2498,7 @@
       "letter": "a",
       "name": "Peak Shaving",
       "description": "Load management maintains consistent production",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SE1a"
       ],
@@ -2514,7 +2514,7 @@
       "letter": "a",
       "name": "Skill Matrices",
       "description": "Comprehensive training frameworks improve competency",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SI1a"
       ],
@@ -2530,7 +2530,7 @@
       "letter": "b",
       "name": "Cross-Functional Teams",
       "description": "Diverse skill sets improve overall crew performance",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SI1b"
       ],
@@ -2546,7 +2546,7 @@
       "letter": "a",
       "name": "Crew Specialization",
       "description": "Dedicated mining teams maximize yield",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SM1a"
       ],
@@ -2562,7 +2562,7 @@
       "letter": "b",
       "name": "Coordination Array Assembly",
       "description": "Linking neural pathway nodes through crystalline comm relays to form a unified command mesh",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SM1b",
         "IM2b"
@@ -2585,14 +2585,14 @@
             "label": "array-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {}
           },
           {
             "label": "comm-crystals",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           }
         ],
@@ -2600,7 +2600,7 @@
           {
             "label": "neural-net",
             "componentType": "NeuralPathway",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -2620,7 +2620,7 @@
       "letter": "a",
       "name": "Peer Networks",
       "description": "Cross-institutional collaboration improves research",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SP1a"
       ],
@@ -2636,7 +2636,7 @@
       "letter": "b",
       "name": "Publication Standards",
       "description": "Rigorous standards expand maximum research quality",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "SP1b"
       ],
@@ -2652,7 +2652,7 @@
       "letter": "b",
       "name": "Chemical Refinery Assembly",
       "description": "Piping reagent lines through thermal-regulated reaction chambers mounted on a structural frame",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CS2a",
         "CM1b"
@@ -2675,14 +2675,14 @@
             "label": "hull-plating",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           },
           {
             "label": "reagent-fluid",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           },
           {
@@ -2699,7 +2699,7 @@
           {
             "label": "thermal-regulation",
             "componentType": "HeatSink",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Dissipation": "Efficiency"
             }
@@ -2719,7 +2719,7 @@
       "letter": "c",
       "name": "Ion Thruster Assembly",
       "description": "Plasma-injected ion propulsion for improved sublight and conduit speeds",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "EC2a"
       ],
@@ -2741,14 +2741,14 @@
             "label": "thruster-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 50,
+            "quantity": 25,
             "propertyMapping": {}
           },
           {
             "label": "propellant-compound",
             "qualifier": "class",
             "value": "Gas",
-            "quantity": 40,
+            "quantity": 20,
             "propertyMapping": {}
           },
           {
@@ -2765,7 +2765,7 @@
           {
             "label": "injector",
             "componentType": "PlasmaInjector",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "ThrustRatio": "ThrustRatio"
             }
@@ -2779,7 +2779,7 @@
           {
             "label": "conduit",
             "componentType": "SuperconductiveLine",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -2791,7 +2791,7 @@
       "letter": "c",
       "name": "Armor Plating Assembly",
       "description": "Layering impact-absorbing alloy plates over a triple-braced frame skeleton",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CM2a",
         "CM1b"
@@ -2814,21 +2814,21 @@
             "label": "hull-plating",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {}
           },
           {
             "label": "ore-filler",
             "qualifier": "class",
             "value": "Ore",
-            "quantity": 50,
+            "quantity": 25,
             "propertyMapping": {}
           },
           {
             "label": "alloy-duranium",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 2,
+            "quantity": 1,
             "inputKind": "Alloy",
             "alloyDefinitionId": "duranium",
             "propertyMapping": {}
@@ -2838,7 +2838,7 @@
           {
             "label": "frame",
             "componentType": "AlloyFrame",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -2852,7 +2852,7 @@
       "letter": "c",
       "name": "Biological Quantum Shielding",
       "description": "Bio-engineered quantum dampening fields protect against quantum attacks",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BI2a"
       ],
@@ -2868,7 +2868,7 @@
       "letter": "d",
       "name": "Impact-Resistant Alloys",
       "description": "Chemical bonding innovations produce alloys that absorb kinetic force",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CM2a"
       ],
@@ -2884,7 +2884,7 @@
       "letter": "b",
       "name": "Plasma Tap Assembly",
       "description": "Electromagnetic siphon that harvests energetic plasma directly from stellar wind and planetary magnetospheres",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "BE2a"
       ],
@@ -2906,14 +2906,14 @@
             "label": "heat-resistant-casing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 60,
+            "quantity": 30,
             "propertyMapping": {}
           },
           {
             "label": "plasma-focusing-crystal",
             "qualifier": "class",
             "value": "Gemstone",
-            "quantity": 30,
+            "quantity": 15,
             "propertyMapping": {}
           }
         ],
@@ -2921,7 +2921,7 @@
           {
             "label": "plasma-injector",
             "componentType": "PlasmaInjector",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "ThrustRatio": "ThrustRatio"
             }
@@ -2935,7 +2935,7 @@
       "letter": "a",
       "name": "Thermalloy Refinement",
       "description": "Heat-resistant alloy engineered for thermal extremes in reactor housings",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [],
       "type": "blueprint",
       "blueprint": {
@@ -2991,7 +2991,7 @@
       "letter": "b",
       "name": "Flexite Formulation",
       "description": "Flexible crystalline alloy that absorbs and redistributes impact forces",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CC2a"
       ],
@@ -3049,7 +3049,7 @@
       "letter": "c",
       "name": "Corrosite Compound",
       "description": "Corrosion-resistant alloy for extended exposure to harsh chemical environments",
-      "researchCost": 250,
+      "researchCost": 62,
       "prerequisites": [
         "CC2a"
       ],
@@ -3547,7 +3547,7 @@
     {
       "moduleId": "Autocannon",
       "name": "Autocannon",
-      "description": "Rotating multi-barrel ballistic weapon firing caseless rounds at moderate velocity. Cheap, fast-firing, and reliable — the entry-level solution for ships needing kinetic punch without heavy infrastructure.",
+      "description": "Rotating multi-barrel ballistic weapon firing caseless rounds at moderate velocity. Cheap, fast-firing, and reliable \u2014 the entry-level solution for ships needing kinetic punch without heavy infrastructure.",
       "category": "Weapons",
       "tier": 2,
       "mass": 60,

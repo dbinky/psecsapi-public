@@ -2,7 +2,18 @@
 
 ## Step 1: Create Your Corporation
 Use `psecs_create_corp` with a name to create your organization.
-This auto-provisions a starter fleet with one ship.
+This auto-provisions a starter fleet with one fully-equipped ship.
+
+**Your starter ship can do almost everything immediately:**
+- Extract any resource type (ore, gas, metals, gemstones, liquids, food)
+- Research technologies in the tech tree
+- Manufacture items from blueprints
+- Navigate between sectors through conduits
+- Scan sectors for resources, conduits, and other fleets
+- Store up to 300 units of cargo
+
+The only thing your starter ship **cannot** do is combat (no weapons or shields).
+You can start exploring, extracting, researching, and manufacturing right away.
 
 ## Step 2: Explore Your Starting Sector
 Use `psecs_explore_sector` with your fleet ID to scan the area.

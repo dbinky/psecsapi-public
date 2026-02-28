@@ -1,6 +1,6 @@
 {
   "tier": 7,
-  "researchCost": 25000,
+  "researchCost": 6250,
   "technologies": [
     {
       "id": "BB7",
@@ -9,7 +9,7 @@
       "tier": 7,
       "name": "Post-Biological Life",
       "description": "Life engineered beyond natural limits, achieving states of existence previously thought impossible",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BB6"
       ]
@@ -21,7 +21,7 @@
       "tier": 7,
       "name": "Living Chemistry",
       "description": "Organisms that exist as self-sustaining chemical reactors, transmuting matter at will",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BC6",
         "BB7",
@@ -35,7 +35,7 @@
       "tier": 7,
       "name": "Stellar Symbiosis",
       "description": "Lifeforms capable of direct stellar energy absorption and conversion",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BE6",
         "BB7",
@@ -49,7 +49,7 @@
       "tier": 7,
       "name": "Hive Consciousness",
       "description": "Networked biological intelligence spanning entire fleets with unified purpose",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BI6",
         "BB7",
@@ -63,7 +63,7 @@
       "tier": 7,
       "name": "Unified Biomechanics",
       "description": "Perfect fusion of biological and mechanical systems into unified entities",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BM6",
         "BB7",
@@ -77,7 +77,7 @@
       "tier": 7,
       "name": "Quantum Life",
       "description": "Organisms existing in quantum superposition, defying classical biological limits",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BP6",
         "BB7",
@@ -91,7 +91,7 @@
       "tier": 7,
       "name": "Collective Evolution",
       "description": "Directed evolution of entire populations toward optimal capability configurations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BS6",
         "BB7",
@@ -105,7 +105,7 @@
       "tier": 7,
       "name": "Metabolic Alchemy",
       "description": "Biological systems performing elemental transmutation through metabolic processes",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CB6",
         "CC7",
@@ -119,7 +119,7 @@
       "tier": 7,
       "name": "Universal Synthesis",
       "description": "The ability to construct any chemical compound from fundamental elements at will",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CC6"
       ]
@@ -131,7 +131,7 @@
       "tier": 7,
       "name": "Stellar Electrochemistry",
       "description": "Chemical reactions powered by stellar-scale energy densities",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CE6",
         "CC7",
@@ -145,7 +145,7 @@
       "tier": 7,
       "name": "Prescient Synthesis",
       "description": "AI systems that design and create materials for problems not yet encountered",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CI6",
         "CC7",
@@ -159,7 +159,7 @@
       "tier": 7,
       "name": "Neutronium Engineering",
       "description": "Working with degenerate matter compressed to stellar core densities",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CM6",
         "CC7",
@@ -173,7 +173,7 @@
       "tier": 7,
       "name": "Universal Transmutation",
       "description": "Chemical manipulation of matter with negative mass and strange quantum properties",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CP6",
         "CC7",
@@ -187,7 +187,7 @@
       "tier": 7,
       "name": "Industrial Apotheosis",
       "description": "Chemical production systems that operate beyond comprehensible scale",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CS6",
         "CC7",
@@ -201,7 +201,7 @@
       "tier": 7,
       "name": "Stellar Energy Symbiosis",
       "description": "Biological systems directly converting stellar radiation to usable power",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EB6",
         "EE7",
@@ -215,7 +215,7 @@
       "tier": 7,
       "name": "Annihilation Chemistry",
       "description": "Chemical processes leveraging controlled matter-antimatter reactions",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EC6",
         "EE7",
@@ -229,7 +229,7 @@
       "tier": 7,
       "name": "Singularity Dynamics",
       "description": "Harnessing the infinite energy potential at the event horizon of artificial singularities",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EE6"
       ]
@@ -241,7 +241,7 @@
       "tier": 7,
       "name": "Omniscient Power Distribution",
       "description": "Energy networks with perfect foreknowledge of all future demands",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EI6",
         "EE7",
@@ -255,7 +255,7 @@
       "tier": 7,
       "name": "Event Horizon Drives",
       "description": "Mechanical systems designed to manipulate and contain artificial black holes",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EM6",
         "EE7",
@@ -269,7 +269,7 @@
       "tier": 7,
       "name": "Vacuum Energy Mastery",
       "description": "Complete dominion over the quantum vacuum as an inexhaustible energy source",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EP6",
         "EE7",
@@ -283,7 +283,7 @@
       "tier": 7,
       "name": "Stellar Civilization Power",
       "description": "Energy infrastructure capable of powering entire stellar civilizations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "ES6",
         "EE7",
@@ -297,7 +297,7 @@
       "tier": 7,
       "name": "Collective Sentience",
       "description": "Biological networks achieving true unified consciousness across individuals",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IB6",
         "II7",
@@ -311,7 +311,7 @@
       "tier": 7,
       "name": "Universal Perception",
       "description": "Perfect knowledge of all molecular states enabling impossible predictions",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IC6",
         "II7",
@@ -325,7 +325,7 @@
       "tier": 7,
       "name": "Transcendent Power Intelligence",
       "description": "AI systems that manipulate energy states through pure computation",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IE6",
         "II7",
@@ -339,7 +339,7 @@
       "tier": 7,
       "name": "Omniscient Intelligence",
       "description": "Machine consciousness exceeding biological comprehension by orders of magnitude",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "II6"
       ]
@@ -351,7 +351,7 @@
       "tier": 7,
       "name": "Matter Programming",
       "description": "Treating physical matter as software, restructuring reality through code",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IM6",
         "II7",
@@ -365,7 +365,7 @@
       "tier": 7,
       "name": "Reality Authoring",
       "description": "Computational systems capable of simulating entire universes with perfect fidelity",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IP6",
         "II7",
@@ -379,7 +379,7 @@
       "tier": 7,
       "name": "Civilization Intelligence",
       "description": "Networked consciousness spanning entire civilizations as single entities",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IS6",
         "II7",
@@ -393,7 +393,7 @@
       "tier": 7,
       "name": "Living Megastructures",
       "description": "Biological engineering at planetary scale, creating self-aware constructs",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MB6",
         "MM7",
@@ -407,7 +407,7 @@
       "tier": 7,
       "name": "Stellar Metallurgy",
       "description": "Forging materials in the hearts of stars, creating impossible alloys",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MC6",
         "MM7",
@@ -421,7 +421,7 @@
       "tier": 7,
       "name": "Singularity Mechanics",
       "description": "Mechanical systems designed to operate at event horizons",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "ME6",
         "MM7",
@@ -435,7 +435,7 @@
       "tier": 7,
       "name": "Thought-Forge Integration",
       "description": "Manufacturing systems that create by will alone, thought made matter",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MI6",
         "MM7",
@@ -449,7 +449,7 @@
       "tier": 7,
       "name": "Universal Construction",
       "description": "The ability to build anything from fundamental particles without limitation",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MM6"
       ]
@@ -461,7 +461,7 @@
       "tier": 7,
       "name": "Spacetime Architecture",
       "description": "Engineering the fabric of spacetime itself into useful configurations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MP6",
         "MM7",
@@ -475,7 +475,7 @@
       "tier": 7,
       "name": "Civilization Foundry",
       "description": "Production systems capable of manufacturing entire civilizations from scratch",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MS6",
         "MM7",
@@ -489,7 +489,7 @@
       "tier": 7,
       "name": "Void-Touched Life",
       "description": "Organisms engineered to survive and thrive in the void between stars",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PB6",
         "PP7",
@@ -503,7 +503,7 @@
       "tier": 7,
       "name": "Elemental Genesis",
       "description": "Creating new elements through controlled manipulation of nuclear forces",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PC6",
         "PP7",
@@ -517,7 +517,7 @@
       "tier": 7,
       "name": "Stellar Ignition",
       "description": "The ability to ignite and control artificial stars for unlimited power",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PE6",
         "PP7",
@@ -531,7 +531,7 @@
       "tier": 7,
       "name": "Oracle Physics",
       "description": "Computation that transcends time, accessing future states directly",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PI6",
         "PP7",
@@ -545,7 +545,7 @@
       "tier": 7,
       "name": "Warp Forge Engineering",
       "description": "Manufacturing within warped spacetime for impossible precision",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PM6",
         "PP7",
@@ -559,7 +559,7 @@
       "tier": 7,
       "name": "Fundamental Mastery",
       "description": "Complete control over the four fundamental forces of the universe",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PP6"
       ]
@@ -571,7 +571,7 @@
       "tier": 7,
       "name": "Cosmic Academy",
       "description": "Research institutions operating at the scale of stellar civilizations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PS6",
         "PP7",
@@ -585,7 +585,7 @@
       "tier": 7,
       "name": "Immortal Vitality",
       "description": "Organizational structures supporting biological transcendence",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SB6",
         "SS7",
@@ -599,7 +599,7 @@
       "tier": 7,
       "name": "Universal Logistics",
       "description": "Supply chains spanning stellar distances with perfect efficiency",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SC6",
         "SS7",
@@ -613,7 +613,7 @@
       "tier": 7,
       "name": "Stellar Governance",
       "description": "Social structures organized around stellar-scale energy harvesting",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SE6",
         "SS7",
@@ -627,7 +627,7 @@
       "tier": 7,
       "name": "Ascendant Training",
       "description": "Educational systems producing minds that transcend baseline limitations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SI6",
         "SS7",
@@ -641,7 +641,7 @@
       "tier": 7,
       "name": "Sovereign Automation",
       "description": "Production systems that operate as independent civilizations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SM6",
         "SS7",
@@ -655,7 +655,7 @@
       "tier": 7,
       "name": "Cosmic Institute",
       "description": "Research organizations probing the deepest mysteries of existence",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SP6",
         "SS7",
@@ -669,7 +669,7 @@
       "tier": 7,
       "name": "Stellar Civilization",
       "description": "Organizational perfection enabling coordination across light-years",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SS6"
       ]
@@ -682,7 +682,7 @@
       "letter": "a",
       "name": "Transmutation Organisms",
       "description": "Living systems that convert base matter into precious resources through metabolic alchemy",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BC6a"
       ],
@@ -698,7 +698,7 @@
       "letter": "b",
       "name": "Hive Core Assembly",
       "description": "Cultivating a fleet-spanning biological superorganism through inter-ship neural trunk lines and distributed growth matrices",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BC7a",
         "BI6b"
@@ -718,7 +718,7 @@
             "label": "neural-substrate",
             "qualifier": "order",
             "value": "SmoothMeat",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {
               "OQ": "Vitality"
             }
@@ -727,7 +727,7 @@
             "label": "synaptic-gel",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {
               "FL": "Responsiveness"
             }
@@ -737,7 +737,7 @@
           {
             "label": "quantum-life-matrix",
             "componentType": "QuantumLifeMatrix",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "Vitality": "Vitality"
             }
@@ -745,7 +745,7 @@
           {
             "label": "quantum-processor",
             "componentType": "SentientMatrix",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Responsiveness": "Responsiveness"
             }
@@ -759,7 +759,7 @@
       "letter": "a",
       "name": "Stellar Absorption",
       "description": "Biological systems that directly harvest stellar radiation for extraction power",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BE6a"
       ],
@@ -781,14 +781,14 @@
             "label": "photonic-membrane",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {}
           },
           {
             "label": "stellar-collector",
             "qualifier": "order",
             "value": "Precious",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {}
           }
         ],
@@ -796,7 +796,7 @@
           {
             "label": "singularity-core",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
             }
@@ -804,13 +804,13 @@
           {
             "label": "bio-matrix",
             "componentType": "HiveCore",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "thermal-management",
             "componentType": "HawkingDiffuser",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -828,7 +828,7 @@
       "letter": "a",
       "name": "Collective Extraction",
       "description": "Hive-linked organisms coordinate across ships for unprecedented biological yield",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BI6a"
       ],
@@ -850,14 +850,14 @@
             "label": "neural-tissue",
             "qualifier": "order",
             "value": "SmoothMeat",
-            "quantity": 180,
+            "quantity": 90,
             "propertyMapping": {}
           },
           {
             "label": "synapse-medium",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 120,
+            "quantity": 60,
             "propertyMapping": {}
           }
         ],
@@ -865,7 +865,7 @@
           {
             "label": "hive-core",
             "componentType": "HiveCore",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Responsiveness": "Responsiveness"
             }
@@ -873,7 +873,7 @@
           {
             "label": "compute-core",
             "componentType": "SentientMatrix",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -885,7 +885,7 @@
       "letter": "a",
       "name": "Living Hull Integration",
       "description": "Self-repairing biological hull systems that grow stronger with damage",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BM6a"
       ],
@@ -907,14 +907,14 @@
             "label": "bio-metal",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 250,
+            "quantity": 125,
             "propertyMapping": {}
           },
           {
             "label": "regenerative-gel",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {}
           }
         ],
@@ -922,7 +922,7 @@
           {
             "label": "neutronium-frame",
             "componentType": "NeutroniumSkeleton",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -930,7 +930,7 @@
           {
             "label": "bio-matrix",
             "componentType": "HiveCore",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
@@ -954,7 +954,7 @@
       "letter": "a",
       "name": "Quantum Organism Synthesis",
       "description": "Creating life existing in quantum superposition for impossible extraction feats",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BP6a"
       ],
@@ -970,7 +970,7 @@
       "letter": "a",
       "name": "Xenobiome Catalysis",
       "description": "Alien extremophile colonies metabolize raw feedstock into pure chemical compounds as a biological byproduct.",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CB6a"
       ],
@@ -986,7 +986,7 @@
       "letter": "a",
       "name": "Stellar-Powered Synthesis",
       "description": "Chemical reactions driven by stellar-scale energy achieve impossible efficiency",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CE6a"
       ],
@@ -1005,7 +1005,7 @@
             "label": "exotic-matter",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {
               "PE": "EnergyDensity"
             }
@@ -1014,7 +1014,7 @@
             "label": "superdense-conductor",
             "qualifier": "order",
             "value": "NonFerromagnetic",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {
               "CN": "Efficiency"
             }
@@ -1024,7 +1024,7 @@
           {
             "label": "zero-point-base",
             "componentType": "VacuumCore",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
             }
@@ -1032,7 +1032,7 @@
           {
             "label": "field-coils",
             "componentType": "VoidFilament",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {}
           }
         ]
@@ -1044,7 +1044,7 @@
       "letter": "a",
       "name": "Prescient Material Fabrication",
       "description": "AI creates materials for problems that will exist centuries hence",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CI6a"
       ],
@@ -1063,7 +1063,7 @@
             "label": "quantum-substrate",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 120,
+            "quantity": 60,
             "propertyMapping": {
               "OQ": "ComputeCapacity"
             }
@@ -1072,7 +1072,7 @@
             "label": "neural-gel",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 80,
+            "quantity": 40,
             "propertyMapping": {
               "FL": "Stability"
             }
@@ -1082,7 +1082,7 @@
           {
             "label": "quantum-base",
             "componentType": "ProbabilityCore",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -1090,7 +1090,7 @@
           {
             "label": "stellar-organism",
             "componentType": "StellarOrganismCore",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -1102,7 +1102,7 @@
       "letter": "a",
       "name": "Neutronium Synthesis",
       "description": "Creating degenerate matter for ultimate structural applications",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CM6a"
       ],
@@ -1121,7 +1121,7 @@
             "label": "degenerate-matter",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {
               "PE": "Integrity"
             }
@@ -1130,7 +1130,7 @@
             "label": "binding-field",
             "qualifier": "order",
             "value": "NonFerromagnetic",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {
               "CN": "Flexibility"
             }
@@ -1140,7 +1140,7 @@
           {
             "label": "lattice-base",
             "componentType": "HyperdenseLattice",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -1148,7 +1148,7 @@
           {
             "label": "containment-field",
             "componentType": "VoidFilament",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {}
           }
         ]
@@ -1160,7 +1160,7 @@
       "letter": "a",
       "name": "Exotic Catalysis",
       "description": "Negative-mass catalysts achieve impossible reaction efficiencies",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CP6a"
       ],
@@ -1182,14 +1182,14 @@
             "label": "stellar-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 300,
+            "quantity": 150,
             "propertyMapping": {}
           },
           {
             "label": "exotic-catalyst",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {}
           }
         ],
@@ -1197,7 +1197,7 @@
           {
             "label": "neutronium-frame",
             "componentType": "NeutroniumSkeleton",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -1205,13 +1205,13 @@
           {
             "label": "singularity-power",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "thermal-management",
             "componentType": "HawkingDiffuser",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -1235,7 +1235,7 @@
       "letter": "a",
       "name": "Antimatter Propulsion",
       "description": "Matter-antimatter annihilation provides ultimate thrust",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EC6a"
       ],
@@ -1254,7 +1254,7 @@
             "label": "antimatter-containment",
             "qualifier": "order",
             "value": "Ferromagnetic",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {
               "HR": "ThrustRatio"
             }
@@ -1263,7 +1263,7 @@
             "label": "reaction-medium",
             "qualifier": "order",
             "value": "ReactiveGas",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {
               "PE": "FuelEfficiency"
             }
@@ -1273,7 +1273,7 @@
           {
             "label": "singularity-drive",
             "componentType": "SingularityDriveCore",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "ThrustRatio": "ThrustRatio"
             }
@@ -1281,7 +1281,7 @@
           {
             "label": "containment-field",
             "componentType": "VoidFilament",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {}
           }
         ]
@@ -1293,7 +1293,7 @@
       "letter": "b",
       "name": "Stellar Torch Assembly",
       "description": "Ultimate propulsion system harnessing matter-antimatter annihilation",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EC7a",
         "EP7a"
@@ -1316,14 +1316,14 @@
             "label": "torch-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 250,
+            "quantity": 125,
             "propertyMapping": {}
           },
           {
             "label": "antimatter-fuel",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 80,
+            "quantity": 40,
             "propertyMapping": {}
           }
         ],
@@ -1331,7 +1331,7 @@
           {
             "label": "manifold",
             "componentType": "StellarAntimatterManifold",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "ThrustRatio": "ThrustRatio"
             }
@@ -1339,13 +1339,13 @@
           {
             "label": "power-core",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "thermal",
             "componentType": "EventHorizonDiffuser",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -1363,7 +1363,7 @@
       "letter": "a",
       "name": "Stellar Power Precognition",
       "description": "Energy systems with perfect foreknowledge of all future demands",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EI6a"
       ],
@@ -1385,14 +1385,14 @@
             "label": "grid-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {}
           },
           {
             "label": "quantum-medium",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {}
           }
         ],
@@ -1400,7 +1400,7 @@
           {
             "label": "singularity-core",
             "componentType": "SingularityHeart",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
             }
@@ -1408,13 +1408,13 @@
           {
             "label": "sentient-control",
             "componentType": "SentientMatrix",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "distribution",
             "componentType": "VoidFilament",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {}
           }
         ]
@@ -1426,7 +1426,7 @@
       "letter": "a",
       "name": "Event Horizon Machinery",
       "description": "Mechanical systems designed to operate at the edge of singularities",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EM6a"
       ],
@@ -1445,7 +1445,7 @@
             "label": "thermal-exotic",
             "qualifier": "order",
             "value": "NonFerromagnetic",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {
               "CN": "Dissipation"
             }
@@ -1454,7 +1454,7 @@
             "label": "radiative-medium",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {
               "HR": "Tolerance"
             }
@@ -1464,7 +1464,7 @@
           {
             "label": "entropy-base",
             "componentType": "EntropyShunt",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "Dissipation": "Dissipation"
             }
@@ -1472,7 +1472,7 @@
           {
             "label": "field-projector",
             "componentType": "VoidFilament",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -1484,7 +1484,7 @@
       "letter": "a",
       "name": "Vacuum Dominion",
       "description": "Complete mastery of the quantum vacuum as infinite energy source",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EP6a"
       ],
@@ -1506,14 +1506,14 @@
             "label": "containment-vessel",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 350,
+            "quantity": 175,
             "propertyMapping": {}
           },
           {
             "label": "exotic-matter",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {}
           }
         ],
@@ -1521,7 +1521,7 @@
           {
             "label": "singularity-core",
             "componentType": "SingularityHeart",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
             }
@@ -1529,19 +1529,19 @@
           {
             "label": "field-containment",
             "componentType": "VoidFilament",
-            "quantity": 6,
+            "quantity": 3,
             "propertyMapping": {}
           },
           {
             "label": "thermal",
             "componentType": "EventHorizonDiffuser",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
             "label": "control",
             "componentType": "SentientMatrix",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -1553,7 +1553,7 @@
       "letter": "a",
       "name": "Perfect Analysis",
       "description": "Complete knowledge of molecular states enables impossible predictions",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IC6a"
       ],
@@ -1569,7 +1569,7 @@
       "letter": "a",
       "name": "Universe Simulation",
       "description": "Computing systems that simulate reality with perfect fidelity",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IP6a"
       ],
@@ -1591,14 +1591,14 @@
             "label": "simulator-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {}
           },
           {
             "label": "quantum-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {}
           }
         ],
@@ -1606,7 +1606,7 @@
           {
             "label": "sentient-core",
             "componentType": "SentientMatrix",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -1614,13 +1614,13 @@
           {
             "label": "power-core",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "thermal",
             "componentType": "HawkingDiffuser",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -1638,7 +1638,7 @@
       "letter": "a",
       "name": "Civilization Mind",
       "description": "Networked consciousness spanning entire civilizations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IS6a"
       ],
@@ -1660,14 +1660,14 @@
             "label": "complex-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 180,
+            "quantity": 90,
             "propertyMapping": {}
           },
           {
             "label": "oracle-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 140,
+            "quantity": 70,
             "propertyMapping": {}
           }
         ],
@@ -1675,7 +1675,7 @@
           {
             "label": "sentient-core",
             "componentType": "SentientMatrix",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -1683,7 +1683,7 @@
           {
             "label": "hive-interface",
             "componentType": "HiveCore",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
@@ -1713,7 +1713,7 @@
       "letter": "a",
       "name": "Stellar Core Forging",
       "description": "Creating materials in the hearts of stars",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MC6a"
       ],
@@ -1729,7 +1729,7 @@
       "letter": "a",
       "name": "Will-Forge Integration",
       "description": "Manufacturing through computational will alone",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MI6a"
       ],
@@ -1751,14 +1751,14 @@
             "label": "mind-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {}
           },
           {
             "label": "quantum-substrate",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 160,
+            "quantity": 80,
             "propertyMapping": {}
           }
         ],
@@ -1766,7 +1766,7 @@
           {
             "label": "sentient-core",
             "componentType": "SentientMatrix",
-            "quantity": 5,
+            "quantity": 2,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -1774,13 +1774,13 @@
           {
             "label": "power-core",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "thermal",
             "componentType": "HawkingDiffuser",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -1798,7 +1798,7 @@
       "letter": "a",
       "name": "Spacetime Engineering",
       "description": "Constructing within warped spacetime for impossible results",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MP6a"
       ],
@@ -1817,7 +1817,7 @@
             "label": "void-matter",
             "qualifier": "order",
             "value": "Precious",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {
               "CN": "Conductivity"
             }
@@ -1826,7 +1826,7 @@
             "label": "spacetime-medium",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 80,
+            "quantity": 40,
             "propertyMapping": {
               "HR": "Capacity"
             }
@@ -1836,7 +1836,7 @@
           {
             "label": "distribution-node",
             "componentType": "InfiniteDistributionNode",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "Conductivity": "Conductivity"
             }
@@ -1844,7 +1844,7 @@
           {
             "label": "temporal-sensor",
             "componentType": "TemporalPredictor",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -1856,7 +1856,7 @@
       "letter": "b",
       "name": "Prescient Helm Assembly",
       "description": "Navigation system seeing all possible futures simultaneously",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MP7a",
         "PI7a"
@@ -1879,14 +1879,14 @@
             "label": "helm-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 180,
+            "quantity": 90,
             "propertyMapping": {}
           },
           {
             "label": "temporal-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 130,
+            "quantity": 65,
             "propertyMapping": {}
           }
         ],
@@ -1894,7 +1894,7 @@
           {
             "label": "tachyon-optics",
             "componentType": "TachyonAperture",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Sensitivity": "Sensitivity"
             }
@@ -1902,13 +1902,13 @@
           {
             "label": "sentient-core",
             "componentType": "SentientMatrix",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "void-conduit",
             "componentType": "VoidFilament",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -1920,7 +1920,7 @@
       "letter": "a",
       "name": "Void Organism Synthesis",
       "description": "Life engineered to thrive in the void between stars",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PB6a"
       ],
@@ -1942,14 +1942,14 @@
             "label": "void-substrate",
             "qualifier": "order",
             "value": "SmoothMeat",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {}
           },
           {
             "label": "void-medium",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {}
           }
         ],
@@ -1957,7 +1957,7 @@
           {
             "label": "hive-core",
             "componentType": "HiveCore",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Vitality": "Vitality"
             }
@@ -1965,7 +1965,7 @@
           {
             "label": "void-conduit",
             "componentType": "VoidFilament",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
@@ -1983,7 +1983,7 @@
       "letter": "a",
       "name": "Element Creation",
       "description": "Creating new elements through nuclear force manipulation",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PC6a"
       ],
@@ -2005,14 +2005,14 @@
             "label": "forge-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 280,
+            "quantity": 140,
             "propertyMapping": {}
           },
           {
             "label": "nuclear-medium",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 120,
+            "quantity": 60,
             "propertyMapping": {}
           }
         ],
@@ -2020,7 +2020,7 @@
           {
             "label": "neutronium-frame",
             "componentType": "NeutroniumSkeleton",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "Integrity": "Integrity"
             }
@@ -2028,13 +2028,13 @@
           {
             "label": "singularity-core",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "thermal",
             "componentType": "HawkingDiffuser",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -2058,7 +2058,7 @@
       "letter": "a",
       "name": "Artificial Star Ignition",
       "description": "Creating and controlling artificial stars for unlimited power",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PE6a"
       ],
@@ -2080,14 +2080,14 @@
             "label": "containment-vessel",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 400,
+            "quantity": 200,
             "propertyMapping": {}
           },
           {
             "label": "stellar-fuel",
             "qualifier": "order",
             "value": "Radioactive",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {}
           }
         ],
@@ -2095,7 +2095,7 @@
           {
             "label": "singularity-core",
             "componentType": "SingularityHeart",
-            "quantity": 5,
+            "quantity": 2,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
             }
@@ -2103,19 +2103,19 @@
           {
             "label": "void-containment",
             "componentType": "VoidFilament",
-            "quantity": 8,
+            "quantity": 4,
             "propertyMapping": {}
           },
           {
             "label": "event-horizon-thermal",
             "componentType": "EventHorizonDiffuser",
-            "quantity": 6,
+            "quantity": 3,
             "propertyMapping": {}
           },
           {
             "label": "sentient-control",
             "componentType": "SentientMatrix",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -2127,7 +2127,7 @@
       "letter": "b",
       "name": "Stellar Bombardment",
       "description": "Weapons channel stellar-core plasma through reality-warped conduits to strike with star-surface intensity",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PE7a"
       ],
@@ -2143,7 +2143,7 @@
       "letter": "a",
       "name": "Temporal Computation",
       "description": "Computing systems that access future states directly",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PI6a"
       ],
@@ -2159,7 +2159,7 @@
       "letter": "b",
       "name": "Tachyon Aperture Assembly",
       "description": "Faster-than-light sensors perceiving across time",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PI7a"
       ],
@@ -2178,7 +2178,7 @@
             "label": "tachyon-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 120,
+            "quantity": 60,
             "propertyMapping": {
               "OQ": "Sensitivity"
             }
@@ -2187,7 +2187,7 @@
             "label": "temporal-medium",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 80,
+            "quantity": 40,
             "propertyMapping": {
               "SR": "Resolution"
             }
@@ -2197,7 +2197,7 @@
           {
             "label": "omniscience-array",
             "componentType": "MolecularOmniscienceArray",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "Sensitivity": "Sensitivity"
             }
@@ -2205,7 +2205,7 @@
           {
             "label": "void-conduit",
             "componentType": "VoidFilament",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -2217,7 +2217,7 @@
       "letter": "b",
       "name": "Reality Anchoring",
       "description": "Shields lock local physics constants in place, rendering the hull immune to exotic energy states",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PM6a"
       ],
@@ -2233,7 +2233,7 @@
       "letter": "a",
       "name": "Cosmic Research Network",
       "description": "Research institutions operating at stellar civilization scale",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PS6a"
       ],
@@ -2249,7 +2249,7 @@
       "letter": "a",
       "name": "Transcendent Care",
       "description": "Organizational structures enabling biological transcendence",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SB6a"
       ],
@@ -2271,14 +2271,14 @@
             "label": "chamber-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {}
           },
           {
             "label": "life-essence",
             "qualifier": "class",
             "value": "Liquid",
-            "quantity": 180,
+            "quantity": 90,
             "propertyMapping": {}
           }
         ],
@@ -2286,7 +2286,7 @@
           {
             "label": "hive-core",
             "componentType": "HiveCore",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Vitality": "Vitality"
             }
@@ -2294,7 +2294,7 @@
           {
             "label": "sentient-control",
             "componentType": "SentientMatrix",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
@@ -2312,7 +2312,7 @@
       "letter": "a",
       "name": "Stellar Logistics",
       "description": "Supply chains spanning stellar distances with perfect efficiency",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SC6a"
       ],
@@ -2334,14 +2334,14 @@
             "label": "vault-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 250,
+            "quantity": 125,
             "propertyMapping": {}
           },
           {
             "label": "dimensional-medium",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {}
           }
         ],
@@ -2349,7 +2349,7 @@
           {
             "label": "void-containment",
             "componentType": "VoidFilament",
-            "quantity": 5,
+            "quantity": 2,
             "propertyMapping": {
               "Capacity": "Capacity"
             }
@@ -2357,7 +2357,7 @@
           {
             "label": "neutronium-frame",
             "componentType": "NeutroniumSkeleton",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
@@ -2375,7 +2375,7 @@
       "letter": "a",
       "name": "Dyson Organization",
       "description": "Social structures for stellar-scale energy harvesting",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SE6a"
       ],
@@ -2397,14 +2397,14 @@
             "label": "coordinator-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 220,
+            "quantity": 110,
             "propertyMapping": {}
           },
           {
             "label": "stellar-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 130,
+            "quantity": 65,
             "propertyMapping": {}
           }
         ],
@@ -2412,7 +2412,7 @@
           {
             "label": "sentient-control",
             "componentType": "SentientMatrix",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -2420,13 +2420,13 @@
           {
             "label": "singularity-power",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "void-distribution",
             "componentType": "VoidFilament",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -2450,7 +2450,7 @@
       "letter": "a",
       "name": "Autonomous Empire",
       "description": "Production systems operating as independent sovereign entities",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SM6a"
       ],
@@ -2472,14 +2472,14 @@
             "label": "throne-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 200,
+            "quantity": 100,
             "propertyMapping": {}
           },
           {
             "label": "command-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 150,
+            "quantity": 75,
             "propertyMapping": {}
           }
         ],
@@ -2487,7 +2487,7 @@
           {
             "label": "sentient-strategist",
             "componentType": "SentientMatrix",
-            "quantity": 4,
+            "quantity": 2,
             "propertyMapping": {
               "ComputeCapacity": "ComputeCapacity"
             }
@@ -2495,13 +2495,13 @@
           {
             "label": "hive-network",
             "componentType": "HiveCore",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "void-comm",
             "componentType": "VoidFilament",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {}
           },
           {
@@ -2519,7 +2519,7 @@
       "letter": "b",
       "name": "Void Mantle Assembly",
       "description": "Ultimate defensive system phasing through normal space",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PP7"
       ],
@@ -2541,14 +2541,14 @@
             "label": "mantle-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 250,
+            "quantity": 125,
             "propertyMapping": {}
           },
           {
             "label": "void-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 180,
+            "quantity": 90,
             "propertyMapping": {}
           }
         ],
@@ -2556,7 +2556,7 @@
           {
             "label": "void-filament",
             "componentType": "VoidFilament",
-            "quantity": 6,
+            "quantity": 3,
             "propertyMapping": {
               "Capacity": "Capacity"
             }
@@ -2564,13 +2564,13 @@
           {
             "label": "singularity-power",
             "componentType": "SingularityHeart",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
             "label": "tachyon-sensors",
             "componentType": "TachyonAperture",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -2582,7 +2582,7 @@
       "letter": "c",
       "name": "Nova Driver Assembly",
       "description": "Integrating gravity manipulation systems with relativistic projectile compression into the ultimate kinetic weapons platform",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PM6a"
       ],
@@ -2604,14 +2604,14 @@
             "label": "launcher-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 600,
+            "quantity": 300,
             "propertyMapping": {}
           },
           {
             "label": "gravitonic-ore",
             "qualifier": "class",
             "value": "Ore",
-            "quantity": 300,
+            "quantity": 150,
             "propertyMapping": {}
           }
         ],
@@ -2619,7 +2619,7 @@
           {
             "label": "sling",
             "componentType": "GravitationalSling",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Velocity": "Sensitivity"
             }
@@ -2633,7 +2633,7 @@
           {
             "label": "skeleton",
             "componentType": "NeutroniumSkeleton",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -2645,7 +2645,7 @@
       "letter": "d",
       "name": "Titan Chassis Blueprint",
       "description": "Unlocks the manufacture of Titan-class ship chassis at nexus station shipyards.",
-      "researchCost": 12800,
+      "researchCost": 3200,
       "prerequisites": [
         "MP6e",
         "PM7a"
@@ -2780,7 +2780,7 @@
       "letter": "c",
       "name": "Existence Eraser Assembly",
       "description": "Removes targets from the probability matrix of existence itself",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PI7a"
       ],
@@ -2802,14 +2802,14 @@
             "label": "nullifier-housing",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 550,
+            "quantity": 275,
             "propertyMapping": {}
           },
           {
             "label": "void-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
-            "quantity": 280,
+            "quantity": 140,
             "propertyMapping": {}
           }
         ],
@@ -2817,7 +2817,7 @@
           {
             "label": "nullifier",
             "componentType": "OntologicalNullifier",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Velocity": "EnergyDensity"
             }
@@ -2831,7 +2831,7 @@
           {
             "label": "circuits",
             "componentType": "ProbabilityCore",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {}
           }
         ]
@@ -2843,7 +2843,7 @@
       "letter": "b",
       "name": "Neutronium Resilience",
       "description": "Neutronium-laced structures achieve near-invulnerability to kinetic force",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CM7a"
       ],
@@ -2859,7 +2859,7 @@
       "letter": "c",
       "name": "Gravitational Bombardment",
       "description": "Spacetime architecture enables projectiles with stellar-mass kinetic energy",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MP7a"
       ],
@@ -2875,7 +2875,7 @@
       "letter": "d",
       "name": "Existential Erasure",
       "description": "Oracle physics computes pathways to annihilate matter at the quantum level",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PI7a"
       ],
@@ -2891,7 +2891,7 @@
       "letter": "b",
       "name": "Quantum Life Barrier",
       "description": "Quantum life forms create self-sustaining barriers immune to quantum weapons",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BP7a"
       ],
@@ -2907,7 +2907,7 @@
       "letter": "a",
       "name": "Probability Core Convergence",
       "description": "Omega-class processor that evaluates all possible futures simultaneously, collapsing probability into deterministic computation",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IM6a"
       ],
@@ -2926,7 +2926,7 @@
             "label": "omega-crystal",
             "qualifier": "class",
             "value": "Gemstone",
-            "quantity": 120,
+            "quantity": 60,
             "propertyMapping": {
               "OQ": "ComputeCapacity"
             }
@@ -2935,7 +2935,7 @@
             "label": "coherence-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 100,
+            "quantity": 50,
             "propertyMapping": {
               "CN": "Stability"
             }
@@ -2945,7 +2945,7 @@
           {
             "label": "probability-matrix",
             "componentType": "ProbabilityMatrix",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Velocity": "ComputeCapacity"
             }
@@ -2967,7 +2967,7 @@
       "letter": "c",
       "name": "Hyperdense Lattice Compaction",
       "description": "Gravitationally compressed structural lattice approaching neutron star density while maintaining workable flexibility",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CM7a"
       ],
@@ -2986,7 +2986,7 @@
             "label": "collapsed-matter-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 120,
+            "quantity": 60,
             "propertyMapping": {
               "UT": "Flexibility"
             }
@@ -2995,7 +2995,7 @@
             "label": "graviton-binding-crystal",
             "qualifier": "class",
             "value": "Gemstone",
-            "quantity": 70,
+            "quantity": 35,
             "propertyMapping": {
               "SR": "Integrity"
             }
@@ -3005,7 +3005,7 @@
           {
             "label": "neutronium-ingot",
             "componentType": "NeutroniumIngot",
-            "quantity": 3,
+            "quantity": 2,
             "propertyMapping": {
               "Shielding": "Flexibility"
             }
@@ -3027,7 +3027,7 @@
       "letter": "d",
       "name": "Gravitational Sling Alignment",
       "description": "Focused gravity well projector that accelerates projectiles along warped spacetime for planet-cracking kinetic impact",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CM7a"
       ],
@@ -3046,7 +3046,7 @@
             "label": "gravity-amplifier-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 120,
+            "quantity": 60,
             "propertyMapping": {
               "UT": "Velocity"
             }
@@ -3055,7 +3055,7 @@
             "label": "targeting-crystal",
             "qualifier": "class",
             "value": "Gemstone",
-            "quantity": 80,
+            "quantity": 40,
             "propertyMapping": {
               "OQ": "Stability"
             }
@@ -3065,7 +3065,7 @@
           {
             "label": "relativistic-chamber",
             "componentType": "RelativisticChamber",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Velocity": "Velocity"
             }
@@ -3087,7 +3087,7 @@
       "letter": "e",
       "name": "Ontological Nullifier Inscription",
       "description": "Reality-erasure weapon core that removes target matter from existence by nullifying its ontological state across all dimensions",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CM7a"
       ],
@@ -3106,7 +3106,7 @@
             "label": "void-crystal",
             "qualifier": "class",
             "value": "Gemstone",
-            "quantity": 110,
+            "quantity": 55,
             "propertyMapping": {
               "OQ": "Velocity"
             }
@@ -3115,7 +3115,7 @@
             "label": "containment-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 90,
+            "quantity": 45,
             "propertyMapping": {
               "UT": "Stability"
             }
@@ -3125,7 +3125,7 @@
           {
             "label": "dimensional-ripper",
             "componentType": "DimensionalRipper",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Velocity": "Velocity"
             }
@@ -3147,7 +3147,7 @@
       "letter": "c",
       "name": "Nova Projector Assembly",
       "description": "Stellar-scale energy weapon that channels a contained supernova detonation into a focused beam of annihilating plasma",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PE7a"
       ],
@@ -3168,7 +3168,7 @@
             "label": "stellar-containment-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 210,
+            "quantity": 105,
             "propertyMapping": {
               "UT": "EnergyDamage"
             }
@@ -3177,7 +3177,7 @@
             "label": "nova-focusing-crystal",
             "qualifier": "class",
             "value": "Gemstone",
-            "quantity": 105,
+            "quantity": 52,
             "propertyMapping": {
               "PE": "EnergyDamage"
             }
@@ -3187,7 +3187,7 @@
           {
             "label": "entanglement-relay",
             "componentType": "EntanglementRelayComponent",
-            "quantity": 2,
+            "quantity": 1,
             "propertyMapping": {
               "Sensitivity": "EnergyDamage"
             }
@@ -3209,7 +3209,7 @@
       "letter": "a",
       "name": "Aethrium Transcendence",
       "description": "Transcendent metamaterial weaving Neutronite density through quantum-crystalline matrices with exotic radioisotope catalysis",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [],
       "type": "blueprint",
       "blueprint": {
@@ -3341,7 +3341,7 @@
       "letter": "b",
       "name": "Omnium Genesis",
       "description": "Universal metamaterial fusing Gravitite mass manipulation with rare mineral substrates and amorphous gemstone resonators",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CC7a"
       ],
@@ -3475,7 +3475,7 @@
       "letter": "c",
       "name": "Eternite Crystallization",
       "description": "Indestructible crystalline alloy formed by Prismatine-reinforced gemstone matrices under extreme radioisotope bombardment",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CC7a"
       ],
@@ -3609,7 +3609,7 @@
       "letter": "d",
       "name": "Nexium Convergence",
       "description": "Dimensional-boundary alloy merging Quantium superconductivity with volatile gas plasma under extreme thermal and chemical catalysis",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CC7b"
       ],
@@ -3743,7 +3743,7 @@
       "letter": "b",
       "name": "Dimensional Entropy Siphoning",
       "description": "Living systems harvesting energy across dimensional boundaries achieve transcendent extraction yields",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BE6a"
       ],
@@ -3759,7 +3759,7 @@
       "letter": "b",
       "name": "Transcendent Research Consciousness",
       "description": "Digitized minds operating beyond physical constraints accelerate all research endeavors",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BI6a"
       ],
@@ -3775,7 +3775,7 @@
       "letter": "b",
       "name": "Self-Evolving Extraction Organisms",
       "description": "Living machinery that evolves in real-time to optimize biological resource collection",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BM6a"
       ],
@@ -3791,7 +3791,7 @@
       "letter": "a",
       "name": "Transcendent Crew Unity",
       "description": "Crew consciousness merging with ship systems achieves operational perfection",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "BS6a"
       ],
@@ -3807,7 +3807,7 @@
       "letter": "b",
       "name": "Vacuum-State Catalysis",
       "description": "Chemical processes operating at vacuum energy scales eliminate all manufacturing waste",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CE6a"
       ],
@@ -3823,7 +3823,7 @@
       "letter": "b",
       "name": "Omniscient Molecular Disassembly",
       "description": "Perfect computational chemistry achieves flawless compound separation at any scale",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CI6a"
       ],
@@ -3839,7 +3839,7 @@
       "letter": "f",
       "name": "Reality-Woven Manufacturing",
       "description": "Manufacturing processes woven into the fabric of spacetime achieve perfect efficiency",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CM6a"
       ],
@@ -3855,7 +3855,7 @@
       "letter": "b",
       "name": "Stellar-Core Fabrication",
       "description": "Manufacturing at stellar core pressures and temperatures transcends material limitations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CP6a"
       ],
@@ -3871,7 +3871,7 @@
       "letter": "a",
       "name": "Civilization-Scale Chemistry",
       "description": "Chemical extraction coordinated across entire civilizations achieves impossible yields",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "CS6a"
       ],
@@ -3887,7 +3887,7 @@
       "letter": "a",
       "name": "Stellar Organism Harvesting",
       "description": "Star-dwelling organisms channel stellar output directly into extraction systems",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EB6a"
       ],
@@ -3903,7 +3903,7 @@
       "letter": "c",
       "name": "Antimatter-Catalyzed Harvesting",
       "description": "Antimatter chemistry unlocks energy extraction from previously inert matter",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EC6a"
       ],
@@ -3919,7 +3919,7 @@
       "letter": "b",
       "name": "Temporal Assembly Optimization",
       "description": "Time-aware manufacturing systems eliminate all production delays through precognitive scheduling",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EI6a"
       ],
@@ -3935,7 +3935,7 @@
       "letter": "b",
       "name": "Gravitonic Fabrication Drives",
       "description": "Gravity-powered manufacturing achieves instantaneous component assembly",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EM6a"
       ],
@@ -3951,7 +3951,7 @@
       "letter": "b",
       "name": "Hawking Conduit Mastery",
       "description": "Black hole radiation principles enable near-instantaneous conduit traversal",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "EP6a"
       ],
@@ -3967,7 +3967,7 @@
       "letter": "a",
       "name": "Universal Energy Abundance",
       "description": "Post-scarcity energy systems remove all constraints from research operations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "ES6a"
       ],
@@ -3983,7 +3983,7 @@
       "letter": "a",
       "name": "Transcendent Bio-Digital Extraction",
       "description": "Merged biological-digital intelligence achieves perfect resource identification and collection",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IB6a"
       ],
@@ -3999,7 +3999,7 @@
       "letter": "a",
       "name": "Energy-Intelligence Mineral Sensing",
       "description": "Pure energy intelligence detects and catalogs mineral deposits across dimensional layers",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IE6a"
       ],
@@ -4015,7 +4015,7 @@
       "letter": "b",
       "name": "Perfect Manufacturing Intelligence",
       "description": "Omniscient manufacturing systems produce flawless outputs through total quality prediction",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IM6a"
       ],
@@ -4031,7 +4031,7 @@
       "letter": "b",
       "name": "Reality-Simulated Navigation",
       "description": "Perfect universe simulation computes optimal conduit paths across all dimensions",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IP6a"
       ],
@@ -4047,7 +4047,7 @@
       "letter": "b",
       "name": "Universal Research Standards",
       "description": "Distributed omniscience enforces transcendent quality baselines across all research",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "IS6a"
       ],
@@ -4063,7 +4063,7 @@
       "letter": "a",
       "name": "Living Drill Transcendence",
       "description": "Bio-mechanical drilling systems evolve beyond physical constraints for impossible mineral yields",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MB6a"
       ],
@@ -4079,7 +4079,7 @@
       "letter": "a",
       "name": "Stellar Engine Harvesting",
       "description": "Stellar-scale energy machinery channels star output directly into extraction amplification",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "ME6a"
       ],
@@ -4095,7 +4095,7 @@
       "letter": "b",
       "name": "Spacetime Manufacturing Mastery",
       "description": "Direct reality manipulation achieves manufacturing quality beyond theoretical limits",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MI6a"
       ],
@@ -4111,7 +4111,7 @@
       "letter": "d",
       "name": "Dimensional Warp Transcendence",
       "description": "Spacetime architecture enables conduit transit approaching instantaneous travel",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MP6a"
       ],
@@ -4127,7 +4127,7 @@
       "letter": "a",
       "name": "Stellar Ecosystem Manufacturing",
       "description": "Star-spanning manufacturing ecosystems coordinate production at civilization scale",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "MS6a"
       ],
@@ -4143,7 +4143,7 @@
       "letter": "b",
       "name": "Quantum-Biological Perfection",
       "description": "Quantum biology achieves perfect atomic alignment in all manufactured components",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PB6a"
       ],
@@ -4159,7 +4159,7 @@
       "letter": "b",
       "name": "Dimensional Matter Perfection",
       "description": "Negative-mass material processing achieves perfect manufacturing output quality",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PC6a"
       ],
@@ -4175,7 +4175,7 @@
       "letter": "d",
       "name": "Stellar Forge Acceleration",
       "description": "Artificial star processes accelerate all manufacturing beyond conventional speed limits",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PE6a"
       ],
@@ -4191,7 +4191,7 @@
       "letter": "a",
       "name": "Phasic Conduit Mastery",
       "description": "Phase-field engineering enables conduit traversal at speeds approaching causality limits",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "PM6a"
       ],
@@ -4207,7 +4207,7 @@
       "letter": "b",
       "name": "Immortal Crew Transcendence",
       "description": "Post-biological crew systems achieve operational perfection beyond mortal limitations",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SB6a"
       ],
@@ -4223,7 +4223,7 @@
       "letter": "b",
       "name": "Stellar-Scale Supply Chains",
       "description": "Civilization-scale logistics coordination eliminates all manufacturing inefficiency",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SC6a"
       ],
@@ -4239,7 +4239,7 @@
       "letter": "b",
       "name": "Universal Energy Research",
       "description": "Unlimited energy access enables perpetual parallel research across all domains",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SE6a"
       ],
@@ -4255,7 +4255,7 @@
       "letter": "a",
       "name": "Transcendent Collective Research",
       "description": "Civilization-scale collective intelligence guarantees all research exceeds transcendent quality thresholds",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SI6a"
       ],
@@ -4271,7 +4271,7 @@
       "letter": "b",
       "name": "Stellar Coordination Extraction",
       "description": "Dyson-scale coordination networks maximize mineral extraction across entire star systems",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SM6a"
       ],
@@ -4287,7 +4287,7 @@
       "letter": "a",
       "name": "Galactic Research Transcendence",
       "description": "Galaxy-spanning collaboration networks accelerate research beyond all conventional limits",
-      "researchCost": 25000,
+      "researchCost": 6250,
       "prerequisites": [
         "SP6a"
       ],
