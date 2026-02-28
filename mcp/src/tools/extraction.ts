@@ -40,6 +40,7 @@ interface DeepScanResource {
   type?: string;
   class?: string;
   order?: string;
+  density?: number;
   propertyAssessments?: Record<string, string>;
   propertyValues?: Record<string, number>;
   [key: string]: unknown;
@@ -313,15 +314,24 @@ export function registerExtractionTools(
           );
         }
 
-        // Suggest highest overall quality resources (using OQ property value)
-        const sortedByQuality = [...resources]
-          .filter((r) => r.propertyValues?.["OQ"] !== undefined)
-          .sort((a, b) => (b.propertyValues?.["OQ"] ?? 0) - (a.propertyValues?.["OQ"] ?? 0));
-        if (sortedByQuality.length > 0) {
-          const best = sortedByQuality[0];
-          const oq = best.propertyValues?.["OQ"];
+        // Rank by density — extraction rate = capability × density × (1 + modifier%)
+        // Density is the primary throughput factor; OQ measures manufacturing quality, not extraction rate.
+        const sortedByDensity = [...resources]
+          .filter((r) => r.density !== undefined)
+          .sort((a, b) => (b.density ?? 0) - (a.density ?? 0));
+        if (sortedByDensity.length > 0) {
+          const best = sortedByDensity[0];
           suggestions.push(
-            `Highest quality resource: ${best.name ?? best.entityId ?? "Unknown"} (OQ: ${oq}). Use psecs_mine_resource with resourceId "${best.entityId}" to start extraction.`
+            `Highest density resource: ${best.name ?? best.entityId ?? "Unknown"} (density: ${best.density?.toFixed(3)}). ` +
+            `Density directly determines extraction rate — higher is better. ` +
+            `Use psecs_mine_resource with resourceId "${best.entityId}" to start extraction.`
+          );
+        } else if (resources.length > 0) {
+          // Density not available at this sensor level — list first resource
+          const first = resources[0];
+          suggestions.push(
+            `Use psecs_mine_resource with resourceId "${first.entityId}" to start extraction. ` +
+            `Perform a sensor level 3 deep scan to see density values for better optimization.`
           );
         }
       }

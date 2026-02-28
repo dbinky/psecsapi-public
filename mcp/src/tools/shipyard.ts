@@ -226,8 +226,10 @@ export function registerShipyardTools(
         "Start building a new ship at the Nexus Station shipyard. " +
         "Fetches blueprint cost details before submitting the build order. " +
         "You need a ship catalog ID (from psecs_shipyard_browse), a chassis blueprint instance ID " +
-        "(from psecs_manufacturing_overview or research), and selected input assets " +
-        "(resources and components from a ship's cargo).",
+        "(from psecs_manufacturing_overview or research), and selected input assets. " +
+        "Input assets can come from ship cargo OR directly from the Nexus Warehouse — " +
+        "you do NOT need to move warehouse assets to ship cargo first, just submit their asset IDs directly. " +
+        "If using ship cargo assets, the ship must be in a fleet that is idle at a Nexus sector.",
       inputSchema: {
         catalogId: z
           .string()
@@ -238,9 +240,10 @@ export function registerShipyardTools(
         selectedInputs: z
           .record(z.array(z.string()))
           .describe(
-            "Map of input label to list of boxed asset IDs from cargo. " +
+            "Map of input label to list of boxed asset IDs. " +
               "Keys are input labels from the blueprint (e.g., 'Hull Plating'), " +
-              "values are arrays of boxed asset IDs to use for that input."
+              "values are arrays of boxed asset IDs to use for that input. " +
+              "Asset IDs can come from ship cargo OR the Nexus Warehouse — both are accepted."
           ),
         interiorSlots: z
           .number()
@@ -257,8 +260,11 @@ export function registerShipyardTools(
       const warnings: string[] = [];
 
       // Step 1: Fetch blueprint details for context (non-blocking — proceed with build even if this fails)
+      // Catalog IDs like "scout-1" map to blueprint IDs like "scout-chassis"
+      const chassisClass = args.catalogId.split("-")[0];
+      const blueprintId = `${chassisClass}-chassis`;
       const blueprintQuery: { path: Record<string, string>; query?: Record<string, string | number | boolean | undefined> } = {
-        path: { blueprintId: args.catalogId },
+        path: { blueprintId },
       };
       if (args.interiorSlots !== undefined || args.exteriorSlots !== undefined) {
         blueprintQuery.query = {

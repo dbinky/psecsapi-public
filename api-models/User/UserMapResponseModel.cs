@@ -10,7 +10,7 @@ namespace psecsapi.api.models.User
         public List<UserMapConduitModel> Conduits { get; set; } = new();
         public DateTime CreateTimestamp { get; set; }
         public DateTime LastMappedTimestamp { get; set; }
-        public Guid? SpawnedByUserId { get; set; }
+        public string? SpawnedByUserId { get; set; }
         public bool IsFavorited { get; set; }
         public string? Note { get; set; }
         public DateTime? NoteTimestamp { get; set; }

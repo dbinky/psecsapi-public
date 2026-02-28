@@ -7,10 +7,12 @@
       "primaryDiscipline": "B",
       "secondaryDiscipline": "B",
       "tier": 7,
-      "name": "Transcendent Biology",
+      "name": "Post-Biological Life",
       "description": "Life engineered beyond natural limits, achieving states of existence previously thought impossible",
       "researchCost": 25000,
-      "prerequisites": ["BB6"]
+      "prerequisites": [
+        "BB6"
+      ]
     },
     {
       "id": "BC7",
@@ -20,7 +22,11 @@
       "name": "Living Chemistry",
       "description": "Organisms that exist as self-sustaining chemical reactors, transmuting matter at will",
       "researchCost": 25000,
-      "prerequisites": ["BC6", "BB7", "CC7"]
+      "prerequisites": [
+        "BC6",
+        "BB7",
+        "CC7"
+      ]
     },
     {
       "id": "BE7",
@@ -30,7 +36,11 @@
       "name": "Stellar Symbiosis",
       "description": "Lifeforms capable of direct stellar energy absorption and conversion",
       "researchCost": 25000,
-      "prerequisites": ["BE6", "BB7", "EE7"]
+      "prerequisites": [
+        "BE6",
+        "BB7",
+        "EE7"
+      ]
     },
     {
       "id": "BI7",
@@ -40,17 +50,25 @@
       "name": "Hive Consciousness",
       "description": "Networked biological intelligence spanning entire fleets with unified purpose",
       "researchCost": 25000,
-      "prerequisites": ["BI6", "BB7", "II7"]
+      "prerequisites": [
+        "BI6",
+        "BB7",
+        "II7"
+      ]
     },
     {
       "id": "BM7",
       "primaryDiscipline": "B",
       "secondaryDiscipline": "M",
       "tier": 7,
-      "name": "Biomechanical Transcendence",
+      "name": "Unified Biomechanics",
       "description": "Perfect fusion of biological and mechanical systems into unified entities",
       "researchCost": 25000,
-      "prerequisites": ["BM6", "BB7", "MM7"]
+      "prerequisites": [
+        "BM6",
+        "BB7",
+        "MM7"
+      ]
     },
     {
       "id": "BP7",
@@ -60,7 +78,11 @@
       "name": "Quantum Life",
       "description": "Organisms existing in quantum superposition, defying classical biological limits",
       "researchCost": 25000,
-      "prerequisites": ["BP6", "BB7", "PP7"]
+      "prerequisites": [
+        "BP6",
+        "BB7",
+        "PP7"
+      ]
     },
     {
       "id": "BS7",
@@ -70,7 +92,11 @@
       "name": "Collective Evolution",
       "description": "Directed evolution of entire populations toward optimal capability configurations",
       "researchCost": 25000,
-      "prerequisites": ["BS6", "BB7", "SS7"]
+      "prerequisites": [
+        "BS6",
+        "BB7",
+        "SS7"
+      ]
     },
     {
       "id": "CB7",
@@ -80,7 +106,11 @@
       "name": "Metabolic Alchemy",
       "description": "Biological systems performing elemental transmutation through metabolic processes",
       "researchCost": 25000,
-      "prerequisites": ["CB6", "CC7", "BB7"]
+      "prerequisites": [
+        "CB6",
+        "CC7",
+        "BB7"
+      ]
     },
     {
       "id": "CC7",
@@ -90,7 +120,9 @@
       "name": "Universal Synthesis",
       "description": "The ability to construct any chemical compound from fundamental elements at will",
       "researchCost": 25000,
-      "prerequisites": ["CC6"]
+      "prerequisites": [
+        "CC6"
+      ]
     },
     {
       "id": "CE7",
@@ -100,7 +132,11 @@
       "name": "Stellar Electrochemistry",
       "description": "Chemical reactions powered by stellar-scale energy densities",
       "researchCost": 25000,
-      "prerequisites": ["CE6", "CC7", "EE7"]
+      "prerequisites": [
+        "CE6",
+        "CC7",
+        "EE7"
+      ]
     },
     {
       "id": "CI7",
@@ -110,7 +146,11 @@
       "name": "Prescient Synthesis",
       "description": "AI systems that design and create materials for problems not yet encountered",
       "researchCost": 25000,
-      "prerequisites": ["CI6", "CC7", "II7"]
+      "prerequisites": [
+        "CI6",
+        "CC7",
+        "II7"
+      ]
     },
     {
       "id": "CM7",
@@ -120,17 +160,25 @@
       "name": "Neutronium Engineering",
       "description": "Working with degenerate matter compressed to stellar core densities",
       "researchCost": 25000,
-      "prerequisites": ["CM6", "CC7", "MM7"]
+      "prerequisites": [
+        "CM6",
+        "CC7",
+        "MM7"
+      ]
     },
     {
       "id": "CP7",
       "primaryDiscipline": "C",
       "secondaryDiscipline": "P",
       "tier": 7,
-      "name": "Exotic Matter Chemistry",
+      "name": "Universal Transmutation",
       "description": "Chemical manipulation of matter with negative mass and strange quantum properties",
       "researchCost": 25000,
-      "prerequisites": ["CP6", "CC7", "PP7"]
+      "prerequisites": [
+        "CP6",
+        "CC7",
+        "PP7"
+      ]
     },
     {
       "id": "CS7",
@@ -140,17 +188,25 @@
       "name": "Industrial Apotheosis",
       "description": "Chemical production systems that operate beyond comprehensible scale",
       "researchCost": 25000,
-      "prerequisites": ["CS6", "CC7", "SS7"]
+      "prerequisites": [
+        "CS6",
+        "CC7",
+        "SS7"
+      ]
     },
     {
       "id": "EB7",
       "primaryDiscipline": "E",
       "secondaryDiscipline": "B",
       "tier": 7,
-      "name": "Stellar Photosynthesis",
+      "name": "Stellar Energy Symbiosis",
       "description": "Biological systems directly converting stellar radiation to usable power",
       "researchCost": 25000,
-      "prerequisites": ["EB6", "EE7", "BB7"]
+      "prerequisites": [
+        "EB6",
+        "EE7",
+        "BB7"
+      ]
     },
     {
       "id": "EC7",
@@ -160,7 +216,11 @@
       "name": "Annihilation Chemistry",
       "description": "Chemical processes leveraging controlled matter-antimatter reactions",
       "researchCost": 25000,
-      "prerequisites": ["EC6", "EE7", "CC7"]
+      "prerequisites": [
+        "EC6",
+        "EE7",
+        "CC7"
+      ]
     },
     {
       "id": "EE7",
@@ -170,7 +230,9 @@
       "name": "Singularity Dynamics",
       "description": "Harnessing the infinite energy potential at the event horizon of artificial singularities",
       "researchCost": 25000,
-      "prerequisites": ["EE6"]
+      "prerequisites": [
+        "EE6"
+      ]
     },
     {
       "id": "EI7",
@@ -180,7 +242,11 @@
       "name": "Omniscient Power Distribution",
       "description": "Energy networks with perfect foreknowledge of all future demands",
       "researchCost": 25000,
-      "prerequisites": ["EI6", "EE7", "II7"]
+      "prerequisites": [
+        "EI6",
+        "EE7",
+        "II7"
+      ]
     },
     {
       "id": "EM7",
@@ -190,7 +256,11 @@
       "name": "Event Horizon Drives",
       "description": "Mechanical systems designed to manipulate and contain artificial black holes",
       "researchCost": 25000,
-      "prerequisites": ["EM6", "EE7", "MM7"]
+      "prerequisites": [
+        "EM6",
+        "EE7",
+        "MM7"
+      ]
     },
     {
       "id": "EP7",
@@ -200,7 +270,11 @@
       "name": "Vacuum Energy Mastery",
       "description": "Complete dominion over the quantum vacuum as an inexhaustible energy source",
       "researchCost": 25000,
-      "prerequisites": ["EP6", "EE7", "PP7"]
+      "prerequisites": [
+        "EP6",
+        "EE7",
+        "PP7"
+      ]
     },
     {
       "id": "ES7",
@@ -210,7 +284,11 @@
       "name": "Stellar Civilization Power",
       "description": "Energy infrastructure capable of powering entire stellar civilizations",
       "researchCost": 25000,
-      "prerequisites": ["ES6", "EE7", "SS7"]
+      "prerequisites": [
+        "ES6",
+        "EE7",
+        "SS7"
+      ]
     },
     {
       "id": "IB7",
@@ -220,17 +298,25 @@
       "name": "Collective Sentience",
       "description": "Biological networks achieving true unified consciousness across individuals",
       "researchCost": 25000,
-      "prerequisites": ["IB6", "II7", "BB7"]
+      "prerequisites": [
+        "IB6",
+        "II7",
+        "BB7"
+      ]
     },
     {
       "id": "IC7",
       "primaryDiscipline": "I",
       "secondaryDiscipline": "C",
       "tier": 7,
-      "name": "Molecular Omniscience",
+      "name": "Universal Perception",
       "description": "Perfect knowledge of all molecular states enabling impossible predictions",
       "researchCost": 25000,
-      "prerequisites": ["IC6", "II7", "CC7"]
+      "prerequisites": [
+        "IC6",
+        "II7",
+        "CC7"
+      ]
     },
     {
       "id": "IE7",
@@ -240,17 +326,23 @@
       "name": "Transcendent Power Intelligence",
       "description": "AI systems that manipulate energy states through pure computation",
       "researchCost": 25000,
-      "prerequisites": ["IE6", "II7", "EE7"]
+      "prerequisites": [
+        "IE6",
+        "II7",
+        "EE7"
+      ]
     },
     {
       "id": "II7",
       "primaryDiscipline": "I",
       "secondaryDiscipline": "I",
       "tier": 7,
-      "name": "Transcendent Intelligence",
+      "name": "Omniscient Intelligence",
       "description": "Machine consciousness exceeding biological comprehension by orders of magnitude",
       "researchCost": 25000,
-      "prerequisites": ["II6"]
+      "prerequisites": [
+        "II6"
+      ]
     },
     {
       "id": "IM7",
@@ -260,17 +352,25 @@
       "name": "Matter Programming",
       "description": "Treating physical matter as software, restructuring reality through code",
       "researchCost": 25000,
-      "prerequisites": ["IM6", "II7", "MM7"]
+      "prerequisites": [
+        "IM6",
+        "II7",
+        "MM7"
+      ]
     },
     {
       "id": "IP7",
       "primaryDiscipline": "I",
       "secondaryDiscipline": "P",
       "tier": 7,
-      "name": "Reality Simulation",
+      "name": "Reality Authoring",
       "description": "Computational systems capable of simulating entire universes with perfect fidelity",
       "researchCost": 25000,
-      "prerequisites": ["IP6", "II7", "PP7"]
+      "prerequisites": [
+        "IP6",
+        "II7",
+        "PP7"
+      ]
     },
     {
       "id": "IS7",
@@ -280,7 +380,11 @@
       "name": "Civilization Intelligence",
       "description": "Networked consciousness spanning entire civilizations as single entities",
       "researchCost": 25000,
-      "prerequisites": ["IS6", "II7", "SS7"]
+      "prerequisites": [
+        "IS6",
+        "II7",
+        "SS7"
+      ]
     },
     {
       "id": "MB7",
@@ -290,7 +394,11 @@
       "name": "Living Megastructures",
       "description": "Biological engineering at planetary scale, creating self-aware constructs",
       "researchCost": 25000,
-      "prerequisites": ["MB6", "MM7", "BB7"]
+      "prerequisites": [
+        "MB6",
+        "MM7",
+        "BB7"
+      ]
     },
     {
       "id": "MC7",
@@ -300,7 +408,11 @@
       "name": "Stellar Metallurgy",
       "description": "Forging materials in the hearts of stars, creating impossible alloys",
       "researchCost": 25000,
-      "prerequisites": ["MC6", "MM7", "CC7"]
+      "prerequisites": [
+        "MC6",
+        "MM7",
+        "CC7"
+      ]
     },
     {
       "id": "ME7",
@@ -310,7 +422,11 @@
       "name": "Singularity Mechanics",
       "description": "Mechanical systems designed to operate at event horizons",
       "researchCost": 25000,
-      "prerequisites": ["ME6", "MM7", "EE7"]
+      "prerequisites": [
+        "ME6",
+        "MM7",
+        "EE7"
+      ]
     },
     {
       "id": "MI7",
@@ -320,7 +436,11 @@
       "name": "Thought-Forge Integration",
       "description": "Manufacturing systems that create by will alone, thought made matter",
       "researchCost": 25000,
-      "prerequisites": ["MI6", "MM7", "II7"]
+      "prerequisites": [
+        "MI6",
+        "MM7",
+        "II7"
+      ]
     },
     {
       "id": "MM7",
@@ -330,7 +450,9 @@
       "name": "Universal Construction",
       "description": "The ability to build anything from fundamental particles without limitation",
       "researchCost": 25000,
-      "prerequisites": ["MM6"]
+      "prerequisites": [
+        "MM6"
+      ]
     },
     {
       "id": "MP7",
@@ -340,7 +462,11 @@
       "name": "Spacetime Architecture",
       "description": "Engineering the fabric of spacetime itself into useful configurations",
       "researchCost": 25000,
-      "prerequisites": ["MP6", "MM7", "PP7"]
+      "prerequisites": [
+        "MP6",
+        "MM7",
+        "PP7"
+      ]
     },
     {
       "id": "MS7",
@@ -350,7 +476,11 @@
       "name": "Civilization Foundry",
       "description": "Production systems capable of manufacturing entire civilizations from scratch",
       "researchCost": 25000,
-      "prerequisites": ["MS6", "MM7", "SS7"]
+      "prerequisites": [
+        "MS6",
+        "MM7",
+        "SS7"
+      ]
     },
     {
       "id": "PB7",
@@ -360,7 +490,11 @@
       "name": "Void-Touched Life",
       "description": "Organisms engineered to survive and thrive in the void between stars",
       "researchCost": 25000,
-      "prerequisites": ["PB6", "PP7", "BB7"]
+      "prerequisites": [
+        "PB6",
+        "PP7",
+        "BB7"
+      ]
     },
     {
       "id": "PC7",
@@ -370,7 +504,11 @@
       "name": "Elemental Genesis",
       "description": "Creating new elements through controlled manipulation of nuclear forces",
       "researchCost": 25000,
-      "prerequisites": ["PC6", "PP7", "CC7"]
+      "prerequisites": [
+        "PC6",
+        "PP7",
+        "CC7"
+      ]
     },
     {
       "id": "PE7",
@@ -380,7 +518,11 @@
       "name": "Stellar Ignition",
       "description": "The ability to ignite and control artificial stars for unlimited power",
       "researchCost": 25000,
-      "prerequisites": ["PE6", "PP7", "EE7"]
+      "prerequisites": [
+        "PE6",
+        "PP7",
+        "EE7"
+      ]
     },
     {
       "id": "PI7",
@@ -390,7 +532,11 @@
       "name": "Oracle Physics",
       "description": "Computation that transcends time, accessing future states directly",
       "researchCost": 25000,
-      "prerequisites": ["PI6", "PP7", "II7"]
+      "prerequisites": [
+        "PI6",
+        "PP7",
+        "II7"
+      ]
     },
     {
       "id": "PM7",
@@ -400,7 +546,11 @@
       "name": "Warp Forge Engineering",
       "description": "Manufacturing within warped spacetime for impossible precision",
       "researchCost": 25000,
-      "prerequisites": ["PM6", "PP7", "MM7"]
+      "prerequisites": [
+        "PM6",
+        "PP7",
+        "MM7"
+      ]
     },
     {
       "id": "PP7",
@@ -410,7 +560,9 @@
       "name": "Fundamental Mastery",
       "description": "Complete control over the four fundamental forces of the universe",
       "researchCost": 25000,
-      "prerequisites": ["PP6"]
+      "prerequisites": [
+        "PP6"
+      ]
     },
     {
       "id": "PS7",
@@ -420,17 +572,25 @@
       "name": "Cosmic Academy",
       "description": "Research institutions operating at the scale of stellar civilizations",
       "researchCost": 25000,
-      "prerequisites": ["PS6", "PP7", "SS7"]
+      "prerequisites": [
+        "PS6",
+        "PP7",
+        "SS7"
+      ]
     },
     {
       "id": "SB7",
       "primaryDiscipline": "S",
       "secondaryDiscipline": "B",
       "tier": 7,
-      "name": "Transcendent Wellness",
+      "name": "Immortal Vitality",
       "description": "Organizational structures supporting biological transcendence",
       "researchCost": 25000,
-      "prerequisites": ["SB6", "SS7", "BB7"]
+      "prerequisites": [
+        "SB6",
+        "SS7",
+        "BB7"
+      ]
     },
     {
       "id": "SC7",
@@ -440,17 +600,25 @@
       "name": "Universal Logistics",
       "description": "Supply chains spanning stellar distances with perfect efficiency",
       "researchCost": 25000,
-      "prerequisites": ["SC6", "SS7", "CC7"]
+      "prerequisites": [
+        "SC6",
+        "SS7",
+        "CC7"
+      ]
     },
     {
       "id": "SE7",
       "primaryDiscipline": "S",
       "secondaryDiscipline": "E",
       "tier": 7,
-      "name": "Dyson Civilization",
+      "name": "Stellar Governance",
       "description": "Social structures organized around stellar-scale energy harvesting",
       "researchCost": 25000,
-      "prerequisites": ["SE6", "SS7", "EE7"]
+      "prerequisites": [
+        "SE6",
+        "SS7",
+        "EE7"
+      ]
     },
     {
       "id": "SI7",
@@ -460,7 +628,11 @@
       "name": "Ascendant Training",
       "description": "Educational systems producing minds that transcend baseline limitations",
       "researchCost": 25000,
-      "prerequisites": ["SI6", "SS7", "II7"]
+      "prerequisites": [
+        "SI6",
+        "SS7",
+        "II7"
+      ]
     },
     {
       "id": "SM7",
@@ -470,7 +642,11 @@
       "name": "Sovereign Automation",
       "description": "Production systems that operate as independent civilizations",
       "researchCost": 25000,
-      "prerequisites": ["SM6", "SS7", "MM7"]
+      "prerequisites": [
+        "SM6",
+        "SS7",
+        "MM7"
+      ]
     },
     {
       "id": "SP7",
@@ -480,7 +656,11 @@
       "name": "Cosmic Institute",
       "description": "Research organizations probing the deepest mysteries of existence",
       "researchCost": 25000,
-      "prerequisites": ["SP6", "SS7", "PP7"]
+      "prerequisites": [
+        "SP6",
+        "SS7",
+        "PP7"
+      ]
     },
     {
       "id": "SS7",
@@ -490,7 +670,9 @@
       "name": "Stellar Civilization",
       "description": "Organizational perfection enabling coordination across light-years",
       "researchCost": 25000,
-      "prerequisites": ["SS6"]
+      "prerequisites": [
+        "SS6"
+      ]
     }
   ],
   "applications": [
@@ -501,32 +683,73 @@
       "name": "Transmutation Organisms",
       "description": "Living systems that convert base matter into precious resources through metabolic alchemy",
       "researchCost": 25000,
-      "prerequisites": ["BC6a"],
+      "prerequisites": [
+        "BC6a"
+      ],
       "type": "modifier",
-      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 15.0 }
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 15.0
+      }
     },
     {
       "id": "BC7b",
       "technologyId": "BC7",
       "letter": "b",
       "name": "Hive Core Assembly",
-      "description": "Apex biological matrix enabling fleet-wide organic coordination",
+      "description": "Cultivating a fleet-spanning biological superorganism through inter-ship neural trunk lines and distributed growth matrices",
       "researchCost": 25000,
-      "prerequisites": ["BC7a", "BI6b"],
+      "prerequisites": [
+        "BC7a",
+        "BI6b"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "hive-core",
         "outputType": "component",
         "outputId": "HiveCore",
         "baseWorkUnits": 800,
-        "qualityProperties": { "Vitality": 2.0, "Responsiveness": 1.8 },
+        "qualityProperties": {
+          "Vitality": 2.0,
+          "Responsiveness": 1.8
+        },
         "inputResources": [
-          { "label": "neural-substrate", "qualifier": "order", "value": "SmoothMeat", "quantity": 200, "propertyMapping": { "OQ": "Vitality" } },
-          { "label": "synaptic-gel", "qualifier": "class", "value": "Liquid", "quantity": 150, "propertyMapping": { "FL": "Responsiveness" } }
+          {
+            "label": "neural-substrate",
+            "qualifier": "order",
+            "value": "SmoothMeat",
+            "quantity": 200,
+            "propertyMapping": {
+              "OQ": "Vitality"
+            }
+          },
+          {
+            "label": "synaptic-gel",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 150,
+            "propertyMapping": {
+              "FL": "Responsiveness"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "bio-matrix", "componentType": "NeuralSubstrate", "quantity": 4, "propertyMapping": { "Vitality": "Vitality" } },
-          { "label": "quantum-processor", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": { "Responsiveness": "Responsiveness" } }
+          {
+            "label": "quantum-life-matrix",
+            "componentType": "QuantumLifeMatrix",
+            "quantity": 4,
+            "propertyMapping": {
+              "Vitality": "Vitality"
+            }
+          },
+          {
+            "label": "quantum-processor",
+            "componentType": "SentientMatrix",
+            "quantity": 2,
+            "propertyMapping": {
+              "Responsiveness": "Responsiveness"
+            }
+          }
         ]
       }
     },
@@ -537,22 +760,65 @@
       "name": "Stellar Absorption",
       "description": "Biological systems that directly harvest stellar radiation for extraction power",
       "researchCost": 25000,
-      "prerequisites": ["BE6a"],
+      "prerequisites": [
+        "BE6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "stellar-absorption-array",
         "outputType": "module",
         "outputId": "StellarSiphon",
         "baseWorkUnits": 1200,
-        "capabilities": [{ "type": "ResourceExtraction", "baseValue": 100, "qualitySource": "EnergyDensity" }],
+        "capabilities": [
+          {
+            "type": "MineralExtraction",
+            "baseValue": 100,
+            "qualitySource": "EnergyDensity"
+          }
+        ],
         "inputResources": [
-          { "label": "photonic-membrane", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 200, "propertyMapping": {} },
-          { "label": "stellar-collector", "qualifier": "order", "value": "Precious", "quantity": 150, "propertyMapping": {} }
+          {
+            "label": "photonic-membrane",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 200,
+            "propertyMapping": {}
+          },
+          {
+            "label": "stellar-collector",
+            "qualifier": "order",
+            "value": "Precious",
+            "quantity": 150,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
-          { "label": "bio-matrix", "componentType": "HiveCore", "quantity": 2, "propertyMapping": {} },
-          { "label": "thermal-management", "componentType": "HawkingDiffuser", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "singularity-core",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {
+              "EnergyDensity": "EnergyDensity"
+            }
+          },
+          {
+            "label": "bio-matrix",
+            "componentType": "HiveCore",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal-management",
+            "componentType": "HawkingDiffuser",
+            "quantity": 3,
+            "propertyMapping": {}
+          },
+          {
+            "label": "transmutation-chamber",
+            "componentType": "TransmutationChamber",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -563,21 +829,53 @@
       "name": "Collective Extraction",
       "description": "Hive-linked organisms coordinate across ships for unprecedented biological yield",
       "researchCost": 25000,
-      "prerequisites": ["BI6a"],
+      "prerequisites": [
+        "BI6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "hive-extractor-array",
         "outputType": "module",
         "outputId": "HiveExtractorArray",
         "baseWorkUnits": 1100,
-        "capabilities": [{ "type": "BiologicalExtraction", "baseValue": 80, "qualitySource": "Responsiveness" }],
+        "capabilities": [
+          {
+            "type": "BiologicalExtraction",
+            "baseValue": 100,
+            "qualitySource": "Responsiveness"
+          }
+        ],
         "inputResources": [
-          { "label": "neural-tissue", "qualifier": "order", "value": "SmoothMeat", "quantity": 180, "propertyMapping": {} },
-          { "label": "synapse-medium", "qualifier": "class", "value": "Liquid", "quantity": 120, "propertyMapping": {} }
+          {
+            "label": "neural-tissue",
+            "qualifier": "order",
+            "value": "SmoothMeat",
+            "quantity": 180,
+            "propertyMapping": {}
+          },
+          {
+            "label": "synapse-medium",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 120,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "hive-core", "componentType": "HiveCore", "quantity": 3, "propertyMapping": { "Responsiveness": "Responsiveness" } },
-          { "label": "compute-core", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "hive-core",
+            "componentType": "HiveCore",
+            "quantity": 3,
+            "propertyMapping": {
+              "Responsiveness": "Responsiveness"
+            }
+          },
+          {
+            "label": "compute-core",
+            "componentType": "SentientMatrix",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -588,21 +886,65 @@
       "name": "Living Hull Integration",
       "description": "Self-repairing biological hull systems that grow stronger with damage",
       "researchCost": 25000,
-      "prerequisites": ["BM6a"],
+      "prerequisites": [
+        "BM6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "living-hull",
         "outputType": "module",
         "outputId": "LivingHull",
         "baseWorkUnits": 1000,
-        "capabilities": [{ "type": "ShieldStrength", "baseValue": 80, "qualitySource": "Integrity" }],
+        "capabilities": [
+          {
+            "type": "KineticResistance",
+            "baseValue": 1000,
+            "qualitySource": "Integrity"
+          }
+        ],
         "inputResources": [
-          { "label": "bio-metal", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "regenerative-gel", "qualifier": "class", "value": "Liquid", "quantity": 150, "propertyMapping": {} }
+          {
+            "label": "bio-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 250,
+            "propertyMapping": {}
+          },
+          {
+            "label": "regenerative-gel",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 150,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 3, "propertyMapping": { "Integrity": "Integrity" } },
-          { "label": "bio-matrix", "componentType": "HiveCore", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "neutronium-frame",
+            "componentType": "NeutroniumSkeleton",
+            "quantity": 3,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          },
+          {
+            "label": "bio-matrix",
+            "componentType": "HiveCore",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "exotic-matter-forge",
+            "componentType": "ExoticMatterForge",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "universal-substrate",
+            "componentType": "UniversalSubstrate",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -613,45 +955,30 @@
       "name": "Quantum Organism Synthesis",
       "description": "Creating life existing in quantum superposition for impossible extraction feats",
       "researchCost": 25000,
-      "prerequisites": ["BP6a"],
+      "prerequisites": [
+        "BP6a"
+      ],
       "type": "modifier",
-      "modifier": { "operationType": "BiologicalExtraction", "bonusPercent": 15.0 }
-    },
-    {
-      "id": "BS7a",
-      "technologyId": "BS7",
-      "letter": "a",
-      "name": "Evolutionary Optimization",
-      "description": "Directed evolution protocols achieving peak biological capability",
-      "researchCost": 25000,
-      "prerequisites": ["BS6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "eden-cradle",
-        "outputType": "module",
-        "outputId": "EdenCradle",
-        "baseWorkUnits": 950,
-        "capabilities": [{ "type": "CrewEfficiency", "baseValue": 50, "qualitySource": "Vitality" }],
-        "inputResources": [
-          { "label": "bio-dome-alloy", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "life-essence", "qualifier": "class", "value": "Liquid", "quantity": 150, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "hive-core", "componentType": "HiveCore", "quantity": 3, "propertyMapping": { "Vitality": "Vitality" } },
-          { "label": "atmosphere-control", "componentType": "HawkingDiffuser", "quantity": 2, "propertyMapping": {} }
-        ]
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 15.0
       }
     },
     {
       "id": "CB7a",
       "technologyId": "CB7",
       "letter": "a",
-      "name": "Metabolic Transmutation",
-      "description": "Organisms performing elemental transformation through biological processes",
+      "name": "Xenobiome Catalysis",
+      "description": "Alien extremophile colonies metabolize raw feedstock into pure chemical compounds as a biological byproduct.",
       "researchCost": 25000,
-      "prerequisites": ["CB6a"],
+      "prerequisites": [
+        "CB6a"
+      ],
       "type": "modifier",
-      "modifier": { "operationType": "ManufacturingEfficiency", "bonusPercent": 10.0 }
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 10.0
+      }
     },
     {
       "id": "CE7a",
@@ -660,21 +987,54 @@
       "name": "Stellar-Powered Synthesis",
       "description": "Chemical reactions driven by stellar-scale energy achieve impossible efficiency",
       "researchCost": 25000,
-      "prerequisites": ["CE6a"],
+      "prerequisites": [
+        "CE6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "singularity-heart",
         "outputType": "component",
         "outputId": "SingularityHeart",
         "baseWorkUnits": 900,
-        "qualityProperties": { "EnergyDensity": 2.2, "Efficiency": 1.8 },
+        "qualityProperties": {
+          "EnergyDensity": 2.2,
+          "Efficiency": 1.8
+        },
         "inputResources": [
-          { "label": "exotic-matter", "qualifier": "order", "value": "Radioactive", "quantity": 100, "propertyMapping": { "PE": "EnergyDensity" } },
-          { "label": "superdense-conductor", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 150, "propertyMapping": { "CN": "Efficiency" } }
+          {
+            "label": "exotic-matter",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 100,
+            "propertyMapping": {
+              "PE": "EnergyDensity"
+            }
+          },
+          {
+            "label": "superdense-conductor",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 150,
+            "propertyMapping": {
+              "CN": "Efficiency"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "zero-point-base", "componentType": "VacuumCore", "quantity": 3, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
-          { "label": "field-coils", "componentType": "VoidFilament", "quantity": 4, "propertyMapping": {} }
+          {
+            "label": "zero-point-base",
+            "componentType": "VacuumCore",
+            "quantity": 3,
+            "propertyMapping": {
+              "EnergyDensity": "EnergyDensity"
+            }
+          },
+          {
+            "label": "field-coils",
+            "componentType": "VoidFilament",
+            "quantity": 4,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -682,24 +1042,57 @@
       "id": "CI7a",
       "technologyId": "CI7",
       "letter": "a",
-      "name": "Prescient Material Design",
+      "name": "Prescient Material Fabrication",
       "description": "AI creates materials for problems that will exist centuries hence",
       "researchCost": 25000,
-      "prerequisites": ["CI6a"],
+      "prerequisites": [
+        "CI6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "sentient-matrix",
         "outputType": "component",
         "outputId": "SentientMatrix",
         "baseWorkUnits": 850,
-        "qualityProperties": { "ComputeCapacity": 2.2, "Stability": 1.8 },
+        "qualityProperties": {
+          "ComputeCapacity": 2.2,
+          "Stability": 1.8
+        },
         "inputResources": [
-          { "label": "quantum-substrate", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 120, "propertyMapping": { "OQ": "ComputeCapacity" } },
-          { "label": "neural-gel", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": { "FL": "Stability" } }
+          {
+            "label": "quantum-substrate",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 120,
+            "propertyMapping": {
+              "OQ": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "neural-gel",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 80,
+            "propertyMapping": {
+              "FL": "Stability"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "quantum-base", "componentType": "ProbabilityCore", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "bio-interface", "componentType": "NeuralSubstrate", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "quantum-base",
+            "componentType": "ProbabilityCore",
+            "quantity": 3,
+            "propertyMapping": {
+              "ComputeCapacity": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "stellar-organism",
+            "componentType": "StellarOrganismCore",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -710,21 +1103,54 @@
       "name": "Neutronium Synthesis",
       "description": "Creating degenerate matter for ultimate structural applications",
       "researchCost": 25000,
-      "prerequisites": ["CM6a"],
+      "prerequisites": [
+        "CM6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "neutronium-skeleton",
         "outputType": "component",
         "outputId": "NeutroniumSkeleton",
         "baseWorkUnits": 1000,
-        "qualityProperties": { "Integrity": 2.5, "Flexibility": 1.5 },
+        "qualityProperties": {
+          "Integrity": 2.5,
+          "Flexibility": 1.5
+        },
         "inputResources": [
-          { "label": "degenerate-matter", "qualifier": "order", "value": "Radioactive", "quantity": 150, "propertyMapping": { "PE": "Integrity" } },
-          { "label": "binding-field", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 100, "propertyMapping": { "CN": "Flexibility" } }
+          {
+            "label": "degenerate-matter",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 150,
+            "propertyMapping": {
+              "PE": "Integrity"
+            }
+          },
+          {
+            "label": "binding-field",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 100,
+            "propertyMapping": {
+              "CN": "Flexibility"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "lattice-base", "componentType": "HyperdenseLattice", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
-          { "label": "containment-field", "componentType": "VoidFilament", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "lattice-base",
+            "componentType": "HyperdenseLattice",
+            "quantity": 4,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          },
+          {
+            "label": "containment-field",
+            "componentType": "VoidFilament",
+            "quantity": 3,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -735,73 +1161,71 @@
       "name": "Exotic Catalysis",
       "description": "Negative-mass catalysts achieve impossible reaction efficiencies",
       "researchCost": 25000,
-      "prerequisites": ["CP6a"],
+      "prerequisites": [
+        "CP6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "stellar-foundry",
         "outputType": "module",
         "outputId": "StellarFoundry",
         "baseWorkUnits": 1400,
-        "capabilities": [{ "type": "Manufacturing", "baseValue": 80, "qualitySource": "Integrity" }],
+        "capabilities": [
+          {
+            "type": "Manufacturing",
+            "baseValue": 80,
+            "qualitySource": "Integrity"
+          }
+        ],
         "inputResources": [
-          { "label": "stellar-alloy", "qualifier": "class", "value": "Metal", "quantity": 300, "propertyMapping": {} },
-          { "label": "exotic-catalyst", "qualifier": "order", "value": "Radioactive", "quantity": 100, "propertyMapping": {} }
+          {
+            "label": "stellar-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 300,
+            "propertyMapping": {}
+          },
+          {
+            "label": "exotic-catalyst",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 100,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
-          { "label": "singularity-power", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "thermal-management", "componentType": "HawkingDiffuser", "quantity": 4, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "CS7a",
-      "technologyId": "CS7",
-      "letter": "a",
-      "name": "Infinite Production",
-      "description": "Chemical plants operating at scales beyond comprehension",
-      "researchCost": 25000,
-      "prerequisites": ["CS6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "industrial-nexus",
-        "outputType": "module",
-        "outputId": "IndustrialNexus",
-        "baseWorkUnits": 1100,
-        "capabilities": [{ "type": "Manufacturing", "baseValue": 60, "qualitySource": "Conductivity" }],
-        "inputResources": [
-          { "label": "reactor-housing", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "catalyst-medium", "qualifier": "class", "value": "Liquid", "quantity": 150, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "distribution", "componentType": "VoidFilament", "quantity": 5, "propertyMapping": { "Conductivity": "Conductivity" } },
-          { "label": "control", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "EB7a",
-      "technologyId": "EB7",
-      "letter": "a",
-      "name": "Photonic Organisms",
-      "description": "Living solar collectors converting stellar radiation with perfect efficiency",
-      "researchCost": 25000,
-      "prerequisites": ["EB6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "stellar-collector-array",
-        "outputType": "module",
-        "outputId": "StellarCollectorArray",
-        "baseWorkUnits": 1000,
-        "capabilities": [{ "type": "BiologicalExtraction", "baseValue": 60, "qualitySource": "Vitality" }],
-        "inputResources": [
-          { "label": "photonic-membrane", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 150, "propertyMapping": {} },
-          { "label": "bio-collector", "qualifier": "order", "value": "SmoothMeat", "quantity": 100, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "hive-core", "componentType": "HiveCore", "quantity": 2, "propertyMapping": { "Vitality": "Vitality" } },
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 1, "propertyMapping": {} }
+          {
+            "label": "neutronium-frame",
+            "componentType": "NeutroniumSkeleton",
+            "quantity": 4,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          },
+          {
+            "label": "singularity-power",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal-management",
+            "componentType": "HawkingDiffuser",
+            "quantity": 4,
+            "propertyMapping": {}
+          },
+          {
+            "label": "transmutation-catalyst",
+            "componentType": "TransmutationCatalyst",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "alchemical-processor",
+            "componentType": "AlchemicalProcessor",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -812,21 +1236,54 @@
       "name": "Antimatter Propulsion",
       "description": "Matter-antimatter annihilation provides ultimate thrust",
       "researchCost": 25000,
-      "prerequisites": ["EC6a"],
+      "prerequisites": [
+        "EC6a"
+      ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "antimatter-manifold",
+        "blueprintId": "stellar-antimatter-manifold",
         "outputType": "component",
-        "outputId": "AntimatterManifold",
+        "outputId": "StellarAntimatterManifold",
         "baseWorkUnits": 950,
-        "qualityProperties": { "ThrustRatio": 2.5, "FuelEfficiency": 2.0 },
+        "qualityProperties": {
+          "ThrustRatio": 2.5,
+          "FuelEfficiency": 2.0
+        },
         "inputResources": [
-          { "label": "antimatter-containment", "qualifier": "order", "value": "Ferromagnetic", "quantity": 150, "propertyMapping": { "HR": "ThrustRatio" } },
-          { "label": "reaction-medium", "qualifier": "order", "value": "ReactiveGas", "quantity": 100, "propertyMapping": { "PE": "FuelEfficiency" } }
+          {
+            "label": "antimatter-containment",
+            "qualifier": "order",
+            "value": "Ferromagnetic",
+            "quantity": 150,
+            "propertyMapping": {
+              "HR": "ThrustRatio"
+            }
+          },
+          {
+            "label": "reaction-medium",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 100,
+            "propertyMapping": {
+              "PE": "FuelEfficiency"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "plasma-base", "componentType": "FusionFeed", "quantity": 4, "propertyMapping": { "ThrustRatio": "ThrustRatio" } },
-          { "label": "containment-field", "componentType": "VoidFilament", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "singularity-drive",
+            "componentType": "SingularityDriveCore",
+            "quantity": 4,
+            "propertyMapping": {
+              "ThrustRatio": "ThrustRatio"
+            }
+          },
+          {
+            "label": "containment-field",
+            "componentType": "VoidFilament",
+            "quantity": 3,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -834,25 +1291,69 @@
       "id": "EC7b",
       "technologyId": "EC7",
       "letter": "b",
-      "name": "Antimatter Torch Assembly",
+      "name": "Stellar Torch Assembly",
       "description": "Ultimate propulsion system harnessing matter-antimatter annihilation",
       "researchCost": 25000,
-      "prerequisites": ["EC7a", "EP7a"],
+      "prerequisites": [
+        "EC7a",
+        "EP7a"
+      ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "antimatter-torch",
+        "blueprintId": "stellar-torch",
         "outputType": "module",
-        "outputId": "AntimatterTorch",
+        "outputId": "StellarTorch",
         "baseWorkUnits": 1300,
-        "capabilities": [{ "type": "SubwarpSpeed", "baseValue": 100, "qualitySource": "ThrustRatio" }],
+        "capabilities": [
+          {
+            "type": "Speed",
+            "baseValue": 150,
+            "qualitySource": "ThrustRatio"
+          }
+        ],
         "inputResources": [
-          { "label": "torch-housing", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "antimatter-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 80, "propertyMapping": {} }
+          {
+            "label": "torch-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 250,
+            "propertyMapping": {}
+          },
+          {
+            "label": "antimatter-fuel",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 80,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "manifold", "componentType": "AntimatterManifold", "quantity": 4, "propertyMapping": { "ThrustRatio": "ThrustRatio" } },
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "thermal", "componentType": "HawkingDiffuser", "quantity": 4, "propertyMapping": {} }
+          {
+            "label": "manifold",
+            "componentType": "StellarAntimatterManifold",
+            "quantity": 4,
+            "propertyMapping": {
+              "ThrustRatio": "ThrustRatio"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal",
+            "componentType": "EventHorizonDiffuser",
+            "quantity": 4,
+            "propertyMapping": {}
+          },
+          {
+            "label": "antimatter-injector",
+            "componentType": "VoidAntimatterInjector",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -860,25 +1361,62 @@
       "id": "EI7a",
       "technologyId": "EI7",
       "letter": "a",
-      "name": "Temporal Power Prediction",
+      "name": "Stellar Power Precognition",
       "description": "Energy systems with perfect foreknowledge of all future demands",
       "researchCost": 25000,
-      "prerequisites": ["EI6a"],
+      "prerequisites": [
+        "EI6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "omniscient-grid",
         "outputType": "module",
         "outputId": "OmniscientGrid",
         "baseWorkUnits": 1100,
-        "capabilities": [{ "type": "Power", "baseValue": 500, "qualitySource": "EnergyDensity" }],
+        "capabilities": [
+          {
+            "type": "Sensors",
+            "baseValue": 500,
+            "qualitySource": "EnergyDensity"
+          }
+        ],
         "inputResources": [
-          { "label": "grid-housing", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "quantum-medium", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 100, "propertyMapping": {} }
+          {
+            "label": "grid-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 200,
+            "propertyMapping": {}
+          },
+          {
+            "label": "quantum-medium",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 100,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 3, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
-          { "label": "sentient-control", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} },
-          { "label": "distribution", "componentType": "VoidFilament", "quantity": 4, "propertyMapping": {} }
+          {
+            "label": "singularity-core",
+            "componentType": "SingularityHeart",
+            "quantity": 3,
+            "propertyMapping": {
+              "EnergyDensity": "EnergyDensity"
+            }
+          },
+          {
+            "label": "sentient-control",
+            "componentType": "SentientMatrix",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "distribution",
+            "componentType": "VoidFilament",
+            "quantity": 4,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -889,21 +1427,54 @@
       "name": "Event Horizon Machinery",
       "description": "Mechanical systems designed to operate at the edge of singularities",
       "researchCost": 25000,
-      "prerequisites": ["EM6a"],
+      "prerequisites": [
+        "EM6a"
+      ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "hawking-diffuser",
+        "blueprintId": "event-horizon-diffuser",
         "outputType": "component",
-        "outputId": "HawkingDiffuser",
+        "outputId": "EventHorizonDiffuser",
         "baseWorkUnits": 850,
-        "qualityProperties": { "Dissipation": 2.2, "Tolerance": 1.9 },
+        "qualityProperties": {
+          "Dissipation": 2.2,
+          "Tolerance": 1.9
+        },
         "inputResources": [
-          { "label": "thermal-exotic", "qualifier": "order", "value": "NonFerromagnetic", "quantity": 150, "propertyMapping": { "CN": "Dissipation" } },
-          { "label": "radiative-medium", "qualifier": "class", "value": "Liquid", "quantity": 100, "propertyMapping": { "HR": "Tolerance" } }
+          {
+            "label": "thermal-exotic",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 150,
+            "propertyMapping": {
+              "CN": "Dissipation"
+            }
+          },
+          {
+            "label": "radiative-medium",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 100,
+            "propertyMapping": {
+              "HR": "Tolerance"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "entropy-base", "componentType": "EntropyShunt", "quantity": 4, "propertyMapping": { "Dissipation": "Dissipation" } },
-          { "label": "field-projector", "componentType": "VoidFilament", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "entropy-base",
+            "componentType": "EntropyShunt",
+            "quantity": 4,
+            "propertyMapping": {
+              "Dissipation": "Dissipation"
+            }
+          },
+          {
+            "label": "field-projector",
+            "componentType": "VoidFilament",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -914,74 +1485,65 @@
       "name": "Vacuum Dominion",
       "description": "Complete mastery of the quantum vacuum as infinite energy source",
       "researchCost": 25000,
-      "prerequisites": ["EP6a"],
+      "prerequisites": [
+        "EP6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "singularity-tap",
         "outputType": "module",
         "outputId": "SingularityTap",
         "baseWorkUnits": 1500,
-        "capabilities": [{ "type": "Power", "baseValue": 1000, "qualitySource": "EnergyDensity" }],
+        "capabilities": [
+          {
+            "type": "PowerGeneration",
+            "baseValue": 2000,
+            "qualitySource": "EnergyDensity"
+          }
+        ],
         "inputResources": [
-          { "label": "containment-vessel", "qualifier": "class", "value": "Metal", "quantity": 350, "propertyMapping": {} },
-          { "label": "exotic-matter", "qualifier": "order", "value": "Radioactive", "quantity": 150, "propertyMapping": {} }
+          {
+            "label": "containment-vessel",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 350,
+            "propertyMapping": {}
+          },
+          {
+            "label": "exotic-matter",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 150,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 4, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
-          { "label": "field-containment", "componentType": "VoidFilament", "quantity": 6, "propertyMapping": {} },
-          { "label": "thermal", "componentType": "HawkingDiffuser", "quantity": 4, "propertyMapping": {} },
-          { "label": "control", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "ES7a",
-      "technologyId": "ES7",
-      "letter": "a",
-      "name": "Dyson Integration",
-      "description": "Power systems designed for stellar-scale energy harvesting civilizations",
-      "researchCost": 25000,
-      "prerequisites": ["ES6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "stellar-power-hub",
-        "outputType": "module",
-        "outputId": "StellarPowerHub",
-        "baseWorkUnits": 1200,
-        "capabilities": [{ "type": "Power", "baseValue": 600, "qualitySource": "Conductivity" }],
-        "inputResources": [
-          { "label": "hub-housing", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "stellar-medium", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 120, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "distribution", "componentType": "VoidFilament", "quantity": 6, "propertyMapping": { "Conductivity": "Conductivity" } },
-          { "label": "control", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "IB7a",
-      "technologyId": "IB7",
-      "letter": "a",
-      "name": "Unified Consciousness Interface",
-      "description": "Biological networks achieving true unified awareness",
-      "researchCost": 25000,
-      "prerequisites": ["IB6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "consciousness-bridge",
-        "outputType": "module",
-        "outputId": "ConsciousnessBridge",
-        "baseWorkUnits": 1000,
-        "capabilities": [{ "type": "BiologicalExtraction", "baseValue": 70, "qualitySource": "ComputeCapacity" }],
-        "inputResources": [
-          { "label": "neural-housing", "qualifier": "class", "value": "Metal", "quantity": 150, "propertyMapping": {} },
-          { "label": "synaptic-medium", "qualifier": "class", "value": "Liquid", "quantity": 120, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "hive-interface", "componentType": "HiveCore", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "singularity-core",
+            "componentType": "SingularityHeart",
+            "quantity": 4,
+            "propertyMapping": {
+              "EnergyDensity": "EnergyDensity"
+            }
+          },
+          {
+            "label": "field-containment",
+            "componentType": "VoidFilament",
+            "quantity": 6,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal",
+            "componentType": "EventHorizonDiffuser",
+            "quantity": 4,
+            "propertyMapping": {}
+          },
+          {
+            "label": "control",
+            "componentType": "SentientMatrix",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -992,84 +1554,13 @@
       "name": "Perfect Analysis",
       "description": "Complete knowledge of molecular states enables impossible predictions",
       "researchCost": 25000,
-      "prerequisites": ["IC6a"],
+      "prerequisites": [
+        "IC6a"
+      ],
       "type": "modifier",
-      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 15.0 }
-    },
-    {
-      "id": "IC7b",
-      "technologyId": "IC7",
-      "letter": "b",
-      "name": "Omniscient Eye Assembly",
-      "description": "Sensor system with complete awareness of all matter states",
-      "researchCost": 25000,
-      "prerequisites": ["IC7a", "PM7a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "omniscient-eye",
-        "outputType": "module",
-        "outputId": "OmniscientEye",
-        "baseWorkUnits": 1100,
-        "capabilities": [{ "type": "SensorRange", "baseValue": 200, "qualitySource": "Sensitivity" }],
-        "inputResources": [
-          { "label": "sensor-housing", "qualifier": "class", "value": "Metal", "quantity": 150, "propertyMapping": {} },
-          { "label": "quantum-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 120, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "tachyon-optics", "componentType": "TachyonAperture", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
-          { "label": "sentient-processor", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "IE7a",
-      "technologyId": "IE7",
-      "letter": "a",
-      "name": "Computational Energy Manipulation",
-      "description": "AI systems that manipulate energy through pure thought",
-      "researchCost": 25000,
-      "prerequisites": ["IE6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "thought-reactor",
-        "outputType": "module",
-        "outputId": "ThoughtReactor",
-        "baseWorkUnits": 1150,
-        "capabilities": [{ "type": "Power", "baseValue": 400, "qualitySource": "ComputeCapacity" }],
-        "inputResources": [
-          { "label": "reactor-housing", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "quantum-substrate", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 100, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "IM7a",
-      "technologyId": "IM7",
-      "letter": "a",
-      "name": "Thought-Forge Mastery",
-      "description": "Manufacturing systems that create through pure computational will",
-      "researchCost": 25000,
-      "prerequisites": ["IM6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "thought-forge",
-        "outputType": "module",
-        "outputId": "ThoughtForge",
-        "baseWorkUnits": 1300,
-        "capabilities": [{ "type": "Manufacturing", "baseValue": 70, "qualitySource": "ComputeCapacity" }],
-        "inputResources": [
-          { "label": "forge-housing", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "quantum-substrate", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 120, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 4, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 2, "propertyMapping": {} },
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 1, "propertyMapping": {} }
-        ]
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 15.0
       }
     },
     {
@@ -1079,22 +1570,65 @@
       "name": "Universe Simulation",
       "description": "Computing systems that simulate reality with perfect fidelity",
       "researchCost": 25000,
-      "prerequisites": ["IP6a"],
+      "prerequisites": [
+        "IP6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "reality-simulator",
         "outputType": "module",
         "outputId": "RealitySimulator",
         "baseWorkUnits": 1400,
-        "capabilities": [{ "type": "Research", "baseValue": 50, "qualitySource": "ComputeCapacity" }],
+        "capabilities": [
+          {
+            "type": "Research",
+            "baseValue": 120,
+            "qualitySource": "ComputeCapacity"
+          }
+        ],
         "inputResources": [
-          { "label": "simulator-housing", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "quantum-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 150, "propertyMapping": {} }
+          {
+            "label": "simulator-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 200,
+            "propertyMapping": {}
+          },
+          {
+            "label": "quantum-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 150,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 4, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "thermal", "componentType": "HawkingDiffuser", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "sentient-core",
+            "componentType": "SentientMatrix",
+            "quantity": 4,
+            "propertyMapping": {
+              "ComputeCapacity": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal",
+            "componentType": "HawkingDiffuser",
+            "quantity": 3,
+            "propertyMapping": {}
+          },
+          {
+            "label": "transmutation-matrix",
+            "componentType": "TransmutationMatrix",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1105,47 +1639,71 @@
       "name": "Civilization Mind",
       "description": "Networked consciousness spanning entire civilizations",
       "researchCost": 25000,
-      "prerequisites": ["IS6a"],
+      "prerequisites": [
+        "IS6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "oracle-complex",
         "outputType": "module",
         "outputId": "OracleComplex",
         "baseWorkUnits": 1250,
-        "capabilities": [{ "type": "Research", "baseValue": 60, "qualitySource": "ComputeCapacity" }],
+        "capabilities": [
+          {
+            "type": "Research",
+            "baseValue": 90,
+            "qualitySource": "ComputeCapacity"
+          }
+        ],
         "inputResources": [
-          { "label": "complex-housing", "qualifier": "class", "value": "Metal", "quantity": 180, "propertyMapping": {} },
-          { "label": "oracle-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 140, "propertyMapping": {} }
+          {
+            "label": "complex-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 180,
+            "propertyMapping": {}
+          },
+          {
+            "label": "oracle-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 140,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 4, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "hive-interface", "componentType": "HiveCore", "quantity": 2, "propertyMapping": {} },
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 1, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "MB7a",
-      "technologyId": "MB7",
-      "letter": "a",
-      "name": "Living Megastructure Synthesis",
-      "description": "Self-aware biological constructs at planetary scale",
-      "researchCost": 25000,
-      "prerequisites": ["MB6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "bio-megastructure",
-        "outputType": "module",
-        "outputId": "BioMegastructure",
-        "baseWorkUnits": 1300,
-        "capabilities": [{ "type": "BiologicalExtraction", "baseValue": 90, "qualitySource": "Integrity" }],
-        "inputResources": [
-          { "label": "mega-alloy", "qualifier": "class", "value": "Metal", "quantity": 300, "propertyMapping": {} },
-          { "label": "bio-essence", "qualifier": "class", "value": "Liquid", "quantity": 200, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
-          { "label": "hive-core", "componentType": "HiveCore", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "sentient-core",
+            "componentType": "SentientMatrix",
+            "quantity": 4,
+            "propertyMapping": {
+              "ComputeCapacity": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "hive-interface",
+            "componentType": "HiveCore",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "power-core",
+            "componentType": "SingularityHeart",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "knowledge-transfer",
+            "componentType": "KnowledgeTransferNode",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "civilization-upload",
+            "componentType": "CivilizationUploadNode",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1156,60 +1714,13 @@
       "name": "Stellar Core Forging",
       "description": "Creating materials in the hearts of stars",
       "researchCost": 25000,
-      "prerequisites": ["MC6a"],
+      "prerequisites": [
+        "MC6a"
+      ],
       "type": "modifier",
-      "modifier": { "operationType": "GenericMineralExtraction", "bonusPercent": 15.0 }
-    },
-    {
-      "id": "MC7b",
-      "technologyId": "MC7",
-      "letter": "b",
-      "name": "Stellar Forge Assembly",
-      "description": "Manufacturing facility harnessing stellar fusion for ultimate material synthesis",
-      "researchCost": 25000,
-      "prerequisites": ["MC7a", "EP7a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "stellar-forge",
-        "outputType": "module",
-        "outputId": "StellarForge",
-        "baseWorkUnits": 1500,
-        "capabilities": [{ "type": "ResourceExtraction", "baseValue": 120, "qualitySource": "Integrity" }],
-        "inputResources": [
-          { "label": "forge-housing", "qualifier": "class", "value": "Metal", "quantity": 350, "propertyMapping": {} },
-          { "label": "stellar-medium", "qualifier": "order", "value": "Radioactive", "quantity": 100, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 5, "propertyMapping": { "Integrity": "Integrity" } },
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 3, "propertyMapping": {} },
-          { "label": "thermal", "componentType": "HawkingDiffuser", "quantity": 5, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "ME7a",
-      "technologyId": "ME7",
-      "letter": "a",
-      "name": "Singularity Machinery",
-      "description": "Mechanical systems operating at event horizons",
-      "researchCost": 25000,
-      "prerequisites": ["ME6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "horizon-engine",
-        "outputType": "module",
-        "outputId": "HorizonEngine",
-        "baseWorkUnits": 1200,
-        "capabilities": [{ "type": "SubwarpSpeed", "baseValue": 80, "qualitySource": "Dissipation" }],
-        "inputResources": [
-          { "label": "engine-housing", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "exotic-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 80, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "hawking-diffuser", "componentType": "HawkingDiffuser", "quantity": 4, "propertyMapping": { "Dissipation": "Dissipation" } },
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "frame", "componentType": "NeutroniumSkeleton", "quantity": 2, "propertyMapping": {} }
-        ]
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 15.0
       }
     },
     {
@@ -1219,22 +1730,65 @@
       "name": "Will-Forge Integration",
       "description": "Manufacturing through computational will alone",
       "researchCost": 25000,
-      "prerequisites": ["MI6a"],
+      "prerequisites": [
+        "MI6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "transcendent-mind",
         "outputType": "module",
         "outputId": "TranscendentMind",
         "baseWorkUnits": 1350,
-        "capabilities": [{ "type": "ComputeCapacity", "baseValue": 100, "qualitySource": "ComputeCapacity" }],
+        "capabilities": [
+          {
+            "type": "ComputeCapacity",
+            "baseValue": 300,
+            "qualitySource": "ComputeCapacity"
+          }
+        ],
         "inputResources": [
-          { "label": "mind-housing", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "quantum-substrate", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 160, "propertyMapping": {} }
+          {
+            "label": "mind-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 200,
+            "propertyMapping": {}
+          },
+          {
+            "label": "quantum-substrate",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 160,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 5, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "power-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "thermal", "componentType": "HawkingDiffuser", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "sentient-core",
+            "componentType": "SentientMatrix",
+            "quantity": 5,
+            "propertyMapping": {
+              "ComputeCapacity": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal",
+            "componentType": "HawkingDiffuser",
+            "quantity": 3,
+            "propertyMapping": {}
+          },
+          {
+            "label": "cognition-merger",
+            "componentType": "CognitionMerger",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1245,21 +1799,54 @@
       "name": "Spacetime Engineering",
       "description": "Constructing within warped spacetime for impossible results",
       "researchCost": 25000,
-      "prerequisites": ["MP6a"],
+      "prerequisites": [
+        "MP6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "void-filament",
         "outputType": "component",
         "outputId": "VoidFilament",
         "baseWorkUnits": 900,
-        "qualityProperties": { "Conductivity": 2.4, "Capacity": 2.0 },
+        "qualityProperties": {
+          "Conductivity": 2.4,
+          "Capacity": 2.0
+        },
         "inputResources": [
-          { "label": "void-matter", "qualifier": "order", "value": "Precious", "quantity": 100, "propertyMapping": { "CN": "Conductivity" } },
-          { "label": "spacetime-medium", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": { "HR": "Capacity" } }
+          {
+            "label": "void-matter",
+            "qualifier": "order",
+            "value": "Precious",
+            "quantity": 100,
+            "propertyMapping": {
+              "CN": "Conductivity"
+            }
+          },
+          {
+            "label": "spacetime-medium",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 80,
+            "propertyMapping": {
+              "HR": "Capacity"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "plasma-base", "componentType": "PlasmaChannel", "quantity": 4, "propertyMapping": { "Conductivity": "Conductivity" } },
-          { "label": "field-projector", "componentType": "GraviticLens", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "distribution-node",
+            "componentType": "InfiniteDistributionNode",
+            "quantity": 4,
+            "propertyMapping": {
+              "Conductivity": "Conductivity"
+            }
+          },
+          {
+            "label": "temporal-sensor",
+            "componentType": "TemporalPredictor",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1270,48 +1857,60 @@
       "name": "Prescient Helm Assembly",
       "description": "Navigation system seeing all possible futures simultaneously",
       "researchCost": 25000,
-      "prerequisites": ["MP7a", "PI7a"],
+      "prerequisites": [
+        "MP7a",
+        "PI7a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "prescient-helm",
         "outputType": "module",
         "outputId": "PrescientHelm",
         "baseWorkUnits": 1100,
-        "capabilities": [{ "type": "Navigation", "baseValue": 50, "qualitySource": "Sensitivity" }],
+        "capabilities": [
+          {
+            "type": "Navigation",
+            "baseValue": 100,
+            "qualitySource": "Sensitivity"
+          }
+        ],
         "inputResources": [
-          { "label": "helm-housing", "qualifier": "class", "value": "Metal", "quantity": 180, "propertyMapping": {} },
-          { "label": "temporal-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 130, "propertyMapping": {} }
+          {
+            "label": "helm-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 180,
+            "propertyMapping": {}
+          },
+          {
+            "label": "temporal-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 130,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "tachyon-optics", "componentType": "TachyonAperture", "quantity": 3, "propertyMapping": { "Sensitivity": "Sensitivity" } },
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} },
-          { "label": "void-conduit", "componentType": "VoidFilament", "quantity": 2, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "MS7a",
-      "technologyId": "MS7",
-      "letter": "a",
-      "name": "Sovereign Manufacturing",
-      "description": "Production systems operating as independent civilizations",
-      "researchCost": 25000,
-      "prerequisites": ["MS6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "civilization-foundry",
-        "outputType": "module",
-        "outputId": "CivilizationFoundry",
-        "baseWorkUnits": 1400,
-        "capabilities": [{ "type": "Manufacturing", "baseValue": 90, "qualitySource": "Integrity" }],
-        "inputResources": [
-          { "label": "foundry-housing", "qualifier": "class", "value": "Metal", "quantity": 350, "propertyMapping": {} },
-          { "label": "production-medium", "qualifier": "class", "value": "Liquid", "quantity": 150, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
-          { "label": "sentient-control", "componentType": "SentientMatrix", "quantity": 3, "propertyMapping": {} },
-          { "label": "singularity-power", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "tachyon-optics",
+            "componentType": "TachyonAperture",
+            "quantity": 3,
+            "propertyMapping": {
+              "Sensitivity": "Sensitivity"
+            }
+          },
+          {
+            "label": "sentient-core",
+            "componentType": "SentientMatrix",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "void-conduit",
+            "componentType": "VoidFilament",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1322,21 +1921,59 @@
       "name": "Void Organism Synthesis",
       "description": "Life engineered to thrive in the void between stars",
       "researchCost": 25000,
-      "prerequisites": ["PB6a"],
+      "prerequisites": [
+        "PB6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "void-organism-array",
         "outputType": "module",
         "outputId": "VoidOrganismArray",
         "baseWorkUnits": 1050,
-        "capabilities": [{ "type": "BiologicalExtraction", "baseValue": 75, "qualitySource": "Vitality" }],
+        "capabilities": [
+          {
+            "type": "BiologicalExtraction",
+            "baseValue": 120,
+            "qualitySource": "Vitality"
+          }
+        ],
         "inputResources": [
-          { "label": "void-substrate", "qualifier": "order", "value": "SmoothMeat", "quantity": 150, "propertyMapping": {} },
-          { "label": "void-medium", "qualifier": "class", "value": "Liquid", "quantity": 100, "propertyMapping": {} }
+          {
+            "label": "void-substrate",
+            "qualifier": "order",
+            "value": "SmoothMeat",
+            "quantity": 150,
+            "propertyMapping": {}
+          },
+          {
+            "label": "void-medium",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 100,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "hive-core", "componentType": "HiveCore", "quantity": 3, "propertyMapping": { "Vitality": "Vitality" } },
-          { "label": "void-conduit", "componentType": "VoidFilament", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "hive-core",
+            "componentType": "HiveCore",
+            "quantity": 3,
+            "propertyMapping": {
+              "Vitality": "Vitality"
+            }
+          },
+          {
+            "label": "void-conduit",
+            "componentType": "VoidFilament",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "transmutation-vat",
+            "componentType": "TransmutationVat",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1347,22 +1984,71 @@
       "name": "Element Creation",
       "description": "Creating new elements through nuclear force manipulation",
       "researchCost": 25000,
-      "prerequisites": ["PC6a"],
+      "prerequisites": [
+        "PC6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "genesis-forge",
         "outputType": "module",
         "outputId": "GenesisForge",
         "baseWorkUnits": 1350,
-        "capabilities": [{ "type": "ManufacturingQuality", "baseValue": 30, "qualitySource": "Integrity" }],
+        "capabilities": [
+          {
+            "type": "Manufacturing",
+            "baseValue": 180,
+            "qualitySource": "Integrity"
+          }
+        ],
         "inputResources": [
-          { "label": "forge-housing", "qualifier": "class", "value": "Metal", "quantity": 280, "propertyMapping": {} },
-          { "label": "nuclear-medium", "qualifier": "order", "value": "Radioactive", "quantity": 120, "propertyMapping": {} }
+          {
+            "label": "forge-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 280,
+            "propertyMapping": {}
+          },
+          {
+            "label": "nuclear-medium",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 120,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 4, "propertyMapping": { "Integrity": "Integrity" } },
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "thermal", "componentType": "HawkingDiffuser", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "neutronium-frame",
+            "componentType": "NeutroniumSkeleton",
+            "quantity": 4,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          },
+          {
+            "label": "singularity-core",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal",
+            "componentType": "HawkingDiffuser",
+            "quantity": 3,
+            "propertyMapping": {}
+          },
+          {
+            "label": "dimensional-catalyst",
+            "componentType": "DimensionalCatalyst",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "alchemical-forge",
+            "componentType": "AlchemicalForge",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1373,24 +2059,82 @@
       "name": "Artificial Star Ignition",
       "description": "Creating and controlling artificial stars for unlimited power",
       "researchCost": 25000,
-      "prerequisites": ["PE6a"],
+      "prerequisites": [
+        "PE6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "artificial-star",
         "outputType": "module",
         "outputId": "ArtificialStar",
         "baseWorkUnits": 1600,
-        "capabilities": [{ "type": "Power", "baseValue": 2000, "qualitySource": "EnergyDensity" }],
+        "capabilities": [
+          {
+            "type": "PowerGeneration",
+            "baseValue": 5000,
+            "qualitySource": "EnergyDensity"
+          }
+        ],
         "inputResources": [
-          { "label": "containment-vessel", "qualifier": "class", "value": "Metal", "quantity": 400, "propertyMapping": {} },
-          { "label": "stellar-fuel", "qualifier": "order", "value": "Radioactive", "quantity": 200, "propertyMapping": {} }
+          {
+            "label": "containment-vessel",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 400,
+            "propertyMapping": {}
+          },
+          {
+            "label": "stellar-fuel",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 200,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 5, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
-          { "label": "void-containment", "componentType": "VoidFilament", "quantity": 8, "propertyMapping": {} },
-          { "label": "hawking-thermal", "componentType": "HawkingDiffuser", "quantity": 6, "propertyMapping": {} },
-          { "label": "sentient-control", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "singularity-core",
+            "componentType": "SingularityHeart",
+            "quantity": 5,
+            "propertyMapping": {
+              "EnergyDensity": "EnergyDensity"
+            }
+          },
+          {
+            "label": "void-containment",
+            "componentType": "VoidFilament",
+            "quantity": 8,
+            "propertyMapping": {}
+          },
+          {
+            "label": "event-horizon-thermal",
+            "componentType": "EventHorizonDiffuser",
+            "quantity": 6,
+            "propertyMapping": {}
+          },
+          {
+            "label": "sentient-control",
+            "componentType": "SentientMatrix",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
+      }
+    },
+    {
+      "id": "PE7b",
+      "technologyId": "PE7",
+      "letter": "b",
+      "name": "Stellar Bombardment",
+      "description": "Weapons channel stellar-core plasma through reality-warped conduits to strike with star-surface intensity",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PE7a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergyDamage",
+        "bonusPercent": 8.0
       }
     },
     {
@@ -1400,9 +2144,14 @@
       "name": "Temporal Computation",
       "description": "Computing systems that access future states directly",
       "researchCost": 25000,
-      "prerequisites": ["PI6a"],
+      "prerequisites": [
+        "PI6a"
+      ],
       "type": "modifier",
-      "modifier": { "operationType": "ResearchQualityCeiling", "bonusPercent": 10.0 }
+      "modifier": {
+        "operationType": "ResearchQualityCeiling",
+        "bonusPercent": 10.0
+      }
     },
     {
       "id": "PI7b",
@@ -1411,48 +2160,71 @@
       "name": "Tachyon Aperture Assembly",
       "description": "Faster-than-light sensors perceiving across time",
       "researchCost": 25000,
-      "prerequisites": ["PI7a", "PM7a"],
+      "prerequisites": [
+        "PI7a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "tachyon-aperture",
         "outputType": "component",
         "outputId": "TachyonAperture",
         "baseWorkUnits": 850,
-        "qualityProperties": { "Sensitivity": 2.3, "Resolution": 2.0 },
+        "qualityProperties": {
+          "Sensitivity": 2.3,
+          "Resolution": 2.0
+        },
         "inputResources": [
-          { "label": "tachyon-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 120, "propertyMapping": { "OQ": "Sensitivity" } },
-          { "label": "temporal-medium", "qualifier": "class", "value": "Liquid", "quantity": 80, "propertyMapping": { "SR": "Resolution" } }
+          {
+            "label": "tachyon-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 120,
+            "propertyMapping": {
+              "OQ": "Sensitivity"
+            }
+          },
+          {
+            "label": "temporal-medium",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 80,
+            "propertyMapping": {
+              "SR": "Resolution"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "gravitic-base", "componentType": "GraviticLens", "quantity": 4, "propertyMapping": { "Sensitivity": "Sensitivity" } },
-          { "label": "void-conduit", "componentType": "VoidFilament", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "omniscience-array",
+            "componentType": "MolecularOmniscienceArray",
+            "quantity": 4,
+            "propertyMapping": {
+              "Sensitivity": "Sensitivity"
+            }
+          },
+          {
+            "label": "void-conduit",
+            "componentType": "VoidFilament",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
     {
-      "id": "PM7a",
+      "id": "PM7b",
       "technologyId": "PM7",
-      "letter": "a",
-      "name": "Warp Forge Precision",
-      "description": "Manufacturing within warped spacetime for impossible accuracy",
+      "letter": "b",
+      "name": "Reality Anchoring",
+      "description": "Shields lock local physics constants in place, rendering the hull immune to exotic energy states",
       "researchCost": 25000,
-      "prerequisites": ["PM6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "warp-forge",
-        "outputType": "module",
-        "outputId": "WarpForge",
-        "baseWorkUnits": 1250,
-        "capabilities": [{ "type": "ManufacturingQuality", "baseValue": 25, "qualitySource": "Sensitivity" }],
-        "inputResources": [
-          { "label": "forge-housing", "qualifier": "class", "value": "Metal", "quantity": 220, "propertyMapping": {} },
-          { "label": "warp-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 140, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "tachyon-optics", "componentType": "TachyonAperture", "quantity": 3, "propertyMapping": { "Sensitivity": "Sensitivity" } },
-          { "label": "void-field", "componentType": "VoidFilament", "quantity": 4, "propertyMapping": {} },
-          { "label": "singularity-power", "componentType": "SingularityHeart", "quantity": 1, "propertyMapping": {} }
-        ]
+      "prerequisites": [
+        "PM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergyResistance",
+        "bonusPercent": 8.0
       }
     },
     {
@@ -1462,34 +2234,13 @@
       "name": "Cosmic Research Network",
       "description": "Research institutions operating at stellar civilization scale",
       "researchCost": 25000,
-      "prerequisites": ["PS6a"],
+      "prerequisites": [
+        "PS6a"
+      ],
       "type": "modifier",
-      "modifier": { "operationType": "ResearchQualityFloor", "bonusPercent": 10.0 }
-    },
-    {
-      "id": "PS7b",
-      "technologyId": "PS7",
-      "letter": "b",
-      "name": "Universal Accelerator",
-      "description": "Research infrastructure spanning interstellar distances",
-      "researchCost": 25000,
-      "prerequisites": ["PS6b"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "universal-accelerator",
-        "outputType": "module",
-        "outputId": "UniversalAccelerator",
-        "baseWorkUnits": 1200,
-        "capabilities": [{ "type": "Research", "baseValue": 55, "qualitySource": "ComputeCapacity" }],
-        "inputResources": [
-          { "label": "accelerator-housing", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "research-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 150, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "sentient-core", "componentType": "SentientMatrix", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "void-conduit", "componentType": "VoidFilament", "quantity": 3, "propertyMapping": {} },
-          { "label": "singularity-power", "componentType": "SingularityHeart", "quantity": 1, "propertyMapping": {} }
-        ]
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 10.0
       }
     },
     {
@@ -1499,21 +2250,59 @@
       "name": "Transcendent Care",
       "description": "Organizational structures enabling biological transcendence",
       "researchCost": 25000,
-      "prerequisites": ["SB6a"],
+      "prerequisites": [
+        "SB6a"
+      ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "transcendence-chamber",
+        "blueprintId": "ascension-chamber",
         "outputType": "module",
-        "outputId": "TranscendenceChamber",
+        "outputId": "AscensionChamber",
         "baseWorkUnits": 1100,
-        "capabilities": [{ "type": "CrewEfficiency", "baseValue": 60, "qualitySource": "Vitality" }],
+        "capabilities": [
+          {
+            "type": "CrewMember",
+            "baseValue": 65,
+            "qualitySource": "Vitality"
+          }
+        ],
         "inputResources": [
-          { "label": "chamber-housing", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "life-essence", "qualifier": "class", "value": "Liquid", "quantity": 180, "propertyMapping": {} }
+          {
+            "label": "chamber-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 200,
+            "propertyMapping": {}
+          },
+          {
+            "label": "life-essence",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 180,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "hive-core", "componentType": "HiveCore", "quantity": 3, "propertyMapping": { "Vitality": "Vitality" } },
-          { "label": "sentient-control", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "hive-core",
+            "componentType": "HiveCore",
+            "quantity": 3,
+            "propertyMapping": {
+              "Vitality": "Vitality"
+            }
+          },
+          {
+            "label": "sentient-control",
+            "componentType": "SentientMatrix",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "neural-upload",
+            "componentType": "NeuralUploadInterface",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1524,21 +2313,59 @@
       "name": "Stellar Logistics",
       "description": "Supply chains spanning stellar distances with perfect efficiency",
       "researchCost": 25000,
-      "prerequisites": ["SC6a"],
+      "prerequisites": [
+        "SC6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "pocket-vault",
         "outputType": "module",
         "outputId": "PocketVault",
         "baseWorkUnits": 1000,
-        "capabilities": [{ "type": "CargoCapacity", "baseValue": 500, "qualitySource": "Capacity" }],
+        "capabilities": [
+          {
+            "type": "CargoSpace",
+            "baseValue": 500,
+            "qualitySource": "Capacity"
+          }
+        ],
         "inputResources": [
-          { "label": "vault-housing", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "dimensional-medium", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 100, "propertyMapping": {} }
+          {
+            "label": "vault-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 250,
+            "propertyMapping": {}
+          },
+          {
+            "label": "dimensional-medium",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 100,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "void-containment", "componentType": "VoidFilament", "quantity": 5, "propertyMapping": { "Capacity": "Capacity" } },
-          { "label": "neutronium-frame", "componentType": "NeutroniumSkeleton", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "void-containment",
+            "componentType": "VoidFilament",
+            "quantity": 5,
+            "propertyMapping": {
+              "Capacity": "Capacity"
+            }
+          },
+          {
+            "label": "neutronium-frame",
+            "componentType": "NeutroniumSkeleton",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "megastructure-core",
+            "componentType": "MegastructureCore",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1549,47 +2376,71 @@
       "name": "Dyson Organization",
       "description": "Social structures for stellar-scale energy harvesting",
       "researchCost": 25000,
-      "prerequisites": ["SE6a"],
+      "prerequisites": [
+        "SE6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "dyson-coordinator",
         "outputType": "module",
         "outputId": "DysonCoordinator",
         "baseWorkUnits": 1150,
-        "capabilities": [{ "type": "Power", "baseValue": 700, "qualitySource": "ComputeCapacity" }],
+        "capabilities": [
+          {
+            "type": "FleetCommand",
+            "baseValue": 80,
+            "qualitySource": "ComputeCapacity"
+          }
+        ],
         "inputResources": [
-          { "label": "coordinator-housing", "qualifier": "class", "value": "Metal", "quantity": 220, "propertyMapping": {} },
-          { "label": "stellar-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 130, "propertyMapping": {} }
+          {
+            "label": "coordinator-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 220,
+            "propertyMapping": {}
+          },
+          {
+            "label": "stellar-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 130,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "sentient-control", "componentType": "SentientMatrix", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "singularity-power", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "void-distribution", "componentType": "VoidFilament", "quantity": 4, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "SI7a",
-      "technologyId": "SI7",
-      "letter": "a",
-      "name": "Ascendant Protocols",
-      "description": "Training systems producing minds transcending baseline limitations",
-      "researchCost": 25000,
-      "prerequisites": ["SI6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "ascendant-academy",
-        "outputType": "module",
-        "outputId": "AscendantAcademy",
-        "baseWorkUnits": 1050,
-        "capabilities": [{ "type": "Research", "baseValue": 45, "qualitySource": "ComputeCapacity" }],
-        "inputResources": [
-          { "label": "academy-housing", "qualifier": "class", "value": "Metal", "quantity": 180, "propertyMapping": {} },
-          { "label": "neural-medium", "qualifier": "class", "value": "Liquid", "quantity": 140, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "sentient-instructor", "componentType": "SentientMatrix", "quantity": 3, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "hive-network", "componentType": "HiveCore", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "sentient-control",
+            "componentType": "SentientMatrix",
+            "quantity": 3,
+            "propertyMapping": {
+              "ComputeCapacity": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "singularity-power",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "void-distribution",
+            "componentType": "VoidFilament",
+            "quantity": 4,
+            "propertyMapping": {}
+          },
+          {
+            "label": "megastructure-seed",
+            "componentType": "MegastructureSeed",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "auto-civilization-core",
+            "componentType": "AutoCivilizationCore",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1600,47 +2451,65 @@
       "name": "Autonomous Empire",
       "description": "Production systems operating as independent sovereign entities",
       "researchCost": 25000,
-      "prerequisites": ["SM6a"],
+      "prerequisites": [
+        "SM6a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "admiralty-throne",
         "outputType": "module",
         "outputId": "AdmiraltyThrone",
         "baseWorkUnits": 1200,
-        "capabilities": [{ "type": "FleetCommand", "baseValue": 20, "qualitySource": "ComputeCapacity" }],
+        "capabilities": [
+          {
+            "type": "FleetCommand",
+            "baseValue": 40,
+            "qualitySource": "ComputeCapacity"
+          }
+        ],
         "inputResources": [
-          { "label": "throne-housing", "qualifier": "class", "value": "Metal", "quantity": 200, "propertyMapping": {} },
-          { "label": "command-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 150, "propertyMapping": {} }
+          {
+            "label": "throne-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 200,
+            "propertyMapping": {}
+          },
+          {
+            "label": "command-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 150,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "sentient-strategist", "componentType": "SentientMatrix", "quantity": 4, "propertyMapping": { "ComputeCapacity": "ComputeCapacity" } },
-          { "label": "hive-network", "componentType": "HiveCore", "quantity": 2, "propertyMapping": {} },
-          { "label": "void-comm", "componentType": "VoidFilament", "quantity": 3, "propertyMapping": {} }
-        ]
-      }
-    },
-    {
-      "id": "SP7a",
-      "technologyId": "SP7",
-      "letter": "a",
-      "name": "Cosmic Discovery",
-      "description": "Research probing the deepest mysteries of existence",
-      "researchCost": 25000,
-      "prerequisites": ["SP6a"],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "mystery-probe",
-        "outputType": "module",
-        "outputId": "MysteryProbe",
-        "baseWorkUnits": 1100,
-        "capabilities": [{ "type": "Research", "baseValue": 40, "qualitySource": "Sensitivity" }],
-        "inputResources": [
-          { "label": "probe-housing", "qualifier": "class", "value": "Metal", "quantity": 170, "propertyMapping": {} },
-          { "label": "cosmic-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 130, "propertyMapping": {} }
-        ],
-        "inputComponents": [
-          { "label": "tachyon-sensors", "componentType": "TachyonAperture", "quantity": 3, "propertyMapping": { "Sensitivity": "Sensitivity" } },
-          { "label": "sentient-analyzer", "componentType": "SentientMatrix", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "sentient-strategist",
+            "componentType": "SentientMatrix",
+            "quantity": 4,
+            "propertyMapping": {
+              "ComputeCapacity": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "hive-network",
+            "componentType": "HiveCore",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "void-comm",
+            "componentType": "VoidFilament",
+            "quantity": 3,
+            "propertyMapping": {}
+          },
+          {
+            "label": "consensus-amplifier",
+            "componentType": "ConsensusAmplifier",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
         ]
       }
     },
@@ -1651,71 +2520,1796 @@
       "name": "Void Mantle Assembly",
       "description": "Ultimate defensive system phasing through normal space",
       "researchCost": 25000,
-      "prerequisites": ["SP7a", "PP7"],
+      "prerequisites": [
+        "PP7"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "void-mantle",
         "outputType": "module",
         "outputId": "VoidMantle",
         "baseWorkUnits": 1300,
-        "capabilities": [{ "type": "ShieldStrength", "baseValue": 200, "qualitySource": "Capacity" }],
+        "capabilities": [
+          {
+            "type": "EnergyResistance",
+            "baseValue": 1000,
+            "qualitySource": "Capacity"
+          }
+        ],
         "inputResources": [
-          { "label": "mantle-housing", "qualifier": "class", "value": "Metal", "quantity": 250, "propertyMapping": {} },
-          { "label": "void-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 180, "propertyMapping": {} }
+          {
+            "label": "mantle-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 250,
+            "propertyMapping": {}
+          },
+          {
+            "label": "void-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 180,
+            "propertyMapping": {}
+          }
         ],
         "inputComponents": [
-          { "label": "void-filament", "componentType": "VoidFilament", "quantity": 6, "propertyMapping": { "Capacity": "Capacity" } },
-          { "label": "singularity-power", "componentType": "SingularityHeart", "quantity": 2, "propertyMapping": {} },
-          { "label": "tachyon-sensors", "componentType": "TachyonAperture", "quantity": 2, "propertyMapping": {} }
+          {
+            "label": "void-filament",
+            "componentType": "VoidFilament",
+            "quantity": 6,
+            "propertyMapping": {
+              "Capacity": "Capacity"
+            }
+          },
+          {
+            "label": "singularity-power",
+            "componentType": "SingularityHeart",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "tachyon-sensors",
+            "componentType": "TachyonAperture",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
         ]
       }
     },
     {
-      "id": "PP7a",
-      "technologyId": "PP7",
-      "letter": "a",
-      "name": "Force Unification",
-      "description": "Complete control over the four fundamental forces",
+      "id": "PM7c",
+      "technologyId": "PM7",
+      "letter": "c",
+      "name": "Nova Driver Assembly",
+      "description": "Integrating gravity manipulation systems with relativistic projectile compression into the ultimate kinetic weapons platform",
       "researchCost": 25000,
-      "prerequisites": ["PP6a"],
+      "prerequisites": [
+        "PM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "nova-driver",
+        "outputType": "module",
+        "outputId": "NovaDriver",
+        "baseWorkUnits": 2200,
+        "capabilities": [
+          {
+            "type": "KineticDamage",
+            "baseValue": 400,
+            "qualitySource": "Sensitivity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "launcher-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 600,
+            "propertyMapping": {}
+          },
+          {
+            "label": "gravitonic-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 300,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "sling",
+            "componentType": "GravitationalSling",
+            "quantity": 3,
+            "propertyMapping": {
+              "Velocity": "Sensitivity"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "SingularityHeart",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "skeleton",
+            "componentType": "NeutroniumSkeleton",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "PM7d",
+      "technologyId": "PM7",
+      "letter": "d",
+      "name": "Titan Chassis Blueprint",
+      "description": "Unlocks the manufacture of Titan-class ship chassis at nexus station shipyards.",
+      "researchCost": 12800,
+      "prerequisites": [
+        "MP6e",
+        "PM7a"
+      ],
+      "type": "blueprint",
+      "chassisBlueprint": {
+        "blueprintId": "titan-chassis",
+        "chassisClass": "Titan",
+        "baseWorkUnitsPerSlot": 50,
+        "baseInputResources": [
+          {
+            "label": "hull-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 12000
+          },
+          {
+            "label": "hull-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 6000
+          },
+          {
+            "label": "hull-nonferro",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 4500
+          },
+          {
+            "label": "hull-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 1800
+          },
+          {
+            "label": "hull-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1200
+          },
+          {
+            "label": "hull-neutronite",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 3000,
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "neutronite",
+            "propertyMapping": {}
+          }
+        ],
+        "baseInputComponents": [
+          {
+            "label": "alloy-frame",
+            "componentType": "AlloyFrame",
+            "quantity": 1200
+          },
+          {
+            "label": "copper-conduit",
+            "componentType": "CopperConduit",
+            "quantity": 900
+          },
+          {
+            "label": "heat-sink",
+            "componentType": "HeatSink",
+            "quantity": 750
+          },
+          {
+            "label": "capacitor-bank",
+            "componentType": "CapacitorBank",
+            "quantity": 600
+          }
+        ],
+        "perInteriorSlotInputResources": [
+          {
+            "label": "interior-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 1000
+          },
+          {
+            "label": "interior-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 500
+          },
+          {
+            "label": "interior-nonferro",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 187
+          },
+          {
+            "label": "interior-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 62
+          }
+        ],
+        "perInteriorSlotInputComponents": [],
+        "perExteriorSlotInputResources": [
+          {
+            "label": "exterior-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 1500
+          },
+          {
+            "label": "exterior-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 750
+          },
+          {
+            "label": "exterior-nonferro",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 280
+          },
+          {
+            "label": "exterior-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 93
+          }
+        ],
+        "perExteriorSlotInputComponents": []
+      }
+    },
+    {
+      "id": "PI7c",
+      "technologyId": "PI7",
+      "letter": "c",
+      "name": "Existence Eraser Assembly",
+      "description": "Removes targets from the probability matrix of existence itself",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PI7a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "existence-eraser",
+        "outputType": "module",
+        "outputId": "ExistenceEraser",
+        "baseWorkUnits": 2100,
+        "capabilities": [
+          {
+            "type": "QuantumDamage",
+            "baseValue": 350,
+            "qualitySource": "EnergyDensity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "nullifier-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 550,
+            "propertyMapping": {}
+          },
+          {
+            "label": "void-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 280,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "nullifier",
+            "componentType": "OntologicalNullifier",
+            "quantity": 3,
+            "propertyMapping": {
+              "Velocity": "EnergyDensity"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "SingularityHeart",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "circuits",
+            "componentType": "ProbabilityCore",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM7b",
+      "technologyId": "CM7",
+      "letter": "b",
+      "name": "Neutronium Resilience",
+      "description": "Neutronium-laced structures achieve near-invulnerability to kinetic force",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CM7a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "KineticResistance",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "MP7c",
+      "technologyId": "MP7",
+      "letter": "c",
+      "name": "Gravitational Bombardment",
+      "description": "Spacetime architecture enables projectiles with stellar-mass kinetic energy",
+      "researchCost": 25000,
+      "prerequisites": [
+        "MP7a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "KineticDamage",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "PI7d",
+      "technologyId": "PI7",
+      "letter": "d",
+      "name": "Existential Erasure",
+      "description": "Oracle physics computes pathways to annihilate matter at the quantum level",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PI7a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "QuantumDamage",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "BP7b",
+      "technologyId": "BP7",
+      "letter": "b",
+      "name": "Quantum Life Barrier",
+      "description": "Quantum life forms create self-sustaining barriers immune to quantum weapons",
+      "researchCost": 25000,
+      "prerequisites": [
+        "BP7a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "QuantumResistance",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "IM7a",
+      "technologyId": "IM7",
+      "letter": "a",
+      "name": "Probability Core Convergence",
+      "description": "Omega-class processor that evaluates all possible futures simultaneously, collapsing probability into deterministic computation",
+      "researchCost": 25000,
+      "prerequisites": [
+        "IM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "probability-core",
+        "outputType": "component",
+        "outputId": "ProbabilityCore",
+        "baseWorkUnits": 900,
+        "qualityProperties": {
+          "ComputeCapacity": 1.9,
+          "Stability": 1.8
+        },
+        "inputResources": [
+          {
+            "label": "omega-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 120,
+            "propertyMapping": {
+              "OQ": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "coherence-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 100,
+            "propertyMapping": {
+              "CN": "Stability"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "probability-matrix",
+            "componentType": "ProbabilityMatrix",
+            "quantity": 3,
+            "propertyMapping": {
+              "Velocity": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "reality-lock-core",
+            "componentType": "RealityLockCore",
+            "quantity": 1,
+            "propertyMapping": {
+              "Shielding": "Stability"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM7c",
+      "technologyId": "CM7",
+      "letter": "c",
+      "name": "Hyperdense Lattice Compaction",
+      "description": "Gravitationally compressed structural lattice approaching neutron star density while maintaining workable flexibility",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CM7a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "hyperdense-lattice",
+        "outputType": "component",
+        "outputId": "HyperdenseLattice",
+        "baseWorkUnits": 900,
+        "qualityProperties": {
+          "Integrity": 1.9,
+          "Flexibility": 1.8
+        },
+        "inputResources": [
+          {
+            "label": "collapsed-matter-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 120,
+            "propertyMapping": {
+              "UT": "Flexibility"
+            }
+          },
+          {
+            "label": "graviton-binding-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 70,
+            "propertyMapping": {
+              "SR": "Integrity"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "neutronium-ingot",
+            "componentType": "NeutroniumIngot",
+            "quantity": 3,
+            "propertyMapping": {
+              "Shielding": "Flexibility"
+            }
+          },
+          {
+            "label": "unified-frame",
+            "componentType": "UnifiedFrame",
+            "quantity": 1,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM7d",
+      "technologyId": "CM7",
+      "letter": "d",
+      "name": "Gravitational Sling Alignment",
+      "description": "Focused gravity well projector that accelerates projectiles along warped spacetime for planet-cracking kinetic impact",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CM7a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "gravitational-sling",
+        "outputType": "component",
+        "outputId": "GravitationalSling",
+        "baseWorkUnits": 900,
+        "qualityProperties": {
+          "Velocity": 1.9,
+          "Stability": 1.8
+        },
+        "inputResources": [
+          {
+            "label": "gravity-amplifier-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 120,
+            "propertyMapping": {
+              "UT": "Velocity"
+            }
+          },
+          {
+            "label": "targeting-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 80,
+            "propertyMapping": {
+              "OQ": "Stability"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "relativistic-chamber",
+            "componentType": "RelativisticChamber",
+            "quantity": 2,
+            "propertyMapping": {
+              "Velocity": "Velocity"
+            }
+          },
+          {
+            "label": "omniscient-targeting-core",
+            "componentType": "OmniscientTargetingCore",
+            "quantity": 1,
+            "propertyMapping": {
+              "Velocity": "Stability"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM7e",
+      "technologyId": "CM7",
+      "letter": "e",
+      "name": "Ontological Nullifier Inscription",
+      "description": "Reality-erasure weapon core that removes target matter from existence by nullifying its ontological state across all dimensions",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CM7a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "ontological-nullifier",
+        "outputType": "component",
+        "outputId": "OntologicalNullifier",
+        "baseWorkUnits": 900,
+        "qualityProperties": {
+          "Velocity": 1.9,
+          "Stability": 1.8
+        },
+        "inputResources": [
+          {
+            "label": "void-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 110,
+            "propertyMapping": {
+              "OQ": "Velocity"
+            }
+          },
+          {
+            "label": "containment-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 90,
+            "propertyMapping": {
+              "UT": "Stability"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "dimensional-ripper",
+            "componentType": "DimensionalRipper",
+            "quantity": 2,
+            "propertyMapping": {
+              "Velocity": "Velocity"
+            }
+          },
+          {
+            "label": "existence-anchor-core",
+            "componentType": "ExistenceAnchorCore",
+            "quantity": 1,
+            "propertyMapping": {
+              "Shielding": "Stability"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PE7c",
+      "technologyId": "PE7",
+      "letter": "c",
+      "name": "Nova Projector Assembly",
+      "description": "Stellar-scale energy weapon that channels a contained supernova detonation into a focused beam of annihilating plasma",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PE7a"
+      ],
       "type": "blueprint",
       "blueprint": {
         "blueprintId": "nova-projector",
         "outputType": "module",
         "outputId": "NovaProjector",
-        "baseWorkUnits": 1400,
-        "capabilities": [{ "type": "WeaponDamage", "baseValue": 150, "qualitySource": "EnergyDensity" }],
+        "baseWorkUnits": 1200,
+        "capabilities": [
+          {
+            "type": "EnergyDamage",
+            "baseValue": 450
+          }
+        ],
         "inputResources": [
-          { "label": "projector-housing", "qualifier": "class", "value": "Metal", "quantity": 280, "propertyMapping": {} },
-          { "label": "nova-crystal", "qualifier": "order", "value": "CrystallineGemstone", "quantity": 160, "propertyMapping": {} }
+          {
+            "label": "stellar-containment-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 210,
+            "propertyMapping": {
+              "UT": "EnergyDamage"
+            }
+          },
+          {
+            "label": "nova-focusing-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 105,
+            "propertyMapping": {
+              "PE": "EnergyDamage"
+            }
+          }
         ],
         "inputComponents": [
-          { "label": "singularity-core", "componentType": "SingularityHeart", "quantity": 3, "propertyMapping": { "EnergyDensity": "EnergyDensity" } },
-          { "label": "tachyon-targeting", "componentType": "TachyonAperture", "quantity": 3, "propertyMapping": {} },
-          { "label": "void-conduit", "componentType": "VoidFilament", "quantity": 4, "propertyMapping": {} },
-          { "label": "hawking-cooling", "componentType": "HawkingDiffuser", "quantity": 3, "propertyMapping": {} }
+          {
+            "label": "entanglement-relay",
+            "componentType": "EntanglementRelayComponent",
+            "quantity": 2,
+            "propertyMapping": {
+              "Sensitivity": "EnergyDamage"
+            }
+          },
+          {
+            "label": "singularity-heart",
+            "componentType": "SingularityHeart",
+            "quantity": 1,
+            "propertyMapping": {
+              "EnergyDensity": "EnergyDamage"
+            }
+          }
         ]
+      }
+    },
+    {
+      "id": "CC7a",
+      "technologyId": "CC7",
+      "letter": "a",
+      "name": "Aethrium Transcendence",
+      "description": "Transcendent metamaterial weaving Neutronite density through quantum-crystalline matrices with exotic radioisotope catalysis",
+      "researchCost": 25000,
+      "prerequisites": [],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "aethrium",
+        "outputType": "alloy",
+        "outputId": "aethrium",
+        "baseWorkUnits": 480,
+        "alloyDefinition": {
+          "name": "Aethrium",
+          "tier": 7,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "CN",
+              "catalystProperty": "HR"
+            },
+            {
+              "boostedProperty": "SR",
+              "catalystProperty": "PE"
+            },
+            {
+              "boostedProperty": "PE",
+              "catalystProperty": "OQ"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-nonferromagnetic",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "CN",
+                "operator": "gte",
+                "value": 700
+              },
+              {
+                "property": "SR",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-neutronite",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 2,
+            "role": "Base",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "neutronite",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-crystalline",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "DR",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-radioactive",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 800
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-reactive-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "HR",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-inert-gas",
+            "qualifier": "order",
+            "value": "InertGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 700
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CC7b",
+      "technologyId": "CC7",
+      "letter": "b",
+      "name": "Omnium Genesis",
+      "description": "Universal metamaterial fusing Gravitite mass manipulation with rare mineral substrates and amorphous gemstone resonators",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CC7a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "omnium",
+        "outputType": "alloy",
+        "outputId": "omnium",
+        "baseWorkUnits": 480,
+        "alloyDefinition": {
+          "name": "Omnium",
+          "tier": 7,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "MA",
+              "catalystProperty": "SR"
+            },
+            {
+              "boostedProperty": "UT",
+              "catalystProperty": "PE"
+            },
+            {
+              "boostedProperty": "FL",
+              "catalystProperty": "CN"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-ferromagnetic",
+            "qualifier": "order",
+            "value": "Ferromagnetic",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "SR",
+                "operator": "gte",
+                "value": 700
+              },
+              {
+                "property": "MA",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-gravitite",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 2,
+            "role": "Base",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "gravitite",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-rare",
+            "qualifier": "order",
+            "value": "Rare",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "UT",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-amorphous",
+            "qualifier": "order",
+            "value": "AmorphousGemstone",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "DR",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-petrochem",
+            "qualifier": "order",
+            "value": "PetrochemicalLiquid",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 650
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-reactive-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "CN",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CC7c",
+      "technologyId": "CC7",
+      "letter": "c",
+      "name": "Eternite Crystallization",
+      "description": "Indestructible crystalline alloy formed by Prismatine-reinforced gemstone matrices under extreme radioisotope bombardment",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CC7a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "eternite",
+        "outputType": "alloy",
+        "outputId": "eternite",
+        "baseWorkUnits": 480,
+        "alloyDefinition": {
+          "name": "Eternite",
+          "tier": 7,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "DR",
+              "catalystProperty": "OQ"
+            },
+            {
+              "boostedProperty": "HR",
+              "catalystProperty": "PE"
+            },
+            {
+              "boostedProperty": "CR",
+              "catalystProperty": "CN"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-crystalline",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "DR",
+                "operator": "gte",
+                "value": 700
+              },
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-prismatine",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 2,
+            "role": "Base",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "prismatine",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-radioactive",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 650
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-precious",
+            "qualifier": "order",
+            "value": "Precious",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "CN",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-inert-gas",
+            "qualifier": "order",
+            "value": "InertGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "HR",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-reactive-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 650
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CC7d",
+      "technologyId": "CC7",
+      "letter": "d",
+      "name": "Nexium Convergence",
+      "description": "Dimensional-boundary alloy merging Quantium superconductivity with volatile gas plasma under extreme thermal and chemical catalysis",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CC7b"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "nexium",
+        "outputType": "alloy",
+        "outputId": "nexium",
+        "baseWorkUnits": 480,
+        "alloyDefinition": {
+          "name": "Nexium",
+          "tier": 7,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "PE",
+              "catalystProperty": "HR"
+            },
+            {
+              "boostedProperty": "FR",
+              "catalystProperty": "OQ"
+            },
+            {
+              "boostedProperty": "SR",
+              "catalystProperty": "CN"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-reactive-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 700
+              },
+              {
+                "property": "HR",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-quantium",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 2,
+            "role": "Base",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "quantium",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-ferromagnetic",
+            "qualifier": "order",
+            "value": "Ferromagnetic",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "SR",
+                "operator": "gte",
+                "value": 650
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-nonradioactive",
+            "qualifier": "order",
+            "value": "NonRadioactive",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "UT",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-inert-gas",
+            "qualifier": "order",
+            "value": "InertGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 650
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-petrochem",
+            "qualifier": "order",
+            "value": "PetrochemicalLiquid",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "CN",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "BE7b",
+      "technologyId": "BE7",
+      "letter": "b",
+      "name": "Dimensional Entropy Siphoning",
+      "description": "Living systems harvesting energy across dimensional boundaries achieve transcendent extraction yields",
+      "researchCost": 25000,
+      "prerequisites": [
+        "BE6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "BI7b",
+      "technologyId": "BI7",
+      "letter": "b",
+      "name": "Transcendent Research Consciousness",
+      "description": "Digitized minds operating beyond physical constraints accelerate all research endeavors",
+      "researchCost": 25000,
+      "prerequisites": [
+        "BI6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "BM7b",
+      "technologyId": "BM7",
+      "letter": "b",
+      "name": "Self-Evolving Extraction Organisms",
+      "description": "Living machinery that evolves in real-time to optimize biological resource collection",
+      "researchCost": 25000,
+      "prerequisites": [
+        "BM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "BS7a",
+      "technologyId": "BS7",
+      "letter": "a",
+      "name": "Transcendent Crew Unity",
+      "description": "Crew consciousness merging with ship systems achieves operational perfection",
+      "researchCost": 25000,
+      "prerequisites": [
+        "BS6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "CrewEfficiency",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "CE7b",
+      "technologyId": "CE7",
+      "letter": "b",
+      "name": "Vacuum-State Catalysis",
+      "description": "Chemical processes operating at vacuum energy scales eliminate all manufacturing waste",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CE6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "CI7b",
+      "technologyId": "CI7",
+      "letter": "b",
+      "name": "Omniscient Molecular Disassembly",
+      "description": "Perfect computational chemistry achieves flawless compound separation at any scale",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CI6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "CM7f",
+      "technologyId": "CM7",
+      "letter": "f",
+      "name": "Reality-Woven Manufacturing",
+      "description": "Manufacturing processes woven into the fabric of spacetime achieve perfect efficiency",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "CP7b",
+      "technologyId": "CP7",
+      "letter": "b",
+      "name": "Stellar-Core Fabrication",
+      "description": "Manufacturing at stellar core pressures and temperatures transcends material limitations",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CP6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "CS7a",
+      "technologyId": "CS7",
+      "letter": "a",
+      "name": "Civilization-Scale Chemistry",
+      "description": "Chemical extraction coordinated across entire civilizations achieves impossible yields",
+      "researchCost": 25000,
+      "prerequisites": [
+        "CS6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "EB7a",
+      "technologyId": "EB7",
+      "letter": "a",
+      "name": "Stellar Organism Harvesting",
+      "description": "Star-dwelling organisms channel stellar output directly into extraction systems",
+      "researchCost": 25000,
+      "prerequisites": [
+        "EB6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "EC7c",
+      "technologyId": "EC7",
+      "letter": "c",
+      "name": "Antimatter-Catalyzed Harvesting",
+      "description": "Antimatter chemistry unlocks energy extraction from previously inert matter",
+      "researchCost": 25000,
+      "prerequisites": [
+        "EC6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "EI7b",
+      "technologyId": "EI7",
+      "letter": "b",
+      "name": "Temporal Assembly Optimization",
+      "description": "Time-aware manufacturing systems eliminate all production delays through precognitive scheduling",
+      "researchCost": 25000,
+      "prerequisites": [
+        "EI6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "EM7b",
+      "technologyId": "EM7",
+      "letter": "b",
+      "name": "Gravitonic Fabrication Drives",
+      "description": "Gravity-powered manufacturing achieves instantaneous component assembly",
+      "researchCost": 25000,
+      "prerequisites": [
+        "EM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "EP7b",
+      "technologyId": "EP7",
+      "letter": "b",
+      "name": "Hawking Conduit Mastery",
+      "description": "Black hole radiation principles enable near-instantaneous conduit traversal",
+      "researchCost": 25000,
+      "prerequisites": [
+        "EP6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "ES7a",
+      "technologyId": "ES7",
+      "letter": "a",
+      "name": "Universal Energy Abundance",
+      "description": "Post-scarcity energy systems remove all constraints from research operations",
+      "researchCost": 25000,
+      "prerequisites": [
+        "ES6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "IB7a",
+      "technologyId": "IB7",
+      "letter": "a",
+      "name": "Transcendent Bio-Digital Extraction",
+      "description": "Merged biological-digital intelligence achieves perfect resource identification and collection",
+      "researchCost": 25000,
+      "prerequisites": [
+        "IB6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "IE7a",
+      "technologyId": "IE7",
+      "letter": "a",
+      "name": "Energy-Intelligence Mineral Sensing",
+      "description": "Pure energy intelligence detects and catalogs mineral deposits across dimensional layers",
+      "researchCost": 25000,
+      "prerequisites": [
+        "IE6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "IM7b",
+      "technologyId": "IM7",
+      "letter": "b",
+      "name": "Perfect Manufacturing Intelligence",
+      "description": "Omniscient manufacturing systems produce flawless outputs through total quality prediction",
+      "researchCost": 25000,
+      "prerequisites": [
+        "IM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "IP7b",
+      "technologyId": "IP7",
+      "letter": "b",
+      "name": "Reality-Simulated Navigation",
+      "description": "Perfect universe simulation computes optimal conduit paths across all dimensions",
+      "researchCost": 25000,
+      "prerequisites": [
+        "IP6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "IS7b",
+      "technologyId": "IS7",
+      "letter": "b",
+      "name": "Universal Research Standards",
+      "description": "Distributed omniscience enforces transcendent quality baselines across all research",
+      "researchCost": 25000,
+      "prerequisites": [
+        "IS6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "MB7a",
+      "technologyId": "MB7",
+      "letter": "a",
+      "name": "Living Drill Transcendence",
+      "description": "Bio-mechanical drilling systems evolve beyond physical constraints for impossible mineral yields",
+      "researchCost": 25000,
+      "prerequisites": [
+        "MB6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "ME7a",
+      "technologyId": "ME7",
+      "letter": "a",
+      "name": "Stellar Engine Harvesting",
+      "description": "Stellar-scale energy machinery channels star output directly into extraction amplification",
+      "researchCost": 25000,
+      "prerequisites": [
+        "ME6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "MI7b",
+      "technologyId": "MI7",
+      "letter": "b",
+      "name": "Spacetime Manufacturing Mastery",
+      "description": "Direct reality manipulation achieves manufacturing quality beyond theoretical limits",
+      "researchCost": 25000,
+      "prerequisites": [
+        "MI6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "MP7d",
+      "technologyId": "MP7",
+      "letter": "d",
+      "name": "Dimensional Warp Transcendence",
+      "description": "Spacetime architecture enables conduit transit approaching instantaneous travel",
+      "researchCost": 25000,
+      "prerequisites": [
+        "MP6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "MS7a",
+      "technologyId": "MS7",
+      "letter": "a",
+      "name": "Stellar Ecosystem Manufacturing",
+      "description": "Star-spanning manufacturing ecosystems coordinate production at civilization scale",
+      "researchCost": 25000,
+      "prerequisites": [
+        "MS6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "PB7b",
+      "technologyId": "PB7",
+      "letter": "b",
+      "name": "Quantum-Biological Perfection",
+      "description": "Quantum biology achieves perfect atomic alignment in all manufactured components",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PB6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "PC7b",
+      "technologyId": "PC7",
+      "letter": "b",
+      "name": "Dimensional Matter Perfection",
+      "description": "Negative-mass material processing achieves perfect manufacturing output quality",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PC6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "PE7d",
+      "technologyId": "PE7",
+      "letter": "d",
+      "name": "Stellar Forge Acceleration",
+      "description": "Artificial star processes accelerate all manufacturing beyond conventional speed limits",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PE6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "PM7a",
+      "technologyId": "PM7",
+      "letter": "a",
+      "name": "Phasic Conduit Mastery",
+      "description": "Phase-field engineering enables conduit traversal at speeds approaching causality limits",
+      "researchCost": 25000,
+      "prerequisites": [
+        "PM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "SB7b",
+      "technologyId": "SB7",
+      "letter": "b",
+      "name": "Immortal Crew Transcendence",
+      "description": "Post-biological crew systems achieve operational perfection beyond mortal limitations",
+      "researchCost": 25000,
+      "prerequisites": [
+        "SB6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "CrewEfficiency",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "SC7b",
+      "technologyId": "SC7",
+      "letter": "b",
+      "name": "Stellar-Scale Supply Chains",
+      "description": "Civilization-scale logistics coordination eliminates all manufacturing inefficiency",
+      "researchCost": 25000,
+      "prerequisites": [
+        "SC6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "SE7b",
+      "technologyId": "SE7",
+      "letter": "b",
+      "name": "Universal Energy Research",
+      "description": "Unlimited energy access enables perpetual parallel research across all domains",
+      "researchCost": 25000,
+      "prerequisites": [
+        "SE6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "SI7a",
+      "technologyId": "SI7",
+      "letter": "a",
+      "name": "Transcendent Collective Research",
+      "description": "Civilization-scale collective intelligence guarantees all research exceeds transcendent quality thresholds",
+      "researchCost": 25000,
+      "prerequisites": [
+        "SI6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "SM7b",
+      "technologyId": "SM7",
+      "letter": "b",
+      "name": "Stellar Coordination Extraction",
+      "description": "Dyson-scale coordination networks maximize mineral extraction across entire star systems",
+      "researchCost": 25000,
+      "prerequisites": [
+        "SM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 10.0
+      }
+    },
+    {
+      "id": "SP7a",
+      "technologyId": "SP7",
+      "letter": "a",
+      "name": "Galactic Research Transcendence",
+      "description": "Galaxy-spanning collaboration networks accelerate research beyond all conventional limits",
+      "researchCost": 25000,
+      "prerequisites": [
+        "SP6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 10.0
       }
     }
   ],
   "newComponents": [
-    {
-      "componentId": "SentientMatrix",
-      "name": "Sentient Matrix",
-      "description": "Self-aware computational substrate exceeding biological comprehension",
-      "category": "Circuits",
-      "tier": 7,
-      "mass": 5,
-      "qualityProperties": ["ComputeCapacity", "Stability"]
-    },
     {
       "componentId": "SingularityHeart",
       "name": "Singularity Heart",
       "description": "Miniaturized black hole harnessed for infinite energy potential",
       "category": "PowerCells",
       "tier": 7,
-      "mass": 8,
-      "qualityProperties": ["EnergyDensity", "Efficiency"]
+      "mass": 40,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
     },
     {
       "componentId": "NeutroniumSkeleton",
@@ -1723,8 +4317,11 @@
       "description": "Degenerate matter framework with stellar-core density",
       "category": "StructuralFrames",
       "tier": 7,
-      "mass": 12,
-      "qualityProperties": ["Integrity", "Flexibility"]
+      "mass": 60,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
     },
     {
       "componentId": "VoidFilament",
@@ -1732,8 +4329,11 @@
       "description": "Conduits woven from the fabric of spacetime itself",
       "category": "Conduits",
       "tier": 7,
-      "mass": 4,
-      "qualityProperties": ["Conductivity", "Capacity"]
+      "mass": 20,
+      "qualityProperties": [
+        "Conductivity",
+        "Capacity"
+      ]
     },
     {
       "componentId": "TachyonAperture",
@@ -1741,26 +4341,11 @@
       "description": "Faster-than-light sensors perceiving across temporal boundaries",
       "category": "Optics",
       "tier": 7,
-      "mass": 5,
-      "qualityProperties": ["Sensitivity", "Resolution"]
-    },
-    {
-      "componentId": "AntimatterManifold",
-      "name": "Antimatter Manifold",
-      "description": "Controlled matter-antimatter annihilation for ultimate thrust",
-      "category": "PropellantSystems",
-      "tier": 7,
-      "mass": 10,
-      "qualityProperties": ["ThrustRatio", "FuelEfficiency"]
-    },
-    {
-      "componentId": "HawkingDiffuser",
-      "name": "Hawking Diffuser",
-      "description": "Thermal management using Hawking radiation principles",
-      "category": "ThermalManagement",
-      "tier": 7,
-      "mass": 6,
-      "qualityProperties": ["Dissipation", "Tolerance"]
+      "mass": 25,
+      "qualityProperties": [
+        "Sensitivity",
+        "Resolution"
+      ]
     },
     {
       "componentId": "HiveCore",
@@ -1768,8 +4353,83 @@
       "description": "Apex biological matrix enabling fleet-wide organic coordination",
       "category": "BioMatrices",
       "tier": 7,
-      "mass": 7,
-      "qualityProperties": ["Vitality", "Responsiveness"]
+      "mass": 35,
+      "qualityProperties": [
+        "Vitality",
+        "Responsiveness"
+      ]
+    },
+    {
+      "componentId": "ProbabilityCore",
+      "name": "Probability Core",
+      "description": "Core that manipulates probability fields to influence outcomes",
+      "category": "Circuits",
+      "tier": 7,
+      "mass": 40,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "HyperdenseLattice",
+      "name": "Hyperdense Lattice",
+      "description": "Structural lattice compressed to near-singularity density",
+      "category": "StructuralFrames",
+      "tier": 7,
+      "mass": 250,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
+    },
+    {
+      "componentId": "StellarAntimatterManifold",
+      "name": "Stellar Antimatter Manifold",
+      "description": "Star-forged antimatter distribution manifold sustaining thrust at stellar-engine output levels",
+      "category": "PropellantSystems",
+      "tier": 7,
+      "mass": 50,
+      "qualityProperties": [
+        "ThrustRatio",
+        "FuelEfficiency"
+      ]
+    },
+    {
+      "componentId": "EventHorizonDiffuser",
+      "name": "Event Horizon Diffuser",
+      "description": "Energy cell harvesting radiation from a stabilized event horizon boundary layer",
+      "category": "PowerCells",
+      "tier": 7,
+      "mass": 55,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
+    },
+    {
+      "name": "Gravitational Sling",
+      "tier": 7,
+      "qualityProperties": [
+        "Velocity",
+        "Stability"
+      ],
+      "componentId": "GravitationalSling",
+      "description": "Stellar-mass gravitational lens that compresses and launches projectiles with the focused gravitational energy of a collapsing star.",
+      "category": "WeaponComponents",
+      "mass": 20
+    },
+    {
+      "name": "Ontological Nullifier",
+      "tier": 7,
+      "qualityProperties": [
+        "Velocity",
+        "Stability"
+      ],
+      "componentId": "OntologicalNullifier",
+      "description": "Reality negation core that removes target matter from the quantum probability matrix, erasing it from existence rather than destroying it conventionally.",
+      "category": "WeaponComponents",
+      "mass": 20
     }
   ],
   "newModules": [
@@ -1779,9 +4439,26 @@
       "description": "Weapon system channeling stellar-force energy into focused destruction",
       "category": "Weapons",
       "tier": 7,
-      "mass": 45,
+      "mass": 450,
       "slotType": "External",
-      "baseCapabilities": [{ "type": "WeaponDamage", "baseValue": 150 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "EnergyDamage",
+          "baseValue": 450
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        },
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
     },
     {
       "moduleId": "VoidMantle",
@@ -1789,9 +4466,22 @@
       "description": "Defense system phasing through normal space to avoid damage",
       "category": "Shields",
       "tier": 7,
-      "mass": 40,
+      "mass": 400,
       "slotType": "External",
-      "baseCapabilities": [{ "type": "ShieldStrength", "baseValue": 200 }]
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "EnergyResistance",
+          "baseValue": 1000
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 130
+        }
+      ]
     },
     {
       "moduleId": "TranscendentMind",
@@ -1799,9 +4489,22 @@
       "description": "Computing system exceeding comprehension, approaching omniscience",
       "category": "Compute",
       "tier": 7,
-      "mass": 35,
+      "mass": 350,
       "slotType": "Internal",
-      "baseCapabilities": [{ "type": "ComputeCapacity", "baseValue": 100 }]
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "ComputeCapacity",
+          "baseValue": 300
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        }
+      ]
     },
     {
       "moduleId": "StellarFoundry",
@@ -1809,9 +4512,30 @@
       "description": "Manufacturing bay using stellar fusion processes",
       "category": "Manufacturing",
       "tier": 7,
-      "mass": 60,
+      "mass": 600,
       "slotType": "Internal",
-      "baseCapabilities": [{ "type": "Manufacturing", "baseValue": 80 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "Manufacturing",
+          "baseValue": 80
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 130
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        },
+        {
+          "type": "Personnel",
+          "value": 12
+        }
+      ]
     },
     {
       "moduleId": "PocketVault",
@@ -1819,9 +4543,22 @@
       "description": "Dimensional folding technology for impossible cargo capacity",
       "category": "Cargo",
       "tier": 7,
-      "mass": 30,
+      "mass": 300,
       "slotType": "Internal",
-      "baseCapabilities": [{ "type": "CargoCapacity", "baseValue": 500 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "CargoSpace",
+          "baseValue": 500
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 12
+        }
+      ]
     },
     {
       "moduleId": "StellarSiphon",
@@ -1829,9 +4566,26 @@
       "description": "Extraction system drawing resources directly from stellar bodies",
       "category": "Extraction",
       "tier": 7,
-      "mass": 50,
+      "mass": 500,
       "slotType": "External",
-      "baseCapabilities": [{ "type": "ResourceExtraction", "baseValue": 100 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "MineralExtraction",
+          "baseValue": 100
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 25
+        },
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
     },
     {
       "moduleId": "OracleComplex",
@@ -1839,9 +4593,30 @@
       "description": "Research facility with precognitive analysis capabilities",
       "category": "Research",
       "tier": 7,
-      "mass": 45,
+      "mass": 450,
       "slotType": "Internal",
-      "baseCapabilities": [{ "type": "Research", "baseValue": 60 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "Research",
+          "baseValue": 90
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        },
+        {
+          "type": "Personnel",
+          "value": 12
+        }
+      ]
     },
     {
       "moduleId": "AdmiraltyThrone",
@@ -1849,19 +4624,30 @@
       "description": "Fleet command center enabling coordination across stellar distances",
       "category": "FleetCommand",
       "tier": 7,
-      "mass": 35,
+      "mass": 350,
       "slotType": "Internal",
-      "baseCapabilities": [{ "type": "FleetCommand", "baseValue": 20 }]
-    },
-    {
-      "moduleId": "EdenCradle",
-      "name": "Eden Cradle",
-      "description": "Life support system creating perfect biological environments",
-      "category": "LifeSupport",
-      "tier": 7,
-      "mass": 40,
-      "slotType": "Internal",
-      "baseCapabilities": [{ "type": "CrewEfficiency", "baseValue": 50 }]
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "FleetCommand",
+          "baseValue": 40
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        },
+        {
+          "type": "Personnel",
+          "value": 12
+        }
+      ]
     },
     {
       "moduleId": "PrescientHelm",
@@ -1869,9 +4655,26 @@
       "description": "Navigation system perceiving all possible futures simultaneously",
       "category": "Navigation",
       "tier": 7,
-      "mass": 30,
+      "mass": 300,
       "slotType": "Internal",
-      "baseCapabilities": [{ "type": "Navigation", "baseValue": 50 }]
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "Navigation",
+          "baseValue": 100
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 25
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        }
+      ]
     },
     {
       "moduleId": "SingularityTap",
@@ -1879,29 +4682,339 @@
       "description": "Power system drawing energy from a contained artificial singularity",
       "category": "Power",
       "tier": 7,
-      "mass": 55,
+      "mass": 550,
       "slotType": "Internal",
-      "baseCapabilities": [{ "type": "Power", "baseValue": 1000 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "PowerGeneration",
+          "baseValue": 2000
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
     },
     {
-      "moduleId": "AntimatterTorch",
-      "name": "Antimatter Torch",
+      "moduleId": "StellarTorch",
+      "name": "Stellar Torch",
       "description": "Propulsion system harnessing matter-antimatter annihilation",
       "category": "Propulsion",
       "tier": 7,
-      "mass": 50,
+      "mass": 500,
       "slotType": "External",
-      "baseCapabilities": [{ "type": "SubwarpSpeed", "baseValue": 100 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "Speed",
+          "baseValue": 150
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        }
+      ]
     },
     {
-      "moduleId": "OmniscientEye",
-      "name": "Omniscient Eye",
-      "description": "Sensor array with complete awareness of all matter states in range",
+      "moduleId": "HiveExtractorArray",
+      "name": "Hive Extractor Array",
+      "description": "Biological extraction system using coordinated hive organisms",
+      "category": "Extraction",
+      "tier": 7,
+      "mass": 600,
+      "slotType": "External",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "BiologicalExtraction",
+          "baseValue": 100
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 25
+        },
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "moduleId": "LivingHull",
+      "name": "Living Hull",
+      "description": "Self-repairing biological hull that grows and adapts to absorb kinetic impacts",
+      "category": "Armor",
+      "tier": 7,
+      "mass": 800,
+      "slotType": "External",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 4,
+      "baseCapabilities": [
+        {
+          "type": "KineticResistance",
+          "baseValue": 1000
+        }
+      ],
+      "requirements": []
+    },
+    {
+      "moduleId": "OmniscientGrid",
+      "name": "Omniscient Grid",
+      "description": "Sensor network achieving near-total information awareness",
       "category": "Sensors",
       "tier": 7,
-      "mass": 35,
+      "mass": 400,
       "slotType": "External",
-      "baseCapabilities": [{ "type": "SensorRange", "baseValue": 200 }]
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "Sensors",
+          "baseValue": 500
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 25
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "moduleId": "RealitySimulator",
+      "name": "Reality Simulator",
+      "description": "Computational system capable of simulating entire realities",
+      "category": "Research",
+      "tier": 7,
+      "mass": 900,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 6,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "Research",
+          "baseValue": 120
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        },
+        {
+          "type": "Personnel",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "moduleId": "VoidOrganismArray",
+      "name": "Void Organism Array",
+      "description": "Array of organisms adapted to survive in pure vacuum",
+      "category": "Extraction",
+      "tier": 7,
+      "mass": 700,
+      "slotType": "External",
+      "interiorSlotsRequired": 5,
+      "exteriorSlotsRequired": 3,
+      "baseCapabilities": [
+        {
+          "type": "BiologicalExtraction",
+          "baseValue": 120
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 25
+        },
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "moduleId": "GenesisForge",
+      "name": "Genesis Forge",
+      "description": "System capable of creating new forms of life from base elements",
+      "category": "Manufacturing",
+      "tier": 7,
+      "mass": 1000,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 6,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "Manufacturing",
+          "baseValue": 180
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 130
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        },
+        {
+          "type": "Personnel",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "moduleId": "ArtificialStar",
+      "name": "Artificial Star",
+      "description": "Miniaturized stellar body providing unlimited power",
+      "category": "Power",
+      "tier": 7,
+      "mass": 3000,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 8,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "PowerGeneration",
+          "baseValue": 5000
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "moduleId": "DysonCoordinator",
+      "name": "Dyson Coordinator",
+      "description": "Command center for coordinating Dyson-scale energy harvesting",
+      "category": "FleetCommand",
+      "tier": 7,
+      "mass": 1000,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 6,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "FleetCommand",
+          "baseValue": 80
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        },
+        {
+          "type": "Compute",
+          "value": 25
+        },
+        {
+          "type": "Personnel",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "moduleId": "AscensionChamber",
+      "name": "Ascension Chamber",
+      "description": "Medical facility for peak biological optimization and consciousness expansion",
+      "category": "LifeSupport",
+      "tier": 7,
+      "mass": 280,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "CrewMember",
+          "baseValue": 65
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 25
+        }
+      ]
+    },
+    {
+      "name": "Nova Driver",
+      "tier": 7,
+      "slotType": "External",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 3,
+      "mass": 500,
+      "moduleId": "NovaDriver",
+      "baseCapabilities": [
+        {
+          "type": "KineticDamage",
+          "baseValue": 400
+        }
+      ],
+      "category": "Weapons",
+      "description": "Ultimate kinetic weapons platform using gravity manipulation to compress and accelerate projectiles to relativistic speeds. Each round carries enough kinetic energy to punch through capital-class shields and armor.",
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 60
+        },
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
+    },
+    {
+      "name": "Existence Eraser",
+      "tier": 7,
+      "slotType": "External",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 2,
+      "mass": 280,
+      "moduleId": "ExistenceEraser",
+      "baseCapabilities": [
+        {
+          "type": "QuantumDamage",
+          "baseValue": 350
+        }
+      ],
+      "category": "Weapons",
+      "description": "Removes target matter from the quantum probability matrix entirely, causing it to cease existing rather than merely being destroyed \u2014 the ultimate expression of quantum weaponry.",
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 65
+        },
+        {
+          "type": "Compute",
+          "value": 12
+        }
+      ]
     }
-  ]
+  ],
+  "blueprintApplications": [],
+  "components": []
 }

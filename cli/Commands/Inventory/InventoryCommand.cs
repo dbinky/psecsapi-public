@@ -32,9 +32,12 @@ namespace psecsapi.Console.Commands.Inventory
 
         private Command BuildCorpCommand()
         {
-            var command = new Command("corp", "View corp-wide inventory with fleet breakdown");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
 
-            command.SetHandler(async () =>
+            var command = new Command("corp", "View corp-wide inventory with fleet breakdown");
+            command.AddOption(jsonOption);
+
+            command.SetHandler(async (bool json) =>
             {
                 var corpId = _config.User.DefaultCorpId;
                 if (!corpId.HasValue)
@@ -47,6 +50,12 @@ namespace psecsapi.Console.Commands.Inventory
                 var content = await response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
                 {
                     System.Console.WriteLine(content);
                     return;
@@ -103,7 +112,7 @@ namespace psecsapi.Console.Commands.Inventory
                         System.Console.WriteLine($"  {fleet.FleetName,-25} {FormatQuantity(fleet.TotalQuantity),15} ({fleet.ResourceTypeCount} types)");
                     }
                 }
-            });
+            }, jsonOption);
 
             return command;
         }
@@ -115,10 +124,12 @@ namespace psecsapi.Console.Commands.Inventory
         private Command BuildFleetCommand()
         {
             var fleetIdArg = new Argument<string>("fleet-id", "The fleet ID to view inventory for");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
 
             var command = new Command("fleet", "View fleet inventory with ship breakdown") { fleetIdArg };
+            command.AddOption(jsonOption);
 
-            command.SetHandler(async (fleetIdStr) =>
+            command.SetHandler(async (string fleetIdStr, bool json) =>
             {
                 var corpId = _config.User.DefaultCorpId;
                 if (!corpId.HasValue)
@@ -137,6 +148,12 @@ namespace psecsapi.Console.Commands.Inventory
                 var content = await response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
                 {
                     System.Console.WriteLine(content);
                     return;
@@ -179,7 +196,7 @@ namespace psecsapi.Console.Commands.Inventory
                         System.Console.WriteLine($"  {ship.ShipName,-25} {FormatQuantity(ship.TotalQuantity),15} ({ship.ResourceTypeCount} types){extracting}");
                     }
                 }
-            }, fleetIdArg);
+            }, fleetIdArg, jsonOption);
 
             return command;
         }
@@ -191,10 +208,12 @@ namespace psecsapi.Console.Commands.Inventory
         private Command BuildShipCommand()
         {
             var shipIdArg = new Argument<string>("ship-id", "The ship ID to view inventory for");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
 
             var command = new Command("ship", "View ship cargo hold details") { shipIdArg };
+            command.AddOption(jsonOption);
 
-            command.SetHandler(async (shipIdStr) =>
+            command.SetHandler(async (string shipIdStr, bool json) =>
             {
                 var corpId = _config.User.DefaultCorpId;
                 if (!corpId.HasValue)
@@ -213,6 +232,12 @@ namespace psecsapi.Console.Commands.Inventory
                 var content = await response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
                 {
                     System.Console.WriteLine(content);
                     return;
@@ -256,12 +281,13 @@ namespace psecsapi.Console.Commands.Inventory
 
                         foreach (var item in hold.Contents.OrderByDescending(i => i.Quantity))
                         {
-                            System.Console.WriteLine($"  {item.ResourceName,-25} {item.ResourceClass,-12} {FormatQuantity(item.Quantity),15}");
+                            var classDisplay = item.AssetType == "Resource" ? item.ResourceClass : item.AssetType;
+                            System.Console.WriteLine($"  {item.ResourceName,-25} {classDisplay,-12} {FormatQuantity(item.Quantity),15}");
                         }
                     }
                     System.Console.WriteLine();
                 }
-            }, shipIdArg);
+            }, shipIdArg, jsonOption);
 
             return command;
         }

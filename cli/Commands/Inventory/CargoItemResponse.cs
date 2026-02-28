@@ -7,5 +7,6 @@ namespace psecsapi.Console.Commands.Inventory
         public string ResourceName { get; set; } = string.Empty;
         public string ResourceClass { get; set; } = string.Empty;
         public decimal Quantity { get; set; }
+        public string AssetType { get; set; } = "Resource";
     }
 }

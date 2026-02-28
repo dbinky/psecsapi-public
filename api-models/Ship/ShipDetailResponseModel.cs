@@ -12,6 +12,7 @@ namespace psecsapi.api.models.Ship
         public Guid EntityId { get; set; }
         public Guid OwnerCorpId { get; set; }
         public string Name { get; set; } = string.Empty;
+        public string AssetImageUrl { get; set; } = string.Empty;
         public string Class { get; set; } = string.Empty;
         public decimal? CurrentStructurePoints { get; set; }
         public decimal? CurrentHullPoints { get; set; }

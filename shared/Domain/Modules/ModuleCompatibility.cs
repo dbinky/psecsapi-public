@@ -1,6 +1,6 @@
 namespace psecsapi.Domain.Modules
 {
-    public enum ModuleCompatability
+    public enum ModuleCompatibility
     {
         Ship,
         Station,

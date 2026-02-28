@@ -181,8 +181,10 @@ export function registerManufacturingTools(
     "psecs_start_manufacturing",
     {
       description:
-        "Start a manufacturing job on a ship. When blueprintDefinitionId is provided, fetches " +
-        "blueprint input requirements and available cargo before starting. " +
+        "Start a manufacturing job on a ship. Input resources and components are auto-selected " +
+        "from the ship's cargo hold — inputs must be in ship cargo before starting. " +
+        "If inputs are currently in the Nexus Warehouse, use psecs_warehouse_withdraw first. " +
+        "When blueprintDefinitionId is provided, fetches blueprint input requirements and available cargo before starting. " +
         "Returns job result with resource availability context.",
       inputSchema: {
         shipId: z.string().describe("Ship ID to manufacture on"),

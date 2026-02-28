@@ -244,7 +244,15 @@ public class ShipyardCommand : ICommand
                 return;
             }
 
+            var result = JsonSerializer.Deserialize<CancelBuildOrderResponse>(content, JsonOptions);
             System.Console.WriteLine("Build order cancelled successfully.");
+            if (result?.ReturnedAssetIds is { Count: > 0 } assets)
+            {
+                System.Console.WriteLine($"Input assets returned to your warehouse ({assets.Count} item(s)):");
+                foreach (var assetId in assets)
+                    System.Console.WriteLine($"  {assetId}");
+                System.Console.WriteLine("Use 'papi warehouse list' to view them or 'papi warehouse withdraw' to move them to a ship.");
+            }
         }, orderNumberArg, jsonOption);
 
         return cmd;
@@ -282,8 +290,33 @@ public class ShipyardCommand : ICommand
                 return;
             }
 
-            System.Console.WriteLine("Chassis picked up successfully!");
-            System.Console.WriteLine(content);
+            var result = JsonSerializer.Deserialize<PickupResponse>(content, JsonOptions);
+            if (result?.ShipDetail == null)
+            {
+                System.Console.WriteLine("Error: Unable to parse response.");
+                return;
+            }
+
+            var sd = result.ShipDetail;
+            var totalSlots = sd.TotalInteriorSlots + sd.TotalExteriorSlots;
+            var hasModules = sd.Modules != null && sd.Modules.Count > 0;
+
+            System.Console.WriteLine("Chassis Retrieved");
+            System.Console.WriteLine();
+            System.Console.WriteLine($"  New Ship: {sd.Name}");
+            System.Console.WriteLine($"  Ship ID: {sd.EntityId}");
+            System.Console.WriteLine($"  Class: {sd.Class} ({totalSlots} slots: {sd.TotalInteriorSlots} interior, {sd.TotalExteriorSlots} exterior)");
+            System.Console.WriteLine($"  Structure Points: {sd.CurrentStructurePoints:F0} / {sd.MaxStructurePoints:F0}");
+            System.Console.WriteLine($"  Hull Points: {sd.CurrentHullPoints:F0} / {sd.MaxHullPoints:F0}");
+            System.Console.WriteLine($"  Modules: {(hasModules ? string.Join(", ", sd.Modules!.Select(m => m.Name)) : "None — ship requires outfitting before use")}");
+            System.Console.WriteLine($"  Added to fleet: {sd.FleetId}");
+
+            if (!hasModules)
+            {
+                System.Console.WriteLine();
+                System.Console.WriteLine("  Warning: This ship has no modules and cannot navigate, scan, or extract.");
+                System.Console.WriteLine("  Use 'ship install' to equip modules.");
+            }
         }, orderNumberArg, fleetOption, jsonOption);
 
         return cmd;
@@ -465,6 +498,40 @@ public class ShipyardCommand : ICommand
         public string Label { get; set; } = "";
         public string ComponentType { get; set; } = "";
         public int Quantity { get; set; }
+    }
+
+    private class PickupResponse
+    {
+        public bool Success { get; set; }
+        public Guid ShipId { get; set; }
+        public ShipDetailModel? ShipDetail { get; set; }
+    }
+
+    private class ShipDetailModel
+    {
+        public Guid EntityId { get; set; }
+        public string Name { get; set; } = "";
+        public string Class { get; set; } = "";
+        public int TotalInteriorSlots { get; set; }
+        public int TotalExteriorSlots { get; set; }
+        public decimal? CurrentStructurePoints { get; set; }
+        public decimal MaxStructurePoints { get; set; }
+        public decimal? CurrentHullPoints { get; set; }
+        public decimal MaxHullPoints { get; set; }
+        public Guid FleetId { get; set; }
+        public List<ModuleModel>? Modules { get; set; }
+    }
+
+    private class ModuleModel
+    {
+        public string Name { get; set; } = "";
+    }
+
+    private class CancelBuildOrderResponse
+    {
+        public bool Success { get; set; }
+        public List<Guid> ReturnedAssetIds { get; set; } = new();
+        public string? ErrorMessage { get; set; }
     }
 
     private class CompletedOrdersResponse

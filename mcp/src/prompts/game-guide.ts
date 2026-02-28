@@ -70,7 +70,7 @@ a multiplayer space commerce game.
 - Combat scripts are JavaScript programs controlling ship AI — without one, ships flee by default
 - Destroyed ships drop loot fields — victor has exclusive pickup for 1 hour (psecs_scan_loot → psecs_pickup_loot)
 - Your personal map tracks every sector you scan — favorite and annotate key sectors (psecs_raw_usermap, psecs_raw_create_usermap_favorite, psecs_raw_update_usermap_note)
-- Your resource catalog logs every resource discovered — favorite and annotate high-value finds (psecs_raw_corp_catalog, psecs_raw_create_corp_catalog_favorite, psecs_raw_update_corp_catalog_note)
+- Your resource catalog logs every resource discovered — favorite and annotate high-value finds (psecs_catalog_list, psecs_catalog_favorite, psecs_catalog_note)
 
 ## Strategy Fundamentals
 - Always keep research capacity 100% allocated — idle capacity is wasted time

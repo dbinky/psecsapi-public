@@ -7,7 +7,7 @@
       "primaryDiscipline": "B",
       "secondaryDiscipline": "B",
       "tier": 6,
-      "name": "Dimensional Biology",
+      "name": "Extradimensional Organisms",
       "description": "Life forms that exist beyond conventional biological constraints, operating across dimensional boundaries",
       "researchCost": 10000,
       "prerequisites": [
@@ -89,7 +89,7 @@
       "primaryDiscipline": "B",
       "secondaryDiscipline": "S",
       "tier": 6,
-      "name": "Hive Transcendence",
+      "name": "Distributed Cognition Networks",
       "description": "Collective consciousness networks that function as single distributed organisms",
       "researchCost": 10000,
       "prerequisites": [
@@ -171,7 +171,7 @@
       "primaryDiscipline": "C",
       "secondaryDiscipline": "P",
       "tier": 6,
-      "name": "Dimensional Chemistry",
+      "name": "Void Chemistry",
       "description": "Chemical reactions occurring across multiple dimensions simultaneously",
       "researchCost": 10000,
       "prerequisites": [
@@ -213,7 +213,7 @@
       "primaryDiscipline": "E",
       "secondaryDiscipline": "C",
       "tier": 6,
-      "name": "Antimatter Synthesis",
+      "name": "Antimatter Mastery",
       "description": "On-demand creation of antimatter through controlled chemical processes",
       "researchCost": 10000,
       "prerequisites": [
@@ -337,7 +337,7 @@
       "primaryDiscipline": "I",
       "secondaryDiscipline": "I",
       "tier": 6,
-      "name": "Omniscient Intelligence",
+      "name": "Transcendent Awareness",
       "description": "AI systems approaching theoretical maximum knowledge and predictive capability",
       "researchCost": 10000,
       "prerequisites": [
@@ -405,7 +405,7 @@
       "primaryDiscipline": "M",
       "secondaryDiscipline": "C",
       "tier": 6,
-      "name": "Transmutation Forges",
+      "name": "Reality Forges",
       "description": "Manufacturing facilities that create materials through controlled nuclear transmutation",
       "researchCost": 10000,
       "prerequisites": [
@@ -487,7 +487,7 @@
       "primaryDiscipline": "P",
       "secondaryDiscipline": "B",
       "tier": 6,
-      "name": "Quantum Biology",
+      "name": "Dimensional Biophysics",
       "description": "Life forms operating on quantum principles, existing in superposition states",
       "researchCost": 10000,
       "prerequisites": [
@@ -557,7 +557,7 @@
       "primaryDiscipline": "P",
       "secondaryDiscipline": "P",
       "tier": 6,
-      "name": "Unified Field Mastery",
+      "name": "Dimensional Field Theory",
       "description": "Complete understanding and control of all fundamental forces in the universe",
       "researchCost": 10000,
       "prerequisites": [
@@ -697,11 +697,11 @@
       "technologyId": "BC6",
       "letter": "b",
       "name": "Void Bioreactor Assembly",
-      "description": "Dimensional-spanning biological processing for exotic organic compounds",
+      "description": "Establishing dimensional rifts within sealed bioreactors to cultivate organisms spanning multiple planes",
       "researchCost": 10000,
       "prerequisites": [
         "BC6a",
-        "BI5b"
+        "BI5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -755,8 +755,8 @@
       "id": "BE6a",
       "technologyId": "BE6",
       "letter": "a",
-      "name": "Entropy Harvester Fabrication",
-      "description": "Component for extracting energy from entropy gradients",
+      "name": "Entropy Gradient Collector Assembly",
+      "description": "Bonding entropy-reactive alloy around Hawking diffuser arrays and flooding them with decay-medium to channel thermodynamic gradients into stored energy",
       "researchCost": 10000,
       "prerequisites": [
         "BE5a"
@@ -812,7 +812,7 @@
       "researchCost": 10000,
       "prerequisites": [
         "BE6a",
-        "EP5b"
+        "EP5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -866,8 +866,8 @@
       "id": "BI6a",
       "technologyId": "BI6",
       "letter": "a",
-      "name": "Neural Upload Interface Fabrication",
-      "description": "Interface for consciousness transfer to digital substrates",
+      "name": "Consciousness Bridge Assembly",
+      "description": "Growing quantum-coherent neural pathways across crystalline substrates and coupling them to omniscient processing cores through consciousness-gel immersion",
       "researchCost": 10000,
       "prerequisites": [
         "BI5a"
@@ -919,10 +919,10 @@
       "technologyId": "BI6",
       "letter": "b",
       "name": "Consciousness Matrix Assembly",
-      "description": "Digital substrate for housing uploaded biological intelligences",
+      "description": "Encoding consciousness patterns onto quantum substrates through precision neural-state transcription",
       "researchCost": 10000,
       "prerequisites": [
-        "BI5b",
+        "BI5a",
         "IM5b"
       ],
       "type": "blueprint",
@@ -970,8 +970,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "power-core",
-            "componentType": "SingularityCore",
+            "label": "precognitive-power",
+            "componentType": "PrecognitivePowerNode",
             "quantity": 1,
             "propertyMapping": {}
           }
@@ -982,17 +982,17 @@
       "id": "BM6a",
       "technologyId": "BM6",
       "letter": "a",
-      "name": "Living Hull Segment Fabrication",
-      "description": "Self-repairing biological hull section",
+      "name": "Evolving Hull Cultivation",
+      "description": "Grafting self-evolving biological tissue onto alloy substrates reinforced by transcendent-matrix scaffolding, saturated in regenerative growth-gel",
       "researchCost": 10000,
       "prerequisites": [
         "BM5a"
       ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "living-hull-segment",
+        "blueprintId": "evolving-hull-segment",
         "outputType": "component",
-        "outputId": "LivingHullSegment",
+        "outputId": "EvolvingHullSegment",
         "baseWorkUnits": 500,
         "qualityProperties": {
           "Integrity": 2.0,
@@ -1035,10 +1035,10 @@
       "technologyId": "BM6",
       "letter": "b",
       "name": "Organic Hull Assembly",
-      "description": "Self-growing, self-repairing biological ship hull sections",
+      "description": "Seeding hull panels with rapid-growth biological tissue and establishing nutrient vasculature networks",
       "researchCost": 10000,
       "prerequisites": [
-        "BM5b",
+        "BM5a",
         "CM5b"
       ],
       "type": "blueprint",
@@ -1110,11 +1110,11 @@
       "technologyId": "BP6",
       "letter": "b",
       "name": "Transcendent Matrix Fabrication",
-      "description": "Biological component operating at the intersection of life and fundamental physics",
+      "description": "Infusing biological matrices with fundamental-force conduits at the intersection of life and physics",
       "researchCost": 10000,
       "prerequisites": [
         "BP5a",
-        "PM5b"
+        "PM5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -1185,10 +1185,10 @@
       "technologyId": "BS6",
       "letter": "b",
       "name": "Transcendence Bay Assembly",
-      "description": "Facility for crew to interface with collective consciousness networks",
+      "description": "Installing consciousness-interface pods and neural bridge hardware in a shielded transcendence chamber",
       "researchCost": 10000,
       "prerequisites": [
-        "BS5b",
+        "BS5a",
         "SB5a"
       ],
       "type": "blueprint",
@@ -1199,8 +1199,8 @@
         "baseWorkUnits": 750,
         "capabilities": [
           {
-            "type": "CrewEfficiency",
-            "baseValue": 35,
+            "type": "CrewMember",
+            "baseValue": 45,
             "qualitySource": "Vitality"
           }
         ],
@@ -1236,8 +1236,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "power",
-            "componentType": "SingularityCore",
+            "label": "vacuum-energy",
+            "componentType": "VacuumEnergyTap",
             "quantity": 1,
             "propertyMapping": {}
           }
@@ -1248,8 +1248,8 @@
       "id": "CB6a",
       "technologyId": "CB6",
       "letter": "a",
-      "name": "Transmutation Catalyst Fabrication",
-      "description": "Biological catalyst for elemental transmutation",
+      "name": "Transmutation Enzyme Synthesis",
+      "description": "Culturing void-bioreactor organisms on crystalline catalyst beds immersed in transmutation-gel to grow enzymes that trigger elemental conversion",
       "researchCost": 10000,
       "prerequisites": [
         "CB5a"
@@ -1261,8 +1261,8 @@
         "outputId": "TransmutationCatalyst",
         "baseWorkUnits": 480,
         "qualityProperties": {
-          "Vitality": 1.8,
-          "Responsiveness": 1.5
+          "ComputeCapacity": 1.8,
+          "Stability": 1.5
         },
         "inputResources": [
           {
@@ -1271,7 +1271,7 @@
             "value": "CrystallineGemstone",
             "quantity": 140,
             "propertyMapping": {
-              "OQ": "Vitality"
+              "OQ": "ComputeCapacity"
             }
           },
           {
@@ -1280,7 +1280,7 @@
             "value": "Liquid",
             "quantity": 100,
             "propertyMapping": {
-              "FL": "Responsiveness"
+              "FL": "Stability"
             }
           }
         ],
@@ -1290,7 +1290,7 @@
             "componentType": "VoidBioreactor",
             "quantity": 2,
             "propertyMapping": {
-              "Vitality": "Vitality"
+              "Vitality": "ComputeCapacity"
             }
           }
         ]
@@ -1301,7 +1301,7 @@
       "technologyId": "CB6",
       "letter": "b",
       "name": "Transmutation Vat Fabrication",
-      "description": "Biological chamber for controlled elemental transmutation",
+      "description": "Suspending transmutation enzymes in a bio-containment vat with elemental conversion monitoring",
       "researchCost": 10000,
       "prerequisites": [
         "CB5a",
@@ -1359,8 +1359,8 @@
       "id": "CE6a",
       "technologyId": "CE6",
       "letter": "a",
-      "name": "Vacuum Energy Tap Fabrication",
-      "description": "Device for harvesting quantum vacuum energy",
+      "name": "Vacuum Fluctuation Harvester Assembly",
+      "description": "Arraying Hawking diffusers around radioactive excitation cores in quantum-dampening fluid to extract zero-point energy from vacuum states",
       "researchCost": 10000,
       "prerequisites": [
         "CE5a"
@@ -1411,7 +1411,7 @@
       "id": "CE6b",
       "technologyId": "CE6",
       "letter": "b",
-      "name": "Singularity Core Assembly",
+      "name": "Dimensional Core Assembly",
       "description": "Power generation from controlled micro-singularity containment",
       "researchCost": 10000,
       "prerequisites": [
@@ -1420,9 +1420,9 @@
       ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "singularity-core",
+        "blueprintId": "void-singularity-core",
         "outputType": "component",
-        "outputId": "SingularityCore",
+        "outputId": "VoidSingularityCore",
         "baseWorkUnits": 600,
         "qualityProperties": {
           "EnergyDensity": 2.2,
@@ -1470,15 +1470,15 @@
       "id": "CI6a",
       "technologyId": "CI6",
       "letter": "a",
-      "name": "Instant Synthesis Prediction",
-      "description": "AI predicts perfect molecular configurations instantaneously",
+      "name": "Subatomic Distillation",
+      "description": "AI-guided particle beams excite individual molecular bonds, releasing target compounds without thermal degradation.",
       "researchCost": 10000,
       "prerequisites": [
         "CI5a"
       ],
       "type": "modifier",
       "modifier": {
-        "operationType": "ManufacturingQuality",
+        "operationType": "ChemicalExtraction",
         "bonusPercent": 8.0
       }
     },
@@ -1487,7 +1487,7 @@
       "technologyId": "CI6",
       "letter": "b",
       "name": "Omniscient Core Fabrication",
-      "description": "Processing system with near-perfect predictive capabilities",
+      "description": "Training predictive algorithms on universal data streams and mounting them in a quantum processing chassis",
       "researchCost": 10000,
       "prerequisites": [
         "CI5a",
@@ -1545,7 +1545,7 @@
       "id": "CM6a",
       "technologyId": "CM6",
       "letter": "a",
-      "name": "Programmable Efficiency",
+      "name": "Reality-Phase Efficiency",
       "description": "Self-reconfiguring materials optimize manufacturing processes in real-time",
       "researchCost": 10000,
       "prerequisites": [
@@ -1562,11 +1562,11 @@
       "technologyId": "CM6",
       "letter": "b",
       "name": "Void Lattice Fabrication",
-      "description": "Programmable structural framework that reconfigures on command",
+      "description": "Programming void-matter lattices with structural transformation codes through dimensional etching",
       "researchCost": 10000,
       "prerequisites": [
         "CM5b",
-        "PM5b"
+        "PM5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -1620,8 +1620,8 @@
       "id": "CP6a",
       "technologyId": "CP6",
       "letter": "a",
-      "name": "Dimensional Catalyst Fabrication",
-      "description": "Catalyst for reactions across dimensional boundaries",
+      "name": "Phase-Boundary Catalyst Assembly",
+      "description": "Suspending phase emitters inside a dimensional-crystal lattice flooded with phase-gel to create catalyst sites spanning multiple dimensional boundaries",
       "researchCost": 10000,
       "prerequisites": [
         "CP5a"
@@ -1633,8 +1633,8 @@
         "outputId": "DimensionalCatalyst",
         "baseWorkUnits": 500,
         "qualityProperties": {
-          "EnergyDensity": 2.0,
-          "Efficiency": 1.5
+          "ComputeCapacity": 2.0,
+          "Stability": 1.5
         },
         "inputResources": [
           {
@@ -1643,7 +1643,7 @@
             "value": "CrystallineGemstone",
             "quantity": 150,
             "propertyMapping": {
-              "OQ": "EnergyDensity"
+              "OQ": "ComputeCapacity"
             }
           },
           {
@@ -1652,7 +1652,7 @@
             "value": "Liquid",
             "quantity": 100,
             "propertyMapping": {
-              "HR": "Efficiency"
+              "HR": "Stability"
             }
           }
         ],
@@ -1662,7 +1662,7 @@
             "componentType": "PhaseEmitter",
             "quantity": 2,
             "propertyMapping": {
-              "Sensitivity": "EnergyDensity"
+              "Sensitivity": "ComputeCapacity"
             }
           }
         ]
@@ -1673,11 +1673,11 @@
       "technologyId": "CP6",
       "letter": "b",
       "name": "Dimensional Reactor Fabrication",
-      "description": "Chemical processing occurring across dimensional boundaries",
+      "description": "Anchoring cross-dimensional reaction chambers with phase-boundary stabilizers for exotic chemistry",
       "researchCost": 10000,
       "prerequisites": [
         "CP5a",
-        "EP5b"
+        "EP5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -1711,8 +1711,8 @@
         ],
         "inputComponents": [
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "living-battery",
+            "componentType": "LivingBatteryMatrix",
             "quantity": 2,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
@@ -1731,8 +1731,8 @@
       "id": "CS6a",
       "technologyId": "CS6",
       "letter": "a",
-      "name": "Alchemical Processor Fabrication",
-      "description": "Society-scale matter transformation processor",
+      "name": "Alchemical Logic Core Assembly",
+      "description": "Encoding elemental transmutation algorithms into crystalline arrays and coupling them to reality-forge manipulators through transmutation-medium interfaces",
       "researchCost": 10000,
       "prerequisites": [
         "CS5a"
@@ -1783,18 +1783,18 @@
       "id": "CS6b",
       "technologyId": "CS6",
       "letter": "b",
-      "name": "Reality Forge Assembly",
+      "name": "Autonomous Forge Assembly",
       "description": "Manufacturing facility using controlled reality manipulation",
       "researchCost": 10000,
       "prerequisites": [
         "CS5a",
-        "MI5b"
+        "MI5a"
       ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "reality-forge",
+        "blueprintId": "alchemical-forge",
         "outputType": "component",
-        "outputId": "RealityForge",
+        "outputId": "AlchemicalForge",
         "baseWorkUnits": 620,
         "qualityProperties": {
           "Integrity": 2.0,
@@ -1842,8 +1842,8 @@
       "id": "EB6a",
       "technologyId": "EB6",
       "letter": "a",
-      "name": "Stellar Organism Core Fabrication",
-      "description": "Core component for stellar-scale biological power generation",
+      "name": "Stellar Organism Incubation",
+      "description": "Irradiating transcendent biological matrices with stellar-grade isotopes and bathing them in bio-plasma to cultivate organisms adapted to extreme energy densities",
       "researchCost": 10000,
       "prerequisites": [
         "EB5a"
@@ -1855,8 +1855,8 @@
         "outputId": "StellarOrganismCore",
         "baseWorkUnits": 580,
         "qualityProperties": {
-          "EnergyDensity": 2.2,
-          "Efficiency": 1.6
+          "Vitality": 2.2,
+          "Responsiveness": 1.6
         },
         "inputResources": [
           {
@@ -1865,7 +1865,7 @@
             "value": "Radioactive",
             "quantity": 140,
             "propertyMapping": {
-              "PE": "EnergyDensity"
+              "PE": "Vitality"
             }
           },
           {
@@ -1874,7 +1874,7 @@
             "value": "Liquid",
             "quantity": 120,
             "propertyMapping": {
-              "HR": "Efficiency"
+              "HR": "Responsiveness"
             }
           }
         ],
@@ -1884,7 +1884,7 @@
             "componentType": "TranscendentMatrix",
             "quantity": 3,
             "propertyMapping": {
-              "Vitality": "EnergyDensity"
+              "Vitality": "Vitality"
             }
           }
         ]
@@ -1895,7 +1895,7 @@
       "technologyId": "EB6",
       "letter": "b",
       "name": "Stellar Bioreactor Assembly",
-      "description": "Biological power generation at stellar energy scales",
+      "description": "Coupling stellar-adapted organisms to power harvesting electrodes in radiation-hardened bioreactor arrays",
       "researchCost": 10000,
       "prerequisites": [
         "EB5a",
@@ -1909,7 +1909,7 @@
         "baseWorkUnits": 900,
         "capabilities": [
           {
-            "type": "Power",
+            "type": "PowerGeneration",
             "baseValue": 800,
             "qualitySource": "EnergyDensity"
           }
@@ -1932,8 +1932,8 @@
         ],
         "inputComponents": [
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "entropy-harvester",
+            "componentType": "EntropyHarvester",
             "quantity": 3,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
@@ -1958,17 +1958,17 @@
       "id": "EC6a",
       "technologyId": "EC6",
       "letter": "a",
-      "name": "Antimatter Injector Fabrication",
-      "description": "Precision antimatter injection system",
+      "name": "Void Antimatter Nozzle Assembly",
+      "description": "Machining ferromagnetic confinement chambers around antimatter-torch injectors pressurized with reactive containment plasma for void-grade thrust vectoring",
       "researchCost": 10000,
       "prerequisites": [
         "EC5a"
       ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "antimatter-injector",
+        "blueprintId": "void-antimatter-injector",
         "outputType": "component",
-        "outputId": "AntimatterInjector",
+        "outputId": "VoidAntimatterInjector",
         "baseWorkUnits": 540,
         "qualityProperties": {
           "ThrustRatio": 2.0,
@@ -2011,7 +2011,7 @@
       "technologyId": "EC6",
       "letter": "b",
       "name": "Antimatter Torch Assembly",
-      "description": "Extreme-performance propulsion using controlled antimatter annihilation",
+      "description": "Directing antimatter annihilation exhaust through magnetic confinement nozzles for extreme thrust output",
       "researchCost": 10000,
       "prerequisites": [
         "EC5b",
@@ -2069,8 +2069,8 @@
       "id": "EI6a",
       "technologyId": "EI6",
       "letter": "a",
-      "name": "Temporal Predictor Fabrication",
-      "description": "Power prediction using temporal modeling",
+      "name": "Temporal Forecasting Lens Assembly",
+      "description": "Aligning omniscient processing cores behind temporal-crystal optics bathed in chrono-gel to project power demand patterns across future timelines",
       "researchCost": 10000,
       "prerequisites": [
         "EI5a"
@@ -2082,8 +2082,8 @@
         "outputId": "TemporalPredictor",
         "baseWorkUnits": 500,
         "qualityProperties": {
-          "ComputeCapacity": 2.0,
-          "Stability": 1.5
+          "Sensitivity": 2.0,
+          "Resolution": 1.5
         },
         "inputResources": [
           {
@@ -2092,7 +2092,7 @@
             "value": "CrystallineGemstone",
             "quantity": 140,
             "propertyMapping": {
-              "OQ": "ComputeCapacity"
+              "OQ": "Sensitivity"
             }
           },
           {
@@ -2101,7 +2101,7 @@
             "value": "Liquid",
             "quantity": 80,
             "propertyMapping": {
-              "FL": "Stability"
+              "FL": "Resolution"
             }
           }
         ],
@@ -2111,72 +2111,8 @@
             "componentType": "OmniscientCore",
             "quantity": 2,
             "propertyMapping": {
-              "ComputeCapacity": "ComputeCapacity"
+              "ComputeCapacity": "Sensitivity"
             }
-          }
-        ]
-      }
-    },
-    {
-      "id": "EI6b",
-      "technologyId": "EI6",
-      "letter": "b",
-      "name": "Precognitive Grid Assembly",
-      "description": "Power distribution system with temporal prediction capabilities",
-      "researchCost": 10000,
-      "prerequisites": [
-        "EI5a",
-        "PI5a"
-      ],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "precognitive-grid",
-        "outputType": "module",
-        "outputId": "PrecognitiveGrid",
-        "baseWorkUnits": 800,
-        "capabilities": [
-          {
-            "type": "Power",
-            "baseValue": 600,
-            "qualitySource": "EnergyDensity"
-          }
-        ],
-        "inputResources": [
-          {
-            "label": "grid-housing",
-            "qualifier": "class",
-            "value": "Metal",
-            "quantity": 250,
-            "propertyMapping": {}
-          },
-          {
-            "label": "temporal-crystal",
-            "qualifier": "order",
-            "value": "CrystallineGemstone",
-            "quantity": 100,
-            "propertyMapping": {}
-          }
-        ],
-        "inputComponents": [
-          {
-            "label": "omniscient-controller",
-            "componentType": "OmniscientCore",
-            "quantity": 3,
-            "propertyMapping": {}
-          },
-          {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
-            "quantity": 2,
-            "propertyMapping": {
-              "EnergyDensity": "EnergyDensity"
-            }
-          },
-          {
-            "label": "singularity-conduit",
-            "componentType": "SingularityConduit",
-            "quantity": 4,
-            "propertyMapping": {}
           }
         ]
       }
@@ -2185,8 +2121,8 @@
       "id": "EM6a",
       "technologyId": "EM6",
       "letter": "a",
-      "name": "Singularity Drive Core Fabrication",
-      "description": "Core component for singularity-based propulsion",
+      "name": "Singularity Thrust Core Assembly",
+      "description": "Encasing singularity-core elements in ferromagnetic confinement housings flooded with reactive void-plasma to harness gravitational shear as directional thrust",
       "researchCost": 10000,
       "prerequisites": [
         "EM5a"
@@ -2238,7 +2174,7 @@
       "technologyId": "EM6",
       "letter": "b",
       "name": "Singularity Conduit Fabrication",
-      "description": "Power transmission using controlled singularity dynamics",
+      "description": "Routing power through singularity-warped conduit junctions with gravitational containment shielding",
       "researchCost": 10000,
       "prerequisites": [
         "EM5b",
@@ -2313,7 +2249,7 @@
       "technologyId": "EP6",
       "letter": "b",
       "name": "Hawking Diffuser Fabrication",
-      "description": "Component for capturing and channeling Hawking radiation energy",
+      "description": "Tuning Hawking radiation capture surfaces inside a micro-singularity containment shell",
       "researchCost": 10000,
       "prerequisites": [
         "EP5a",
@@ -2371,8 +2307,8 @@
       "id": "ES6a",
       "technologyId": "ES6",
       "letter": "a",
-      "name": "Infinite Power Tap Fabrication",
-      "description": "Power extraction for post-scarcity systems",
+      "name": "Perpetual Energy Siphon Assembly",
+      "description": "Cascading Hawking diffusers around radioactive excitation rods immersed in void-gel to sustain continuous energy extraction beyond fuel dependency",
       "researchCost": 10000,
       "prerequisites": [
         "ES5a"
@@ -2424,7 +2360,7 @@
       "technologyId": "ES6",
       "letter": "b",
       "name": "Infinite Reactor Assembly",
-      "description": "Power generation facility with effectively unlimited output",
+      "description": "Cascading infinite-loop power generation stages inside a reality-stabilized reactor housing",
       "researchCost": 10000,
       "prerequisites": [
         "ES5a",
@@ -2438,7 +2374,7 @@
         "baseWorkUnits": 1000,
         "capabilities": [
           {
-            "type": "Power",
+            "type": "PowerGeneration",
             "baseValue": 1000,
             "qualitySource": "EnergyDensity"
           }
@@ -2461,8 +2397,8 @@
         ],
         "inputComponents": [
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "vacuum-battery",
+            "componentType": "VacuumBatteryArray",
             "quantity": 4,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
@@ -2487,8 +2423,8 @@
       "id": "IB6a",
       "technologyId": "IB6",
       "letter": "a",
-      "name": "Cognition Merger Fabrication",
-      "description": "Interface for merging biological and digital cognition",
+      "name": "Neural-Digital Bridge Assembly",
+      "description": "Threading transcendent biological matrices through crystalline signal conduits in neural-gel to seamlessly interface organic thought with digital computation",
       "researchCost": 10000,
       "prerequisites": [
         "IB5a"
@@ -2540,11 +2476,11 @@
       "technologyId": "IB6",
       "letter": "b",
       "name": "Universal Cognition Core Assembly",
-      "description": "Unified processing center merging biological and digital intelligence",
+      "description": "Bridging biological neural tissue and digital processors through quantum-coherent interface adapters",
       "researchCost": 10000,
       "prerequisites": [
         "IB5a",
-        "BI5b"
+        "BI5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -2555,7 +2491,7 @@
         "capabilities": [
           {
             "type": "Research",
-            "baseValue": 50,
+            "baseValue": 70,
             "qualitySource": "ComputeCapacity"
           }
         ],
@@ -2591,8 +2527,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-power",
-            "componentType": "SingularityCore",
+            "label": "temporal-power",
+            "componentType": "TemporalPowerCore",
             "quantity": 1,
             "propertyMapping": {}
           }
@@ -2603,8 +2539,8 @@
       "id": "IC6a",
       "technologyId": "IC6",
       "letter": "a",
-      "name": "Molecular Omniscience Array Fabrication",
-      "description": "Sensor array with complete molecular knowledge",
+      "name": "Omniscient Sensor Lattice Assembly",
+      "description": "Calibrating phase emitters across an omniscience-crystal lattice with molecular-resolution gel dampeners for total atomic-state awareness",
       "researchCost": 10000,
       "prerequisites": [
         "IC5a"
@@ -2656,11 +2592,11 @@
       "technologyId": "IC6",
       "letter": "b",
       "name": "Omniscient Eye Assembly",
-      "description": "Sensor system with perfect molecular-level knowledge of all matter",
+      "description": "Calibrating molecular-omniscient sensor arrays behind reality-piercing optics in a zero-vibration mount",
       "researchCost": 10000,
       "prerequisites": [
         "IC5b",
-        "PM5b"
+        "PM5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -2670,7 +2606,7 @@
         "baseWorkUnits": 800,
         "capabilities": [
           {
-            "type": "SensorRange",
+            "type": "Sensors",
             "baseValue": 200,
             "qualitySource": "Sensitivity"
           }
@@ -2707,8 +2643,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-power",
-            "componentType": "SingularityCore",
+            "label": "dimensional-power",
+            "componentType": "DimensionalReactor",
             "quantity": 1,
             "propertyMapping": {}
           }
@@ -2719,8 +2655,8 @@
       "id": "IE6a",
       "technologyId": "IE6",
       "letter": "a",
-      "name": "Precognitive Power Node Fabrication",
-      "description": "Power distribution node with temporal anticipation",
+      "name": "Precognitive Junction Assembly",
+      "description": "Wiring singularity conduits through precious-metal distribution nodes bathed in temporal-gel that routes power before demand manifests",
       "researchCost": 10000,
       "prerequisites": [
         "IE5a"
@@ -2732,8 +2668,8 @@
         "outputId": "PrecognitivePowerNode",
         "baseWorkUnits": 500,
         "qualityProperties": {
-          "Conductivity": 2.0,
-          "Capacity": 1.6
+          "EnergyDensity": 2.0,
+          "Efficiency": 1.6
         },
         "inputResources": [
           {
@@ -2742,7 +2678,7 @@
             "value": "Precious",
             "quantity": 120,
             "propertyMapping": {
-              "CN": "Conductivity"
+              "CN": "EnergyDensity"
             }
           },
           {
@@ -2751,7 +2687,7 @@
             "value": "Liquid",
             "quantity": 80,
             "propertyMapping": {
-              "HR": "Capacity"
+              "HR": "Efficiency"
             }
           }
         ],
@@ -2761,7 +2697,7 @@
             "componentType": "SingularityConduit",
             "quantity": 3,
             "propertyMapping": {
-              "Conductivity": "Conductivity"
+              "Conductivity": "EnergyDensity"
             }
           }
         ]
@@ -2772,11 +2708,11 @@
       "technologyId": "IE6",
       "letter": "b",
       "name": "Temporal Power Core Fabrication",
-      "description": "Power system with temporal prediction for perfect energy availability",
+      "description": "Integrating temporal prediction engines into power management hardware with pre-emptive distribution logic",
       "researchCost": 10000,
       "prerequisites": [
         "IE5a",
-        "EP5b"
+        "EP5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -2810,8 +2746,8 @@
         ],
         "inputComponents": [
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "stellar-regulator",
+            "componentType": "StellarPowerRegulator",
             "quantity": 2,
             "propertyMapping": {
               "EnergyDensity": "EnergyDensity"
@@ -2830,7 +2766,7 @@
       "id": "IM6a",
       "technologyId": "IM6",
       "letter": "a",
-      "name": "Perfect Fabrication",
+      "name": "Perfect Fabrication Protocols",
       "description": "Manufacturing systems achieve theoretical maximum quality",
       "researchCost": 10000,
       "prerequisites": [
@@ -2847,7 +2783,7 @@
       "technologyId": "IM6",
       "letter": "b",
       "name": "Reality Processor Fabrication",
-      "description": "Computing circuits that process by manipulating local reality",
+      "description": "Etching reality-manipulation circuits onto substrates that alter local physical constants during computation",
       "researchCost": 10000,
       "prerequisites": [
         "IM5b",
@@ -2905,7 +2841,7 @@
       "id": "IP6a",
       "technologyId": "IP6",
       "letter": "a",
-      "name": "Reality Simulation",
+      "name": "Reality Simulation Engines",
       "description": "Perfect universe simulation enables optimal conduit navigation",
       "researchCost": 10000,
       "prerequisites": [
@@ -2922,7 +2858,7 @@
       "technologyId": "IP6",
       "letter": "b",
       "name": "Universal Lattice Fabrication",
-      "description": "Processing architecture using space-time itself as computational substrate",
+      "description": "Weaving computational pathways into the fabric of space-time through dimensional substrate embedding",
       "researchCost": 10000,
       "prerequisites": [
         "IP5a",
@@ -2980,8 +2916,8 @@
       "id": "IS6a",
       "technologyId": "IS6",
       "letter": "a",
-      "name": "Civilization Upload Node Fabrication",
-      "description": "Processing node for uploaded societies",
+      "name": "Civilization Substrate Encoding",
+      "description": "Inscribing universal lattice processors with civilization-crystal memory patterns and stabilizing uploaded consciousness states in synchronization gel",
       "researchCost": 10000,
       "prerequisites": [
         "IS5a"
@@ -3029,75 +2965,11 @@
       }
     },
     {
-      "id": "IS6b",
-      "technologyId": "IS6",
-      "letter": "b",
-      "name": "Civilization Core Assembly",
-      "description": "Computational substrate for hosting entire uploaded societies",
-      "researchCost": 10000,
-      "prerequisites": [
-        "IS5b",
-        "PI5a"
-      ],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "civilization-core",
-        "outputType": "module",
-        "outputId": "CivilizationCore",
-        "baseWorkUnits": 950,
-        "capabilities": [
-          {
-            "type": "Research",
-            "baseValue": 60,
-            "qualitySource": "ComputeCapacity"
-          }
-        ],
-        "inputResources": [
-          {
-            "label": "civilization-housing",
-            "qualifier": "class",
-            "value": "Metal",
-            "quantity": 300,
-            "propertyMapping": {}
-          },
-          {
-            "label": "consciousness-crystals",
-            "qualifier": "order",
-            "value": "CrystallineGemstone",
-            "quantity": 200,
-            "propertyMapping": {}
-          }
-        ],
-        "inputComponents": [
-          {
-            "label": "universal-lattice",
-            "componentType": "UniversalLattice",
-            "quantity": 4,
-            "propertyMapping": {
-              "ComputeCapacity": "ComputeCapacity"
-            }
-          },
-          {
-            "label": "omniscient-core",
-            "componentType": "OmniscientCore",
-            "quantity": 3,
-            "propertyMapping": {}
-          },
-          {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
-            "quantity": 2,
-            "propertyMapping": {}
-          }
-        ]
-      }
-    },
-    {
       "id": "MB6a",
       "technologyId": "MB6",
       "letter": "a",
-      "name": "Megastructure Seed Fabrication",
-      "description": "Growth seed for planet-scale organic structures",
+      "name": "Megastructure Growth Primer Assembly",
+      "description": "Embedding transcendent biological matrices into heavy alloy seed casings saturated with growth-catalyst to trigger planet-scale organic expansion",
       "researchCost": 10000,
       "prerequisites": [
         "MB5a"
@@ -3109,8 +2981,8 @@
         "outputId": "MegastructureSeed",
         "baseWorkUnits": 600,
         "qualityProperties": {
-          "Vitality": 2.2,
-          "Responsiveness": 1.6
+          "Integrity": 2.2,
+          "Flexibility": 1.6
         },
         "inputResources": [
           {
@@ -3119,7 +2991,7 @@
             "value": "Metal",
             "quantity": 200,
             "propertyMapping": {
-              "UT": "Vitality"
+              "UT": "Integrity"
             }
           },
           {
@@ -3128,7 +3000,7 @@
             "value": "Liquid",
             "quantity": 150,
             "propertyMapping": {
-              "FL": "Responsiveness"
+              "FL": "Flexibility"
             }
           }
         ],
@@ -3138,7 +3010,7 @@
             "componentType": "TranscendentMatrix",
             "quantity": 3,
             "propertyMapping": {
-              "Vitality": "Vitality"
+              "Vitality": "Integrity"
             }
           }
         ]
@@ -3149,11 +3021,11 @@
       "technologyId": "MB6",
       "letter": "b",
       "name": "Megastructure Core Fabrication",
-      "description": "Core component for organic megastructure construction",
+      "description": "Forging megastructure-grade biological support frames with integrated growth and repair systems",
       "researchCost": 10000,
       "prerequisites": [
         "MB5a",
-        "BM5b"
+        "BM5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -3207,8 +3079,8 @@
       "id": "MC6a",
       "technologyId": "MC6",
       "letter": "a",
-      "name": "Transmutation Chamber Fabrication",
-      "description": "Chamber for controlled nuclear transmutation",
+      "name": "Nuclear Transmutation Vessel Assembly",
+      "description": "Lining reality-forge manipulators inside heavy alloy containment vessels flooded with nuclear-gel for controlled elemental conversion under extreme conditions",
       "researchCost": 10000,
       "prerequisites": [
         "MC5a"
@@ -3259,7 +3131,7 @@
       "id": "MC6b",
       "technologyId": "MC6",
       "letter": "b",
-      "name": "Transmutation Drill Assembly",
+      "name": "Reality Drill Assembly",
       "description": "Extraction system using controlled nuclear transmutation",
       "researchCost": 10000,
       "prerequisites": [
@@ -3268,14 +3140,14 @@
       ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "transmutation-drill",
+        "blueprintId": "reality-drill",
         "outputType": "module",
-        "outputId": "TransmutationDrill",
+        "outputId": "RealityDrill",
         "baseWorkUnits": 900,
         "capabilities": [
           {
-            "type": "ResourceExtraction",
-            "baseValue": 75,
+            "type": "MineralExtraction",
+            "baseValue": 65,
             "qualitySource": "Sensitivity"
           }
         ],
@@ -3311,8 +3183,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "void-singularity",
+            "componentType": "VoidSingularityCore",
             "quantity": 2,
             "propertyMapping": {}
           }
@@ -3331,7 +3203,7 @@
       ],
       "type": "modifier",
       "modifier": {
-        "operationType": "ManufacturingSpeed",
+        "operationType": "EnergeticExtraction",
         "bonusPercent": 10.0
       }
     },
@@ -3339,11 +3211,11 @@
       "id": "ME6b",
       "technologyId": "ME6",
       "letter": "b",
-      "name": "Antimatter Engine Assembly",
+      "name": "Void Engine Assembly",
       "description": "Propulsion system using controlled antimatter annihilation",
       "researchCost": 10000,
       "prerequisites": [
-        "ME5b",
+        "ME5a",
         "EC6b"
       ],
       "type": "blueprint",
@@ -3354,8 +3226,8 @@
         "baseWorkUnits": 950,
         "capabilities": [
           {
-            "type": "PropulsionPower",
-            "baseValue": 100,
+            "type": "Speed",
+            "baseValue": 120,
             "qualitySource": "ThrustRatio"
           }
         ],
@@ -3420,10 +3292,10 @@
       "technologyId": "MI6",
       "letter": "b",
       "name": "Reality Foundry Assembly",
-      "description": "Manufacturing facility that fabricates by reshaping reality",
+      "description": "Tuning reality-reshaping emitters inside a manufacturing bay anchored to stable dimensional coordinates",
       "researchCost": 10000,
       "prerequisites": [
-        "MI5b",
+        "MI5a",
         "IM6b"
       ],
       "type": "blueprint",
@@ -3471,8 +3343,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "exotic-catalyst",
+            "componentType": "ExoticCatalystCore",
             "quantity": 2,
             "propertyMapping": {}
           }
@@ -3483,7 +3355,7 @@
       "id": "MP6a",
       "technologyId": "MP6",
       "letter": "a",
-      "name": "Dimensional Navigation",
+      "name": "Dimensional Warp Navigation",
       "description": "Multi-dimensional structures optimize conduit traversal",
       "researchCost": 10000,
       "prerequisites": [
@@ -3500,11 +3372,11 @@
       "technologyId": "MP6",
       "letter": "b",
       "name": "Dimensional Frame Fabrication",
-      "description": "Structural component existing across multiple dimensions",
+      "description": "Extruding structural members across dimensional boundaries for multi-plane load bearing",
       "researchCost": 10000,
       "prerequisites": [
         "MP5a",
-        "PM5b"
+        "PM5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -3558,8 +3430,8 @@
       "id": "MS6a",
       "technologyId": "MS6",
       "letter": "a",
-      "name": "Auto-Civilization Core Fabrication",
-      "description": "Core for self-sustaining manufacturing civilizations",
+      "name": "Autonomous Governance Core Assembly",
+      "description": "Programming omniscient cores with civilization management protocols on crystalline substrates dampened in governance-gel for autonomous industrial oversight",
       "researchCost": 10000,
       "prerequisites": [
         "MS5a"
@@ -3611,7 +3483,7 @@
       "technologyId": "MS6",
       "letter": "b",
       "name": "Civilization Forge Assembly",
-      "description": "Self-sustaining manufacturing complex for society-scale production",
+      "description": "Linking autonomous production lines into a self-governing manufacturing network with civilization-scale throughput",
       "researchCost": 10000,
       "prerequisites": [
         "MS5a",
@@ -3662,8 +3534,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "infinite-power",
+            "componentType": "InfinitePowerTap",
             "quantity": 2,
             "propertyMapping": {}
           }
@@ -3674,8 +3546,8 @@
       "id": "PB6a",
       "technologyId": "PB6",
       "letter": "a",
-      "name": "Quantum Life Matrix Fabrication",
-      "description": "Matrix for quantum superposition organisms",
+      "name": "Quantum Bio-Lattice Cultivation",
+      "description": "Seeding transcendent biological matrices on quantum-resonant crystal substrates in superposition-gel to cultivate organisms spanning multiple quantum states",
       "researchCost": 10000,
       "prerequisites": [
         "PB5a"
@@ -3727,7 +3599,7 @@
       "technologyId": "PB6",
       "letter": "b",
       "name": "Quantum Bio-Extractor Assembly",
-      "description": "Extraction system using quantum biological organisms",
+      "description": "Mounting quantum-bio interface adapters on extraction hardware with entanglement-stabilized organism chambers",
       "researchCost": 10000,
       "prerequisites": [
         "PB5a",
@@ -3778,8 +3650,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "stellar-tap",
+            "componentType": "StellarCoreTapComponent",
             "quantity": 1,
             "propertyMapping": {}
           }
@@ -3790,7 +3662,7 @@
       "id": "PC6a",
       "technologyId": "PC6",
       "letter": "a",
-      "name": "Exotic Matter Processing",
+      "name": "Dimensional Matter Processing",
       "description": "Negative mass materials enable impossible manufacturing efficiency",
       "researchCost": 10000,
       "prerequisites": [
@@ -3807,7 +3679,7 @@
       "technologyId": "PC6",
       "letter": "b",
       "name": "Exotic Matter Forge Fabrication",
-      "description": "Manufacturing system using exotic matter properties",
+      "description": "Configuring exotic matter manipulation fields inside a precision forging chamber",
       "researchCost": 10000,
       "prerequisites": [
         "PC5a",
@@ -3881,8 +3753,8 @@
       "id": "PE6b",
       "technologyId": "PE6",
       "letter": "b",
-      "name": "Vacuum Core Fabrication",
-      "description": "Power generation through controlled vacuum state manipulation",
+      "name": "Singularity Projector Assembly",
+      "description": "Tapping controlled vacuum state transitions through phase-boundary generators in a shielded reactor core",
       "researchCost": 10000,
       "prerequisites": [
         "PE5a",
@@ -3937,11 +3809,90 @@
       }
     },
     {
+      "id": "PE6c",
+      "technologyId": "PE6",
+      "letter": "c",
+      "name": "Disruptor Array Assembly",
+      "description": "Arraying multi-frequency disruption emitters along a phased power bus with adaptive targeting",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PE6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "disruptor-array",
+        "outputType": "module",
+        "outputId": "DisruptorArray",
+        "baseWorkUnits": 750,
+        "capabilities": [
+          {
+            "type": "EnergyDamage",
+            "baseValue": 250,
+            "qualitySource": "Sensitivity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "weapon-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 180,
+            "propertyMapping": {}
+          },
+          {
+            "label": "exotic-matter",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 60,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "field-emitters",
+            "componentType": "FieldEmitter",
+            "quantity": 4,
+            "propertyMapping": {
+              "Sensitivity": "Sensitivity"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "ZeroPointCore",
+            "quantity": 4,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal",
+            "componentType": "ActiveThermalArray",
+            "quantity": 5,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "PE6d",
+      "technologyId": "PE6",
+      "letter": "d",
+      "name": "Singularity Beams",
+      "description": "Micro-singularity lensing compresses beam energy to near-infinite density at the focal point",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PE6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergyDamage",
+        "bonusPercent": 7.0
+      }
+    },
+    {
       "id": "PI6a",
       "technologyId": "PI6",
       "letter": "a",
       "name": "Universal Substrate Fabrication",
-      "description": "Space-time computational substrate",
+      "description": "Fabrication process for computational substrates woven into spacetime itself, enabling processing speeds unbound by matter-based limitations.",
       "researchCost": 10000,
       "prerequisites": [
         "PI5a"
@@ -3953,8 +3904,8 @@
         "outputId": "UniversalSubstrate",
         "baseWorkUnits": 580,
         "qualityProperties": {
-          "ComputeCapacity": 2.4,
-          "Stability": 1.6
+          "Integrity": 2.4,
+          "Flexibility": 1.6
         },
         "inputResources": [
           {
@@ -3963,7 +3914,7 @@
             "value": "CrystallineGemstone",
             "quantity": 180,
             "propertyMapping": {
-              "OQ": "ComputeCapacity"
+              "OQ": "Integrity"
             }
           },
           {
@@ -3972,7 +3923,7 @@
             "value": "Liquid",
             "quantity": 100,
             "propertyMapping": {
-              "FL": "Stability"
+              "FL": "Flexibility"
             }
           }
         ],
@@ -3982,72 +3933,8 @@
             "componentType": "RealityProcessor",
             "quantity": 3,
             "propertyMapping": {
-              "ComputeCapacity": "ComputeCapacity"
+              "ComputeCapacity": "Integrity"
             }
-          }
-        ]
-      }
-    },
-    {
-      "id": "PI6b",
-      "technologyId": "PI6",
-      "letter": "b",
-      "name": "Reality Computation Core Assembly",
-      "description": "Computing using the fabric of reality as processing substrate",
-      "researchCost": 10000,
-      "prerequisites": [
-        "PI5a",
-        "IP6b"
-      ],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "reality-computation-core",
-        "outputType": "module",
-        "outputId": "RealityComputationCore",
-        "baseWorkUnits": 950,
-        "capabilities": [
-          {
-            "type": "Research",
-            "baseValue": 55,
-            "qualitySource": "ComputeCapacity"
-          }
-        ],
-        "inputResources": [
-          {
-            "label": "reality-housing",
-            "qualifier": "class",
-            "value": "Metal",
-            "quantity": 280,
-            "propertyMapping": {}
-          },
-          {
-            "label": "spacetime-crystals",
-            "qualifier": "order",
-            "value": "CrystallineGemstone",
-            "quantity": 180,
-            "propertyMapping": {}
-          }
-        ],
-        "inputComponents": [
-          {
-            "label": "universal-lattice",
-            "componentType": "UniversalLattice",
-            "quantity": 4,
-            "propertyMapping": {
-              "ComputeCapacity": "ComputeCapacity"
-            }
-          },
-          {
-            "label": "reality-processor",
-            "componentType": "RealityProcessor",
-            "quantity": 3,
-            "propertyMapping": {}
-          },
-          {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
-            "quantity": 2,
-            "propertyMapping": {}
           }
         ]
       }
@@ -4072,11 +3959,11 @@
       "id": "PM6b",
       "technologyId": "PM6",
       "letter": "b",
-      "name": "Phase Emitter Fabrication",
-      "description": "Advanced field generation manipulating phase boundaries of reality",
+      "name": "Dimensional Shield Assembly",
+      "description": "Calibrating phase-boundary manipulation fields through reality-interface emitter arrays",
       "researchCost": 10000,
       "prerequisites": [
-        "PM5b",
+        "PM5a",
         "EP5a"
       ],
       "type": "blueprint",
@@ -4128,11 +4015,96 @@
       }
     },
     {
+      "id": "PM6c",
+      "technologyId": "PM6",
+      "letter": "c",
+      "name": "Quantum Barrier Assembly",
+      "description": "Generating quantum-phased barrier layers through probability-manipulation field projectors",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "quantum-barrier",
+        "outputType": "module",
+        "outputId": "QuantumBarrier",
+        "baseWorkUnits": 800,
+        "capabilities": [
+          {
+            "type": "EnergyResistance",
+            "baseValue": 600,
+            "qualitySource": "Sensitivity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "barrier-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 160,
+            "propertyMapping": {}
+          },
+          {
+            "label": "quantum-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 80,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "field-emitters",
+            "componentType": "FieldEmitter",
+            "quantity": 5,
+            "propertyMapping": {
+              "Sensitivity": "Sensitivity"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "ZeroPointCore",
+            "quantity": 4,
+            "propertyMapping": {}
+          },
+          {
+            "label": "conduits",
+            "componentType": "QuantumConduit",
+            "quantity": 4,
+            "propertyMapping": {}
+          },
+          {
+            "label": "morphogenic-matrix",
+            "componentType": "MorphogenicComponentMatrix",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "PM6d",
+      "technologyId": "PM6",
+      "letter": "d",
+      "name": "Dimensional Barriers",
+      "description": "Barriers spanning multiple dimensions scatter energy across parallel planes, diluting any single impact",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergyResistance",
+        "bonusPercent": 7.0
+      }
+    },
+    {
       "id": "PS6a",
       "technologyId": "PS6",
       "letter": "a",
-      "name": "Consensus Amplifier Fabrication",
-      "description": "Amplifier for collective reality-shaping will",
+      "name": "Consensus Resonance Chamber Assembly",
+      "description": "Tuning omniscient cores inside crystalline resonance chambers flooded with psycho-reactive gel for collective intention amplification and broadcast",
       "researchCost": 10000,
       "prerequisites": [
         "PS5a"
@@ -4180,69 +4152,6 @@
       }
     },
     {
-      "id": "PS6b",
-      "technologyId": "PS6",
-      "letter": "b",
-      "name": "Consensus Engine Accelerator Assembly",
-      "description": "Research facility harnessing collective will to shape reality",
-      "researchCost": 10000,
-      "prerequisites": [
-        "PS5b"
-      ],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "consensus-accelerator",
-        "outputType": "module",
-        "outputId": "ConsensusAccelerator",
-        "baseWorkUnits": 900,
-        "capabilities": [
-          {
-            "type": "Research",
-            "baseValue": 45,
-            "qualitySource": "ComputeCapacity"
-          }
-        ],
-        "inputResources": [
-          {
-            "label": "consensus-housing",
-            "qualifier": "class",
-            "value": "Metal",
-            "quantity": 250,
-            "propertyMapping": {}
-          },
-          {
-            "label": "collective-crystals",
-            "qualifier": "order",
-            "value": "CrystallineGemstone",
-            "quantity": 180,
-            "propertyMapping": {}
-          }
-        ],
-        "inputComponents": [
-          {
-            "label": "omniscient-core",
-            "componentType": "OmniscientCore",
-            "quantity": 4,
-            "propertyMapping": {
-              "ComputeCapacity": "ComputeCapacity"
-            }
-          },
-          {
-            "label": "transcendent-matrix",
-            "componentType": "TranscendentMatrix",
-            "quantity": 2,
-            "propertyMapping": {}
-          },
-          {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
-            "quantity": 1,
-            "propertyMapping": {}
-          }
-        ]
-      }
-    },
-    {
       "id": "SB6a",
       "technologyId": "SB6",
       "letter": "a",
@@ -4263,7 +4172,7 @@
       "technologyId": "SB6",
       "letter": "b",
       "name": "Immortality Ward Assembly",
-      "description": "Medical facility maintaining indefinite crew lifespan",
+      "description": "Installing telomere reconstruction suites and cellular renewal systems in a stasis-capable medical ward",
       "researchCost": 10000,
       "prerequisites": [
         "SB5b",
@@ -4277,7 +4186,7 @@
         "baseWorkUnits": 900,
         "capabilities": [
           {
-            "type": "CrewEfficiency",
+            "type": "CrewMember",
             "baseValue": 50,
             "qualitySource": "Vitality"
           }
@@ -4314,8 +4223,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "sentient-hub",
+            "componentType": "SentientNeuralHub",
             "quantity": 1,
             "propertyMapping": {}
           }
@@ -4326,8 +4235,8 @@
       "id": "SC6a",
       "technologyId": "SC6",
       "letter": "a",
-      "name": "Transmutation Matrix Fabrication",
-      "description": "Society-scale transmutation control matrix",
+      "name": "Elemental Control Matrix Assembly",
+      "description": "Networking reality-forge manipulators through transmutation-crystal control pathways in economic-gel for coordinated society-scale matter conversion",
       "researchCost": 10000,
       "prerequisites": [
         "SC5a"
@@ -4339,8 +4248,8 @@
         "outputId": "TransmutationMatrix",
         "baseWorkUnits": 560,
         "qualityProperties": {
-          "Integrity": 2.2,
-          "Flexibility": 1.6
+          "ComputeCapacity": 2.2,
+          "Stability": 1.6
         },
         "inputResources": [
           {
@@ -4349,7 +4258,7 @@
             "value": "CrystallineGemstone",
             "quantity": 180,
             "propertyMapping": {
-              "OQ": "Integrity"
+              "OQ": "ComputeCapacity"
             }
           },
           {
@@ -4358,7 +4267,7 @@
             "value": "Liquid",
             "quantity": 100,
             "propertyMapping": {
-              "SR": "Flexibility"
+              "SR": "Stability"
             }
           }
         ],
@@ -4368,72 +4277,8 @@
             "componentType": "RealityForge",
             "quantity": 2,
             "propertyMapping": {
-              "Integrity": "Integrity"
+              "Integrity": "ComputeCapacity"
             }
-          }
-        ]
-      }
-    },
-    {
-      "id": "SC6b",
-      "technologyId": "SC6",
-      "letter": "b",
-      "name": "Transmutation Hub Assembly",
-      "description": "Central facility for society-scale matter transformation",
-      "researchCost": 10000,
-      "prerequisites": [
-        "SC5a",
-        "CB6b"
-      ],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "transmutation-hub",
-        "outputType": "module",
-        "outputId": "TransmutationHub",
-        "baseWorkUnits": 950,
-        "capabilities": [
-          {
-            "type": "Manufacturing",
-            "baseValue": 55,
-            "qualitySource": "Integrity"
-          }
-        ],
-        "inputResources": [
-          {
-            "label": "hub-housing",
-            "qualifier": "class",
-            "value": "Metal",
-            "quantity": 320,
-            "propertyMapping": {}
-          },
-          {
-            "label": "transmutation-crystals",
-            "qualifier": "order",
-            "value": "CrystallineGemstone",
-            "quantity": 200,
-            "propertyMapping": {}
-          }
-        ],
-        "inputComponents": [
-          {
-            "label": "transmutation-vat",
-            "componentType": "TransmutationVat",
-            "quantity": 4,
-            "propertyMapping": {}
-          },
-          {
-            "label": "reality-forge",
-            "componentType": "RealityForge",
-            "quantity": 3,
-            "propertyMapping": {
-              "Integrity": "Integrity"
-            }
-          },
-          {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
-            "quantity": 2,
-            "propertyMapping": {}
           }
         ]
       }
@@ -4442,8 +4287,8 @@
       "id": "SE6a",
       "technologyId": "SE6",
       "letter": "a",
-      "name": "Infinite Distribution Node Fabrication",
-      "description": "Node for unlimited energy distribution",
+      "name": "Boundless Grid Junction Assembly",
+      "description": "Routing singularity conduits through precious-metal distribution junctions in scarcity-gel for lossless energy transmission across unlimited distances",
       "researchCost": 10000,
       "prerequisites": [
         "SE5a"
@@ -4491,75 +4336,11 @@
       }
     },
     {
-      "id": "SE6b",
-      "technologyId": "SE6",
-      "letter": "b",
-      "name": "Post-Scarcity Grid Assembly",
-      "description": "Power infrastructure for post-scarcity civilization",
-      "researchCost": 10000,
-      "prerequisites": [
-        "SE5a",
-        "ES6b"
-      ],
-      "type": "blueprint",
-      "blueprint": {
-        "blueprintId": "post-scarcity-grid",
-        "outputType": "module",
-        "outputId": "PostScarcityGrid",
-        "baseWorkUnits": 1000,
-        "capabilities": [
-          {
-            "type": "Power",
-            "baseValue": 800,
-            "qualitySource": "EnergyDensity"
-          }
-        ],
-        "inputResources": [
-          {
-            "label": "grid-housing",
-            "qualifier": "class",
-            "value": "Metal",
-            "quantity": 350,
-            "propertyMapping": {}
-          },
-          {
-            "label": "infinite-fuel",
-            "qualifier": "order",
-            "value": "Radioactive",
-            "quantity": 150,
-            "propertyMapping": {}
-          }
-        ],
-        "inputComponents": [
-          {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
-            "quantity": 4,
-            "propertyMapping": {
-              "EnergyDensity": "EnergyDensity"
-            }
-          },
-          {
-            "label": "hawking-diffuser",
-            "componentType": "HawkingDiffuser",
-            "quantity": 3,
-            "propertyMapping": {}
-          },
-          {
-            "label": "singularity-conduit",
-            "componentType": "SingularityConduit",
-            "quantity": 5,
-            "propertyMapping": {}
-          }
-        ]
-      }
-    },
-    {
       "id": "SI6a",
       "technologyId": "SI6",
       "letter": "a",
       "name": "Knowledge Transfer Node Fabrication",
-      "description": "Node for instant knowledge sharing",
+      "description": "Assembly process for quantum-entangled knowledge transfer nodes enabling instantaneous information sharing across any distance.",
       "researchCost": 10000,
       "prerequisites": [
         "SI5a"
@@ -4611,10 +4392,10 @@
       "technologyId": "SI6",
       "letter": "b",
       "name": "Omniscience Academy Assembly",
-      "description": "Training facility for instant knowledge transfer",
+      "description": "Networking instant-transfer knowledge conduits through neural bridge hardware in a training facility",
       "researchCost": 10000,
       "prerequisites": [
-        "SI5b"
+        "SI5a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -4625,7 +4406,7 @@
         "capabilities": [
           {
             "type": "Research",
-            "baseValue": 40,
+            "baseValue": 55,
             "qualitySource": "ComputeCapacity"
           }
         ],
@@ -4661,8 +4442,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "perpetual-enzyme",
+            "componentType": "PerpetualEnzymeMatrix",
             "quantity": 1,
             "propertyMapping": {}
           }
@@ -4681,7 +4462,7 @@
       ],
       "type": "modifier",
       "modifier": {
-        "operationType": "GenericMineralExtraction",
+        "operationType": "MineralExtraction",
         "bonusPercent": 10.0
       }
     },
@@ -4690,11 +4471,11 @@
       "technologyId": "SM6",
       "letter": "b",
       "name": "Dyson Command Assembly",
-      "description": "Coordination center for stellar-scale megastructure operations",
+      "description": "Constructing a stellar-scale coordination nexus with megastructure command and control systems",
       "researchCost": 10000,
       "prerequisites": [
         "SM5b",
-        "IS6b"
+        "IS6a"
       ],
       "type": "blueprint",
       "blueprint": {
@@ -4705,7 +4486,7 @@
         "capabilities": [
           {
             "type": "FleetCommand",
-            "baseValue": 25,
+            "baseValue": 35,
             "qualitySource": "ComputeCapacity"
           }
         ],
@@ -4741,8 +4522,8 @@
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "logic-engine",
+            "componentType": "MolecularLogicEngine",
             "quantity": 2,
             "propertyMapping": {}
           }
@@ -4753,7 +4534,7 @@
       "id": "SP6a",
       "technologyId": "SP6",
       "letter": "a",
-      "name": "Galactic Research Networks",
+      "name": "Galactic Research Coordination",
       "description": "Galaxy-wide coordination accelerates all research",
       "researchCost": 10000,
       "prerequisites": [
@@ -4766,38 +4547,107 @@
       }
     },
     {
-      "id": "SP6b",
-      "technologyId": "SP6",
-      "letter": "b",
-      "name": "Galactic Unity Beacon Assembly",
-      "description": "Communication hub for galaxy-spanning research coordination",
+      "id": "MP6c",
+      "technologyId": "MP6",
+      "letter": "c",
+      "name": "Coilgun Array Assembly",
+      "description": "Synchronizing a bank of electromagnetic accelerators into an array configuration with shared targeting and power distribution",
       "researchCost": 10000,
       "prerequisites": [
-        "SP5b"
+        "MP6a"
       ],
       "type": "blueprint",
       "blueprint": {
-        "blueprintId": "galactic-beacon",
+        "blueprintId": "coilgun-array",
         "outputType": "module",
-        "outputId": "GalacticBeacon",
-        "baseWorkUnits": 900,
+        "outputId": "CoilgunArray",
+        "baseWorkUnits": 1500,
         "capabilities": [
           {
-            "type": "Research",
-            "baseValue": 50,
-            "qualitySource": "ComputeCapacity"
+            "type": "KineticDamage",
+            "baseValue": 200,
+            "qualitySource": "Sensitivity"
           }
         ],
         "inputResources": [
           {
-            "label": "beacon-housing",
+            "label": "accelerator-alloy",
             "qualifier": "class",
             "value": "Metal",
-            "quantity": 280,
+            "quantity": 400,
             "propertyMapping": {}
           },
           {
-            "label": "galactic-crystals",
+            "label": "exotic-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 200,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "chamber",
+            "componentType": "RelativisticChamber",
+            "quantity": 3,
+            "propertyMapping": {
+              "Velocity": "Sensitivity"
+            }
+          },
+          {
+            "label": "power-core",
+            "componentType": "HawkingDiffuser",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "conduit",
+            "componentType": "SingularityConduit",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "lossless-conduit",
+            "componentType": "LosslessGridConduit",
+            "quantity": 2,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "PI6c",
+      "technologyId": "PI6",
+      "letter": "c",
+      "name": "Reality Shear Assembly",
+      "description": "Tears localized holes in spacetime to annihilate targets",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PI6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "reality-shear",
+        "outputType": "module",
+        "outputId": "RealityShear",
+        "baseWorkUnits": 1400,
+        "capabilities": [
+          {
+            "type": "QuantumDamage",
+            "baseValue": 180,
+            "qualitySource": "EnergyDensity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "ripper-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 380,
+            "propertyMapping": {}
+          },
+          {
+            "label": "dimensional-crystal",
             "qualifier": "order",
             "value": "CrystallineGemstone",
             "quantity": 180,
@@ -4806,26 +4656,1912 @@
         ],
         "inputComponents": [
           {
-            "label": "omniscient-core",
-            "componentType": "OmniscientCore",
-            "quantity": 4,
+            "label": "ripper",
+            "componentType": "DimensionalRipper",
+            "quantity": 2,
             "propertyMapping": {
-              "ComputeCapacity": "ComputeCapacity"
+              "Velocity": "EnergyDensity"
             }
           },
           {
-            "label": "phase-emitter",
-            "componentType": "PhaseEmitter",
-            "quantity": 3,
+            "label": "power-core",
+            "componentType": "HawkingDiffuser",
+            "quantity": 1,
             "propertyMapping": {}
           },
           {
-            "label": "singularity-core",
-            "componentType": "SingularityCore",
+            "label": "emitter",
+            "componentType": "PhaseEmitter",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "phase-matter",
+            "componentType": "PhaseMatterCore",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "BI6c",
+      "technologyId": "BI6",
+      "letter": "c",
+      "name": "Existence Anchor Assembly",
+      "description": "Anchors ship existence against probability manipulation",
+      "researchCost": 10000,
+      "prerequisites": [
+        "BI6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "existence-anchor",
+        "outputType": "module",
+        "outputId": "ExistenceAnchor",
+        "baseWorkUnits": 1600,
+        "capabilities": [
+          {
+            "type": "QuantumResistance",
+            "baseValue": 500,
+            "qualitySource": "Integrity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "anchor-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 450,
+            "propertyMapping": {}
+          },
+          {
+            "label": "stabilization-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 200,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "anchor-core",
+            "componentType": "ExistenceAnchorCore",
+            "quantity": 3,
+            "propertyMapping": {
+              "Shielding": "Integrity"
+            }
+          },
+          {
+            "label": "frame",
+            "componentType": "VoidLattice",
+            "quantity": 2,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          },
+          {
+            "label": "circuits",
+            "componentType": "OmniscientCore",
+            "quantity": 1,
+            "propertyMapping": {}
+          },
+          {
+            "label": "organic-hull",
+            "componentType": "OrganicHullMatrix",
             "quantity": 2,
             "propertyMapping": {}
           }
         ]
+      }
+    },
+    {
+      "id": "CM6c",
+      "technologyId": "CM6",
+      "letter": "c",
+      "name": "Neutronium Plate Assembly",
+      "description": "Ultra-dense neutronium armor resists extreme kinetic forces",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "neutronium-plate",
+        "outputType": "module",
+        "outputId": "NeutroniumPlate",
+        "baseWorkUnits": 1700,
+        "capabilities": [
+          {
+            "type": "KineticResistance",
+            "baseValue": 700,
+            "qualitySource": "Integrity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "neutronium-ore",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 500,
+            "propertyMapping": {}
+          },
+          {
+            "label": "binding-compound",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 250,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "neutronium-ingot",
+            "componentType": "NeutroniumIngot",
+            "quantity": 4,
+            "propertyMapping": {
+              "Shielding": "Integrity"
+            }
+          },
+          {
+            "label": "frame",
+            "componentType": "VoidLattice",
+            "quantity": 2,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          },
+          {
+            "label": "evolving-hull",
+            "componentType": "EvolvingHullSegment",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "adaptive-frame",
+            "componentType": "AdaptiveStructuralFrame",
+            "quantity": 2,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "IC6c",
+      "technologyId": "IC6",
+      "letter": "c",
+      "name": "Omniscient Targeting Grid Assembly",
+      "description": "Reality-aware targeting system with near-perfect accuracy",
+      "researchCost": 10000,
+      "prerequisites": [
+        "IC6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "omniscient-targeting-grid",
+        "outputType": "module",
+        "outputId": "OmniscientTargetingGrid",
+        "baseWorkUnits": 1300,
+        "capabilities": [
+          {
+            "type": "WeaponRange",
+            "baseValue": 75,
+            "qualitySource": "Sensitivity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "grid-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 350,
+            "propertyMapping": {}
+          },
+          {
+            "label": "sensor-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 180,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "targeting-core",
+            "componentType": "OmniscientTargetingCore",
+            "quantity": 2,
+            "propertyMapping": {
+              "Velocity": "Sensitivity"
+            }
+          },
+          {
+            "label": "optics",
+            "componentType": "PhaseEmitter",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "circuits",
+            "componentType": "OmniscientCore",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM6d",
+      "technologyId": "CM6",
+      "letter": "d",
+      "name": "Living Kinetic Shield",
+      "description": "Living matter instinctively hardens against incoming kinetic projectiles",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "KineticResistance",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "MP6d",
+      "technologyId": "MP6",
+      "letter": "d",
+      "name": "Dimensional Mass Amplification",
+      "description": "Dimensional folding multiplies projectile mass at the moment of impact",
+      "researchCost": 10000,
+      "prerequisites": [
+        "MP6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "KineticDamage",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "MP6e",
+      "technologyId": "MP6",
+      "letter": "e",
+      "name": "Capitol Chassis Blueprint",
+      "description": "Unlocks the manufacture of Capitol-class ship chassis at nexus station shipyards.",
+      "researchCost": 6400,
+      "prerequisites": [
+        "MI5c",
+        "MP6a"
+      ],
+      "type": "blueprint",
+      "chassisBlueprint": {
+        "blueprintId": "capitol-chassis",
+        "chassisClass": "Capitol",
+        "baseWorkUnitsPerSlot": 50,
+        "baseInputResources": [
+          {
+            "label": "hull-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 8000
+          },
+          {
+            "label": "hull-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 4000
+          },
+          {
+            "label": "hull-nonferro",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 3000
+          },
+          {
+            "label": "hull-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 1200
+          },
+          {
+            "label": "hull-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 800
+          },
+          {
+            "label": "hull-stellium",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 1500,
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "stellium",
+            "propertyMapping": {}
+          }
+        ],
+        "baseInputComponents": [
+          {
+            "label": "alloy-frame",
+            "componentType": "AlloyFrame",
+            "quantity": 800
+          },
+          {
+            "label": "copper-conduit",
+            "componentType": "CopperConduit",
+            "quantity": 600
+          },
+          {
+            "label": "heat-sink",
+            "componentType": "HeatSink",
+            "quantity": 500
+          },
+          {
+            "label": "capacitor-bank",
+            "componentType": "CapacitorBank",
+            "quantity": 400
+          }
+        ],
+        "perInteriorSlotInputResources": [
+          {
+            "label": "interior-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 900
+          },
+          {
+            "label": "interior-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 450
+          },
+          {
+            "label": "interior-nonferro",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 168
+          },
+          {
+            "label": "interior-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 56
+          }
+        ],
+        "perInteriorSlotInputComponents": [],
+        "perExteriorSlotInputResources": [
+          {
+            "label": "exterior-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 1350
+          },
+          {
+            "label": "exterior-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 675
+          },
+          {
+            "label": "exterior-nonferro",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 252
+          },
+          {
+            "label": "exterior-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 84
+          }
+        ],
+        "perExteriorSlotInputComponents": []
+      }
+    },
+    {
+      "id": "PI6b",
+      "technologyId": "PI6",
+      "letter": "b",
+      "name": "Reality Unraveling",
+      "description": "Universal computation finds precise points to collapse quantum stability",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PI6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "QuantumDamage",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "BP6c",
+      "technologyId": "BP6",
+      "letter": "c",
+      "name": "Biological Singularity Shield",
+      "description": "Singularity-level biological systems maintain quantum coherence under attack",
+      "researchCost": 10000,
+      "prerequisites": [
+        "BP6a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "QuantumResistance",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "BI6d",
+      "technologyId": "BI6",
+      "letter": "d",
+      "name": "Evolution Chamber Gestation",
+      "description": "Controlled mutagenic environment that accelerates biological adaptation across thousands of generations per cycle",
+      "researchCost": 10000,
+      "prerequisites": [
+        "BI6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "evolution-chamber",
+        "outputType": "component",
+        "outputId": "EvolutionChamber",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Vitality": 1.75,
+          "Responsiveness": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "mutagenic-substrate",
+            "qualifier": "class",
+            "value": "Biological",
+            "quantity": 100,
+            "propertyMapping": {
+              "FL": "Responsiveness"
+            }
+          },
+          {
+            "label": "nutrient-concentrate",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 70,
+            "propertyMapping": {
+              "HR": "Vitality"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "neural-substrate",
+            "componentType": "NeuralSubstrate",
+            "quantity": 2,
+            "propertyMapping": {
+              "Vitality": "Vitality"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "EP6c",
+      "technologyId": "EP6",
+      "letter": "c",
+      "name": "Warp Nozzle Shaping",
+      "description": "Spacetime-bending exhaust geometry that converts warp field collapse into directional thrust beyond conventional limits",
+      "researchCost": 10000,
+      "prerequisites": [
+        "EP6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "warp-nozzle",
+        "outputType": "component",
+        "outputId": "WarpNozzle",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "ThrustRatio": 1.75,
+          "FuelEfficiency": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "warp-reactive-fuel",
+            "qualifier": "class",
+            "value": "Gas",
+            "quantity": 100,
+            "propertyMapping": {
+              "PE": "Efficiency"
+            }
+          },
+          {
+            "label": "heat-resistant-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 100,
+            "propertyMapping": {
+              "HR": "ThrustRatio"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "fusion-feed",
+            "componentType": "FusionFeed",
+            "quantity": 2,
+            "propertyMapping": {
+              "ThrustRatio": "ThrustRatio"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "EM6c",
+      "technologyId": "EM6",
+      "letter": "c",
+      "name": "Warp Conduit Extrusion",
+      "description": "Superconducting warp-energy pathway extruded in zero-gravity to eliminate crystalline defects that cause field collapse",
+      "researchCost": 10000,
+      "prerequisites": [
+        "EM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "warp-conduit",
+        "outputType": "component",
+        "outputId": "WarpConduit",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Conductivity": 1.75,
+          "Capacity": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "warp-conductive-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 100,
+            "propertyMapping": {
+              "CN": "Conductivity"
+            }
+          },
+          {
+            "label": "stabilizing-fluid",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 60,
+            "propertyMapping": {
+              "FL": "Capacity"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "plasma-channel",
+            "componentType": "PlasmaChannel",
+            "quantity": 3,
+            "propertyMapping": {
+              "Conductivity": "Conductivity"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM6e",
+      "technologyId": "CM6",
+      "letter": "e",
+      "name": "Unified Frame Synthesis",
+      "description": "Self-organizing structural matrix that dynamically reconfigures load paths to absorb damage and accommodate module changes",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "unified-frame",
+        "outputType": "component",
+        "outputId": "UnifiedFrame",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Integrity": 1.75,
+          "Flexibility": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "adaptive-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 100,
+            "propertyMapping": {
+              "UT": "Integrity"
+            }
+          },
+          {
+            "label": "reconfiguration-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 60,
+            "propertyMapping": {
+              "SR": "Flexibility"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "quantum-lattice-frame",
+            "componentType": "QuantumLatticeFrame",
+            "quantity": 2,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "EP6d",
+      "technologyId": "EP6",
+      "letter": "d",
+      "name": "Warp Emitter Tuning",
+      "description": "Graviton projection array that generates shaped warp bubbles for superluminal thrust at extreme range",
+      "researchCost": 10000,
+      "prerequisites": [
+        "EP6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "warp-emitter",
+        "outputType": "component",
+        "outputId": "WarpEmitter",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "ThrustRatio": 1.75,
+          "FuelEfficiency": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "exotic-propellant",
+            "qualifier": "class",
+            "value": "Gas",
+            "quantity": 100,
+            "propertyMapping": {
+              "PE": "ThrustRatio"
+            }
+          },
+          {
+            "label": "warp-field-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 80,
+            "propertyMapping": {
+              "CN": "FuelEfficiency"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "warp-nozzle",
+            "componentType": "WarpNozzle",
+            "quantity": 2,
+            "propertyMapping": {
+              "ThrustRatio": "ThrustRatio"
+            }
+          },
+          {
+            "label": "field-emitter-array",
+            "componentType": "FieldEmitterArray",
+            "quantity": 1,
+            "propertyMapping": {
+              "Sensitivity": "FuelEfficiency"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM6f",
+      "technologyId": "CM6",
+      "letter": "f",
+      "name": "Relativistic Chamber Forging",
+      "description": "Magnetically confined acceleration chamber that propels projectiles to relativistic velocities within a ship-scale barrel",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "relativistic-chamber",
+        "outputType": "component",
+        "outputId": "RelativisticChamber",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Velocity": 1.75,
+          "Stability": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "magnetic-confinement-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 100,
+            "propertyMapping": {
+              "UT": "Stability"
+            }
+          },
+          {
+            "label": "acceleration-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 60,
+            "propertyMapping": {
+              "PE": "Velocity"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "gauss-coil-array",
+            "componentType": "GaussCoilArray",
+            "quantity": 3,
+            "propertyMapping": {
+              "Velocity": "Velocity"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM6g",
+      "technologyId": "CM6",
+      "letter": "g",
+      "name": "Dimensional Ripper Assembly",
+      "description": "Focused dimensional shear projector that tears holes in local spacetime to devastate targets at the quantum level",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "dimensional-ripper",
+        "outputType": "component",
+        "outputId": "DimensionalRipper",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Velocity": 1.75,
+          "Stability": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "dimensional-shear-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 90,
+            "propertyMapping": {
+              "OQ": "Velocity"
+            }
+          },
+          {
+            "label": "containment-hull-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 70,
+            "propertyMapping": {
+              "UT": "Stability"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "reality-lock-core",
+            "componentType": "RealityLockCore",
+            "quantity": 2,
+            "propertyMapping": {
+              "Shielding": "Stability"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM6h",
+      "technologyId": "CM6",
+      "letter": "h",
+      "name": "Existence Anchor Core Crystallization",
+      "description": "Hyper-dense matter core that generates a permanent reality well, anchoring the vessel against dimensional and quantum disruption",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "existence-anchor-core",
+        "outputType": "component",
+        "outputId": "ExistenceAnchorCore",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Shielding": 1.75,
+          "Resilience": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "hyper-dense-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 100,
+            "propertyMapping": {
+              "UT": "Resilience"
+            }
+          },
+          {
+            "label": "permanence-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 70,
+            "propertyMapping": {
+              "OQ": "Shielding"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "reality-lock-core",
+            "componentType": "RealityLockCore",
+            "quantity": 2,
+            "propertyMapping": {
+              "Resilience": "Shielding"
+            }
+          },
+          {
+            "label": "ablative-hull-panel",
+            "componentType": "AblativeHullPanel",
+            "quantity": 1,
+            "propertyMapping": {
+              "Resilience": "Resilience"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM6i",
+      "technologyId": "CM6",
+      "letter": "i",
+      "name": "Neutronium Ingot Compression",
+      "description": "Gravitational compression of degenerate matter into stable neutronium slugs with extraordinary mass-to-volume ratio",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "neutronium-ingot",
+        "outputType": "component",
+        "outputId": "NeutroniumIngot",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Shielding": 1.75,
+          "Resilience": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "degenerate-matter",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 120,
+            "propertyMapping": {
+              "UT": "Shielding"
+            }
+          },
+          {
+            "label": "graviton-catalyst",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 50,
+            "propertyMapping": {
+              "PE": "Resilience"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "ablative-hull-panel",
+            "componentType": "AblativeHullPanel",
+            "quantity": 2,
+            "propertyMapping": {
+              "Resilience": "Shielding"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CM6j",
+      "technologyId": "CM6",
+      "letter": "j",
+      "name": "Omniscient Targeting Core Integration",
+      "description": "Multi-dimensional sensor fusion core that perceives targets across spacetime, enabling fire solutions before evasive action begins",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "omniscient-targeting-core",
+        "outputType": "component",
+        "outputId": "OmniscientTargetingCore",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Velocity": 1.75,
+          "Stability": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "omnisensor-crystal",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 90,
+            "propertyMapping": {
+              "OQ": "Velocity"
+            }
+          },
+          {
+            "label": "processing-alloy",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 70,
+            "propertyMapping": {
+              "CN": "Stability"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "quantum-targeting-core",
+            "componentType": "QuantumTargetingCore",
+            "quantity": 2,
+            "propertyMapping": {
+              "Velocity": "Velocity"
+            }
+          },
+          {
+            "label": "probability-matrix",
+            "componentType": "ProbabilityMatrix",
+            "quantity": 1,
+            "propertyMapping": {
+              "Stability": "Stability"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "PM6e",
+      "technologyId": "PM6",
+      "letter": "e",
+      "name": "Entanglement Relay Component Assembly",
+      "description": "Paired quantum-entangled transceivers that maintain coherent sensor data streams across interstellar distances",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PM6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "entanglement-relay-component",
+        "outputType": "component",
+        "outputId": "EntanglementRelayComponent",
+        "baseWorkUnits": 600,
+        "qualityProperties": {
+          "Sensitivity": 1.75,
+          "Resolution": 1.65
+        },
+        "inputResources": [
+          {
+            "label": "entangled-crystal-pair",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 90,
+            "propertyMapping": {
+              "OQ": "Resolution"
+            }
+          },
+          {
+            "label": "signal-conductor",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 60,
+            "propertyMapping": {
+              "CN": "Sensitivity"
+            }
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "gravitic-lens",
+            "componentType": "GraviticLens",
+            "quantity": 2,
+            "propertyMapping": {
+              "Sensitivity": "Sensitivity"
+            }
+          },
+          {
+            "label": "field-emitter-array",
+            "componentType": "FieldEmitterArray",
+            "quantity": 1,
+            "propertyMapping": {
+              "Resolution": "Resolution"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "CC6a",
+      "technologyId": "CC6",
+      "letter": "a",
+      "name": "Quantium Entanglement",
+      "description": "Quantum-entangled superconductor weaving Stellium networks through non-ferromagnetic lattices at subatomic precision",
+      "researchCost": 10000,
+      "prerequisites": [],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "quantium",
+        "outputType": "alloy",
+        "outputId": "quantium",
+        "baseWorkUnits": 300,
+        "alloyDefinition": {
+          "name": "Quantium",
+          "tier": 6,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "CN",
+              "catalystProperty": "HR"
+            },
+            {
+              "boostedProperty": "PE",
+              "catalystProperty": "OQ"
+            },
+            {
+              "boostedProperty": "SR",
+              "catalystProperty": "MA"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-nonferromagnetic",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "CN",
+                "operator": "gte",
+                "value": 600
+              },
+              {
+                "property": "SR",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-stellium",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "stellium",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-precious",
+            "qualifier": "order",
+            "value": "Precious",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 600
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-reactive-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "HR",
+                "operator": "gte",
+                "value": 550
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-inert-gas",
+            "qualifier": "order",
+            "value": "InertGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 550
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CC6b",
+      "technologyId": "CC6",
+      "letter": "b",
+      "name": "Nullite Containment",
+      "description": "Anti-matter stabilized composite channeling radioactive energy through Pyronite-tempered crystalline matrices",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CC6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "nullite",
+        "outputType": "alloy",
+        "outputId": "nullite",
+        "baseWorkUnits": 300,
+        "alloyDefinition": {
+          "name": "Nullite",
+          "tier": 6,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "HR",
+              "catalystProperty": "PE"
+            },
+            {
+              "boostedProperty": "DR",
+              "catalystProperty": "CN"
+            },
+            {
+              "boostedProperty": "MA",
+              "catalystProperty": "OQ"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-radioactive",
+            "qualifier": "order",
+            "value": "Radioactive",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 650
+              },
+              {
+                "property": "HR",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-pyronite",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "pyronite",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-crystalline",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "DR",
+                "operator": "gte",
+                "value": 550
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-petrochem",
+            "qualifier": "order",
+            "value": "PetrochemicalLiquid",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 550
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-reactive-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "CN",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CC6c",
+      "technologyId": "CC6",
+      "letter": "c",
+      "name": "Prismatine Resonance",
+      "description": "Spectral-resonant crystalline alloy harnessing Chronite temporal fields within rare gemstone lattices",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CC6a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "prismatine",
+        "outputType": "alloy",
+        "outputId": "prismatine",
+        "baseWorkUnits": 300,
+        "alloyDefinition": {
+          "name": "Prismatine",
+          "tier": 6,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "DR",
+              "catalystProperty": "OQ"
+            },
+            {
+              "boostedProperty": "FL",
+              "catalystProperty": "PE"
+            },
+            {
+              "boostedProperty": "UT",
+              "catalystProperty": "CN"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-crystalline",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "DR",
+                "operator": "gte",
+                "value": 600
+              },
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-chronite",
+            "qualifier": "class",
+            "value": "Gemstone",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "chronite",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-rare",
+            "qualifier": "order",
+            "value": "Rare",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "UT",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-inert-gas",
+            "qualifier": "order",
+            "value": "InertGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 550
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-petrochem",
+            "qualifier": "order",
+            "value": "PetrochemicalLiquid",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "CN",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CC6d",
+      "technologyId": "CC6",
+      "letter": "d",
+      "name": "Tectite Amplification",
+      "description": "Tectonic-force channeling alloy embedding Voidsteel cores within corrosion-resistant ferromagnetic shells",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CC6b"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "tectite",
+        "outputType": "alloy",
+        "outputId": "tectite",
+        "baseWorkUnits": 300,
+        "alloyDefinition": {
+          "name": "Tectite",
+          "tier": 6,
+          "specialtyBoosts": [
+            {
+              "boostedProperty": "SR",
+              "catalystProperty": "PE"
+            },
+            {
+              "boostedProperty": "CR",
+              "catalystProperty": "HR"
+            },
+            {
+              "boostedProperty": "FR",
+              "catalystProperty": "OQ"
+            }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-ferromagnetic",
+            "qualifier": "order",
+            "value": "Ferromagnetic",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "SR",
+                "operator": "gte",
+                "value": 650
+              },
+              {
+                "property": "CR",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "alloy-voidsteel",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "Alloy",
+            "alloyDefinitionId": "voidsteel",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-nonradioactive",
+            "qualifier": "order",
+            "value": "NonRadioactive",
+            "quantity": 3,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "UT",
+                "operator": "gte",
+                "value": 550
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-reactive-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "PE",
+                "operator": "gte",
+                "value": 550
+              }
+            ],
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-inert-gas",
+            "qualifier": "order",
+            "value": "InertGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyConstraints": [
+              {
+                "property": "OQ",
+                "operator": "gte",
+                "value": 500
+              }
+            ],
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "BE6c",
+      "technologyId": "BE6",
+      "letter": "c",
+      "name": "Entropy Cascade Harvesting",
+      "description": "Bioenergetic singularity systems cascade dimensional entropy gradients into extraction amplification",
+      "researchCost": 10000,
+      "prerequisites": [
+        "BE5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "BI6e",
+      "technologyId": "BI6",
+      "letter": "e",
+      "name": "Digitized Consciousness Research",
+      "description": "Uploaded consciousness networks process research hypotheses across parallel dimensional substrates",
+      "researchCost": 10000,
+      "prerequisites": [
+        "BI5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "BM6c",
+      "technologyId": "BM6",
+      "letter": "c",
+      "name": "Living Machinery Extraction",
+      "description": "Self-evolving biological machines optimize extraction pathways through dimensional adaptation",
+      "researchCost": 10000,
+      "prerequisites": [
+        "BM5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "CB6c",
+      "technologyId": "CB6",
+      "letter": "c",
+      "name": "Void Distillation Extraction",
+      "description": "Molecular void distillation separates compounds through interdimensional pressure differentials",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CB5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "CE6c",
+      "technologyId": "CE6",
+      "letter": "c",
+      "name": "Vacuum Energy Synthesis",
+      "description": "Zero-point energy chemistry eliminates waste through perfect reaction thermodynamics",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CE5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "CP6c",
+      "technologyId": "CP6",
+      "letter": "c",
+      "name": "Quantum Transmutation Acceleration",
+      "description": "Subatomic transmutation bypasses conventional fabrication steps entirely",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CP5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "CS6c",
+      "technologyId": "CS6",
+      "letter": "c",
+      "name": "Networked Solvent Cascades",
+      "description": "Distributed chemical networks coordinate simultaneous extraction across fleet-wide processors",
+      "researchCost": 10000,
+      "prerequisites": [
+        "CS5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "EB6c",
+      "technologyId": "EB6",
+      "letter": "c",
+      "name": "Stellar Bio-Fusion Harvesting",
+      "description": "Organisms engineered for stellar core proximity channel fusion byproducts into extraction systems",
+      "researchCost": 10000,
+      "prerequisites": [
+        "EB5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "EC6c",
+      "technologyId": "EC6",
+      "letter": "c",
+      "name": "Antimatter Catalytic Extraction",
+      "description": "Controlled antimatter reactions energize extraction chambers to unprecedented efficiency",
+      "researchCost": 10000,
+      "prerequisites": [
+        "EC5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "EI6b",
+      "technologyId": "EI6",
+      "letter": "b",
+      "name": "Temporal Manufacturing Prediction",
+      "description": "Temporal forecasting eliminates manufacturing bottlenecks before they form",
+      "researchCost": 10000,
+      "prerequisites": [
+        "EI5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "EM6d",
+      "technologyId": "EM6",
+      "letter": "d",
+      "name": "Gravitational Assembly Acceleration",
+      "description": "Gravitational manipulation accelerates component alignment during fabrication",
+      "researchCost": 10000,
+      "prerequisites": [
+        "EM5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "ES6c",
+      "technologyId": "ES6",
+      "letter": "c",
+      "name": "Abundant Energy Research",
+      "description": "Post-scarcity energy distribution removes all power constraints from research operations",
+      "researchCost": 10000,
+      "prerequisites": [
+        "ES5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "IB6c",
+      "technologyId": "IB6",
+      "letter": "c",
+      "name": "Symbiotic Extraction Intelligence",
+      "description": "Bio-digital hybrid systems achieve perfect extraction precision through dimensional sensing",
+      "researchCost": 10000,
+      "prerequisites": [
+        "IB5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "IC6d",
+      "technologyId": "IC6",
+      "letter": "d",
+      "name": "Predictive Deposit Mapping",
+      "description": "AI systems predict mineral distributions across dimensional boundaries with perfect accuracy",
+      "researchCost": 10000,
+      "prerequisites": [
+        "IC5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "IE6c",
+      "technologyId": "IE6",
+      "letter": "c",
+      "name": "Energy-Pattern Mineral Detection",
+      "description": "Pure energy intelligence patterns detect mineral deposits through dimensional resonance",
+      "researchCost": 10000,
+      "prerequisites": [
+        "IE5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "IS6b",
+      "technologyId": "IS6",
+      "letter": "b",
+      "name": "Omniscient Research Networks",
+      "description": "Distributed omniscience ensures all research maintains dimensional-grade quality baselines",
+      "researchCost": 10000,
+      "prerequisites": [
+        "IS5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "MB6c",
+      "technologyId": "MB6",
+      "letter": "c",
+      "name": "Bio-Structural Extraction",
+      "description": "Bio-engineered structural systems optimize mineral extraction through living drill matrices",
+      "researchCost": 10000,
+      "prerequisites": [
+        "MB5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "MC6c",
+      "technologyId": "MC6",
+      "letter": "c",
+      "name": "Atomic Reconstruction Extraction",
+      "description": "Atomic-scale manufacturing techniques enable perfect separation of chemical compounds",
+      "researchCost": 10000,
+      "prerequisites": [
+        "MC5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "MS6c",
+      "technologyId": "MS6",
+      "letter": "c",
+      "name": "Ecosystem-Driven Production",
+      "description": "Self-organizing manufacturing ecosystems maximize throughput through emergent optimization",
+      "researchCost": 10000,
+      "prerequisites": [
+        "MS5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "PB6c",
+      "technologyId": "PB6",
+      "letter": "c",
+      "name": "Quantum Biological Tempering",
+      "description": "Quantum biology principles achieve atomic-perfect crystalline alignment in manufactured outputs",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PB5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "PS6b",
+      "technologyId": "PS6",
+      "letter": "b",
+      "name": "Institutional Quantum Standards",
+      "description": "Quantum-verified institutional protocols guarantee minimum research quality thresholds",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PS5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "SC6b",
+      "technologyId": "SC6",
+      "letter": "b",
+      "name": "Molecular Trade Optimization",
+      "description": "Molecular-level supply chain coordination eliminates all manufacturing waste",
+      "researchCost": 10000,
+      "prerequisites": [
+        "SC5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "SE6b",
+      "technologyId": "SE6",
+      "letter": "b",
+      "name": "Post-Scarcity Research Distribution",
+      "description": "Universal energy access enables continuous parallel research operations",
+      "researchCost": 10000,
+      "prerequisites": [
+        "SE5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "SI6c",
+      "technologyId": "SI6",
+      "letter": "c",
+      "name": "Collective Intelligence Baselines",
+      "description": "Networked collective intelligence ensures all research outputs exceed dimensional quality thresholds",
+      "researchCost": 10000,
+      "prerequisites": [
+        "SI5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 8.0
+      }
+    },
+    {
+      "id": "PI6d",
+      "technologyId": "PI6",
+      "letter": "d",
+      "name": "Oracle-Guided Discovery Ceilings",
+      "description": "Quantum oracle systems explore every branch of possibility space to maximize research quality potential",
+      "researchCost": 10000,
+      "prerequisites": [
+        "PI5a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityCeiling",
+        "bonusPercent": 8.0
       }
     }
   ],
@@ -4836,22 +6572,10 @@
       "description": "Biological component operating at the intersection of life and fundamental physics",
       "category": "BioMatrices",
       "tier": 6,
-      "mass": 8,
+      "mass": 40,
       "qualityProperties": [
         "Vitality",
         "Responsiveness"
-      ]
-    },
-    {
-      "componentId": "SingularityCore",
-      "name": "Singularity Core",
-      "description": "Power generation from controlled micro-singularity containment",
-      "category": "PowerCells",
-      "tier": 6,
-      "mass": 12,
-      "qualityProperties": [
-        "EnergyDensity",
-        "Efficiency"
       ]
     },
     {
@@ -4860,7 +6584,7 @@
       "description": "Programmable structural framework that reconfigures on command",
       "category": "StructuralFrames",
       "tier": 6,
-      "mass": 14,
+      "mass": 70,
       "qualityProperties": [
         "Integrity",
         "Flexibility"
@@ -4872,7 +6596,7 @@
       "description": "Extreme-performance propulsion using controlled antimatter annihilation",
       "category": "PropellantSystems",
       "tier": 6,
-      "mass": 10,
+      "mass": 50,
       "qualityProperties": [
         "ThrustRatio",
         "FuelEfficiency"
@@ -4884,7 +6608,7 @@
       "description": "Power transmission using controlled singularity dynamics",
       "category": "Conduits",
       "tier": 6,
-      "mass": 6,
+      "mass": 30,
       "qualityProperties": [
         "Conductivity",
         "Capacity"
@@ -4896,22 +6620,10 @@
       "description": "Processing system with near-perfect predictive capabilities",
       "category": "Circuits",
       "tier": 6,
-      "mass": 6,
+      "mass": 30,
       "qualityProperties": [
         "ComputeCapacity",
         "Stability"
-      ]
-    },
-    {
-      "componentId": "EntropyShunt",
-      "name": "Entropy Shunt",
-      "description": "Channel entropy differentials to extract usable energy from decay processes",
-      "category": "ThermalManagement",
-      "tier": 6,
-      "mass": 8,
-      "qualityProperties": [
-        "Dissipation",
-        "Tolerance"
       ]
     },
     {
@@ -4920,7 +6632,7 @@
       "description": "Advanced field generation manipulating phase boundaries of reality",
       "category": "Optics",
       "tier": 6,
-      "mass": 6,
+      "mass": 30,
       "qualityProperties": [
         "Sensitivity",
         "Resolution"
@@ -4932,7 +6644,7 @@
       "description": "Dimensional-spanning biological processing for exotic organic compounds",
       "category": "BioMatrices",
       "tier": 6,
-      "mass": 10,
+      "mass": 50,
       "qualityProperties": [
         "Vitality",
         "Responsiveness"
@@ -4944,7 +6656,7 @@
       "description": "Component for capturing and channeling Hawking radiation energy",
       "category": "PowerCells",
       "tier": 6,
-      "mass": 10,
+      "mass": 50,
       "qualityProperties": [
         "EnergyDensity",
         "Efficiency"
@@ -4956,19 +6668,19 @@
       "description": "Self-growing, self-repairing biological ship hull sections",
       "category": "StructuralFrames",
       "tier": 6,
-      "mass": 16,
+      "mass": 80,
       "qualityProperties": [
         "Integrity",
         "Flexibility"
       ]
     },
     {
-      "componentId": "RealityForge",
-      "name": "Reality Forge",
+      "componentId": "AlchemicalForge",
+      "name": "Alchemical Forge",
       "description": "Manufacturing system using controlled reality manipulation",
       "category": "StructuralFrames",
       "tier": 6,
-      "mass": 14,
+      "mass": 70,
       "qualityProperties": [
         "Integrity",
         "Flexibility"
@@ -4980,7 +6692,7 @@
       "description": "Biological chamber for controlled elemental transmutation",
       "category": "BioMatrices",
       "tier": 6,
-      "mass": 12,
+      "mass": 60,
       "qualityProperties": [
         "Vitality",
         "Responsiveness"
@@ -4992,7 +6704,7 @@
       "description": "Chemical processing occurring across dimensional boundaries",
       "category": "PowerCells",
       "tier": 6,
-      "mass": 10,
+      "mass": 50,
       "qualityProperties": [
         "EnergyDensity",
         "Efficiency"
@@ -5004,7 +6716,7 @@
       "description": "Computing circuits that process by manipulating local reality",
       "category": "Circuits",
       "tier": 6,
-      "mass": 8,
+      "mass": 40,
       "qualityProperties": [
         "ComputeCapacity",
         "Stability"
@@ -5016,7 +6728,7 @@
       "description": "Processing architecture using space-time itself as computational substrate",
       "category": "Circuits",
       "tier": 6,
-      "mass": 10,
+      "mass": 50,
       "qualityProperties": [
         "ComputeCapacity",
         "Stability"
@@ -5028,7 +6740,7 @@
       "description": "Power system with temporal prediction for perfect energy availability",
       "category": "PowerCells",
       "tier": 6,
-      "mass": 10,
+      "mass": 50,
       "qualityProperties": [
         "EnergyDensity",
         "Efficiency"
@@ -5040,7 +6752,7 @@
       "description": "Power generation through controlled vacuum state manipulation",
       "category": "PowerCells",
       "tier": 6,
-      "mass": 12,
+      "mass": 60,
       "qualityProperties": [
         "EnergyDensity",
         "Efficiency"
@@ -5052,7 +6764,7 @@
       "description": "Structural component existing across multiple dimensions",
       "category": "StructuralFrames",
       "tier": 6,
-      "mass": 14,
+      "mass": 70,
       "qualityProperties": [
         "Integrity",
         "Flexibility"
@@ -5064,7 +6776,7 @@
       "description": "Core component for organic megastructure construction",
       "category": "StructuralFrames",
       "tier": 6,
-      "mass": 18,
+      "mass": 90,
       "qualityProperties": [
         "Integrity",
         "Flexibility"
@@ -5076,11 +6788,443 @@
       "description": "Manufacturing system using exotic matter properties",
       "category": "StructuralFrames",
       "tier": 6,
-      "mass": 16,
+      "mass": 80,
       "qualityProperties": [
         "Integrity",
         "Flexibility"
       ]
+    },
+    {
+      "componentId": "EntropyHarvester",
+      "name": "Entropy Harvester",
+      "description": "Device that extracts useful energy from entropy gradients",
+      "category": "PowerCells",
+      "tier": 6,
+      "mass": 30,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
+    },
+    {
+      "componentId": "NeuralUploadInterface",
+      "name": "Neural Upload Interface",
+      "description": "Interface for digitizing biological neural patterns",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 20,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "EvolutionChamber",
+      "name": "Evolution Chamber",
+      "description": "Controlled environment for accelerated evolutionary processes",
+      "category": "BioMatrices",
+      "tier": 6,
+      "mass": 60,
+      "qualityProperties": [
+        "Vitality",
+        "Responsiveness"
+      ]
+    },
+    {
+      "componentId": "TransmutationCatalyst",
+      "name": "Transmutation Catalyst",
+      "description": "Catalyst enabling matter-to-matter conversion at the atomic level",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 25,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "VacuumEnergyTap",
+      "name": "Vacuum Energy Tap",
+      "description": "Device that extracts energy from quantum vacuum fluctuations",
+      "category": "PowerCells",
+      "tier": 6,
+      "mass": 40,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
+    },
+    {
+      "componentId": "DimensionalCatalyst",
+      "name": "Dimensional Catalyst",
+      "description": "Catalyst that enables manipulation of dimensional boundaries",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 30,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "AlchemicalProcessor",
+      "name": "Alchemical Processor",
+      "description": "Processor that enables molecular transformation and synthesis",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 35,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "StellarOrganismCore",
+      "name": "Stellar Organism Core",
+      "description": "Biological core adapted to survive and thrive in stellar environments",
+      "category": "BioMatrices",
+      "tier": 6,
+      "mass": 75,
+      "qualityProperties": [
+        "Vitality",
+        "Responsiveness"
+      ]
+    },
+    {
+      "componentId": "WarpNozzle",
+      "name": "Warp Nozzle",
+      "description": "Propulsion component that shapes warp field emissions",
+      "category": "PropellantSystems",
+      "tier": 6,
+      "mass": 50,
+      "qualityProperties": [
+        "ThrustRatio",
+        "FuelEfficiency"
+      ]
+    },
+    {
+      "componentId": "TemporalPredictor",
+      "name": "Temporal Predictor",
+      "description": "Device that analyzes probability streams to predict future states",
+      "category": "Optics",
+      "tier": 6,
+      "mass": 25,
+      "qualityProperties": [
+        "Sensitivity",
+        "Resolution"
+      ]
+    },
+    {
+      "componentId": "SingularityDriveCore",
+      "name": "Singularity Drive Core",
+      "description": "Core component that harnesses micro-singularities for propulsion",
+      "category": "PropellantSystems",
+      "tier": 6,
+      "mass": 100,
+      "qualityProperties": [
+        "ThrustRatio",
+        "FuelEfficiency"
+      ]
+    },
+    {
+      "componentId": "WarpConduit",
+      "name": "Warp Conduit",
+      "description": "Conduit that channels and directs warp field energy",
+      "category": "Conduits",
+      "tier": 6,
+      "mass": 40,
+      "qualityProperties": [
+        "Conductivity",
+        "Capacity"
+      ]
+    },
+    {
+      "componentId": "InfinitePowerTap",
+      "name": "Infinite Power Tap",
+      "description": "Device that draws unlimited energy from exotic sources",
+      "category": "PowerCells",
+      "tier": 6,
+      "mass": 60,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
+    },
+    {
+      "componentId": "CognitionMerger",
+      "name": "Cognition Merger",
+      "description": "Interface enabling multiple consciousnesses to share thought processes",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 30,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "MolecularOmniscienceArray",
+      "name": "Molecular Omniscience Array",
+      "description": "Sensor array capable of detecting individual molecular states",
+      "category": "Optics",
+      "tier": 6,
+      "mass": 40,
+      "qualityProperties": [
+        "Sensitivity",
+        "Resolution"
+      ]
+    },
+    {
+      "componentId": "PrecognitivePowerNode",
+      "name": "Precognitive Power Node",
+      "description": "Power distribution node that anticipates energy demands",
+      "category": "PowerCells",
+      "tier": 6,
+      "mass": 35,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
+    },
+    {
+      "componentId": "CivilizationUploadNode",
+      "name": "Civilization Upload Node",
+      "description": "Node capable of digitizing and storing entire civilizations",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 75,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "MegastructureSeed",
+      "name": "Megastructure Seed",
+      "description": "Self-replicating seed that grows into massive structures",
+      "category": "StructuralFrames",
+      "tier": 6,
+      "mass": 125,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
+    },
+    {
+      "componentId": "TransmutationChamber",
+      "name": "Transmutation Chamber",
+      "description": "Chamber where matter undergoes controlled transmutation",
+      "category": "StructuralFrames",
+      "tier": 6,
+      "mass": 90,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
+    },
+    {
+      "componentId": "UnifiedFrame",
+      "name": "Unified Frame",
+      "description": "Structural frame that integrates all ship systems seamlessly",
+      "category": "StructuralFrames",
+      "tier": 6,
+      "mass": 100,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
+    },
+    {
+      "componentId": "AutoCivilizationCore",
+      "name": "Auto-Civilization Core",
+      "description": "Core that autonomously manages civilization-scale operations",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 60,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "QuantumLifeMatrix",
+      "name": "Quantum Life Matrix",
+      "description": "Biological matrix existing in quantum superposition states",
+      "category": "BioMatrices",
+      "tier": 6,
+      "mass": 50,
+      "qualityProperties": [
+        "Vitality",
+        "Responsiveness"
+      ]
+    },
+    {
+      "componentId": "UniversalSubstrate",
+      "name": "Universal Substrate",
+      "description": "Programmable matter that can become any needed component",
+      "category": "StructuralFrames",
+      "tier": 6,
+      "mass": 75,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
+    },
+    {
+      "componentId": "WarpEmitter",
+      "name": "Warp Emitter",
+      "description": "Emitter that generates and projects warp fields",
+      "category": "PropellantSystems",
+      "tier": 6,
+      "mass": 60,
+      "qualityProperties": [
+        "ThrustRatio",
+        "FuelEfficiency"
+      ]
+    },
+    {
+      "componentId": "ConsensusAmplifier",
+      "name": "Consensus Amplifier",
+      "description": "Device that amplifies and harmonizes collective decision-making",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 25,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "TransmutationMatrix",
+      "name": "Transmutation Matrix",
+      "description": "Matrix enabling large-scale matter transformation",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 45,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "InfiniteDistributionNode",
+      "name": "Infinite Distribution Node",
+      "description": "Node enabling unlimited resource distribution across systems",
+      "category": "Conduits",
+      "tier": 6,
+      "mass": 40,
+      "qualityProperties": [
+        "Conductivity",
+        "Capacity"
+      ]
+    },
+    {
+      "componentId": "KnowledgeTransferNode",
+      "name": "Knowledge Transfer Node",
+      "description": "Node enabling direct knowledge transfer between minds",
+      "category": "Circuits",
+      "tier": 6,
+      "mass": 30,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "EvolvingHullSegment",
+      "name": "Evolving Hull Segment",
+      "description": "Adaptive biological hull that evolves in response to combat damage, growing stronger at wound sites",
+      "category": "StructuralFrames",
+      "tier": 6,
+      "mass": 50,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
+    },
+    {
+      "componentId": "VoidSingularityCore",
+      "name": "Void Singularity Core",
+      "description": "Void-stabilized singularity storing energy in the curvature of space-time itself",
+      "category": "PowerCells",
+      "tier": 6,
+      "mass": 35,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
+    },
+    {
+      "componentId": "VoidAntimatterInjector",
+      "name": "Void Antimatter Injector",
+      "description": "Void-channeled antimatter injection achieving thrust levels impossible in normal space",
+      "category": "PropellantSystems",
+      "tier": 6,
+      "mass": 40,
+      "qualityProperties": [
+        "ThrustRatio",
+        "FuelEfficiency"
+      ]
+    },
+    {
+      "name": "Relativistic Chamber",
+      "tier": 6,
+      "qualityProperties": [
+        "Velocity",
+        "Stability"
+      ],
+      "componentId": "RelativisticChamber",
+      "description": "Magnetically confined acceleration chamber that boosts projectiles to relativistic velocities where mass dilation dramatically amplifies kinetic yield.",
+      "category": "WeaponComponents",
+      "mass": 20
+    },
+    {
+      "name": "Dimensional Ripper",
+      "tier": 6,
+      "qualityProperties": [
+        "Velocity",
+        "Stability"
+      ],
+      "componentId": "DimensionalRipper",
+      "description": "Spacetime fracture generator that tears controlled breaches in local reality, producing destructive quantum decoherence at the point of impact.",
+      "category": "WeaponComponents",
+      "mass": 20
+    },
+    {
+      "name": "Existence Anchor",
+      "tier": 6,
+      "qualityProperties": [
+        "Shielding",
+        "Resilience"
+      ],
+      "componentId": "ExistenceAnchorCore",
+      "description": "Ontological field emitter that enforces deterministic existence on surrounding matter, nullifying reality manipulation and quantum erasure attacks.",
+      "category": "DefenseComponents",
+      "mass": 20
+    },
+    {
+      "name": "Neutronium Ingot",
+      "tier": 6,
+      "qualityProperties": [
+        "Shielding",
+        "Resilience"
+      ],
+      "componentId": "NeutroniumIngot",
+      "description": "Stabilized degenerate matter block harvested from neutron star cores, providing unmatched material density for kinetic damage absorption.",
+      "category": "DefenseComponents",
+      "mass": 20
+    },
+    {
+      "name": "Omniscient Targeting Core",
+      "tier": 6,
+      "qualityProperties": [
+        "Velocity",
+        "Stability"
+      ],
+      "componentId": "OmniscientTargetingCore",
+      "description": "Multi-dimensional sensor array processing targeting data from parallel realities simultaneously, enabling near-perfect fire solution computation.",
+      "category": "WeaponComponents",
+      "mass": 20
     }
   ],
   "newModules": [
@@ -5090,12 +7234,24 @@
       "description": "Digital substrate for housing uploaded biological intelligences",
       "category": "Extraction",
       "tier": 6,
-      "mass": 35,
+      "mass": 350,
       "slotType": "Internal",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
           "type": "BiologicalExtraction",
           "baseValue": 50
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 15
+        },
+        {
+          "type": "Compute",
+          "value": 8
         }
       ]
     },
@@ -5105,12 +7261,20 @@
       "description": "Facility for crew to interface with collective consciousness networks",
       "category": "LifeSupport",
       "tier": 6,
-      "mass": 40,
+      "mass": 400,
       "slotType": "Internal",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
-          "type": "CrewEfficiency",
-          "baseValue": 35
+          "type": "CrewMember",
+          "baseValue": 45
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 15
         }
       ]
     },
@@ -5120,27 +7284,20 @@
       "description": "Biological power generation at stellar energy scales",
       "category": "Power",
       "tier": 6,
-      "mass": 60,
+      "mass": 600,
       "slotType": "Internal",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
-          "type": "Power",
+          "type": "PowerGeneration",
           "baseValue": 800
         }
-      ]
-    },
-    {
-      "moduleId": "PrecognitiveGrid",
-      "name": "Precognitive Grid",
-      "description": "Power distribution system with temporal prediction capabilities",
-      "category": "Power",
-      "tier": 6,
-      "mass": 50,
-      "slotType": "Internal",
-      "baseCapabilities": [
+      ],
+      "requirements": [
         {
-          "type": "Power",
-          "baseValue": 600
+          "type": "Compute",
+          "value": 8
         }
       ]
     },
@@ -5150,12 +7307,20 @@
       "description": "Power generation facility with effectively unlimited output",
       "category": "Power",
       "tier": 6,
-      "mass": 70,
+      "mass": 700,
       "slotType": "Internal",
+      "interiorSlotsRequired": 5,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
-          "type": "Power",
+          "type": "PowerGeneration",
           "baseValue": 1000
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Compute",
+          "value": 8
         }
       ]
     },
@@ -5165,12 +7330,28 @@
       "description": "Unified processing center merging biological and digital intelligence",
       "category": "Research",
       "tier": 6,
-      "mass": 45,
+      "mass": 450,
       "slotType": "Internal",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
           "type": "Research",
-          "baseValue": 50
+          "baseValue": 70
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 40
+        },
+        {
+          "type": "Compute",
+          "value": 15
+        },
+        {
+          "type": "Personnel",
+          "value": 8
         }
       ]
     },
@@ -5180,57 +7361,24 @@
       "description": "Sensor system with perfect molecular-level knowledge of all matter",
       "category": "Sensors",
       "tier": 6,
-      "mass": 30,
+      "mass": 300,
       "slotType": "External",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 2,
       "baseCapabilities": [
         {
-          "type": "SensorRange",
+          "type": "Sensors",
           "baseValue": 200
         }
-      ]
-    },
-    {
-      "moduleId": "CivilizationCore",
-      "name": "Civilization Core",
-      "description": "Computational substrate for hosting entire uploaded societies",
-      "category": "Research",
-      "tier": 6,
-      "mass": 55,
-      "slotType": "Internal",
-      "baseCapabilities": [
+      ],
+      "requirements": [
         {
-          "type": "Research",
-          "baseValue": 60
-        }
-      ]
-    },
-    {
-      "moduleId": "TransmutationDrill",
-      "name": "Transmutation Drill",
-      "description": "Extraction system using controlled nuclear transmutation",
-      "category": "Extraction",
-      "tier": 6,
-      "mass": 45,
-      "slotType": "External",
-      "baseCapabilities": [
+          "type": "Power",
+          "value": 15
+        },
         {
-          "type": "ResourceExtraction",
-          "baseValue": 75
-        }
-      ]
-    },
-    {
-      "moduleId": "AntimatterEngine",
-      "name": "Antimatter Engine",
-      "description": "Propulsion system using controlled antimatter annihilation",
-      "category": "Propulsion",
-      "tier": 6,
-      "mass": 55,
-      "slotType": "Internal",
-      "baseCapabilities": [
-        {
-          "type": "PropulsionPower",
-          "baseValue": 100
+          "type": "Compute",
+          "value": 15
         }
       ]
     },
@@ -5240,12 +7388,28 @@
       "description": "Manufacturing facility that fabricates by reshaping reality",
       "category": "Manufacturing",
       "tier": 6,
-      "mass": 60,
+      "mass": 600,
       "slotType": "Internal",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
           "type": "Manufacturing",
           "baseValue": 60
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 80
+        },
+        {
+          "type": "Compute",
+          "value": 15
+        },
+        {
+          "type": "Personnel",
+          "value": 8
         }
       ]
     },
@@ -5255,12 +7419,28 @@
       "description": "Self-sustaining manufacturing complex for society-scale production",
       "category": "Manufacturing",
       "tier": 6,
-      "mass": 70,
+      "mass": 700,
       "slotType": "Internal",
+      "interiorSlotsRequired": 5,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
           "type": "Manufacturing",
           "baseValue": 70
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 80
+        },
+        {
+          "type": "Compute",
+          "value": 15
+        },
+        {
+          "type": "Personnel",
+          "value": 8
         }
       ]
     },
@@ -5270,42 +7450,24 @@
       "description": "Extraction system using quantum biological organisms",
       "category": "Extraction",
       "tier": 6,
-      "mass": 40,
+      "mass": 400,
       "slotType": "External",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 2,
       "baseCapabilities": [
         {
           "type": "BiologicalExtraction",
           "baseValue": 60
         }
-      ]
-    },
-    {
-      "moduleId": "RealityComputationCore",
-      "name": "Reality Computation Core",
-      "description": "Computing using the fabric of reality as processing substrate",
-      "category": "Research",
-      "tier": 6,
-      "mass": 50,
-      "slotType": "Internal",
-      "baseCapabilities": [
+      ],
+      "requirements": [
         {
-          "type": "Research",
-          "baseValue": 55
-        }
-      ]
-    },
-    {
-      "moduleId": "ConsensusAccelerator",
-      "name": "Consensus Accelerator",
-      "description": "Research facility harnessing collective will to shape reality",
-      "category": "Research",
-      "tier": 6,
-      "mass": 45,
-      "slotType": "Internal",
-      "baseCapabilities": [
+          "type": "Power",
+          "value": 15
+        },
         {
-          "type": "Research",
-          "baseValue": 45
+          "type": "Compute",
+          "value": 8
         }
       ]
     },
@@ -5315,42 +7477,20 @@
       "description": "Medical facility maintaining indefinite crew lifespan",
       "category": "LifeSupport",
       "tier": 6,
-      "mass": 45,
+      "mass": 450,
       "slotType": "Internal",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
-          "type": "CrewEfficiency",
+          "type": "CrewMember",
           "baseValue": 50
         }
-      ]
-    },
-    {
-      "moduleId": "TransmutationHub",
-      "name": "Transmutation Hub",
-      "description": "Central facility for society-scale matter transformation",
-      "category": "Manufacturing",
-      "tier": 6,
-      "mass": 55,
-      "slotType": "Internal",
-      "baseCapabilities": [
-        {
-          "type": "Manufacturing",
-          "baseValue": 55
-        }
-      ]
-    },
-    {
-      "moduleId": "PostScarcityGrid",
-      "name": "Post-Scarcity Grid",
-      "description": "Power infrastructure for post-scarcity civilization",
-      "category": "Power",
-      "tier": 6,
-      "mass": 65,
-      "slotType": "Internal",
-      "baseCapabilities": [
+      ],
+      "requirements": [
         {
           "type": "Power",
-          "baseValue": 800
+          "value": 15
         }
       ]
     },
@@ -5360,12 +7500,28 @@
       "description": "Training facility for instant knowledge transfer",
       "category": "Research",
       "tier": 6,
-      "mass": 40,
+      "mass": 400,
       "slotType": "Internal",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 0,
       "baseCapabilities": [
         {
           "type": "Research",
-          "baseValue": 40
+          "baseValue": 55
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 40
+        },
+        {
+          "type": "Compute",
+          "value": 15
+        },
+        {
+          "type": "Personnel",
+          "value": 8
         }
       ]
     },
@@ -5375,29 +7531,258 @@
       "description": "Coordination center for stellar-scale megastructure operations",
       "category": "FleetCommand",
       "tier": 6,
-      "mass": 55,
+      "mass": 550,
       "slotType": "Internal",
+      "interiorSlotsRequired": 4,
+      "exteriorSlotsRequired": 1,
       "baseCapabilities": [
         {
           "type": "FleetCommand",
-          "baseValue": 25
+          "baseValue": 35
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 40
+        },
+        {
+          "type": "Compute",
+          "value": 15
+        },
+        {
+          "type": "Personnel",
+          "value": 8
         }
       ]
     },
     {
-      "moduleId": "GalacticBeacon",
-      "name": "Galactic Beacon",
-      "description": "Communication hub for galaxy-spanning research coordination",
-      "category": "Research",
+      "moduleId": "QuantumBarrier",
+      "name": "Quantum Barrier",
+      "description": "Quantum-phased defensive field rendering attacks probabilistic",
+      "category": "Defense",
       "tier": 6,
-      "mass": 45,
-      "slotType": "Internal",
+      "mass": 350,
+      "slotType": "External",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 2,
       "baseCapabilities": [
         {
-          "type": "Research",
-          "baseValue": 50
+          "type": "EnergyResistance",
+          "baseValue": 600
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 15
+        }
+      ]
+    },
+    {
+      "moduleId": "DisruptorArray",
+      "name": "Disruptor Array",
+      "description": "Multi-frequency energy weapon disrupting molecular bonds",
+      "category": "Weapons",
+      "tier": 6,
+      "mass": 280,
+      "slotType": "External",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "EnergyDamage",
+          "baseValue": 250
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 40
+        },
+        {
+          "type": "Compute",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "moduleId": "AntimatterEngine",
+      "name": "Antimatter Engine",
+      "description": "Extreme-performance propulsion using antimatter annihilation",
+      "category": "Propulsion",
+      "tier": 6,
+      "mass": 420,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 2,
+      "baseCapabilities": [
+        {
+          "type": "Speed",
+          "baseValue": 120
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 40
+        }
+      ]
+    },
+    {
+      "moduleId": "RealityDrill",
+      "name": "Reality Drill",
+      "description": "Extraction beam that reshapes reality to isolate desired materials",
+      "category": "Extraction",
+      "tier": 6,
+      "mass": 220,
+      "slotType": "External",
+      "interiorSlotsRequired": 2,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "MineralExtraction",
+          "baseValue": 65
+        }
+      ],
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 15
+        },
+        {
+          "type": "Compute",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Coilgun Array",
+      "tier": 6,
+      "slotType": "External",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 2,
+      "mass": 320,
+      "moduleId": "CoilgunArray",
+      "baseCapabilities": [
+        {
+          "type": "KineticDamage",
+          "baseValue": 200
+        }
+      ],
+      "category": "Weapons",
+      "description": "Bank of synchronized electromagnetic accelerators firing hyper-dense ferromagnetic penetrators. The array configuration allows rapid sequential fire or devastating synchronized volleys.",
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 40
+        },
+        {
+          "type": "Compute",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Reality Shear",
+      "tier": 6,
+      "slotType": "External",
+      "interiorSlotsRequired": 2,
+      "exteriorSlotsRequired": 1,
+      "mass": 200,
+      "moduleId": "RealityShear",
+      "baseCapabilities": [
+        {
+          "type": "QuantumDamage",
+          "baseValue": 180
+        }
+      ],
+      "category": "Weapons",
+      "description": "Tears localized fractures in spacetime fabric at the target location, causing catastrophic quantum decoherence that disintegrates matter regardless of conventional shielding.",
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 40
+        },
+        {
+          "type": "Compute",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Existence Anchor",
+      "tier": 6,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 2,
+      "exteriorSlotsRequired": 0,
+      "mass": 160,
+      "moduleId": "ExistenceAnchor",
+      "baseCapabilities": [
+        {
+          "type": "QuantumResistance",
+          "baseValue": 500
+        }
+      ],
+      "category": "DefenseSystems",
+      "description": "Projects a reinforced ontological field that locks the ship's matter into a single deterministic state, providing near-immunity to quantum decoherence and reality manipulation attacks.",
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 8
+        },
+        {
+          "type": "Compute",
+          "value": 8
+        }
+      ]
+    },
+    {
+      "name": "Neutronium Plate",
+      "tier": 6,
+      "slotType": "External",
+      "interiorSlotsRequired": 3,
+      "exteriorSlotsRequired": 3,
+      "mass": 240,
+      "moduleId": "NeutroniumPlate",
+      "baseCapabilities": [
+        {
+          "type": "KineticResistance",
+          "baseValue": 700
+        }
+      ],
+      "category": "Armor",
+      "description": "Hull plating forged from degenerate neutron star matter, offering extraordinary density and kinetic resistance that renders conventional projectile weapons nearly ineffective.",
+      "requirements": []
+    },
+    {
+      "name": "Omniscient Targeting Grid",
+      "tier": 6,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 2,
+      "exteriorSlotsRequired": 0,
+      "mass": 90,
+      "moduleId": "OmniscientTargetingGrid",
+      "baseCapabilities": [
+        {
+          "type": "WeaponRange",
+          "baseValue": 75
+        }
+      ],
+      "category": "Targeting",
+      "description": "Distributed sensor mesh spanning multiple dimensions that provides near-perfect target prediction, extending weapon engagement envelopes far beyond conventional sensor limits.",
+      "requirements": [
+        {
+          "type": "Power",
+          "value": 8
+        },
+        {
+          "type": "Compute",
+          "value": 15
         }
       ]
     }
-  ]
+  ],
+  "blueprintApplications": [],
+  "components": []
 }

@@ -1,0 +1,258 @@
+{
+  "disciplines": [
+    {
+      "code": "B",
+      "name": "Biology",
+      "description": "Life sciences, organic systems, genetic engineering, and biological resource processing"
+    },
+    {
+      "code": "C",
+      "name": "Chemistry",
+      "description": "Chemical processes, molecular synthesis, materials science, and compound analysis"
+    },
+    {
+      "code": "E",
+      "name": "Energetics",
+      "description": "Power generation, energy storage, fuel systems, and power distribution"
+    },
+    {
+      "code": "I",
+      "name": "Informatics",
+      "description": "Data processing, AI systems, sensor networks, and computational analysis"
+    },
+    {
+      "code": "M",
+      "name": "Mechanics",
+      "description": "Ship hulls, crafted components, structural engineering, and manufacturing systems"
+    },
+    {
+      "code": "P",
+      "name": "Physics",
+      "description": "Fundamental forces, particle physics, warp mechanics, weapons, and shields"
+    },
+    {
+      "code": "S",
+      "name": "Sociology",
+      "description": "Organizational dynamics, crew management, fleet coordination, and trade networks"
+    }
+  ],
+  "components": [
+    {
+      "componentId": "CultureVat",
+      "name": "Culture Vat",
+      "description": "Contained environment for cultivating organic samples",
+      "category": "BioMatrices",
+      "tier": 1,
+      "mass": 10,
+      "qualityProperties": [
+        "Vitality",
+        "Responsiveness"
+      ]
+    },
+    {
+      "componentId": "CapacitorBank",
+      "name": "Capacitor Bank",
+      "description": "Stackable energy storage cells for power buffering",
+      "category": "PowerCells",
+      "tier": 1,
+      "mass": 15,
+      "qualityProperties": [
+        "EnergyDensity",
+        "Efficiency"
+      ]
+    },
+    {
+      "componentId": "AlloyFrame",
+      "name": "Alloy Frame",
+      "description": "Load-bearing structural component for ship construction",
+      "category": "StructuralFrames",
+      "tier": 1,
+      "mass": 25,
+      "qualityProperties": [
+        "Integrity",
+        "Flexibility"
+      ]
+    },
+    {
+      "componentId": "IonChamber",
+      "name": "Ion Chamber",
+      "description": "Ionization chamber for basic propulsion systems",
+      "category": "PropellantSystems",
+      "tier": 1,
+      "mass": 20,
+      "qualityProperties": [
+        "ThrustRatio",
+        "FuelEfficiency"
+      ]
+    },
+    {
+      "componentId": "CopperConduit",
+      "name": "Copper Conduit",
+      "description": "Standard power transmission lines for shipboard systems",
+      "category": "Conduits",
+      "tier": 1,
+      "mass": 5,
+      "qualityProperties": [
+        "Conductivity",
+        "Capacity"
+      ]
+    },
+    {
+      "componentId": "LogicArray",
+      "name": "Logic Array",
+      "description": "Basic processing circuits for computational tasks",
+      "category": "Circuits",
+      "tier": 1,
+      "mass": 5,
+      "qualityProperties": [
+        "ComputeCapacity",
+        "Stability"
+      ]
+    },
+    {
+      "componentId": "HeatSink",
+      "name": "Heat Sink",
+      "description": "Passive thermal management for power-intensive systems",
+      "category": "ThermalManagement",
+      "tier": 1,
+      "mass": 10,
+      "qualityProperties": [
+        "Dissipation",
+        "Tolerance"
+      ]
+    },
+    {
+      "componentId": "LensArray",
+      "name": "Lens Array",
+      "description": "Precision optical components for sensor and targeting systems",
+      "category": "Optics",
+      "tier": 1,
+      "mass": 5,
+      "qualityProperties": [
+        "Sensitivity",
+        "Resolution"
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "moduleId": "ProcessingCore",
+      "name": "Processing Core",
+      "description": "Basic shipboard computing module for operational tasks",
+      "category": "Compute",
+      "tier": 1,
+      "mass": 80,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 1,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "ComputeCapacity",
+          "baseValue": 50
+        }
+      ]
+    },
+    {
+      "moduleId": "FabricationBay",
+      "name": "Fabrication Bay",
+      "description": "Basic onboard manufacturing facility for component production",
+      "category": "Manufacturing",
+      "tier": 1,
+      "mass": 200,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 2,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "Manufacturing",
+          "baseValue": 5
+        }
+      ]
+    },
+    {
+      "moduleId": "TacticalCore",
+      "name": "Tactical Core",
+      "description": "Coordination system for multi-ship fleet operations",
+      "category": "FleetCommand",
+      "tier": 1,
+      "mass": 100,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 1,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "FleetCommand",
+          "baseValue": 2
+        }
+      ]
+    },
+    {
+      "moduleId": "IonDrive",
+      "name": "Ion Drive",
+      "description": "Basic ion propulsion module for sublight and conduit transit",
+      "category": "Propulsion",
+      "tier": 1,
+      "mass": 150,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 1,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "Speed",
+          "baseValue": 10
+        }
+      ]
+    },
+    {
+      "moduleId": "MicroReactor",
+      "name": "Micro Reactor",
+      "description": "Compact power generation module for shipboard energy supply",
+      "category": "Power",
+      "tier": 1,
+      "mass": 180,
+      "slotType": "Internal",
+      "interiorSlotsRequired": 1,
+      "exteriorSlotsRequired": 0,
+      "baseCapabilities": [
+        {
+          "type": "PowerGeneration",
+          "baseValue": 100
+        }
+      ]
+    },
+    {
+      "moduleId": "SensorArray",
+      "name": "Sensor Array",
+      "description": "Multi-spectrum sensor module for detection and scanning operations",
+      "category": "Sensors",
+      "tier": 1,
+      "mass": 60,
+      "slotType": "External",
+      "interiorSlotsRequired": 1,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "Sensors",
+          "baseValue": 20
+        }
+      ]
+    },
+    {
+      "moduleId": "BioExtractor",
+      "name": "Bio Extractor",
+      "description": "Organic extraction module combining culture systems with thermal regulation",
+      "category": "Extraction",
+      "tier": 1,
+      "mass": 120,
+      "slotType": "External",
+      "interiorSlotsRequired": 1,
+      "exteriorSlotsRequired": 1,
+      "baseCapabilities": [
+        {
+          "type": "BiologicalExtraction",
+          "baseValue": 8
+        }
+      ]
+    }
+  ]
+}

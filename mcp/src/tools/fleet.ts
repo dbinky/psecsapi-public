@@ -262,6 +262,17 @@ export function registerFleetTools(
         );
       }
 
+      // Nexus sector: commerce hub operations available
+      if (sectorType === "Nexus") {
+        suggestions.push(
+          "This is a Nexus sector — the commerce and trade hub. The following operations are available:" +
+          " Warehouse: psecs_warehouse_deposit (store cargo, first 10,000 mass free)," +
+          " psecs_warehouse_withdraw (retrieve stored assets), psecs_warehouse_list (view storage and billing)." +
+          " Market: psecs_market_search (browse listings), psecs_market_sell (list assets for sale)." +
+          " Shipyard: psecs_shipyard_browse (view ship catalog and build queue)."
+        );
+      }
+
       const otherFleetCount = Math.max(0, (survey?.fleets ?? []).length - 1);
       if (otherFleetCount > 0) {
         suggestions.push(
@@ -346,6 +357,7 @@ export function registerFleetTools(
       const scan = scanResult.data;
 
       const conduits = scan.conduits ?? [];
+      const currentSectorType = scan.type ?? "";
       if (conduits.length === 0) {
         warnings.push(
           "No conduits found in this sector. The fleet cannot travel anywhere from here."
@@ -353,6 +365,19 @@ export function registerFleetTools(
       } else {
         suggestions.push(
           `${conduits.length} conduit(s) available. Use psecs_navigate with a conduitId to travel.`
+        );
+      }
+
+      if (currentSectorType === "Nexus") {
+        suggestions.push(
+          "You are already in a Nexus sector — warehouse, market, and shipyard operations are available here. " +
+          "No navigation required for commerce operations."
+        );
+      } else if (conduits.length > 0) {
+        suggestions.push(
+          "To reach a Nexus sector (required for warehouse, market, and ship building): " +
+          "check your known map with psecs_raw_usermap (type: \"Nexus\") to find Nexus sector IDs, " +
+          "then navigate conduits toward your target. Conduit endpoints are shown above."
         );
       }
 
@@ -416,6 +441,84 @@ export function registerFleetTools(
       return formatToolResult({
         survey,
         otherFleetCount,
+        suggestions,
+        warnings,
+      });
+    }
+  );
+
+  server.registerTool(
+    "psecs_fleet_add_ship",
+    {
+      description:
+        "Add a ship to a fleet. The ship must not already belong to another fleet. " +
+        "Returns the updated fleet details after the ship is added.",
+      inputSchema: {
+        fleetId: z.string().describe("Fleet ID to add the ship to"),
+        shipId: z.string().describe("Ship ID to add to the fleet"),
+      },
+    },
+    async (args) => {
+      const suggestions: string[] = [];
+
+      const result = await client.post<FleetDetails>(
+        "/api/Fleet/{fleetId}/ship",
+        { ShipId: args.shipId },
+        { path: { fleetId: args.fleetId } }
+      );
+      if (!result.ok) return formatToolError(result);
+
+      suggestions.push(
+        "Use psecs_fleet_status to see the updated fleet composition and ship details."
+      );
+      suggestions.push(
+        "Ships add capacity for extraction, manufacturing, and research based on their modules."
+      );
+
+      return formatToolResult({
+        fleet: result.data,
+        suggestions,
+      });
+    }
+  );
+
+  server.registerTool(
+    "psecs_fleet_remove_ship",
+    {
+      description:
+        "Remove a ship from a fleet. The ship must currently belong to the specified fleet. " +
+        "Returns the updated fleet details after the ship is removed.",
+      inputSchema: {
+        fleetId: z.string().describe("Fleet ID to remove the ship from"),
+        shipId: z.string().describe("Ship ID to remove from the fleet"),
+      },
+    },
+    async (args) => {
+      const suggestions: string[] = [];
+      const warnings: string[] = [];
+
+      const result = await client.delete<FleetDetails>(
+        "/api/Fleet/{fleetId}/ship/{shipId}",
+        { path: { fleetId: args.fleetId, shipId: args.shipId } }
+      );
+      if (!result.ok) return formatToolError(result);
+
+      const remainingShips = result.data.ships ?? [];
+      if (remainingShips.length === 0) {
+        warnings.push(
+          "Fleet now has no ships and cannot perform any operations."
+        );
+      }
+
+      suggestions.push(
+        "Use psecs_fleet_status to see the updated fleet composition."
+      );
+      suggestions.push(
+        "Use psecs_fleet_add_ship to reassign the ship to a different fleet."
+      );
+
+      return formatToolResult({
+        fleet: result.data,
         suggestions,
         warnings,
       });

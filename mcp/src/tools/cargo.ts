@@ -9,6 +9,13 @@ interface CargoTransferResult {
   [key: string]: unknown;
 }
 
+interface CargoSplitResult {
+  success?: boolean;
+  newAssetId?: string;
+  errorMessage?: string;
+  [key: string]: unknown;
+}
+
 export function registerCargoTools(
   server: McpServer,
   client: PsecsClient
@@ -162,6 +169,75 @@ export function registerCargoTools(
         shipId: args.shipId,
         boxedAssetId: args.boxedAssetId,
         destinationCargoModuleId: args.destinationCargoModuleId,
+        result,
+        suggestions,
+        warnings,
+      });
+    }
+  );
+
+  server.registerTool(
+    "psecs_cargo_split",
+    {
+      description:
+        "Split a stackable cargo asset (resource, component, or alloy) into two separate assets. " +
+        "The specified quantity is moved to a new boxed asset placed in the same cargo module. " +
+        "Modules and chassis cannot be split. " +
+        "Use this when you want to sell or use only part of a resource stack.",
+      inputSchema: {
+        shipId: z
+          .string()
+          .describe("Ship ID containing the cargo asset"),
+        boxedAssetId: z
+          .string()
+          .describe("Boxed asset ID to split (from psecs_ship_cargo_overview)"),
+        splitQuantity: z
+          .number()
+          .positive()
+          .describe("Quantity to split off into a new asset (must be less than the current total)"),
+      },
+    },
+    async (args) => {
+      const suggestions: string[] = [];
+      const warnings: string[] = [];
+
+      const splitResult = await client.post<CargoSplitResult>(
+        "/api/Ship/{shipId}/cargo/split",
+        {
+          BoxedAssetId: args.boxedAssetId,
+          SplitQuantity: args.splitQuantity,
+        },
+        { path: { shipId: args.shipId } }
+      );
+      if (!splitResult.ok) return formatToolError(splitResult);
+
+      const result = splitResult.data;
+
+      if (result.success === false) {
+        warnings.push(result.errorMessage ?? "Split failed.");
+        suggestions.push(
+          "Common issues: asset not found in ship cargo, quantity too large, or asset type not splittable (modules and chassis cannot be split)."
+        );
+        suggestions.push(
+          "Use psecs_ship_cargo_overview to verify the asset ID and current quantity."
+        );
+      } else {
+        suggestions.push(
+          `Split succeeded. New asset ID: ${result.newAssetId}. Original asset retains the remaining quantity.`
+        );
+        suggestions.push(
+          "Use psecs_ship_cargo_overview to see both assets in cargo."
+        );
+        suggestions.push(
+          "Use psecs_market_sell to list one of the split assets for sale."
+        );
+      }
+
+      return formatToolResult({
+        action: "split",
+        shipId: args.shipId,
+        originalAssetId: args.boxedAssetId,
+        splitQuantity: args.splitQuantity,
         result,
         suggestions,
         warnings,

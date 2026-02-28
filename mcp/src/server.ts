@@ -18,6 +18,8 @@ import { registerCombatTools } from "./tools/combat.js";
 import { registerShipyardTools } from "./tools/shipyard.js";
 import { registerLootTools } from "./tools/loot.js";
 import { registerCargoTools } from "./tools/cargo.js";
+import { registerCatalogTools } from "./tools/catalog.js";
+import { registerWarehouseTools } from "./tools/warehouse.js";
 import { registerGuideResources } from "./resources/guides.js";
 import { registerGameStateResources } from "./resources/game-state.js";
 import { registerPrompts } from "./prompts/game-guide.js";
@@ -48,6 +50,8 @@ export function createServer(client: PsecsClient): McpServer {
   registerShipyardTools(server, client);
   registerLootTools(server, client);
   registerCargoTools(server, client);
+  registerCatalogTools(server, client);
+  registerWarehouseTools(server, client);
 
   // Resources
   registerGuideResources(server, client);

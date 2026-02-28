@@ -7,7 +7,7 @@ namespace psecsapi.api.Models.Corp
     {
         public Guid EntityId { get; init; }
         public string Name { get; init; } = string.Empty;
-        public Dictionary<string, OwnedEntityAccessLevel>? AccessLevels = new();
+        public Dictionary<string, OwnedEntityAccessLevel>? AccessLevels { get; set; } = new();
         public decimal? Credits { get; set; }
         public DateTime? LastUpdateTimestamp { get; set; }
         public DateTime CreateTimestamp { get; set; }

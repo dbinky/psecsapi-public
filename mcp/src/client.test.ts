@@ -132,17 +132,30 @@ describe("PsecsClient", () => {
   });
 
   it("classifies 429 as rate limit error with retryAfter", async () => {
-    fetchMock.mockResolvedValueOnce(
+    // The client auto-retries on 429 up to 3 times. Mock 4 responses (initial +
+    // 3 retries) all returning 429, and use fake timers to skip the retry delays.
+    vi.useFakeTimers();
+
+    const rateLimitResponse = () =>
       new Response(JSON.stringify({ message: "Too many requests" }), {
         status: 429,
         headers: {
           "Content-Type": "application/json",
           "Retry-After": "30",
         },
-      })
-    );
+      });
 
-    const result = await client.get("/corp");
+    fetchMock
+      .mockResolvedValueOnce(rateLimitResponse())
+      .mockResolvedValueOnce(rateLimitResponse())
+      .mockResolvedValueOnce(rateLimitResponse())
+      .mockResolvedValueOnce(rateLimitResponse());
+
+    const resultPromise = client.get("/corp");
+    await vi.runAllTimersAsync();
+    const result = await resultPromise;
+
+    vi.useRealTimers();
 
     expect(result).toEqual({
       ok: false,

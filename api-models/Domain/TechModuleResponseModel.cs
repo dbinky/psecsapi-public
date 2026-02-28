@@ -14,7 +14,7 @@ namespace psecsapi.api.models.Domain
         public int Tier { get; set; }
         public string Category { get; set; } = string.Empty;
         public string SlotType { get; set; } = string.Empty;
-        public List<ModuleCompatability> Compatabilities { get; set; } = new();
+        public List<ModuleCompatibility> Compatibilities { get; set; } = new();
         public int InteriorSlotsRequired { get; set; }
         public int ExteriorSlotsRequired { get; set; }
         public decimal Mass { get; set; }

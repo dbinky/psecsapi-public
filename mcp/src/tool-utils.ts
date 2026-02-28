@@ -25,10 +25,18 @@ export function formatToolError(error: ApiError) {
     );
   }
   if (error.errorType === "rate_limit" && error.retryAfter) {
+    const limitInfo = error.currentLimit
+      ? ` (current limit: ${error.currentLimit} req/s)`
+      : "";
     const unit = error.retryAfter === 1 ? "second" : "seconds";
+    const webUrl = (process.env.PSECS_WEB_URL ?? "https://psecs.io").replace(
+      /\/$/,
+      ""
+    );
     parts.push(
-      `Rate limited. Retry after ${error.retryAfter} ${unit}. ` +
-      `To permanently increase your rate limit, stake more tokens using psecs_raw_create_user_stake_api_tokens.`
+      `Rate limited${limitInfo}. Retry after ${error.retryAfter} ${unit}.\n` +
+      `You can permanently increase your rate limit by purchasing and staking tokens.\n` +
+      `See the guide: ${webUrl}/wiki/api-rate-limits`
     );
   }
   return {

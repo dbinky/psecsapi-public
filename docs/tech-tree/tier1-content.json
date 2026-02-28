@@ -1,0 +1,2088 @@
+{
+  "tier": 1,
+  "researchCost": 100,
+  "technologies": [
+    {
+      "id": "BB1",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "B",
+      "tier": 1,
+      "name": "Foundational Biology",
+      "description": "Core principles of biological systems and life sciences",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "BC1",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "C",
+      "tier": 1,
+      "name": "Biochemical Processing",
+      "description": "Chemical techniques applied to biological material extraction and processing",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "BE1",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "E",
+      "tier": 1,
+      "name": "Metabolic Systems",
+      "description": "Energy principles applied to biological metabolism and biofuel extraction",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "BI1",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "I",
+      "tier": 1,
+      "name": "Genetic Computation",
+      "description": "Informatics techniques applied to genetic sequencing and bio-data analysis",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "BM1",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "M",
+      "tier": 1,
+      "name": "Biomechanical Engineering",
+      "description": "Mechanical precision applied to biological sample collection and processing",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "BP1",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "P",
+      "tier": 1,
+      "name": "Biophysical Sciences",
+      "description": "Physics principles applied to cellular and molecular biology",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "BS1",
+      "primaryDiscipline": "B",
+      "secondaryDiscipline": "S",
+      "tier": 1,
+      "name": "Crew Biology",
+      "description": "Organizational approaches to crew health and biological optimization",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "CB1",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "B",
+      "tier": 1,
+      "name": "Organic Chemistry",
+      "description": "Biological insights applied to carbon-based compound synthesis",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "CC1",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "C",
+      "tier": 1,
+      "name": "Foundational Chemistry",
+      "description": "Core principles of chemical reactions and molecular structures",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "CE1",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "E",
+      "tier": 1,
+      "name": "Electrochemistry",
+      "description": "Energy principles applied to chemical storage and fuel cell design",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "CI1",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "I",
+      "tier": 1,
+      "name": "Computational Chemistry",
+      "description": "Informatics techniques applied to molecular modeling and simulation",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "CM1",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "M",
+      "tier": 1,
+      "name": "Materials Science",
+      "description": "Mechanical principles applied to alloy formulation and composite design",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "CP1",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "P",
+      "tier": 1,
+      "name": "Physical Chemistry",
+      "description": "Physics principles applied to reaction kinetics and thermodynamics",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "CS1",
+      "primaryDiscipline": "C",
+      "secondaryDiscipline": "S",
+      "tier": 1,
+      "name": "Industrial Chemistry",
+      "description": "Organizational methods applied to large-scale chemical production",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "EB1",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "B",
+      "tier": 1,
+      "name": "Bioenergy",
+      "description": "Biological processes applied to organic fuel extraction and processing",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "EC1",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "C",
+      "tier": 1,
+      "name": "Fuel Chemistry",
+      "description": "Chemical techniques applied to propellant refinement and fuel synthesis",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "EE1",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "E",
+      "tier": 1,
+      "name": "Foundational Energetics",
+      "description": "Core principles of energy generation, storage, and distribution",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "EI1",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "I",
+      "tier": 1,
+      "name": "Power Informatics",
+      "description": "Informatics techniques applied to smart grid design and load optimization",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "EM1",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "M",
+      "tier": 1,
+      "name": "Power Machinery",
+      "description": "Mechanical engineering applied to generators and power transmission",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "EP1",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "P",
+      "tier": 1,
+      "name": "Plasma Physics",
+      "description": "Physics principles applied to plasma containment and high-energy systems",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "ES1",
+      "primaryDiscipline": "E",
+      "secondaryDiscipline": "S",
+      "tier": 1,
+      "name": "Energy Economics",
+      "description": "Organizational methods applied to power allocation and distribution networks",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "IB1",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "B",
+      "tier": 1,
+      "name": "Biosensor Networks",
+      "description": "Biological detection applied to sensor array design and life sign scanning",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "IC1",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "C",
+      "tier": 1,
+      "name": "Chemical Informatics",
+      "description": "Chemical analysis applied to automated spectral scanning and compound ID",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "IE1",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "E",
+      "tier": 1,
+      "name": "Energy Informatics",
+      "description": "Energy monitoring applied to power diagnostics and efficiency analysis",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "II1",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "I",
+      "tier": 1,
+      "name": "Foundational Informatics",
+      "description": "Core principles of data processing, computation, and information systems",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "IM1",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "M",
+      "tier": 1,
+      "name": "Structural Informatics",
+      "description": "Mechanical modeling applied to CAD/CAM and fabrication optimization",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "IP1",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "P",
+      "tier": 1,
+      "name": "Physics Simulation",
+      "description": "Physics modeling applied to trajectory calculation and field simulation",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "IS1",
+      "primaryDiscipline": "I",
+      "secondaryDiscipline": "S",
+      "tier": 1,
+      "name": "Social Informatics",
+      "description": "Organizational insights applied to knowledge networks and research collaboration",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "MB1",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "B",
+      "tier": 1,
+      "name": "Bioengineered Structures",
+      "description": "Biological materials applied to organic composites and self-healing structures",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "MC1",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "C",
+      "tier": 1,
+      "name": "Chemical Processing",
+      "description": "Chemical techniques applied to refineries and material transformation",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "ME1",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "E",
+      "tier": 1,
+      "name": "Electromechanical Systems",
+      "description": "Energy principles applied to power transmission and generator design",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "MI1",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "I",
+      "tier": 1,
+      "name": "Automated Fabrication",
+      "description": "Informatics applied to CNC precision and robotic assembly systems",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "MM1",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "M",
+      "tier": 1,
+      "name": "Foundational Mechanics",
+      "description": "Core principles of mechanical engineering, fabrication, and structural design",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "MP1",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "P",
+      "tier": 1,
+      "name": "Field Mechanics",
+      "description": "Physics principles applied to gravitational systems and warp nacelle design",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "MS1",
+      "primaryDiscipline": "M",
+      "secondaryDiscipline": "S",
+      "tier": 1,
+      "name": "Production Management",
+      "description": "Organizational methods applied to labor efficiency and modular design",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "PB1",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "B",
+      "tier": 1,
+      "name": "Radiation Biology",
+      "description": "Biological insights applied to radiation effects and cellular manipulation",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "PC1",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "C",
+      "tier": 1,
+      "name": "Quantum Chemistry",
+      "description": "Chemical principles applied to quantum bonding and exotic materials",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "PE1",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "E",
+      "tier": 1,
+      "name": "Fusion Physics",
+      "description": "Energy principles applied to fusion theory and reactor design",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "PI1",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "I",
+      "tier": 1,
+      "name": "Quantum Computing",
+      "description": "Informatics applied to quantum algorithms and parallel processing",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "PM1",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "M",
+      "tier": 1,
+      "name": "Applied Physics",
+      "description": "Mechanical engineering applied to warp field generators and structural fields",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "PP1",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "P",
+      "tier": 1,
+      "name": "Foundational Physics",
+      "description": "Core principles of fundamental forces, particles, and field theory",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "PS1",
+      "primaryDiscipline": "P",
+      "secondaryDiscipline": "S",
+      "tier": 1,
+      "name": "Research Methodology",
+      "description": "Organizational methods applied to scientific discovery and collaboration",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "SB1",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "B",
+      "tier": 1,
+      "name": "Crew Wellness",
+      "description": "Biological insights applied to crew health programs and performance optimization",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "SC1",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "C",
+      "tier": 1,
+      "name": "Resource Logistics",
+      "description": "Chemical handling applied to supply chain management and material distribution",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "SE1",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "E",
+      "tier": 1,
+      "name": "Power Management",
+      "description": "Energy allocation applied to rationing systems and priority scheduling",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "SI1",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "I",
+      "tier": 1,
+      "name": "Knowledge Systems",
+      "description": "Informatics applied to training programs and information networks",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "SM1",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "M",
+      "tier": 1,
+      "name": "Labor Engineering",
+      "description": "Mechanical workflow applied to shift optimization and crew ergonomics",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "SP1",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "P",
+      "tier": 1,
+      "name": "Research Organization",
+      "description": "Physics research methods applied to team structures and discovery culture",
+      "researchCost": 100,
+      "prerequisites": []
+    },
+    {
+      "id": "SS1",
+      "primaryDiscipline": "S",
+      "secondaryDiscipline": "S",
+      "tier": 1,
+      "name": "Foundational Sociology",
+      "description": "Core principles of organizational dynamics, culture, and social systems",
+      "researchCost": 100,
+      "prerequisites": []
+    }
+  ],
+  "applications": [
+    {
+      "id": "BC1a",
+      "technologyId": "BC1",
+      "letter": "a",
+      "name": "Enzymatic Catalysis",
+      "description": "Engineered enzyme solutions accelerate organic material breakdown",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "BE1a",
+      "technologyId": "BE1",
+      "letter": "a",
+      "name": "Metabolic Siphoning",
+      "description": "Bioenergetic feedback loops optimize organic energy capture from living systems.",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "BI1a",
+      "technologyId": "BI1",
+      "letter": "a",
+      "name": "Genomic Indexing",
+      "description": "Computational gene mapping accelerates biological research simulations.",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "BI1b",
+      "technologyId": "BI1",
+      "letter": "b",
+      "name": "Culture Vat Assembly",
+      "description": "Fusing amorphous glass into a sealed growth chamber and flooding it with nutrient solution over a structural frame",
+      "researchCost": 100,
+      "prerequisites": [
+        "BI1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "culture-vat",
+        "outputType": "component",
+        "outputId": "CultureVat",
+        "baseWorkUnits": 80,
+        "qualityProperties": {
+          "Vitality": 1.0,
+          "Responsiveness": 0.8
+        },
+        "inputResources": [
+          {
+            "label": "containment-glass",
+            "qualifier": "order",
+            "value": "AmorphousGemstone",
+            "quantity": 30,
+            "propertyMapping": {
+              "OQ": "Vitality"
+            }
+          },
+          {
+            "label": "nutrient-base",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 40,
+            "propertyMapping": {
+              "FL": "Responsiveness"
+            }
+          },
+          {
+            "label": "structural-frame",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 20,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "BI1c",
+      "technologyId": "BI1",
+      "letter": "c",
+      "name": "Bio Extractor Assembly",
+      "description": "Mounting culture vats into a thermally regulated metal chassis with nutrient feed lines for continuous organic harvesting",
+      "researchCost": 100,
+      "prerequisites": [
+        "BI1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "bio-extractor",
+        "outputType": "module",
+        "outputId": "BioExtractor",
+        "baseWorkUnits": 190,
+        "capabilities": [
+          {
+            "type": "BiologicalExtraction",
+            "baseValue": 8,
+            "qualitySource": "Vitality"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "housing-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 40,
+            "propertyMapping": {}
+          },
+          {
+            "label": "nutrient-feed",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 20,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "culture-system",
+            "componentType": "CultureVat",
+            "quantity": 1,
+            "propertyMapping": {
+              "Vitality": "Vitality"
+            }
+          },
+          {
+            "label": "thermal-regulator",
+            "componentType": "HeatSink",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "BM1a",
+      "technologyId": "BM1",
+      "letter": "a",
+      "name": "Precision Harvesters",
+      "description": "Mechanical precision reduces damage to delicate organic samples",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "BP1a",
+      "technologyId": "BP1",
+      "letter": "a",
+      "name": "Cellular Resonance",
+      "description": "Resonant frequencies optimize cellular extraction efficiency",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "BS1a",
+      "technologyId": "BS1",
+      "letter": "a",
+      "name": "Health Protocols",
+      "description": "Standardized health monitoring improves crew performance",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "CrewEfficiency",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "CB1a",
+      "technologyId": "CB1",
+      "letter": "a",
+      "name": "Reagent Distillation",
+      "description": "Bio-organic solvents improve chemical separation and reagent purity.",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "CE1a",
+      "technologyId": "CE1",
+      "letter": "a",
+      "name": "Electrolyte Optimization",
+      "description": "Improved electrolyte formulations reduce power cell material waste",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "CE1b",
+      "technologyId": "CE1",
+      "letter": "b",
+      "name": "Capacitor Bank Assembly",
+      "description": "Interleaving conductive metal plates with dielectric fluid layers inside a non-ferromagnetic casing to form stackable charge cells",
+      "researchCost": 100,
+      "prerequisites": [
+        "CE1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "capacitor-bank",
+        "outputType": "component",
+        "outputId": "CapacitorBank",
+        "baseWorkUnits": 90,
+        "qualityProperties": {
+          "EnergyDensity": 1.0,
+          "Efficiency": 0.7
+        },
+        "inputResources": [
+          {
+            "label": "conductive-plates",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 40,
+            "propertyMapping": {
+              "CN": "EnergyDensity"
+            }
+          },
+          {
+            "label": "dielectric-medium",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 30,
+            "propertyMapping": {
+              "PE": "Efficiency"
+            }
+          },
+          {
+            "label": "casing-alloy",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 20,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CI1a",
+      "technologyId": "CI1",
+      "letter": "a",
+      "name": "Molecular Scanning",
+      "description": "Automated molecular analysis identifies optimal extraction targets in chemical deposits.",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "CM1a",
+      "technologyId": "CM1",
+      "letter": "a",
+      "name": "Alloy Formulation",
+      "description": "Precise alloy ratios minimize material loss during fabrication",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "CM1b",
+      "technologyId": "CM1",
+      "letter": "b",
+      "name": "Alloy Frame Fabrication",
+      "description": "Hot-pressing metal stock over reinforcing ore cores to forge load-bearing structural beams",
+      "researchCost": 100,
+      "prerequisites": [
+        "CM1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "alloy-frame",
+        "outputType": "component",
+        "outputId": "AlloyFrame",
+        "baseWorkUnits": 120,
+        "qualityProperties": {
+          "Integrity": 1.0,
+          "Flexibility": 0.6
+        },
+        "inputResources": [
+          {
+            "label": "primary-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 80,
+            "propertyMapping": {
+              "UT": "Integrity"
+            }
+          },
+          {
+            "label": "reinforcing-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 40,
+            "propertyMapping": {
+              "SR": "Flexibility"
+            }
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CP1a",
+      "technologyId": "CP1",
+      "letter": "a",
+      "name": "Reaction Kinetics",
+      "description": "Accelerated reaction rates speed production cycles",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "CS1a",
+      "technologyId": "CS1",
+      "letter": "a",
+      "name": "Process Standardization",
+      "description": "Standardized chemical processes reduce production time",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "EB1a",
+      "technologyId": "EB1",
+      "letter": "a",
+      "name": "Thermal Harvesting",
+      "description": "Bioenergetic thermal gradients improve energetic resource capture efficiency.",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "EC1a",
+      "technologyId": "EC1",
+      "letter": "a",
+      "name": "Propellant Refinement",
+      "description": "Refined fuel compounds accelerate high-temperature fabrication",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "EC1b",
+      "technologyId": "EC1",
+      "letter": "b",
+      "name": "Ion Chamber Assembly",
+      "description": "Shaping a metal housing around a reactive gas reservoir and lining it with ceramic insulation for stable ionization",
+      "researchCost": 100,
+      "prerequisites": [
+        "EC1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "ion-chamber",
+        "outputType": "component",
+        "outputId": "IonChamber",
+        "baseWorkUnits": 100,
+        "qualityProperties": {
+          "ThrustRatio": 1.0,
+          "FuelEfficiency": 0.75
+        },
+        "inputResources": [
+          {
+            "label": "chamber-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 50,
+            "propertyMapping": {
+              "HR": "ThrustRatio"
+            }
+          },
+          {
+            "label": "ionizing-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 30,
+            "propertyMapping": {
+              "PE": "FuelEfficiency"
+            }
+          },
+          {
+            "label": "insulating-ceramic",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 20,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "EC1c",
+      "technologyId": "EC1",
+      "letter": "c",
+      "name": "Ion Drive Assembly",
+      "description": "Coupling ion chambers to power conduits inside a reinforced metal housing for basic sublight thrust",
+      "researchCost": 100,
+      "prerequisites": [
+        "EC1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "ion-drive",
+        "outputType": "module",
+        "outputId": "IonDrive",
+        "baseWorkUnits": 220,
+        "capabilities": [
+          {
+            "type": "Speed",
+            "baseValue": 10,
+            "qualitySource": "ThrustRatio"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "drive-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 60,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "thrust-chamber",
+            "componentType": "IonChamber",
+            "quantity": 1,
+            "propertyMapping": {
+              "ThrustRatio": "ThrustRatio"
+            }
+          },
+          {
+            "label": "power-conduit",
+            "componentType": "CopperConduit",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "EI1a",
+      "technologyId": "EI1",
+      "letter": "a",
+      "name": "Load Balancing",
+      "description": "Intelligent power distribution maximizes fabrication throughput",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "EM1a",
+      "technologyId": "EM1",
+      "letter": "a",
+      "name": "Generator Tuning",
+      "description": "Optimized generator output stabilizes manufacturing power supply",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "EM1b",
+      "technologyId": "EM1",
+      "letter": "b",
+      "name": "Copper Conduit Fabrication",
+      "description": "Drawing non-ferromagnetic wire through calibrated dies and jacketing it in polymer insulation for shipboard power routing",
+      "researchCost": 100,
+      "prerequisites": [
+        "EM1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "copper-conduit",
+        "outputType": "component",
+        "outputId": "CopperConduit",
+        "baseWorkUnits": 60,
+        "qualityProperties": {
+          "Conductivity": 1.0,
+          "Capacity": 0.6
+        },
+        "inputResources": [
+          {
+            "label": "conductive-metal",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 50,
+            "propertyMapping": {
+              "CN": "Conductivity"
+            }
+          },
+          {
+            "label": "insulating-polymer",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 20,
+            "propertyMapping": {
+              "HR": "Capacity"
+            }
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "EM1c",
+      "technologyId": "EM1",
+      "letter": "c",
+      "name": "Micro Reactor Assembly",
+      "description": "Wiring capacitor banks through copper conduits to a heat-sinked reactor housing for compact shipboard power generation",
+      "researchCost": 100,
+      "prerequisites": [
+        "EM1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "micro-reactor",
+        "outputType": "module",
+        "outputId": "MicroReactor",
+        "baseWorkUnits": 240,
+        "capabilities": [
+          {
+            "type": "PowerGeneration",
+            "baseValue": 100,
+            "qualitySource": "EnergyDensity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "reactor-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 50,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "energy-storage",
+            "componentType": "CapacitorBank",
+            "quantity": 1,
+            "propertyMapping": {
+              "EnergyDensity": "EnergyDensity"
+            }
+          },
+          {
+            "label": "power-distribution",
+            "componentType": "CopperConduit",
+            "quantity": 2,
+            "propertyMapping": {}
+          },
+          {
+            "label": "thermal-management",
+            "componentType": "HeatSink",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "EP1a",
+      "technologyId": "EP1",
+      "letter": "a",
+      "name": "Containment Theory",
+      "description": "Plasma containment principles improve warp field stability",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "ES1a",
+      "technologyId": "ES1",
+      "letter": "a",
+      "name": "Distribution Networks",
+      "description": "Efficient energy allocation reduces production bottlenecks",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "IB1a",
+      "technologyId": "IB1",
+      "letter": "a",
+      "name": "Life Sign Detection",
+      "description": "Biosensors identify optimal harvesting targets in organic fields",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "BiologicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "IC1a",
+      "technologyId": "IC1",
+      "letter": "a",
+      "name": "Spectral Analysis",
+      "description": "Automated spectral scanning identifies high-yield mineral deposits",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "IE1a",
+      "technologyId": "IE1",
+      "letter": "a",
+      "name": "Power Diagnostics",
+      "description": "Real-time power monitoring eliminates inefficient cycles",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "IM1a",
+      "technologyId": "IM1",
+      "letter": "a",
+      "name": "Stress Modeling",
+      "description": "Computational stress analysis improves structural component design",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "IM1b",
+      "technologyId": "IM1",
+      "letter": "b",
+      "name": "Logic Array Fabrication",
+      "description": "Etching conductive traces onto crystalline substrates and bonding them with ferromagnetic adhesive into layered circuit boards",
+      "researchCost": 100,
+      "prerequisites": [
+        "IM1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "logic-array",
+        "outputType": "component",
+        "outputId": "LogicArray",
+        "baseWorkUnits": 70,
+        "qualityProperties": {
+          "ComputeCapacity": 1.0,
+          "Stability": 0.7
+        },
+        "inputResources": [
+          {
+            "label": "conductive-traces",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 30,
+            "propertyMapping": {
+              "CN": "ComputeCapacity"
+            }
+          },
+          {
+            "label": "crystalline-substrate",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 25,
+            "propertyMapping": {
+              "OQ": "Stability"
+            }
+          },
+          {
+            "label": "bonding-agent",
+            "qualifier": "order",
+            "value": "Ferromagnetic",
+            "quantity": 15,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "IP1a",
+      "technologyId": "IP1",
+      "letter": "a",
+      "name": "Trajectory Modeling",
+      "description": "Simulated trajectory optimization reduces conduit transit time",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "IP1b",
+      "technologyId": "IP1",
+      "letter": "b",
+      "name": "Sensor Array Assembly",
+      "description": "Aligning precision lens arrays and a signal-processing logic board inside a shielded metal housing for multi-spectrum scanning",
+      "researchCost": 100,
+      "prerequisites": [
+        "IP1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "sensor-array",
+        "outputType": "module",
+        "outputId": "SensorArray",
+        "baseWorkUnits": 160,
+        "capabilities": [
+          {
+            "type": "Sensors",
+            "baseValue": 20,
+            "qualitySource": "Sensitivity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "sensor-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 30,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "optical-assembly",
+            "componentType": "LensArray",
+            "quantity": 2,
+            "propertyMapping": {
+              "Sensitivity": "Sensitivity"
+            }
+          },
+          {
+            "label": "signal-processor",
+            "componentType": "LogicArray",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "IS1a",
+      "technologyId": "IS1",
+      "letter": "a",
+      "name": "Knowledge Networks",
+      "description": "Shared knowledge databases improve baseline research outcomes",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "IS1b",
+      "technologyId": "IS1",
+      "letter": "b",
+      "name": "Processing Core Assembly",
+      "description": "Stacking logic array boards into a ventilated metal chassis and wiring them into a unified compute bus",
+      "researchCost": 100,
+      "prerequisites": [
+        "IS1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "processing-core",
+        "outputType": "module",
+        "outputId": "ProcessingCore",
+        "baseWorkUnits": 180,
+        "capabilities": [
+          {
+            "type": "ComputeCapacity",
+            "baseValue": 50,
+            "qualitySource": "ComputeCapacity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "housing-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 40,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "logic-circuits",
+            "componentType": "LogicArray",
+            "quantity": 2,
+            "propertyMapping": {
+              "ComputeCapacity": "ComputeCapacity"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "MB1a",
+      "technologyId": "MB1",
+      "letter": "a",
+      "name": "Drill Calibration",
+      "description": "Bio-responsive drill feedback reduces sample damage during mineral extraction.",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "MC1a",
+      "technologyId": "MC1",
+      "letter": "a",
+      "name": "Refinery Optimization",
+      "description": "Mechanical refinement processes maximize mineral recovery rates",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ChemicalExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "ME1a",
+      "technologyId": "ME1",
+      "letter": "a",
+      "name": "Power Transmission",
+      "description": "Efficient mechanical power transfer accelerates fabrication",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergeticExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "ME1b",
+      "technologyId": "ME1",
+      "letter": "b",
+      "name": "Heat Sink Fabrication",
+      "description": "Extruding non-ferromagnetic fins and coating them with radiative ore compound for passive thermal dissipation",
+      "researchCost": 100,
+      "prerequisites": [
+        "ME1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "heat-sink",
+        "outputType": "component",
+        "outputId": "HeatSink",
+        "baseWorkUnits": 85,
+        "qualityProperties": {
+          "Dissipation": 1.0,
+          "Tolerance": 0.65
+        },
+        "inputResources": [
+          {
+            "label": "heat-conductive-metal",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 60,
+            "propertyMapping": {
+              "CN": "Dissipation"
+            }
+          },
+          {
+            "label": "radiative-coating",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 25,
+            "propertyMapping": {
+              "HR": "Tolerance"
+            }
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "MI1a",
+      "technologyId": "MI1",
+      "letter": "a",
+      "name": "CNC Precision",
+      "description": "Computer-controlled tooling improves component tolerances",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "MI1b",
+      "technologyId": "MI1",
+      "letter": "b",
+      "name": "Fabrication Bay Assembly",
+      "description": "Bolting alloy frames together around a CNC-controlled work platform, routing power cables and logic circuits throughout",
+      "researchCost": 100,
+      "prerequisites": [
+        "MI1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "fabrication-bay",
+        "outputType": "module",
+        "outputId": "FabricationBay",
+        "baseWorkUnits": 250,
+        "capabilities": [
+          {
+            "type": "Manufacturing",
+            "baseValue": 5,
+            "qualitySource": "Integrity"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "structural-plating",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 80,
+            "propertyMapping": {}
+          },
+          {
+            "label": "power-cabling",
+            "qualifier": "order",
+            "value": "NonFerromagnetic",
+            "quantity": 30,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "frame-structure",
+            "componentType": "AlloyFrame",
+            "quantity": 2,
+            "propertyMapping": {
+              "Integrity": "Integrity"
+            }
+          },
+          {
+            "label": "control-circuits",
+            "componentType": "LogicArray",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "MP1a",
+      "technologyId": "MP1",
+      "letter": "a",
+      "name": "Field Stabilization",
+      "description": "Mechanical dampeners improve warp field coherence",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "MP1b",
+      "technologyId": "MP1",
+      "letter": "b",
+      "name": "Scout Chassis Blueprint",
+      "description": "Unlocks the manufacture of Scout-class ship chassis at nexus station shipyards.",
+      "researchCost": 200,
+      "prerequisites": ["MP1a"],
+      "type": "blueprint",
+      "chassisBlueprint": {
+        "blueprintId": "scout-chassis",
+        "chassisClass": "Scout",
+        "baseWorkUnitsPerSlot": 50,
+        "baseInputResources": [
+          { "label": "hull-metal", "qualifier": "class", "value": "Metal", "quantity": 1000 },
+          { "label": "hull-ore", "qualifier": "class", "value": "Ore", "quantity": 500 }
+        ],
+        "baseInputComponents": [
+          { "label": "alloy-frame", "componentType": "AlloyFrame", "quantity": 100 }
+        ],
+        "perInteriorSlotInputResources": [
+          { "label": "interior-metal", "qualifier": "class", "value": "Metal", "quantity": 200 },
+          { "label": "interior-ore", "qualifier": "class", "value": "Ore", "quantity": 100 }
+        ],
+        "perInteriorSlotInputComponents": [],
+        "perExteriorSlotInputResources": [
+          { "label": "exterior-metal", "qualifier": "class", "value": "Metal", "quantity": 300 },
+          { "label": "exterior-ore", "qualifier": "class", "value": "Ore", "quantity": 150 }
+        ],
+        "perExteriorSlotInputComponents": []
+      }
+    },
+    {
+      "id": "MS1a",
+      "technologyId": "MS1",
+      "letter": "a",
+      "name": "Shift Optimization",
+      "description": "Coordinated work schedules maximize fabrication uptime",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PB1a",
+      "technologyId": "PB1",
+      "letter": "a",
+      "name": "Irradiation Control",
+      "description": "Precision radiation dosing improves material treatment and manufacturing quality.",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PC1a",
+      "technologyId": "PC1",
+      "letter": "a",
+      "name": "Quantum Bonding",
+      "description": "Quantum-level analysis improves molecular assembly precision",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingQuality",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PE1a",
+      "technologyId": "PE1",
+      "letter": "a",
+      "name": "Ignition Theory",
+      "description": "Fusion reaction principles enable high-temperature processing",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PE1b",
+      "technologyId": "PE1",
+      "letter": "b",
+      "name": "Directed Energy Focus",
+      "description": "Magnetic lensing concentrates particle beams into tighter impact profiles",
+      "researchCost": 100,
+      "prerequisites": [
+        "PE1a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergyDamage",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PI1a",
+      "technologyId": "PI1",
+      "letter": "a",
+      "name": "Parallel Processing",
+      "description": "Quantum parallelism expands research outcome possibilities",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityCeiling",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PM1a",
+      "technologyId": "PM1",
+      "letter": "a",
+      "name": "Warp Field Theory",
+      "description": "Fundamental warp mechanics improve conduit navigation",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ConduitTravelSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PM1b",
+      "technologyId": "PM1",
+      "letter": "b",
+      "name": "Lens Array Fabrication",
+      "description": "Grinding crystalline gemstone into precision lenses, polishing with compound, and seating them in a metal mounting frame",
+      "researchCost": 100,
+      "prerequisites": [
+        "PM1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "lens-array",
+        "outputType": "component",
+        "outputId": "LensArray",
+        "baseWorkUnits": 75,
+        "qualityProperties": {
+          "Sensitivity": 1.0,
+          "Resolution": 0.8
+        },
+        "inputResources": [
+          {
+            "label": "optical-crystal",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 40,
+            "propertyMapping": {
+              "OQ": "Sensitivity"
+            }
+          },
+          {
+            "label": "polishing-compound",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 20,
+            "propertyMapping": {
+              "SR": "Resolution"
+            }
+          },
+          {
+            "label": "mounting-frame",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 15,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "PM1c",
+      "technologyId": "PM1",
+      "letter": "c",
+      "name": "Field Reinforcement",
+      "description": "Layered electromagnetic containment fields absorb and disperse incoming energy",
+      "researchCost": 100,
+      "prerequisites": [
+        "PM1a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "EnergyResistance",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PS1a",
+      "technologyId": "PS1",
+      "letter": "a",
+      "name": "Discovery Protocols",
+      "description": "Systematic research methods ensure consistent baseline quality",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "PS1b",
+      "technologyId": "PS1",
+      "letter": "b",
+      "name": "Research Collaboration",
+      "description": "Formalized collaboration structures accelerate discovery",
+      "researchCost": 100,
+      "prerequisites": [
+        "PS1a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SB1a",
+      "technologyId": "SB1",
+      "letter": "a",
+      "name": "Health Programs",
+      "description": "Preventive health initiatives improve overall crew performance",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "CrewEfficiency",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SB1b",
+      "technologyId": "SB1",
+      "letter": "b",
+      "name": "Biometric Conditioning",
+      "description": "Physiological monitoring tailors crew training programs to individual performance profiles.",
+      "researchCost": 100,
+      "prerequisites": [
+        "SB1a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "CrewEfficiency",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SC1a",
+      "technologyId": "SC1",
+      "letter": "a",
+      "name": "Supply Chain Management",
+      "description": "Optimized logistics reduce material waste in production pipelines",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ManufacturingEfficiency",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SE1a",
+      "technologyId": "SE1",
+      "letter": "a",
+      "name": "Power Rationing",
+      "description": "Prioritized power allocation keeps critical systems at full capacity",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SI1a",
+      "technologyId": "SI1",
+      "letter": "a",
+      "name": "Training Programs",
+      "description": "Structured training improves baseline research competency",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityFloor",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SI1b",
+      "technologyId": "SI1",
+      "letter": "b",
+      "name": "Knowledge Sharing",
+      "description": "Cross-training initiatives create a more capable workforce",
+      "researchCost": 100,
+      "prerequisites": [
+        "SI1a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "CrewEfficiency",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SM1a",
+      "technologyId": "SM1",
+      "letter": "a",
+      "name": "Extraction Crews",
+      "description": "Specialized mining teams maximize extraction efficiency",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "MineralExtraction",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SM1b",
+      "technologyId": "SM1",
+      "letter": "b",
+      "name": "Tactical Core Assembly",
+      "description": "Wiring logic arrays and capacitor banks through crystalline comm relays inside a hardened housing for fleet coordination",
+      "researchCost": 100,
+      "prerequisites": [
+        "SM1a"
+      ],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "tactical-core",
+        "outputType": "module",
+        "outputId": "TacticalCore",
+        "baseWorkUnits": 200,
+        "capabilities": [
+          {
+            "type": "FleetCommand",
+            "baseValue": 2,
+            "qualitySource": "Coordination"
+          }
+        ],
+        "inputResources": [
+          {
+            "label": "hardened-housing",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 50,
+            "propertyMapping": {}
+          },
+          {
+            "label": "comm-crystals",
+            "qualifier": "order",
+            "value": "CrystallineGemstone",
+            "quantity": 25,
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": [
+          {
+            "label": "processing-unit",
+            "componentType": "LogicArray",
+            "quantity": 2,
+            "propertyMapping": {
+              "ComputeCapacity": "Coordination"
+            }
+          },
+          {
+            "label": "power-supply",
+            "componentType": "CapacitorBank",
+            "quantity": 1,
+            "propertyMapping": {}
+          }
+        ]
+      }
+    },
+    {
+      "id": "SP1a",
+      "technologyId": "SP1",
+      "letter": "a",
+      "name": "Team Structures",
+      "description": "Optimized research team organization accelerates discovery",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchSpeed",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SP1b",
+      "technologyId": "SP1",
+      "letter": "b",
+      "name": "Peer Review",
+      "description": "Collaborative review processes catch errors before they compound",
+      "researchCost": 100,
+      "prerequisites": [
+        "SP1a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "ResearchQualityCeiling",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "SM1c",
+      "technologyId": "SM1",
+      "letter": "c",
+      "name": "Structural Hardening",
+      "description": "Strategic analysis of kinetic threat vectors improves hull reinforcement",
+      "researchCost": 100,
+      "prerequisites": [
+        "SM1a"
+      ],
+      "type": "modifier",
+      "modifier": {
+        "operationType": "KineticResistance",
+        "bonusPercent": 2.0
+      }
+    },
+    {
+      "id": "CC1a",
+      "technologyId": "CC1",
+      "letter": "a",
+      "name": "Duranium Formulation",
+      "description": "Fundamental alloy combining metallic strength with mineral hardness",
+      "researchCost": 100,
+      "prerequisites": [],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "duranium",
+        "outputType": "alloy",
+        "outputId": "duranium",
+        "baseWorkUnits": 60,
+        "alloyDefinition": {
+          "name": "Duranium",
+          "tier": 1,
+          "specialtyBoosts": [
+            { "boostedProperty": "SR", "catalystProperty": "PE" }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 4,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-ore",
+            "qualifier": "class",
+            "value": "Ore",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-gas",
+            "qualifier": "order",
+            "value": "ReactiveGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    },
+    {
+      "id": "CC1b",
+      "technologyId": "CC1",
+      "letter": "b",
+      "name": "Conductite Synthesis",
+      "description": "Conductive alloy optimized for energy transfer and signal propagation",
+      "researchCost": 100,
+      "prerequisites": ["CC1a"],
+      "type": "blueprint",
+      "blueprint": {
+        "blueprintId": "conductite",
+        "outputType": "alloy",
+        "outputId": "conductite",
+        "baseWorkUnits": 60,
+        "alloyDefinition": {
+          "name": "Conductite",
+          "tier": 1,
+          "specialtyBoosts": [
+            { "boostedProperty": "CN", "catalystProperty": "HR" }
+          ]
+        },
+        "inputResources": [
+          {
+            "label": "base-metal",
+            "qualifier": "class",
+            "value": "Metal",
+            "quantity": 3,
+            "role": "Base",
+            "inputKind": "RawResource",
+            "propertyMapping": {}
+          },
+          {
+            "label": "additive-liquid",
+            "qualifier": "class",
+            "value": "Liquid",
+            "quantity": 2,
+            "role": "Additive",
+            "inputKind": "RawResource",
+            "propertyMapping": {}
+          },
+          {
+            "label": "catalyst-gas",
+            "qualifier": "order",
+            "value": "InertGas",
+            "quantity": 1,
+            "role": "Catalyst",
+            "inputKind": "RawResource",
+            "propertyMapping": {}
+          }
+        ],
+        "inputComponents": []
+      }
+    }
+  ],
+  "newComponents": [],
+  "newModules": []
+}

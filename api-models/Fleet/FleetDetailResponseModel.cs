@@ -21,6 +21,8 @@ namespace psecsapi.api.models.Fleet
         public Guid? ActiveCombatId { get; set; }
         public DateTime? LastCombatTimestamp { get; set; }
         public Guid? AssignedCombatScriptId { get; set; }
+        public Guid? DestinationSectorId { get; set; }
+        public decimal FleetSpeed { get; set; }
     }
 
     public class QueueState

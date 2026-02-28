@@ -14,5 +14,9 @@ namespace psecsapi.api.models.Market
         public DateTimeOffset ExpiresAt { get; set; }
         public string TimeRemaining { get; set; } = string.Empty;
         public string Description { get; set; } = string.Empty;
+        /// <summary>Whether the requesting corp can afford this listing at the current price.</summary>
+        public bool CanAfford { get; set; }
+        /// <summary>Credits the requesting corp still needs to afford this listing. Null when CanAfford is true.</summary>
+        public long? InsufficientFundsAmount { get; set; }
     }
 }

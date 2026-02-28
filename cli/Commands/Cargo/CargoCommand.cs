@@ -20,6 +20,7 @@ public class CargoCommand : ICommand
         command.AddCommand(BuildTransferCommand());
         command.AddCommand(BuildMoveCommand());
         command.AddCommand(BuildInspectCommand());
+        command.AddCommand(BuildSplitCommand());
         return command;
     }
 
@@ -199,5 +200,69 @@ public class CargoCommand : ICommand
         }, assetIdArg, shipOption, jsonOption);
 
         return cmd;
+    }
+
+    private Command BuildSplitCommand()
+    {
+        var shipIdArg = new Argument<Guid>("ship-id", "Ship containing the cargo asset");
+        var assetIdArg = new Argument<Guid>("asset-id", "Boxed asset ID to split");
+        var quantityArg = new Argument<decimal>("quantity", "Quantity to split off into a new asset");
+        var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+        var cmd = new Command("split", "Split a stackable cargo asset (resource, component, alloy) into two assets")
+        {
+            shipIdArg, assetIdArg, quantityArg, jsonOption
+        };
+
+        cmd.SetHandler(async (Guid shipId, Guid assetId, decimal quantity, bool json) =>
+        {
+            var response = await _client.PostAsync($"/api/Ship/{shipId}/cargo/split", new
+            {
+                BoxedAssetId = assetId,
+                SplitQuantity = quantity
+            });
+
+            var content = await response.Content.ReadAsStringAsync();
+
+            if (!response.IsSuccessStatusCode)
+            {
+                System.Console.WriteLine($"Error: {response.StatusCode}");
+                System.Console.WriteLine(content);
+                return;
+            }
+
+            if (json)
+            {
+                System.Console.WriteLine(content);
+                return;
+            }
+
+            var result = JsonSerializer.Deserialize<SplitResult>(content, JsonOptions);
+            if (result == null)
+            {
+                System.Console.WriteLine("Error: Unable to parse response.");
+                return;
+            }
+
+            if (!result.Success)
+            {
+                System.Console.WriteLine($"Split failed: {result.ErrorMessage}");
+                return;
+            }
+
+            System.Console.WriteLine($"Split succeeded! {quantity} moved to new asset.");
+            System.Console.WriteLine($"  New Asset ID: {result.NewAssetId}");
+            System.Console.WriteLine();
+            System.Console.WriteLine($"Inspect with: papi cargo inspect {result.NewAssetId} --ship {shipId}");
+        }, shipIdArg, assetIdArg, quantityArg, jsonOption);
+
+        return cmd;
+    }
+
+    private class SplitResult
+    {
+        public bool Success { get; set; }
+        public Guid? NewAssetId { get; set; }
+        public string? ErrorMessage { get; set; }
     }
 }

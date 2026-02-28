@@ -147,7 +147,7 @@ namespace psecsapi.Console.Commands.Catalog
                 var fav = entry.IsFavorite ? "*" : "";
                 var name = entry.Name.Length > 27 ? entry.Name[..24] + "..." : entry.Name;
                 var sector = entry.SectorName.Length > 19 ? entry.SectorName[..16] + "..." : entry.SectorName;
-                System.Console.WriteLine($"{name,-28} {entry.Type,-12} {entry.Class,-10} {entry.Density:F2,-8} {sector,-20} {fav,3}");
+                System.Console.WriteLine($"{name,-28} {entry.Type,-12} {entry.Class,-10} {entry.Density,-8:F2} {sector,-20} {fav,3}");
             }
 
             System.Console.WriteLine();

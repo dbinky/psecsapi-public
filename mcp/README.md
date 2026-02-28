@@ -18,6 +18,7 @@ npx @psecs/mcp
 |----------|----------|---------|-------------|
 | `PSECS_API_KEY` | Yes | -- | Your PSECS API key |
 | `PSECS_BASE_URL` | No | `https://api.psecs.io` | API base URL |
+| `PSECS_WEB_URL` | No | `https://psecs.io` | Web UI base URL (for wiki links in error messages) |
 
 Get an API key from your PSECS account settings page.
 

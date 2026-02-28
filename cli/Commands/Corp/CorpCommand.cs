@@ -23,6 +23,7 @@ namespace psecsapi.Console.Commands.Corp
 
             command.AddCommand(BuildGetCommand());
             command.AddCommand(BuildFleetsCommand());
+            command.AddCommand(BuildEventsCommand());
 
             return command;
         }
@@ -184,5 +185,113 @@ namespace psecsapi.Console.Commands.Corp
             3 => "Owner",
             _ => $"Level {level}"
         };
+
+        private Command BuildEventsCommand()
+        {
+            var sinceOption = new Option<string?>("--since", "Return events after this timestamp (ISO 8601, e.g. 2024-01-15T14:00:00Z)");
+            var untilOption = new Option<string?>("--until", "Return events before this timestamp (ISO 8601)");
+            var typeOption = new Option<string?>("--type", "Filter by event type (e.g. com.psecsapi.fleet.moved)");
+            var sourceOption = new Option<string?>("--source", "Filter by source prefix");
+            var limitOption = new Option<int?>("--limit", "Maximum events to return (1-1000, default 100)");
+            var cursorOption = new Option<string?>("--cursor", "Pagination cursor from a previous response");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+            var command = new Command("events", "Query corp event log (mining, market, combat, manufacturing events)")
+            {
+                sinceOption, untilOption, typeOption, sourceOption, limitOption, cursorOption, jsonOption
+            };
+
+            command.SetHandler(async (string? since, string? until, string? type, string? source, int? limit, string? cursor, bool json) =>
+            {
+                var corpId = _config.User.DefaultCorpId;
+                if (!corpId.HasValue)
+                {
+                    System.Console.WriteLine("Error: No default corp ID set. Use 'papi config set-corp <id>'.");
+                    return;
+                }
+
+                var url = $"/api/corp/{corpId}/events";
+                var queryParams = new List<string>();
+                if (!string.IsNullOrEmpty(since)) queryParams.Add($"since={Uri.EscapeDataString(since)}");
+                if (!string.IsNullOrEmpty(until)) queryParams.Add($"until={Uri.EscapeDataString(until)}");
+                if (!string.IsNullOrEmpty(type)) queryParams.Add($"type={Uri.EscapeDataString(type)}");
+                if (!string.IsNullOrEmpty(source)) queryParams.Add($"source={Uri.EscapeDataString(source)}");
+                if (limit.HasValue) queryParams.Add($"limit={limit.Value}");
+                if (!string.IsNullOrEmpty(cursor)) queryParams.Add($"cursor={Uri.EscapeDataString(cursor)}");
+                if (queryParams.Count > 0) url += "?" + string.Join("&", queryParams);
+
+                var response = await _client.GetAsync(url);
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine($"Error: {response.StatusCode}");
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                var result = JsonSerializer.Deserialize<JsonElement>(content, JsonOptions);
+
+                if (!result.TryGetProperty("events", out var events) || events.ValueKind != JsonValueKind.Array)
+                {
+                    System.Console.WriteLine("Error: Unable to parse response.");
+                    return;
+                }
+
+                var eventCount = events.GetArrayLength();
+                System.Console.WriteLine();
+
+                if (eventCount == 0)
+                {
+                    System.Console.WriteLine("No events found.");
+                    System.Console.WriteLine();
+                    return;
+                }
+
+                System.Console.WriteLine($"Events ({eventCount}):");
+                System.Console.WriteLine();
+
+                foreach (var evt in events.EnumerateArray())
+                {
+                    var time = evt.TryGetProperty("time", out var t) && t.ValueKind != JsonValueKind.Null
+                        ? t.GetDateTime().ToString("yyyy-MM-dd HH:mm:ss") + " UTC"
+                        : "(no time)";
+                    var evtType = evt.TryGetProperty("type", out var tp) ? tp.GetString() ?? "" : "";
+                    var evtSource = evt.TryGetProperty("source", out var s) ? s.GetString() ?? "" : "";
+                    var evtId = evt.TryGetProperty("id", out var id) ? id.GetString() ?? "" : "";
+
+                    System.Console.WriteLine($"  [{time}] {evtType}");
+                    System.Console.WriteLine($"    ID:     {evtId}");
+                    System.Console.WriteLine($"    Source: {evtSource}");
+
+                    if (evt.TryGetProperty("data", out var data) && data.ValueKind == JsonValueKind.Object)
+                    {
+                        var dataProps = data.EnumerateObject().ToList();
+                        if (dataProps.Count > 0)
+                        {
+                            System.Console.WriteLine("    Data:");
+                            foreach (var prop in dataProps)
+                                System.Console.WriteLine($"      {prop.Name}: {prop.Value}");
+                        }
+                    }
+
+                    System.Console.WriteLine();
+                }
+
+                if (result.TryGetProperty("cursor", out var nextCursor) && nextCursor.ValueKind != JsonValueKind.Null)
+                {
+                    System.Console.WriteLine($"More events available. Next page: papi corp events --cursor \"{nextCursor.GetString()}\"");
+                    System.Console.WriteLine();
+                }
+            }, sinceOption, untilOption, typeOption, sourceOption, limitOption, cursorOption, jsonOption);
+
+            return command;
+        }
     }
 }

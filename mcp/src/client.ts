@@ -14,6 +14,7 @@ export interface ApiError {
   message: string;
   status: number;
   retryAfter?: number;
+  currentLimit?: number;
 }
 
 export type ApiResult<T> = ApiResponse<T> | ApiError;
@@ -63,7 +64,8 @@ export class PsecsClient {
     method: string,
     path: string,
     body: unknown,
-    options?: RequestOptions
+    options?: RequestOptions,
+    retryCount = 0
   ): Promise<ApiResult<T>> {
     const url = this.buildUrl(path, options);
 
@@ -96,12 +98,19 @@ export class PsecsClient {
       return { ok: true, data, status: response.status };
     }
 
-    const errorBody = await this.parseErrorBody(response);
+    // Auto-retry on 429 (rate limit) up to 3 times with backoff
+    if (response.status === 429 && retryCount < 3) {
+      const retryAfter = response.headers.get("Retry-After");
+      const delayMs = retryAfter ? parseInt(retryAfter, 10) * 1000 : 1000;
+      await new Promise((resolve) => setTimeout(resolve, delayMs));
+      return this.request<T>(method, path, body, options, retryCount + 1);
+    }
+
     const errorType = this.classifyError(response.status);
     const result: ApiError = {
       ok: false,
       errorType,
-      message: errorBody,
+      message: "",
       status: response.status,
     };
 
@@ -110,6 +119,12 @@ export class PsecsClient {
       if (retryAfter) {
         result.retryAfter = parseInt(retryAfter, 10);
       }
+      // Parse JSON body once to get both message and currentLimit
+      const parsed = await this.parseRateLimitBody(response);
+      result.message = parsed.message;
+      result.currentLimit = parsed.currentLimit;
+    } else {
+      result.message = await this.parseErrorBody(response);
     }
 
     return result;
@@ -142,6 +157,22 @@ export class PsecsClient {
     if (status === 429) return "rate_limit";
     if (status >= 400 && status < 500) return "game"; // 403 = AccessDenied (game-logic), not an API key failure
     return "infrastructure";
+  }
+
+  private async parseRateLimitBody(
+    response: Response
+  ): Promise<{ message: string; currentLimit?: number }> {
+    try {
+      const body = await response.json();
+      const message = sanitizeErrorMessage(
+        typeof body.message === "string" ? body.message : `HTTP 429 error`
+      );
+      const currentLimit =
+        typeof body.currentLimit === "number" ? body.currentLimit : undefined;
+      return { message, currentLimit };
+    } catch {
+      return { message: "HTTP 429 error" };
+    }
   }
 
   private async parseErrorBody(response: Response): Promise<string> {

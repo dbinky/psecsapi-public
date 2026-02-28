@@ -123,8 +123,8 @@ namespace psecsapi.Console.Commands.Market
                 }
 
                 System.Console.WriteLine();
-                System.Console.WriteLine($"{"ID",-38} {"Type",-8} {"Asset",-25} {"Price",12} {"Ends",-12} {"Bids",5}");
-                System.Console.WriteLine(new string('-', 104));
+                System.Console.WriteLine($"{"ID",-38} {"Type",-8} {"Asset",-25} {"Price",12} {"Ends",-12} {"Bids",5}  {"Afford",-6}");
+                System.Console.WriteLine(new string('-', 114));
 
                 foreach (var listing in listings.Listings)
                 {
@@ -132,8 +132,11 @@ namespace psecsapi.Console.Commands.Market
                         ? listing.AssetSummary[..21] + "..."
                         : listing.AssetSummary;
                     var typeStr = listing.Type == "Auction" ? "Auction" : "BuyNow";
+                    var afford = listing.CanAfford
+                        ? "Yes"
+                        : $"No (-{listing.InsufficientFundsAmount:N0})";
 
-                    System.Console.WriteLine($"{listing.SaleId,-38} {typeStr,-8} {asset,-25} {listing.Price,12:N0} {listing.TimeRemaining,-12} {listing.BidCount,5}");
+                    System.Console.WriteLine($"{listing.SaleId,-38} {typeStr,-8} {asset,-25} {listing.Price,12:N0} {listing.TimeRemaining,-12} {listing.BidCount,5}  {afford}");
                 }
 
                 System.Console.WriteLine();
@@ -730,6 +733,8 @@ namespace psecsapi.Console.Commands.Market
             public int BidCount { get; set; }
             public string TimeRemaining { get; set; } = string.Empty;
             public string Description { get; set; } = string.Empty;
+            public bool CanAfford { get; set; }
+            public long? InsufficientFundsAmount { get; set; }
         }
 
         private class SaleDetailsResponse

@@ -25,6 +25,8 @@ namespace psecsapi.Console.Commands.Fleet
             command.AddCommand(BuildScanCommand());
             command.AddCommand(BuildEnqueueCommand());
             command.AddCommand(BuildDequeueCommand());
+            command.AddCommand(BuildAddShipCommand());
+            command.AddCommand(BuildRemoveShipCommand());
             command.AddCommand(BuildSetCombatScriptCommand());
             command.AddCommand(BuildUnsetCombatScriptCommand());
 
@@ -266,6 +268,73 @@ namespace psecsapi.Console.Commands.Fleet
             return command;
         }
 
+        private Command BuildAddShipCommand()
+        {
+            var fleetIdArg = new Argument<Guid>("fleet-id", "Fleet ID to add the ship to");
+            var shipOption = new Option<Guid>("--ship", "Ship ID to add to the fleet") { IsRequired = true };
+            shipOption.AddAlias("-s");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+            var command = new Command("add-ship", "Add a ship to this fleet") { fleetIdArg, shipOption, jsonOption };
+            command.SetHandler(async (fleetId, shipId, json) =>
+            {
+                var response = await _client.PostAsync($"/api/Fleet/{fleetId}/ship", new { ShipId = shipId });
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine($"Error: {response.StatusCode}");
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                System.Console.WriteLine($"Ship added to fleet!");
+                System.Console.WriteLine();
+                FormatFleetDetail(content);
+            }, fleetIdArg, shipOption, jsonOption);
+
+            return command;
+        }
+
+        private Command BuildRemoveShipCommand()
+        {
+            var fleetIdArg = new Argument<Guid>("fleet-id", "Fleet ID to remove the ship from");
+            var shipIdArg = new Argument<Guid>("ship-id", "Ship ID to remove from the fleet");
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+            var command = new Command("remove-ship", "Remove a ship from this fleet") { fleetIdArg, shipIdArg, jsonOption };
+            command.SetHandler(async (fleetId, shipId, json) =>
+            {
+                var response = await _client.DeleteAsync($"/api/Fleet/{fleetId}/ship/{shipId}");
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine($"Error: {response.StatusCode}");
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                if (json)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                System.Console.WriteLine($"Ship removed from fleet!");
+                System.Console.WriteLine();
+                FormatFleetDetail(content);
+            }, fleetIdArg, shipIdArg, jsonOption);
+
+            return command;
+        }
+
         private Command BuildSetCombatScriptCommand()
         {
             var fleetIdArg = new Argument<Guid>("fleet-id", "Fleet ID");
@@ -330,10 +399,16 @@ namespace psecsapi.Console.Commands.Fleet
             if (fleet.TryGetProperty("sectorId", out var sec) && sec.ValueKind != JsonValueKind.Null)
                 System.Console.WriteLine($"  Sector:  {sec.GetString()}");
 
+            if (fleet.TryGetProperty("destinationSectorId", out var dest) && dest.ValueKind != JsonValueKind.Null)
+                System.Console.WriteLine($"  Dest:    {dest.GetString()}");
+
             System.Console.WriteLine($"  Status:  {status}");
 
             if (fleet.TryGetProperty("ships", out var ships) && ships.ValueKind == JsonValueKind.Array)
                 System.Console.WriteLine($"  Ships:   {ships.GetArrayLength()}");
+
+            if (fleet.TryGetProperty("fleetSpeed", out var spd) && spd.ValueKind != JsonValueKind.Null)
+                System.Console.WriteLine($"  Speed:   {spd.GetDecimal():0.##}");
 
             // Queue status
             if (fleet.TryGetProperty("queueStatus", out var qs) && qs.ValueKind == JsonValueKind.Object)
@@ -453,6 +528,8 @@ namespace psecsapi.Console.Commands.Fleet
                 if (!string.IsNullOrEmpty(type)) System.Console.WriteLine($"  Type:  {type}");
                 if (!string.IsNullOrEmpty(cls)) System.Console.WriteLine($"  Class: {cls}");
                 if (!string.IsNullOrEmpty(order)) System.Console.WriteLine($"  Order: {order}");
+                if (res.TryGetProperty("density", out var densityEl) && densityEl.ValueKind != JsonValueKind.Null)
+                    System.Console.WriteLine($"  Density: {densityEl.GetDecimal():F3}");
 
                 // Property values with assessments
                 var hasValues = res.TryGetProperty("propertyValues", out var vals) && vals.ValueKind == JsonValueKind.Object;

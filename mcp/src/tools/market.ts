@@ -193,15 +193,21 @@ export function registerMarketTools(
     "psecs_market_sell",
     {
       description:
-        "List an item for sale on the Nexus Market. The item must be a boxed asset " +
-        "in a ship's cargo hold. Supports both BuyNow (fixed price) and Auction listings. " +
+        "List an item for sale on the Nexus Market. The item can be a boxed asset " +
+        "from a ship's cargo hold OR directly from the Nexus Warehouse — you do NOT need to withdraw warehouse assets to ship cargo first. " +
+        "For cargo assets, provide shipId and use psecs_ship_cargo_overview to find boxedAssetId. " +
+        "For warehouse assets, omit shipId and use psecs_warehouse_list to find boxedAssetId. " +
+        "Supports both BuyNow (fixed price) and Auction listings. " +
         "BuyNow charges a storage fee of 1% × price × duration days, paid upfront at creation (non-refundable). " +
         "Auctions charge a storage fee of 0.5% × final sale price × duration days, deducted from seller proceeds on completion.",
       inputSchema: {
-        shipId: z.string().describe("Ship ID containing the item to sell"),
+        shipId: z
+          .string()
+          .optional()
+          .describe("Ship ID containing the item to sell (required for cargo assets; omit when selling directly from the Nexus Warehouse)"),
         boxedAssetId: z
           .string()
-          .describe("Boxed asset ID from the ship's cargo"),
+          .describe("Boxed asset ID from psecs_ship_cargo_overview (cargo) or psecs_warehouse_list (warehouse)"),
         price: z
           .number()
           .describe("Sale price (fixed price for BuyNow, starting price for Auction)"),
