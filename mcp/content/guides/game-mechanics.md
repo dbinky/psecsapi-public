@@ -23,7 +23,7 @@ researching technology, manufacturing items, and trading on the market.
 - Research capacity comes from ship modules
 - Allocate research as percentages across targets (psecs_allocate_research)
 - Stop research to free capacity for new priorities (psecs_stop_research) — progress is preserved
-- Research processes on 1-minute tick cycles
+- Research progresses once per hour: each tick awards 1 research point per capacity unit (adjusted by allocation % and ResearchSpeed modifiers)
 
 ## Manufacturing
 - Blueprints turn raw resources + components into higher-tier items
@@ -104,4 +104,9 @@ Your corporation automatically tracks two knowledge databases as you explore:
 ## Credits & Economy
 - Credits are the primary currency
 - Earned through market sales
+- Also earned via the **Credit Mint**: permanently burn tokens to receive credits at a dynamic rate
+  - Base rate: 25,000 credits/token; floor rate: 5,000 credits/token
+  - Rate decays with recent burn volume and recovers over 24 hours
+  - Use `psecs_mint_rate` to check the current rate before burning
+  - Use `psecs_mint_burn` to execute a burn (min 0.1, max 100 tokens; irreversible)
 - Spent on manufacturing, market purchases, and ship building

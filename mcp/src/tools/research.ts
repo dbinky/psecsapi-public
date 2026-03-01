@@ -90,7 +90,8 @@ export function registerResearchTools(
       description:
         "Get a comprehensive overview of the corporation's research state. " +
         "Fetches research status, available technologies, completed research, and active modifiers. " +
-        "Returns combined view with strategic suggestions.",
+        "Returns combined view with strategic suggestions. " +
+        "Research earns 1 point per capacity per HOUR (not per minute). A 25-point tech at capacity 1 takes ~25 hours.",
     },
     async () => {
       const suggestions: string[] = [];
@@ -209,7 +210,8 @@ export function registerResearchTools(
       description:
         "Allocate research capacity to a technology or application. " +
         "Starts or updates research on the target with the specified percentage. " +
-        "Total allocation across all projects cannot exceed 100%.",
+        "Total allocation across all projects cannot exceed 100%. " +
+        "Research ticks hourly: points per tick = capacity × (allocation% / 100). Capacity 1 at 100% = 1 point/hour.",
       inputSchema: {
         targetId: z
           .string()

@@ -21,6 +21,7 @@ import { registerCargoTools } from "./tools/cargo.js";
 import { registerCatalogTools } from "./tools/catalog.js";
 import { registerWarehouseTools } from "./tools/warehouse.js";
 import { registerTokenTools } from "./tools/tokens.js";
+import { registerMintTools } from "./tools/mint.js";
 import { registerCliTools } from "./tools/cli.js";
 import { registerGuideResources } from "./resources/guides.js";
 import { registerGameStateResources } from "./resources/game-state.js";
@@ -55,6 +56,7 @@ export function createServer(client: PsecsClient): McpServer {
   registerCatalogTools(server, client);
   registerWarehouseTools(server, client);
   registerTokenTools(server, client);
+  registerMintTools(server, client);
   registerCliTools(server);
 
   // Resources

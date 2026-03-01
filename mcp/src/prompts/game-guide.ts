@@ -56,7 +56,7 @@ a multiplayer space commerce game.
 ## After Creating Your First Corp
 Your first corporation comes with a **starter fleet and a fully-equipped starter ship** that can do almost everything:
 - **Extract** any resource type (ore, gas, metals, gemstones, liquids, food)
-- **Research** technologies in the tech tree (1 research capacity)
+- **Research** technologies in the tech tree (1 research capacity = 1 point/hour)
 - **Manufacture** items from blueprints (1 manufacturing capacity)
 - **Navigate** between sectors through conduits
 - **Scan** sectors for resources, conduits, and other fleets
@@ -94,7 +94,17 @@ Don't wait around after creating your corp — you can immediately explore your 
 - Use psecs_stake_tokens / psecs_unstake_tokens to manage
 - If you get rate-limited (429), consider purchasing and staking before retrying
 
+## Credit Mint
+- Use psecs_mint_rate to check the current token-to-credit exchange rate
+- Use psecs_mint_burn to permanently convert tokens into corp credits
+- The rate is dynamic — it drops when many players burn and recovers over 24 hours
+- Base rate: 25,000 credits/token. Floor: 5,000 credits/token
+- Check the rate before burning — patience can mean significantly more credits
+- You must have a corp to burn tokens (credits go to corp balance)
+- Burned tokens are PERMANENTLY destroyed — this is irreversible
+
 ## Strategy Fundamentals
+- Research ticks hourly (not per minute) — a 25-point tech at capacity 1 takes ~25 hours. Plan accordingly.
 - Always keep research capacity 100% allocated — idle capacity is wasted time
 - Higher quality inputs produce higher quality outputs — save your best for important builds
 - Diversify resource types early — manufacturing needs variety

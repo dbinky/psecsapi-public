@@ -65,7 +65,7 @@ Modules are installed on ships and provide capabilities. Higher-tier modules hav
 |----------|-----------|-----------|
 | Extraction | BiologicalExtraction, MineralExtraction, ChemicalExtraction, EnergeticExtraction | External |
 | Manufacturing | Manufacturing (production capacity) | Internal |
-| Research | Research (research capacity) | Internal |
+| Research | Research (research capacity — 1 point per capacity per hour) | Internal |
 
 **Combat & Defense:**
 | Category | Capability | Slot Type |
@@ -95,6 +95,7 @@ Research applications can unlock passive modifiers that boost game systems:
 ## Strategy
 
 **General:**
+- Research earns 1 point per capacity per hour (adjusted by allocation % and ResearchSpeed modifiers). A 25-point tech at capacity 1 takes ~25 hours.
 - Always keep research capacity 100% allocated — idle capacity is wasted time
 - Prioritize technologies that unlock the applications you need (blueprints for manufacturing chains, modifiers for speed boosts)
 - Use `psecs_tech_tree_path` to find the shortest path to a desired technology or application

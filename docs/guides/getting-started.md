@@ -55,4 +55,5 @@ More ships = more extraction, research, and manufacturing capacity.
 - Annotate discovered resources in your catalog (psecs_raw_update_corp_catalog_note) to track quality patterns and blueprint matches
 - Use psecs_raw_usermap with type=Favorites to quickly find your bookmarked sectors
 - Purchase tokens at https://www.psecsapi.com/account/tokens and stake them with psecs_stake_tokens to increase your API rate limit
+- **Credit Mint:** Convert tokens into corp credits with `psecs_mint_rate` and `psecs_mint_burn`. The exchange rate is dynamic — check before burning.
 - Download the CLI (`papi`) for direct terminal access — use psecs_download_cli for platform-specific install instructions
