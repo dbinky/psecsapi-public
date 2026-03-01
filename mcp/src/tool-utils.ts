@@ -24,19 +24,29 @@ export function formatToolError(error: ApiError) {
       "Your API key may be invalid or revoked. Get a new one from the PSECS web UI."
     );
   }
-  if (error.errorType === "rate_limit" && error.retryAfter) {
+  if (error.errorType === "rate_limit") {
     const limitInfo = error.currentLimit
       ? ` (current limit: ${error.currentLimit} req/s)`
       : "";
-    const unit = error.retryAfter === 1 ? "second" : "seconds";
-    const webUrl = (process.env.PSECS_WEB_URL ?? "https://psecs.io").replace(
-      /\/$/,
-      ""
+    if (error.retryAfter) {
+      const unit = error.retryAfter === 1 ? "second" : "seconds";
+      parts.push(
+        `Rate limited${limitInfo}. Retry after ${error.retryAfter} ${unit}.`
+      );
+    } else {
+      parts.push(`Rate limited${limitInfo}.`);
+    }
+    if (error.currentLimit === 2) {
+      parts.push(
+        "You're on the base rate limit. Even 1 staked token boosts you from 2 to 33 req/s."
+      );
+    }
+    parts.push(
+      "Check psecs_token_status for your balance and rate limit info.\n" +
+      "Purchase tokens at https://www.psecsapi.com/account/tokens"
     );
     parts.push(
-      `Rate limited${limitInfo}. Retry after ${error.retryAfter} ${unit}.\n` +
-      `You can permanently increase your rate limit by purchasing and staking tokens.\n` +
-      `See the guide: ${webUrl}/wiki/api-rate-limits`
+      "If you have unstaked tokens, use psecs_stake_tokens to boost your rate limit immediately."
     );
   }
   return {

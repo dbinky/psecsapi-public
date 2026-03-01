@@ -17,6 +17,7 @@ const GUIDES = {
   "tech-tree-overview": loadGuide("tech-tree-overview.md"),
   "combat-scripting": loadGuide("combat-scripting.md"),
   "getting-started": loadGuide("getting-started.md"),
+  "cli-setup": loadGuide("cli-setup.md"),
 };
 
 export function registerGuideResources(
@@ -88,6 +89,24 @@ export function registerGuideResources(
           uri: uri.href,
           mimeType: "text/markdown",
           text: GUIDES["getting-started"],
+        },
+      ],
+    })
+  );
+
+  server.registerResource(
+    "cli-setup",
+    "psecs://guide/cli-setup",
+    {
+      description:
+        "CLI download, installation, and setup guide for the papi command-line tool",
+    },
+    async (uri) => ({
+      contents: [
+        {
+          uri: uri.href,
+          mimeType: "text/markdown",
+          text: GUIDES["cli-setup"],
         },
       ],
     })

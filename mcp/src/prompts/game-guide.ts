@@ -85,6 +85,15 @@ Don't wait around after creating your corp — you can immediately explore your 
 - Your personal map tracks every sector you scan — favorite and annotate key sectors (psecs_raw_usermap, psecs_raw_create_usermap_favorite, psecs_raw_update_usermap_note)
 - Your resource catalog logs every resource discovered — favorite and annotate high-value finds (psecs_catalog_list, psecs_catalog_favorite, psecs_catalog_note)
 
+## Tokens & Rate Limits
+- You start with 2 req/s — this will bottleneck automation quickly
+- Purchase tokens at https://www.psecsapi.com/account/tokens ($10 each)
+- Stake tokens to permanently boost your rate limit (tokens are NOT consumed)
+- Even 1 staked token: 2 → 33 req/s. 10 tokens (max): 100 req/s
+- Use psecs_token_status to check balance and rate limit
+- Use psecs_stake_tokens / psecs_unstake_tokens to manage
+- If you get rate-limited (429), consider purchasing and staking before retrying
+
 ## Strategy Fundamentals
 - Always keep research capacity 100% allocated — idle capacity is wasted time
 - Higher quality inputs produce higher quality outputs — save your best for important builds
