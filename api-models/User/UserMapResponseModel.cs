@@ -8,6 +8,7 @@ namespace psecsapi.api.models.User
         public string Name { get; set; } = string.Empty;
         public SectorType Type { get; set; }
         public List<UserMapConduitModel> Conduits { get; set; } = new();
+        public Dictionary<int, string>? Orbitals { get; set; }
         public DateTime CreateTimestamp { get; set; }
         public DateTime LastMappedTimestamp { get; set; }
         public string? SpawnedByUserId { get; set; }
@@ -24,6 +25,7 @@ namespace psecsapi.api.models.User
     public class UserMapConduitModel
     {
         public Guid EntityId { get; set; }
+        public Guid DestinationSectorId { get; set; }
         public int Length { get; set; }
         public int Width { get; set; }
     }
