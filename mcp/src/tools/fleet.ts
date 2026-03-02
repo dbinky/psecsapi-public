@@ -19,6 +19,7 @@ interface FleetDetails {
     [key: string]: unknown;
   };
   transitETA?: string;
+  fleetSpeed?: number;
   activeCombatId?: string;
   assignedCombatScriptId?: string;
   [key: string]: unknown;
@@ -125,14 +126,29 @@ export function registerFleetTools(
         );
       } else if (status === "InTransit") {
         suggestions.push(
-          "Fleet is in transit. Wait for arrival before issuing new commands."
+          "Fleet is in transit. Do NOT issue fleet commands until arrival."
         );
         if (fleet.transitETA) {
-          suggestions.push(`Estimated arrival: ${fleet.transitETA}`);
+          const eta = new Date(fleet.transitETA);
+          const now = new Date();
+          const remainingMs = eta.getTime() - now.getTime();
+          const remainingMinutes = Math.max(0, Math.ceil(remainingMs / 60000));
+          if (remainingMinutes > 0) {
+            suggestions.push(
+              `Estimated arrival in ~${remainingMinutes} minute(s) (ETA: ${fleet.transitETA}). ` +
+              `Check again after that time with psecs_fleet_status.`
+            );
+          } else {
+            suggestions.push(
+              `Transit ETA has passed (${fleet.transitETA}). Fleet should arrive within ~1 minute. ` +
+              `Check again shortly with psecs_fleet_status.`
+            );
+          }
         }
       } else if (status === "Queued") {
         suggestions.push(
-          "Fleet is queued at a conduit. It will enter transit when a lane opens."
+          "Fleet is queued at a conduit. It will enter transit in ~1 minute when the queue processes. " +
+          "Do NOT issue fleet commands until transit completes."
         );
         suggestions.push(
           "Use psecs_raw_update_fleet_dequeue to cancel transit if needed."
@@ -320,15 +336,50 @@ export function registerFleetTools(
       );
       if (!result.ok) return formatToolError(result);
 
+      const fleet = result.data as FleetDetails;
+
+      // Calculate estimated transit time from conduit length and fleet speed
+      // Queue processing takes ~1 minute, then transit = conduit_length / fleet_speed minutes
+      const fleetSpeed = fleet.fleetSpeed ?? 1;
+      // Fetch conduit details to get length for time estimate
+      const conduitResult = await client.get<{length?: number; width?: number}>(
+        "/api/Fleet/{fleetId}/scan",
+        { path: { fleetId: args.fleetId } }
+      ).catch(() => null);
+
+      // Try to find conduit length from the scan data
+      let conduitLength: number | undefined;
+      if (conduitResult?.ok) {
+        const scanData = conduitResult.data as ScanResult;
+        const conduit = scanData.conduits?.find(c => c.entityId === args.conduitId);
+        conduitLength = conduit?.length;
+      }
+
+      if (conduitLength) {
+        const transitMinutes = Math.ceil(conduitLength / fleetSpeed);
+        const totalMinutes = transitMinutes + 1; // +1 minute for queue processing
+        suggestions.push(
+          `IMPORTANT: Transit is asynchronous. The fleet will enter the conduit in ~1 minute, ` +
+          `then travel for ~${transitMinutes} minute(s). Total time: ~${totalMinutes} minute(s). ` +
+          `Do NOT issue fleet commands until transit completes.`
+        );
+      } else {
+        suggestions.push(
+          "IMPORTANT: Transit is asynchronous. The fleet will enter the conduit in ~1 minute, " +
+          "then travel based on conduit length and fleet speed. " +
+          "Do NOT issue fleet commands until transit completes."
+        );
+      }
+
       suggestions.push(
-        "Fleet queued for transit. Use psecs_fleet_status to monitor transit progress."
+        "Use psecs_fleet_status to check if the fleet has arrived (status will change from InTransit to Idle)."
       );
       suggestions.push(
         "After arrival, use psecs_explore_sector to scan the new sector."
       );
 
       return formatToolResult({
-        ...result.data as Record<string, unknown>,
+        ...fleet as Record<string, unknown>,
         suggestions,
         warnings,
       });
