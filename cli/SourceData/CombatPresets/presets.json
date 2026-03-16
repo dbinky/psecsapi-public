@@ -1,0 +1,125 @@
+{
+  "scout-pair": {
+    "ships": [
+      {
+        "name": "Scout Alpha",
+        "chassis": "Corvette",
+        "weapons": ["PulseLaser", "Autocannon"],
+        "modules": [
+          { "type": "IonDrive", "slot": "Interior" },
+          { "type": "FissionReactor", "slot": "Interior" },
+          { "type": "BasicSensors", "slot": "Interior" }
+        ],
+        "cargo": 50
+      },
+      {
+        "name": "Scout Beta",
+        "chassis": "Corvette",
+        "weapons": ["Autocannon", "Autocannon"],
+        "modules": [
+          { "type": "IonDrive", "slot": "Interior" },
+          { "type": "FissionReactor", "slot": "Interior" },
+          { "type": "BasicSensors", "slot": "Interior" }
+        ],
+        "cargo": 50
+      }
+    ],
+    "script": "aggressive"
+  },
+  "gunship-solo": {
+    "ships": [
+      {
+        "name": "Gunship Viper",
+        "chassis": "Destroyer",
+        "weapons": ["BeamCannon", "Railgun", "Railgun"],
+        "modules": [
+          { "type": "FusionDrive", "slot": "Interior" },
+          { "type": "FusionReactor", "slot": "Interior" },
+          { "type": "PlasmaShield", "slot": "Exterior" },
+          { "type": "CompositeArmor", "slot": "Exterior" },
+          { "type": "TacticalComputer", "slot": "Interior" },
+          { "type": "TargetingArray", "slot": "Interior" }
+        ],
+        "cargo": 100
+      }
+    ],
+    "script": "aggressive"
+  },
+  "heavy-assault": {
+    "ships": [
+      {
+        "name": "Hammer of Dawn",
+        "chassis": "Battlecruiser",
+        "weapons": ["PlasmaLance", "PlasmaLance", "GaussLance", "GaussLance"],
+        "modules": [
+          { "type": "WarpDrive", "slot": "Interior" },
+          { "type": "AntimatterReactor", "slot": "Interior" },
+          { "type": "HardlightShield", "slot": "Exterior" },
+          { "type": "NanoweaveArmor", "slot": "Exterior" },
+          { "type": "QuantumComputer", "slot": "Interior" },
+          { "type": "AdvancedTargeting", "slot": "Interior" },
+          { "type": "DeepScanArray", "slot": "Interior" }
+        ],
+        "cargo": 200
+      },
+      {
+        "name": "Iron Curtain",
+        "chassis": "Cruiser",
+        "weapons": ["BeamCannon", "Railgun", "Railgun"],
+        "modules": [
+          { "type": "PlasmaDrive", "slot": "Interior" },
+          { "type": "PlasmaReactor", "slot": "Interior" },
+          { "type": "PlasmaShield", "slot": "Exterior" },
+          { "type": "CompositeArmor", "slot": "Exterior" },
+          { "type": "TacticalComputer", "slot": "Interior" },
+          { "type": "TargetingArray", "slot": "Interior" }
+        ],
+        "cargo": 150
+      }
+    ],
+    "script": "aggressive"
+  },
+  "balanced-trio": {
+    "ships": [
+      {
+        "name": "Vanguard",
+        "chassis": "Frigate",
+        "weapons": ["MassDriver", "MassDriver"],
+        "modules": [
+          { "type": "FusionDrive", "slot": "Interior" },
+          { "type": "FusionReactor", "slot": "Interior" },
+          { "type": "ReactiveArmor", "slot": "Exterior" },
+          { "type": "LongRangeSensors", "slot": "Interior" }
+        ],
+        "cargo": 75
+      },
+      {
+        "name": "Bulwark",
+        "chassis": "Destroyer",
+        "weapons": ["BeamCannon", "Railgun"],
+        "modules": [
+          { "type": "FusionDrive", "slot": "Interior" },
+          { "type": "FusionReactor", "slot": "Interior" },
+          { "type": "PhaseShield", "slot": "Exterior" },
+          { "type": "CompositeArmor", "slot": "Exterior" },
+          { "type": "TacticalComputer", "slot": "Interior" }
+        ],
+        "cargo": 100
+      },
+      {
+        "name": "Longbow",
+        "chassis": "Frigate",
+        "weapons": ["PulseLaser", "PulseLaser"],
+        "modules": [
+          { "type": "FusionDrive", "slot": "Interior" },
+          { "type": "FusionReactor", "slot": "Interior" },
+          { "type": "PhaseShield", "slot": "Exterior" },
+          { "type": "TargetingArray", "slot": "Interior" },
+          { "type": "LongRangeSensors", "slot": "Interior" }
+        ],
+        "cargo": 75
+      }
+    ],
+    "script": "defensive"
+  }
+}

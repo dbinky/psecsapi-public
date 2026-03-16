@@ -10,7 +10,8 @@ RUN npm ci
 COPY tsconfig.json ./
 COPY src/ src/
 COPY content/ content/
-RUN npm run build
+# Build, then prune devDependencies so the runtime stage gets a clean install
+RUN npm run build && npm prune --omit=dev
 
 # Runtime stage
 FROM node:22-alpine AS runtime
@@ -24,4 +25,7 @@ COPY --from=build /app/node_modules node_modules/
 
 EXPOSE 3001
 
-ENTRYPOINT ["node", "dist/server.js", "--http", "--host", "0.0.0.0", "--port", "3001"]
+# Run as non-root user to limit container compromise blast radius
+USER node
+
+ENTRYPOINT ["node", "dist/server.js", "--http", "--oauth", "--host", "0.0.0.0", "--port", "3001"]

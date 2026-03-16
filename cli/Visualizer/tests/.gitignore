@@ -1,0 +1,7 @@
+# Playwright test artifacts
+test-results/
+playwright-report/
+node_modules/
+
+# Binary fixtures (generate via test beforeAll, not committed)
+*.bin

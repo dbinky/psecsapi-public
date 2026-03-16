@@ -16,6 +16,12 @@
 
   <ItemGroup>
     <ProjectReference Include="..\api-models\psecsapi.api.models.csproj" />
+    <ProjectReference Include="..\combat\psecsapi.Combat.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Visualizer\**\*" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="SourceData\**\*" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

@@ -16,6 +16,7 @@ const GUIDES = {
   "game-mechanics": loadGuide("game-mechanics.md"),
   "tech-tree-overview": loadGuide("tech-tree-overview.md"),
   "combat-scripting": loadGuide("combat-scripting.md"),
+  "combat-simulation": loadGuide("combat-simulation.md"),
   "getting-started": loadGuide("getting-started.md"),
   "cli-setup": loadGuide("cli-setup.md"),
 };
@@ -71,6 +72,24 @@ export function registerGuideResources(
           uri: uri.href,
           mimeType: "text/markdown",
           text: GUIDES["combat-scripting"],
+        },
+      ],
+    })
+  );
+
+  server.registerResource(
+    "combat-simulation",
+    "psecs://guide/combat-simulation",
+    {
+      description:
+        "Combat simulation workflow — local testing, CLI commands, fleet export, terrain types, and autonomous script iteration loop",
+    },
+    async (uri) => ({
+      contents: [
+        {
+          uri: uri.href,
+          mimeType: "text/markdown",
+          text: GUIDES["combat-simulation"],
         },
       ],
     })

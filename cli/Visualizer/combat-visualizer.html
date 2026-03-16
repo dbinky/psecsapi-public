@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PSECS Combat Replay</title>
+<style>
+/* ============================================================
+   GLOBAL STYLES
+   ============================================================ */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background: #000;
+    color: #aaa;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    user-select: none;
+}
+
+/* ============================================================
+   LAYOUT: LEFT STATS | CENTER COMBAT | RIGHT STATS
+   ============================================================ */
+.main-area {
+    display: flex;
+    flex: 1;
+    min-height: 0;
+}
+
+/* ============================================================
+   FLEET STATS PANELS
+   ============================================================ */
+.stats-panel {
+    flex: 1;
+    min-width: 160px;
+    padding: 10px;
+    overflow-y: auto;
+    font-size: 11px;
+    line-height: 1.5;
+    border-top: 1px solid #333;
+}
+.stats-panel::-webkit-scrollbar { width: 4px; }
+.stats-panel::-webkit-scrollbar-track { background: #111; }
+.stats-panel::-webkit-scrollbar-thumb { background: #333; }
+.stats-panel.fleet1 { border-right: 1px solid #333; }
+.stats-panel.fleet2 { border-left: 1px solid #333; }
+.stats-panel.fleet2 .ship-list { justify-content: flex-end; }
+
+/* Ship tiles flow in a multi-column grid when panel is wide enough */
+.ship-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+.ship-stat-block {
+    flex: 0 0 180px;
+    max-width: 220px;
+    padding: 6px;
+    border: 1px solid #222;
+    border-radius: 2px;
+}
+
+.stats-panel .panel-title {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.fleet1 .panel-title { color: #00ff41; }
+.fleet2 .panel-title { color: #ff0040; }
+
+/* .ship-stat-block sizing is set above in .ship-list flex layout */
+.ship-stat-block.destroyed { opacity: 0.35; }
+.ship-stat-block.fled { opacity: 0.5; }
+.ship-stat-block.highlighted {
+    border-color: #ffd700;
+    box-shadow: 0 0 8px rgba(255, 215, 0, 0.5), inset 0 0 4px rgba(255, 215, 0, 0.15);
+}
+.ship-stat-block { cursor: pointer; }
+
+.ship-stat-block .ship-name {
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.fleet1 .ship-name { color: #00ff41; }
+.fleet2 .ship-name { color: #ff0040; }
+
+.stat-bar {
+    height: 6px;
+    background: #111;
+    border: 1px solid #333;
+    margin: 2px 0;
+    position: relative;
+}
+.stat-bar-fill {
+    height: 100%;
+    transition: width 0.15s ease;
+}
+.stat-bar-label {
+    font-size: 9px;
+    color: #666;
+}
+
+/* Module status icons row */
+.module-status {
+    margin-top: 4px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    display: flex;
+    align-items: center;
+    gap: 1px;
+}
+.module-status .status-label {
+    font-size: 8px;
+    color: #555;
+    text-transform: uppercase;
+    margin-right: 4px;
+    white-space: nowrap;
+}
+.module-status .mod-icon {
+    display: inline-block;
+    width: 12px;
+    text-align: center;
+    font-size: 10px;
+}
+.module-status .mod-icon.healthy { opacity: 1.0; }
+.module-status .mod-icon.degraded { opacity: 0.5; }
+.module-status .mod-icon.destroyed { text-decoration: line-through; opacity: 0.9; }
+
+/* ============================================================
+   COMBAT CANVAS CONTAINER
+   ============================================================ */
+.combat-container {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    padding: 8px;
+    /* Height-driven square: fill available height, stats panels get the rest */
+    align-self: stretch;
+}
+#combatCanvas {
+    border: 1px solid #333;
+    background: #000;
+    image-rendering: pixelated;
+}
+
+/* ============================================================
+   HEADER BAR
+   ============================================================ */
+.header-bar {
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+    font-size: 13px;
+    letter-spacing: 3px;
+    color: #00aaff;
+    text-transform: uppercase;
+    flex-shrink: 0;
+}
+
+/* ============================================================
+   TRANSPORT BAR (PLAYBACK CONTROLS)
+   ============================================================ */
+.transport-bar {
+    height: 80px;
+    border-top: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    padding: 6px 16px;
+    flex-shrink: 0;
+    background: #0a0a0a;
+}
+
+/* Progress bar row */
+.progress-row {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    gap: 8px;
+}
+.tick-display {
+    font-size: 11px;
+    color: #00aaff;
+    white-space: nowrap;
+    min-width: 140px;
+}
+.tick-display.right { text-align: right; }
+
+.progress-track {
+    flex: 1;
+    height: 12px;
+    background: #111;
+    border: 1px solid #333;
+    position: relative;
+    cursor: pointer;
+    border-radius: 1px;
+}
+.progress-fill {
+    height: 100%;
+    background: #00aaff33;
+    pointer-events: none;
+}
+.progress-handle {
+    position: absolute;
+    top: -2px;
+    width: 8px;
+    height: 16px;
+    background: #00aaff;
+    border: 1px solid #006699;
+    margin-left: -4px;
+    cursor: grab;
+    z-index: 2;
+}
+.progress-handle:active { cursor: grabbing; }
+
+.event-marker {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    pointer-events: none;
+    opacity: 0.7;
+}
+.event-marker.kill { background: #ff0040; }
+.event-marker.fled { background: #ff8800; }
+.event-marker.module-destroyed { background: #ffcc00; }
+
+/* Controls row */
+.controls-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    gap: 6px;
+    margin-top: 4px;
+}
+
+.transport-btn {
+    background: #111;
+    border: 1px solid #333;
+    color: #aaa;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+    padding: 2px 10px;
+    cursor: pointer;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+}
+.transport-btn:hover { border-color: #00aaff; color: #00aaff; }
+.transport-btn:active { background: #1a1a1a; }
+.transport-btn.active { border-color: #00aaff; color: #00aaff; background: #001a2a; }
+
+.speed-selector {
+    display: flex;
+    gap: 2px;
+    margin-left: 16px;
+}
+.speed-btn {
+    background: #111;
+    border: 1px solid #222;
+    color: #666;
+    font-family: 'Courier New', monospace;
+    font-size: 10px;
+    padding: 2px 6px;
+    cursor: pointer;
+    height: 22px;
+}
+.speed-btn:hover { border-color: #555; color: #aaa; }
+.speed-btn.active { border-color: #00aaff; color: #00aaff; background: #001a2a; }
+
+.keyboard-hint {
+    font-size: 9px;
+    color: #333;
+    margin-left: 16px;
+}
+
+/* ============================================================
+   LOADING / ERROR OVERLAY
+   ============================================================ */
+.overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #00aaff;
+    letter-spacing: 2px;
+    z-index: 100;
+}
+.overlay.hidden { display: none; }
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     LOADING OVERLAY
+     ============================================================ -->
+<div id="loadingOverlay" class="overlay">LOADING REPLAY DATA...</div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<div class="header-bar">
+    <span id="headerTitle">PSECS COMBAT REPLAY</span>
+</div>
+
+<!-- ============================================================
+     MAIN AREA: LEFT STATS | CANVAS | RIGHT STATS
+     ============================================================ -->
+<div class="main-area">
+    <div class="stats-panel fleet1" id="fleet1Panel">
+        <div class="panel-title">FLEET 1 (ATK)</div>
+        <div class="ship-list" id="fleet1Ships"></div>
+    </div>
+    <div class="combat-container">
+        <canvas id="combatCanvas"></canvas>
+    </div>
+    <div class="stats-panel fleet2" id="fleet2Panel">
+        <div class="panel-title">FLEET 2 (DEF)</div>
+        <div class="ship-list" id="fleet2Ships"></div>
+    </div>
+</div>
+
+<!-- ============================================================
+     TRANSPORT BAR
+     ============================================================ -->
+<div class="transport-bar">
+    <div class="progress-row">
+        <div class="tick-display" id="tickDisplay">TICK 0 / 0</div>
+        <div class="progress-track" id="progressTrack">
+            <div class="progress-fill" id="progressFill"></div>
+            <div class="progress-handle" id="progressHandle" style="left:0%"></div>
+        </div>
+        <div class="tick-display right" id="timeDisplay">0.00s</div>
+    </div>
+    <div class="controls-row">
+        <button class="transport-btn" id="btnSkipStart" title="Home">|&lt;</button>
+        <button class="transport-btn" id="btnStepBack" title="Left Arrow">&lt;</button>
+        <button class="transport-btn active" id="btnPlayPause" title="Space">PLAY</button>
+        <button class="transport-btn" id="btnStepForward" title="Right Arrow">&gt;</button>
+        <button class="transport-btn" id="btnSkipEnd" title="End">&gt;|</button>
+        <div class="speed-selector" id="speedSelector">
+            <button class="speed-btn" data-speed="0.25">0.25x</button>
+            <button class="speed-btn" data-speed="0.5">0.5x</button>
+            <button class="speed-btn active" data-speed="1">1x</button>
+            <button class="speed-btn" data-speed="2">2x</button>
+            <button class="speed-btn" data-speed="4">4x</button>
+            <button class="speed-btn" data-speed="8">8x</button>
+            <button class="speed-btn" data-speed="16">16x</button>
+        </div>
+        <span class="keyboard-hint">[SPACE] play | [&lt;&gt;] step | [SHIFT+&lt;&gt;] x10 | [HOME/END] skip | [[] [-] speed | [1-7] presets</span>
+    </div>
+</div>
+
+<!-- ============================================================
+     MAIN SCRIPT
+     ============================================================ -->
+<script>
+(function() {
+'use strict';
+
+/* ============================================================
+   CONSTANTS
+   ============================================================ */
+const EVENT_TYPES = {
+    CombatStarted: 0,
+    ShipMoved: 1,
+    WeaponFired: 2,
+    ProjectileCreated: 3,
+    ProjectileHit: 4,
+    ShipDestroyed: 5,
+    ShipFled: 6,
+    ModuleDestroyed: 7,
+    EnvironmentalDamage: 8,
+    CombatEnded: 9
+};
+
+const DAMAGE_TYPE = { Energy: 0, Kinetic: 1 };
+const OUTCOME = { AttackerWon: 0, DefenderWon: 1, Draw: 2, TimedOut: 3 };
+
+const FLEET1_COLOR = '#00ff41';
+const FLEET1_COLOR_DIM = 'rgba(0,255,65,0.08)';
+const FLEET2_COLOR = '#ff0040';
+const FLEET2_COLOR_DIM = 'rgba(255,0,64,0.08)';
+const SHIELD_COLOR = '#00aaff';
+const BEAM_COLOR_ENERGY = '#00ccff';
+const PROJECTILE_COLOR = '#ffffff';
+
+const SPEED_OPTIONS = [0.25, 0.5, 1, 2, 4, 8, 16];
+const TICKS_PER_SECOND = 20; // display tick rate (2x real sim rate for snappier playback)
+
+/* ============================================================
+   STATE
+   ============================================================ */
+let rawEvents = [];
+let eventsByTick = {};       // tick -> [events]
+let maxTick = 0;
+let gridWidth = 20000;
+let gridHeight = 20000;
+
+// Ship states indexed by shipId
+let shipLoadouts = {};       // initial loadout data
+let shipStates = {};         // current interpolated state per ship
+let projectiles = {};        // active projectiles
+let terrain = [];
+
+// Visual effects
+let beams = [];              // active energy beams
+let impactFlashes = [];      // hit impact flashes
+let explosions = [];         // ship destruction effects
+let damageNumbers = [];      // floating damage numbers
+let trails = [];             // projectile trails
+
+// Playback
+let currentTick = 0;
+let subTickProgress = 0;     // 0..1 fractional progress between ticks
+let isPlaying = false;
+let playbackSpeed = 1;
+let lastFrameTime = 0;
+
+// Canvas
+const canvas = document.getElementById('combatCanvas');
+const ctx = canvas.getContext('2d');
+let canvasScale = 1;         // grid units -> canvas pixels
+
+// Hover state: which ship is highlighted (by ID), set from canvas or tile hover
+let hoveredShipId = null;
+
+/* ============================================================
+   MODULE SYSTEM CATEGORIES
+   Maps capability types to display categories for status icons.
+   ============================================================ */
+const MODULE_CATEGORIES = {
+    'EnergyResistance': 'S',   // Shields
+    'KineticResistance': 'A',  // Armor
+    'QuantumResistance': 'S',  // Shields (quantum variant)
+    'Speed': 'E',              // Engines
+    'EnergyDamage': 'W',       // Weapons
+    'KineticDamage': 'W',      // Weapons
+    'QuantumDamage': 'W',      // Weapons
+    'PowerGeneration': 'R',    // Reactor
+    'Sensors': 'N',            // Sensors
+    'ComputeCapacity': 'C',    // Compute
+};
+
+const MODULE_STATUS_CONFIG = {
+    'S': { label: 'S', color: '#00ffff', name: 'Shields' },
+    'A': { label: 'A', color: '#ff8800', name: 'Armor' },
+    'E': { label: 'E', color: '#ffff00', name: 'Engines' },
+    'W': { label: 'W', color: '#ff4444', name: 'Weapons' },
+    'R': { label: 'R', color: '#ff00ff', name: 'Reactor' },
+    'N': { label: 'N', color: '#44ff44', name: 'Sensors' },
+    'C': { label: 'C', color: '#4488ff', name: 'Compute' },
+};
+
+/// Build a module map from loadout data: { moduleName -> { name, condition, capability, category } }
+/// Also builds per-category aggregate: { category -> { minCondition, moduleCount } }
+function buildModuleMap(modules) {
+    const byName = {};
+    const byCategory = {};
+    for (const m of modules) {
+        const cat = MODULE_CATEGORIES[m.capability] || null;
+        byName[m.name] = {
+            name: m.name,
+            moduleId: m.moduleId,
+            condition: m.condition || 100,
+            capability: m.capability,
+            category: cat
+        };
+        if (cat) {
+            if (!byCategory[cat]) byCategory[cat] = { minCondition: 100, moduleCount: 0 };
+            byCategory[cat].moduleCount++;
+            if ((m.condition || 100) < byCategory[cat].minCondition) {
+                byCategory[cat].minCondition = m.condition || 100;
+            }
+        }
+    }
+    return { byName, byCategory };
+}
+
+/// Recalculate shield/armor effectiveness from module conditions.
+/// Mirrors the DamagePipeline: effectiveness = sum(baseValue * condition/100) / sum(baseValue)
+function recalcShieldArmorFromModules(shipState) {
+    if (!shipState.modules || !shipState.modules.byName) return;
+    let shieldTotal = 0, shieldMax = 0;
+    let armorTotal = 0, armorMax = 0;
+    for (const mName of Object.keys(shipState.modules.byName)) {
+        const m = shipState.modules.byName[mName];
+        if (m.capability === 'EnergyResistance') {
+            shieldMax += 1;
+            shieldTotal += m.condition / 100;
+        } else if (m.capability === 'KineticResistance') {
+            armorMax += 1;
+            armorTotal += m.condition / 100;
+        }
+    }
+    shipState.shield = shieldMax > 0 ? shieldTotal / shieldMax : 0;
+    shipState.armor = armorMax > 0 ? armorTotal / armorMax : 0;
+}
+
+/// Update module condition by module name, returns the updated category for display refresh
+function updateModuleCondition(shipState, moduleName, newCondition) {
+    if (!shipState.modules) return;
+    const mod = shipState.modules.byName[moduleName];
+    if (!mod) return;
+    mod.condition = newCondition;
+
+    // Recalculate category min condition
+    if (mod.category && shipState.modules.byCategory[mod.category]) {
+        let minCond = 100;
+        for (const mName of Object.keys(shipState.modules.byName)) {
+            const m = shipState.modules.byName[mName];
+            if (m.category === mod.category) {
+                if (m.condition < minCond) minCond = m.condition;
+            }
+        }
+        shipState.modules.byCategory[mod.category].minCondition = minCond;
+    }
+}
+
+/* ============================================================
+   DATA LOADING
+   ============================================================ */
+async function loadReplayData() {
+    try {
+        const resp = await fetch('/replay');
+        if (!resp.ok) throw new Error('HTTP ' + resp.status);
+        rawEvents = await resp.json();
+        processEvents();
+        document.getElementById('loadingOverlay').classList.add('hidden');
+        requestAnimationFrame(renderLoop);
+    } catch(e) {
+        document.getElementById('loadingOverlay').textContent = 'ERROR: ' + e.message;
+    }
+}
+
+function processEvents() {
+    eventsByTick = {};
+    maxTick = 0;
+
+    for (const evt of rawEvents) {
+        const type = evt.eventType;
+
+        if (type === EVENT_TYPES.CombatStarted) {
+            gridWidth = evt.gridWidth || 20000;
+            gridHeight = evt.gridHeight || 20000;
+            terrain = (evt.terrain || []).map(t => ({
+                x: t.x, y: t.y, radius: t.radius, type: t.obstacleType || 'Asteroid'
+            }));
+            for (const sl of (evt.shipLoadouts || [])) {
+                shipLoadouts[sl.shipId] = sl;
+                shipStates[sl.shipId] = {
+                    id: sl.shipId,
+                    side: sl.fleetSide,
+                    x: sl.startX, y: sl.startY,
+                    velX: 0, velY: 0,
+                    maxHp: sl.structurePoints,
+                    hp: sl.structurePoints,
+                    shieldMax: 1.0,
+                    shield: sl.shieldEffectiveness > 0 ? 1.0 : 0,
+                    armorMax: 1.0,
+                    armor: sl.armorEffectiveness > 0 ? 1.0 : 0,
+                    mass: sl.mass || 100,
+                    alive: true,
+                    fled: false,
+                    // for interpolation
+                    prevX: sl.startX, prevY: sl.startY,
+                    prevTick: 0,
+                    targetX: sl.startX, targetY: sl.startY,
+                    targetTick: 0,
+                    // visual
+                    flickerTimer: 0,
+                    damageFlash: 0,
+                    // module condition tracking: { capability -> { name, condition, moduleId } }
+                    modules: buildModuleMap(sl.modules || [])
+                };
+            }
+            continue;
+        }
+
+        // Determine tick for indexing
+        let tick = 0;
+        if ('tick' in evt) tick = evt.tick;
+        else if ('tickCount' in evt) tick = evt.tickCount;
+
+        if (tick > maxTick) maxTick = tick;
+
+        if (!eventsByTick[tick]) eventsByTick[tick] = [];
+        eventsByTick[tick].push(evt);
+    }
+
+    buildEventMarkers();
+    buildStatPanels();
+    updateTickDisplay();
+}
+
+/* ============================================================
+   STAT PANELS
+   ============================================================ */
+function buildStatPanels() {
+    const f1 = document.getElementById('fleet1Ships');
+    const f2 = document.getElementById('fleet2Ships');
+    f1.innerHTML = '';
+    f2.innerHTML = '';
+
+    for (const id of Object.keys(shipLoadouts)) {
+        const sl = shipLoadouts[id];
+        const shortId = id.substring(0, 8);
+        const container = sl.fleetSide === 0 ? f1 : f2;
+        const color = sl.fleetSide === 0 ? FLEET1_COLOR : FLEET2_COLOR;
+
+        const block = document.createElement('div');
+        block.className = 'ship-stat-block';
+        block.id = 'stat-' + id;
+        block.innerHTML = `
+            <div class="ship-name" style="color:${color}">${shortId}</div>
+            <div class="stat-bar-label">HP</div>
+            <div class="stat-bar"><div class="stat-bar-fill" id="hp-${id}" style="width:100%;background:#00ff41"></div></div>
+            <div class="stat-bar-label">SHIELD</div>
+            <div class="stat-bar"><div class="stat-bar-fill" id="sh-${id}" style="width:100%;background:${SHIELD_COLOR}"></div></div>
+            <div class="stat-bar-label">ARMOR</div>
+            <div class="stat-bar"><div class="stat-bar-fill" id="ar-${id}" style="width:100%;background:#ff8800"></div></div>
+            <div class="module-status"><span class="status-label">SYS:</span><span id="modules-${id}"></span></div>
+        `;
+        container.appendChild(block);
+    }
+
+    // Wire up tile hover listeners after tiles are created
+    wireUpTileHoverListeners();
+}
+
+function updateStatPanels() {
+    for (const id of Object.keys(shipStates)) {
+        const s = shipStates[id];
+        const block = document.getElementById('stat-' + id);
+        if (!block) continue;
+
+        const isHighlighted = id === hoveredShipId ? ' highlighted' : '';
+        block.className = 'ship-stat-block' + (!s.alive ? ' destroyed' : s.fled ? ' fled' : '') + isHighlighted;
+
+        const hpBar = document.getElementById('hp-' + id);
+        const shBar = document.getElementById('sh-' + id);
+        const arBar = document.getElementById('ar-' + id);
+
+        if (hpBar) {
+            const pct = s.maxHp > 0 ? Math.max(0, s.hp / s.maxHp * 100) : 0;
+            hpBar.style.width = pct + '%';
+            hpBar.style.background = pct > 60 ? '#00ff41' : pct > 30 ? '#ffcc00' : '#ff0040';
+        }
+        if (shBar) {
+            const pct = s.shieldMax > 0 ? Math.max(0, s.shield / s.shieldMax * 100) : 0;
+            shBar.style.width = pct + '%';
+        }
+        if (arBar) {
+            const pct = s.armorMax > 0 ? Math.max(0, s.armor / s.armorMax * 100) : 0;
+            arBar.style.width = pct + '%';
+        }
+
+        // Update module status icons — always show all system types the ship has
+        const modSpan = document.getElementById('modules-' + id);
+        if (modSpan && s.modules && s.modules.byCategory) {
+            let html = '';
+            const order = ['S', 'A', 'E', 'W', 'R', 'N', 'C'];
+            for (const cat of order) {
+                const catData = s.modules.byCategory[cat];
+                if (!catData) continue;
+                const cfg = MODULE_STATUS_CONFIG[cat];
+                const minCond = catData.minCondition;
+                let cls = 'mod-icon';
+                let suffix = '';
+                if (minCond <= 0) {
+                    cls += ' destroyed';
+                    suffix = 'X';
+                } else if (minCond < 50) {
+                    cls += ' degraded';
+                } else {
+                    cls += ' healthy';
+                }
+                html += `<span class="${cls}" style="color:${cfg.color}" title="${cfg.name}: ${Math.round(minCond)}%">${cfg.label}${suffix}</span>`;
+            }
+            modSpan.innerHTML = html;
+        }
+    }
+}
+
+/* ============================================================
+   EVENT MARKERS ON TIMELINE
+   ============================================================ */
+function buildEventMarkers() {
+    const track = document.getElementById('progressTrack');
+    // Remove old markers
+    track.querySelectorAll('.event-marker').forEach(m => m.remove());
+
+    for (const evt of rawEvents) {
+        let cls = null;
+        let tick = 0;
+        if (evt.eventType === EVENT_TYPES.ShipDestroyed) { cls = 'kill'; tick = evt.tick; }
+        else if (evt.eventType === EVENT_TYPES.ShipFled) { cls = 'fled'; tick = evt.tick; }
+        else if (evt.eventType === EVENT_TYPES.ModuleDestroyed) { cls = 'module-destroyed'; tick = evt.tick; }
+
+        if (cls && maxTick > 0) {
+            const marker = document.createElement('div');
+            marker.className = 'event-marker ' + cls;
+            marker.style.left = (tick / maxTick * 100) + '%';
+            track.appendChild(marker);
+        }
+    }
+}
+
+/* ============================================================
+   SIMULATION STATE - APPLY EVENTS UP TO TICK
+   ============================================================ */
+function resetState() {
+    projectiles = {};
+    beams = [];
+    impactFlashes = [];
+    explosions = [];
+    damageNumbers = [];
+    trails = [];
+
+    for (const id of Object.keys(shipLoadouts)) {
+        const sl = shipLoadouts[id];
+        shipStates[id] = {
+            id: sl.shipId,
+            side: sl.fleetSide,
+            x: sl.startX, y: sl.startY,
+            velX: 0, velY: 0,
+            maxHp: sl.structurePoints,
+            hp: sl.structurePoints,
+            shieldMax: sl.shieldEffectiveness,
+            shield: sl.shieldEffectiveness,
+            armorMax: sl.armorEffectiveness,
+            armor: sl.armorEffectiveness,
+            mass: sl.mass || 100,
+            alive: true,
+            fled: false,
+            prevX: sl.startX, prevY: sl.startY,
+            prevTick: 0,
+            targetX: sl.startX, targetY: sl.startY,
+            targetTick: 0,
+            flickerTimer: 0,
+            damageFlash: 0,
+            modules: buildModuleMap(sl.modules || [])
+        };
+    }
+}
+
+function applyEventsForTick(tick) {
+    const events = eventsByTick[tick];
+    if (!events) return;
+
+    for (const evt of events) {
+        switch (evt.eventType) {
+
+        case EVENT_TYPES.ShipMoved: {
+            const s = shipStates[evt.shipId];
+            if (!s) break;
+            s.prevX = s.targetX;
+            s.prevY = s.targetY;
+            s.prevTick = s.targetTick;
+            s.targetX = evt.newX;
+            s.targetY = evt.newY;
+            s.velX = evt.velX;
+            s.velY = evt.velY;
+            s.targetTick = evt.tick;
+            // Snap current position to target for this tick
+            s.x = evt.newX;
+            s.y = evt.newY;
+            break;
+        }
+
+        case EVENT_TYPES.WeaponFired: {
+            const s = shipStates[evt.shipId];
+            if (!s) break;
+            const targetShip = evt.targetId ? shipStates[evt.targetId] : null;
+            let endX = evt.targetX;
+            let endY = evt.targetY;
+            if (targetShip) {
+                endX = targetShip.x;
+                endY = targetShip.y;
+            }
+            if (endX === 0 && endY === 0 && (evt.dirX !== 0 || evt.dirY !== 0)) {
+                const range = 3000;
+                endX = s.x + evt.dirX * range;
+                endY = s.y + evt.dirY * range;
+            }
+            beams.push({
+                x1: s.x, y1: s.y,
+                x2: endX, y2: endY,
+                tick: evt.tick,
+                life: 8,
+                weaponId: evt.weaponId
+            });
+
+            // Check if this shot hit anything (look for ProjectileHit at same tick for same target)
+            const isEnergyHit = rawEvents.some(e =>
+                e.eventType === EVENT_TYPES.ProjectileHit &&
+                e.tick === evt.tick &&
+                e.targetShipId === evt.targetId);
+
+            // Also check if a ProjectileCreated follows (kinetic weapon) — handled by projectile miss logic
+            const isKinetic = rawEvents.some(e =>
+                e.eventType === EVENT_TYPES.ProjectileCreated &&
+                e.tick === evt.tick &&
+                e.shipId === evt.shipId);
+
+            // For energy weapons (no projectile created): show MISS at beam endpoint with brief delay
+            if (!isKinetic && !isEnergyHit) {
+                damageNumbers.push({
+                    x: endX + (Math.random() - 0.5) * 150,
+                    y: endY - 80,
+                    text: 'MISS',
+                    life: 25,
+                    color: 'rgba(150,150,150,ALPHA)'
+                });
+            }
+            break;
+        }
+
+        case EVENT_TYPES.ProjectileCreated: {
+            projectiles[evt.projectileId] = {
+                id: evt.projectileId,
+                x: evt.originX, y: evt.originY,
+                velX: evt.velX, velY: evt.velY,
+                originX: evt.originX, originY: evt.originY,
+                damageType: evt.damageType,
+                damage: evt.damage,
+                spawnTick: evt.tick,
+                alive: true
+            };
+            break;
+        }
+
+        case EVENT_TYPES.ProjectileHit: {
+            const p = projectiles[evt.projectileId];
+            if (p) p.alive = false;
+
+            const target = shipStates[evt.targetShipId];
+            if (target) {
+                target.hp -= evt.structureDamage;
+                // Shield/armor are effectiveness ratios, not HP pools.
+                // Recalculate from module conditions after module hit is applied.
+                // (Module condition update happens below via updateModuleCondition)
+                if (target.hp < 0) target.hp = 0;
+                if (target.shield < 0) target.shield = 0;
+                if (target.armor < 0) target.armor = 0;
+                target.damageFlash = 6;
+
+                // Update module condition if a module was hit
+                if (evt.moduleHitName && target.modules) {
+                    updateModuleCondition(target, evt.moduleHitName, evt.moduleConditionAfter);
+                    recalcShieldArmorFromModules(target);
+                }
+
+                impactFlashes.push({
+                    x: target.x, y: target.y,
+                    life: 6,
+                    damage: evt.damageDealt,
+                    shield: evt.shieldAbsorbed > 0
+                });
+
+                // Multi-colored damage breakdown spread horizontally:
+                // shield (cyan), armor (yellow), structure (orange), module (magenta)
+                const parts = [];
+                if (evt.shieldAbsorbed > 0) parts.push({ text: Math.round(evt.shieldAbsorbed).toString(), color: 'rgba(0,170,255,ALPHA)' });
+                if (evt.armorAblated > 0) parts.push({ text: Math.round(evt.armorAblated).toString(), color: 'rgba(255,200,0,ALPHA)' });
+                if (evt.structureDamage > 0) parts.push({ text: Math.round(evt.structureDamage).toString(), color: 'rgba(255,100,50,ALPHA)' });
+                if (evt.moduleConditionDamage > 0) parts.push({ text: 'MOD ' + Math.round(evt.moduleConditionDamage).toString(), color: 'rgba(220,50,220,ALPHA)' });
+
+                // Spread horizontally: center the group, ~150 grid units apart
+                const spacing = 300;
+                const totalWidth = (parts.length - 1) * spacing;
+                const startX = target.x - totalWidth / 2;
+                for (let pi = 0; pi < parts.length; pi++) {
+                    damageNumbers.push({
+                        x: startX + pi * spacing,
+                        y: target.y - 120,
+                        text: parts[pi].text,
+                        life: 25,
+                        color: parts[pi].color
+                    });
+                }
+            }
+            break;
+        }
+
+        case EVENT_TYPES.ShipDestroyed: {
+            const s = shipStates[evt.shipId];
+            if (s) {
+                s.alive = false;
+                s.x = evt.posX;
+                s.y = evt.posY;
+                // Create explosion effect
+                for (let i = 0; i < 12; i++) {
+                    const angle = (Math.PI * 2 / 12) * i + Math.random() * 0.3;
+                    const speed = 80 + Math.random() * 120;
+                    explosions.push({
+                        x: evt.posX, y: evt.posY,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed,
+                        life: 30 + Math.random() * 20,
+                        maxLife: 50,
+                        type: 'debris'
+                    });
+                }
+                // Glow
+                explosions.push({
+                    x: evt.posX, y: evt.posY,
+                    vx: 0, vy: 0,
+                    life: 40, maxLife: 40,
+                    type: 'glow',
+                    color: s.side === 0 ? FLEET1_COLOR : FLEET2_COLOR
+                });
+                // Scattered particles
+                for (let i = 0; i < 20; i++) {
+                    const angle = Math.random() * Math.PI * 2;
+                    const speed = 30 + Math.random() * 200;
+                    explosions.push({
+                        x: evt.posX, y: evt.posY,
+                        vx: Math.cos(angle) * speed,
+                        vy: Math.sin(angle) * speed,
+                        life: 15 + Math.random() * 30,
+                        maxLife: 45,
+                        type: 'particle'
+                    });
+                }
+            }
+            break;
+        }
+
+        case EVENT_TYPES.ShipFled: {
+            const s = shipStates[evt.shipId];
+            if (s) {
+                s.fled = true;
+                s.alive = false;
+                s.x = evt.exitX;
+                s.y = evt.exitY;
+            }
+            break;
+        }
+
+        case EVENT_TYPES.ModuleDestroyed: {
+            const s = shipStates[evt.shipId];
+            if (s) {
+                s.damageFlash = 10;
+                // Mark the module as destroyed (condition = 0)
+                const modName = evt.moduleName || '';
+                if (modName && s.modules) {
+                    updateModuleCondition(s, modName, 0);
+                    recalcShieldArmorFromModules(s);
+                }
+            }
+            break;
+        }
+
+        case EVENT_TYPES.EnvironmentalDamage: {
+            const s = shipStates[evt.shipId];
+            if (s) {
+                s.hp -= evt.damage;
+                if (s.hp < 0) s.hp = 0;
+                s.damageFlash = 4;
+            }
+            break;
+        }
+
+        case EVENT_TYPES.CombatEnded:
+            // Update header with outcome
+            {
+                const outcomes = ['ATTACKER WON', 'DEFENDER WON', 'DRAW', 'TIMED OUT'];
+                const label = outcomes[evt.outcome] || 'ENDED';
+                document.getElementById('headerTitle').textContent = 'COMBAT ' + label;
+            }
+            break;
+        }
+    }
+}
+
+function seekToTick(tick) {
+    tick = Math.max(0, Math.min(tick, maxTick));
+    resetState();
+    for (let t = 0; t <= tick; t++) {
+        applyEventsForTick(t);
+    }
+    currentTick = tick;
+    subTickProgress = 0;
+    // Clear transient effects when seeking
+    beams = [];
+    impactFlashes = [];
+    explosions = [];
+    damageNumbers = [];
+    trails = [];
+    // Re-apply last few ticks of visual events for context
+    for (let t = Math.max(0, tick - 5); t <= tick; t++) {
+        applyVisualEventsForTick(t, tick);
+    }
+    updateProjectilePositions(tick);
+    updateStatPanels();
+    updateTickDisplay();
+    updateProgressBar();
+}
+
+function applyVisualEventsForTick(tick, currentTick) {
+    const events = eventsByTick[tick];
+    if (!events) return;
+    const age = currentTick - tick;
+    for (const evt of events) {
+        if (evt.eventType === EVENT_TYPES.WeaponFired) {
+            const s = shipStates[evt.shipId];
+            if (!s) continue;
+            const targetShip = evt.targetId ? shipStates[evt.targetId] : null;
+            let endX = evt.targetX;
+            let endY = evt.targetY;
+            if (targetShip) { endX = targetShip.x; endY = targetShip.y; }
+            if (endX === 0 && endY === 0 && (evt.dirX !== 0 || evt.dirY !== 0)) {
+                endX = s.x + evt.dirX * 3000;
+                endY = s.y + evt.dirY * 3000;
+            }
+            const life = 8 - age;
+            if (life > 0) {
+                beams.push({ x1: s.x, y1: s.y, x2: endX, y2: endY, tick: evt.tick, life: life, weaponId: evt.weaponId });
+            }
+        }
+    }
+}
+
+function updateProjectilePositions(tick) {
+    for (const id of Object.keys(projectiles)) {
+        const p = projectiles[id];
+        if (!p.alive) { delete projectiles[id]; continue; }
+        const elapsed = tick - p.spawnTick;
+        p.x = p.originX + p.velX * elapsed;
+        p.y = p.originY + p.velY * elapsed;
+
+        // Check for kinetic projectile miss: if projectile passes near any enemy without a hit event
+        if (!p.missShown) {
+            for (const sid of Object.keys(shipStates)) {
+                const s = shipStates[sid];
+                if (!s.alive || s.fled) continue;
+                const dx = p.x - s.x, dy = p.y - s.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                // If projectile is very close to a ship (within 200 units) and moving away
+                if (dist < 200) {
+                    // Check if this projectile has a hit event — if not, it's a miss
+                    const hasHit = rawEvents.some(e =>
+                        e.eventType === EVENT_TYPES.ProjectileHit &&
+                        e.projectileId === id);
+                    if (!hasHit) {
+                        damageNumbers.push({
+                            x: p.x + (Math.random() - 0.5) * 100,
+                            y: p.y - 60,
+                            text: 'MISS',
+                            life: 25,
+                            color: 'rgba(150,150,150,ALPHA)'
+                        });
+                        p.missShown = true;
+                    }
+                }
+            }
+        }
+
+        // Remove if way off grid
+        const halfW = gridWidth / 2, halfH = gridHeight / 2;
+        if (p.x < -halfW - 2000 || p.x > halfW + 2000 || p.y < -halfH - 2000 || p.y > halfH + 2000) {
+            // Show MISS when projectile leaves grid without hitting
+            if (!p.missShown) {
+                damageNumbers.push({
+                    x: p.x, y: p.y - 60,
+                    text: 'MISS', life: 20,
+                    color: 'rgba(150,150,150,ALPHA)'
+                });
+            }
+            delete projectiles[id];
+        }
+    }
+}
+
+/* ============================================================
+   INTERPOLATION
+   ============================================================ */
+function interpolateShips(fractionalTick) {
+    for (const id of Object.keys(shipStates)) {
+        const s = shipStates[id];
+        if (!s.alive && !s.fled) continue;
+        // Extrapolate from last known position using velocity
+        const dt = fractionalTick - s.targetTick;
+        if (dt >= 0) {
+            s.x = s.targetX + s.velX * dt;
+            s.y = s.targetY + s.velY * dt;
+        }
+    }
+}
+
+function interpolateProjectiles(fractionalTick) {
+    for (const id of Object.keys(projectiles)) {
+        const p = projectiles[id];
+        if (!p.alive) continue;
+        const elapsed = fractionalTick - p.spawnTick;
+        p.x = p.originX + p.velX * elapsed;
+        p.y = p.originY + p.velY * elapsed;
+    }
+}
+
+/* ============================================================
+   CANVAS SIZING
+   ============================================================ */
+function resizeCanvas() {
+    // Square canvas driven by available height (viewport minus header and transport bar)
+    const header = document.querySelector('.header-bar');
+    const transport = document.querySelector('.transport-bar');
+    const headerH = header ? header.offsetHeight : 32;
+    const transportH = transport ? transport.offsetHeight : 50;
+    const availH = window.innerHeight - headerH - transportH - 24; // 24px padding
+    const size = Math.max(200, Math.floor(availH));
+    canvas.width = size;
+    canvas.height = size;
+    canvasScale = size / Math.max(gridWidth, gridHeight);
+}
+
+// Grid coords are -10000..+10000; canvas coords are 0..canvasSize
+function toCanvasX(gx) { return (gx + gridWidth / 2) * canvasScale; }
+function toCanvasY(gy) { return (gy + gridHeight / 2) * canvasScale; }
+
+/* ============================================================
+   RENDERING
+   ============================================================ */
+function renderLoop(timestamp) {
+    if (!lastFrameTime) lastFrameTime = timestamp;
+    const dt = (timestamp - lastFrameTime) / 1000;
+    lastFrameTime = timestamp;
+
+    resizeCanvas();
+
+    // Advance playback
+    if (isPlaying && currentTick < maxTick) {
+        subTickProgress += dt * TICKS_PER_SECOND * playbackSpeed;
+        while (subTickProgress >= 1 && currentTick < maxTick) {
+            currentTick++;
+            applyEventsForTick(currentTick);
+            updateProjectilePositions(currentTick);
+            subTickProgress -= 1;
+        }
+        if (currentTick >= maxTick) {
+            isPlaying = false;
+            subTickProgress = 0;
+            updatePlayButton();
+        }
+        updateStatPanels();
+        updateTickDisplay();
+        updateProgressBar();
+    }
+
+    // Interpolate
+    const fractionalTick = currentTick + subTickProgress;
+    interpolateShips(fractionalTick);
+    interpolateProjectiles(fractionalTick);
+
+    // Update effects
+    updateEffects(dt);
+
+    // Draw
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawGrid();
+    drawTerrain();
+    drawBeams();
+    drawProjectiles();
+    drawShips();
+    drawImpactFlashes();
+    drawExplosions();
+    drawDamageNumbers();
+
+    requestAnimationFrame(renderLoop);
+}
+
+/* ============================================================
+   DRAW: GRID
+   ============================================================ */
+function drawGrid() {
+    ctx.strokeStyle = '#111';
+    ctx.lineWidth = 0.5;
+    const step = 2000;
+    const halfW = gridWidth / 2, halfH = gridHeight / 2;
+    for (let gx = -halfW; gx <= halfW; gx += step) {
+        const cx = toCanvasX(gx);
+        ctx.beginPath();
+        ctx.moveTo(cx, 0);
+        ctx.lineTo(cx, canvas.height);
+        ctx.stroke();
+    }
+    for (let gy = -halfH; gy <= halfH; gy += step) {
+        const cy = toCanvasY(gy);
+        ctx.beginPath();
+        ctx.moveTo(0, cy);
+        ctx.lineTo(canvas.width, cy);
+        ctx.stroke();
+    }
+}
+
+/* ============================================================
+   DRAW: TERRAIN
+   ============================================================ */
+function drawTerrain() {
+    for (const t of terrain) {
+        const cx = toCanvasX(t.x);
+        const cy = toCanvasY(t.y);
+        const cr = t.radius * canvasScale;
+
+        switch (t.type) {
+        case 'Asteroid':
+            drawAsteroid(cx, cy, cr);
+            break;
+        case 'Planet':
+            ctx.strokeStyle = '#336633';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.arc(cx, cy, cr, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = 'rgba(51,102,51,0.06)';
+            ctx.fill();
+            break;
+        case 'Star':
+            // Orange with heat rings
+            ctx.strokeStyle = '#ff8800';
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            ctx.arc(cx, cy, cr, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.fillStyle = 'rgba(255,136,0,0.08)';
+            ctx.fill();
+            // Heat rings
+            for (let i = 1; i <= 3; i++) {
+                ctx.strokeStyle = `rgba(255,136,0,${0.15 - i * 0.04})`;
+                ctx.lineWidth = 0.5;
+                ctx.beginPath();
+                ctx.arc(cx, cy, cr + i * 15, 0, Math.PI * 2);
+                ctx.stroke();
+            }
+            break;
+        case 'BlackHole':
+            // Purple dashed rings
+            ctx.strokeStyle = '#9933ff';
+            ctx.lineWidth = 1.5;
+            ctx.setLineDash([6, 4]);
+            ctx.beginPath();
+            ctx.arc(cx, cy, cr, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.setLineDash([4, 6]);
+            ctx.beginPath();
+            ctx.arc(cx, cy, cr * 0.6, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.setLineDash([]);
+            break;
+        case 'Nebula':
+            // Soft transparent circles
+            for (let i = 3; i >= 1; i--) {
+                ctx.fillStyle = `rgba(100,50,150,${0.03 * i})`;
+                ctx.beginPath();
+                ctx.arc(cx, cy, cr * (1 + i * 0.3), 0, Math.PI * 2);
+                ctx.fill();
+            }
+            ctx.strokeStyle = 'rgba(100,50,150,0.15)';
+            ctx.lineWidth = 0.5;
+            ctx.beginPath();
+            ctx.arc(cx, cy, cr, 0, Math.PI * 2);
+            ctx.stroke();
+            break;
+        default:
+            // Generic obstacle
+            drawAsteroid(cx, cy, cr);
+            break;
+        }
+    }
+}
+
+function drawAsteroid(cx, cy, cr) {
+    // Irregular polygon
+    const sides = 7;
+    ctx.strokeStyle = '#555';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let i = 0; i < sides; i++) {
+        const angle = (Math.PI * 2 / sides) * i;
+        // Use deterministic "random" based on position for consistent shape
+        const variation = 0.7 + 0.3 * Math.abs(Math.sin(cx * 7.3 + i * 2.1 + cy * 3.7));
+        const r = cr * variation;
+        const px = cx + Math.cos(angle) * r;
+        const py = cy + Math.sin(angle) * r;
+        if (i === 0) ctx.moveTo(px, py);
+        else ctx.lineTo(px, py);
+    }
+    ctx.closePath();
+    ctx.stroke();
+    ctx.fillStyle = 'rgba(80,80,80,0.06)';
+    ctx.fill();
+}
+
+/* ============================================================
+   DRAW: SHIPS
+   ============================================================ */
+function drawShips() {
+    for (const id of Object.keys(shipStates)) {
+        const s = shipStates[id];
+        if (!s.alive) continue;
+        if (s.fled) continue;
+
+        const cx = toCanvasX(s.x);
+        const cy = toCanvasY(s.y);
+        const isFleet1 = s.side === 0;
+        const color = isFleet1 ? FLEET1_COLOR : FLEET2_COLOR;
+        const fillColor = isFleet1 ? FLEET1_COLOR_DIM : FLEET2_COLOR_DIM;
+
+        // Ship size based on mass (compact icons)
+        const baseSize = 3 + Math.sqrt(s.mass) * 0.2;
+        const size = Math.max(3, Math.min(baseSize, 10));
+
+        // Outline = fleet identity (ALWAYS green or red, never changes)
+        const outlineColor = color;
+
+        // Fill glow = damage state (fleet color when healthy → yellow → orange as damaged)
+        const hpRatio = s.maxHp > 0 ? s.hp / s.maxHp : 1;
+        let damageFill;
+        let damageAlpha = 0.08;
+        if (hpRatio > 0.6) {
+            // Healthy: fleet color fill at low opacity
+            damageFill = fillColor;
+        } else if (hpRatio > 0.2) {
+            // Damaged: yellow-orange fill, increasing opacity
+            const t = Math.max(0, (hpRatio - 0.2) / 0.4);
+            const r = 255;
+            const g = Math.floor(200 * t);
+            damageAlpha = 0.12 + (1 - t) * 0.15;
+            damageFill = `rgba(${r},${g},0,${damageAlpha})`;
+        } else {
+            // Critical: red-orange fill, pulsing opacity
+            s.flickerTimer += 0.3;
+            const pulse = 0.15 + 0.12 * Math.abs(Math.sin(s.flickerTimer * 10));
+            damageFill = `rgba(255,50,0,${pulse})`;
+        }
+
+        // Damage flash (white fill on hit)
+        if (s.damageFlash > 0) {
+            s.damageFlash -= 0.2;
+            damageFill = `rgba(255,255,255,0.3)`;
+        }
+
+        // Heading from velocity or default
+        let heading = isFleet1 ? 0 : Math.PI;
+        if (s.velX !== 0 || s.velY !== 0) {
+            heading = Math.atan2(s.velY, s.velX);
+        }
+
+        // Draw ship polygon (triangle/chevron shape)
+        ctx.save();
+        ctx.translate(cx, cy);
+        ctx.rotate(heading);
+
+        // Filled glow (damage state)
+        ctx.fillStyle = damageFill;
+        ctx.beginPath();
+        ctx.moveTo(size, 0);
+        ctx.lineTo(-size * 0.7, -size * 0.6);
+        ctx.lineTo(-size * 0.4, 0);
+        ctx.lineTo(-size * 0.7, size * 0.6);
+        ctx.closePath();
+        ctx.fill();
+
+        // Outlined polygon (fleet identity — always fleet color)
+        ctx.strokeStyle = outlineColor;
+        ctx.lineWidth = 1.5;
+        ctx.beginPath();
+        ctx.moveTo(size, 0);
+        ctx.lineTo(-size * 0.7, -size * 0.6);
+        ctx.lineTo(-size * 0.4, 0);
+        ctx.lineTo(-size * 0.7, size * 0.6);
+        ctx.closePath();
+        ctx.stroke();
+
+        // Engine exhaust circles
+        if (s.velX !== 0 || s.velY !== 0) {
+            const speed = Math.sqrt(s.velX * s.velX + s.velY * s.velY);
+            const exhaustSize = Math.min(3, 1 + speed * 0.01);
+            ctx.fillStyle = `rgba(${isFleet1 ? '0,255,65' : '255,100,50'},0.6)`;
+            ctx.beginPath();
+            ctx.arc(-size * 0.7, -size * 0.2, exhaustSize, 0, Math.PI * 2);
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(-size * 0.7, size * 0.2, exhaustSize, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        // Damage lines at low HP
+        if (hpRatio < 0.4 && hpRatio > 0) {
+            ctx.strokeStyle = `rgba(255,0,0,${0.4 + Math.random() * 0.3})`;
+            ctx.lineWidth = 0.5;
+            for (let i = 0; i < 3; i++) {
+                const x1 = (Math.random() - 0.5) * size;
+                const y1 = (Math.random() - 0.5) * size;
+                const x2 = x1 + (Math.random() - 0.5) * size * 0.6;
+                const y2 = y1 + (Math.random() - 0.5) * size * 0.6;
+                ctx.beginPath();
+                ctx.moveTo(x1, y1);
+                ctx.lineTo(x2, y2);
+                ctx.stroke();
+            }
+        }
+
+        ctx.restore();
+
+        // Shield circle (drawn in world space, outside rotation)
+        if (s.shield > 0 && s.shieldMax > 0) {
+            const shieldRatio = s.shield / s.shieldMax;
+            const shieldRadius = size + 5;
+            ctx.strokeStyle = `rgba(0,170,255,${0.2 + shieldRatio * 0.5})`;
+            ctx.lineWidth = 1;
+            ctx.setLineDash([4, 4 + (1 - shieldRatio) * 8]);
+            ctx.beginPath();
+            ctx.arc(cx, cy, shieldRadius, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.setLineDash([]);
+        }
+
+        // Gold hover glow
+        if (id === hoveredShipId) {
+            ctx.save();
+            ctx.shadowColor = '#ffd700';
+            ctx.shadowBlur = 15;
+            ctx.strokeStyle = '#ffd700';
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(cx, cy, size + 6, 0, Math.PI * 2);
+            ctx.stroke();
+            ctx.restore();
+        }
+    }
+}
+
+/* ============================================================
+   DRAW: PROJECTILES (Kinetic)
+   ============================================================ */
+function drawProjectiles() {
+    for (const id of Object.keys(projectiles)) {
+        const p = projectiles[id];
+        if (!p.alive) continue;
+
+        const cx = toCanvasX(p.x);
+        const cy = toCanvasY(p.y);
+
+        // White dot
+        ctx.fillStyle = PROJECTILE_COLOR;
+        ctx.beginPath();
+        ctx.arc(cx, cy, 2, 0, Math.PI * 2);
+        ctx.fill();
+
+        // Fading trail
+        const trailLen = 4;
+        const trailStepX = -p.velX * canvasScale * 0.3;
+        const trailStepY = -p.velY * canvasScale * 0.3;
+        for (let i = 1; i <= trailLen; i++) {
+            const alpha = 0.5 - (i / trailLen) * 0.5;
+            ctx.fillStyle = `rgba(255,255,255,${alpha})`;
+            ctx.beginPath();
+            ctx.arc(cx + trailStepX * i, cy + trailStepY * i, Math.max(0.5, 2 - i * 0.4), 0, Math.PI * 2);
+            ctx.fill();
+        }
+    }
+}
+
+/* ============================================================
+   DRAW: ENERGY BEAMS
+   ============================================================ */
+function drawBeams() {
+    for (let i = beams.length - 1; i >= 0; i--) {
+        const b = beams[i];
+        if (b.life <= 0) { beams.splice(i, 1); continue; }
+
+        const alpha = b.life / 8;
+        const x1 = toCanvasX(b.x1);
+        const y1 = toCanvasY(b.y1);
+        const x2 = toCanvasX(b.x2);
+        const y2 = toCanvasY(b.y2);
+
+        // Wide dim layer
+        ctx.strokeStyle = `rgba(0,204,255,${alpha * 0.15})`;
+        ctx.lineWidth = 6;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+
+        // Narrow bright layer
+        ctx.strokeStyle = `rgba(0,204,255,${alpha * 0.6})`;
+        ctx.lineWidth = 2;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+
+        // Core white
+        ctx.strokeStyle = `rgba(255,255,255,${alpha * 0.8})`;
+        ctx.lineWidth = 0.5;
+        ctx.beginPath();
+        ctx.moveTo(x1, y1);
+        ctx.lineTo(x2, y2);
+        ctx.stroke();
+    }
+}
+
+/* ============================================================
+   DRAW: IMPACT FLASHES
+   ============================================================ */
+function drawImpactFlashes() {
+    for (let i = impactFlashes.length - 1; i >= 0; i--) {
+        const f = impactFlashes[i];
+        if (f.life <= 0) { impactFlashes.splice(i, 1); continue; }
+
+        const alpha = f.life / 6;
+        const cx = toCanvasX(f.x);
+        const cy = toCanvasY(f.y);
+        const radius = (6 - f.life) * 3 + 4;
+
+        ctx.fillStyle = f.shield
+            ? `rgba(0,170,255,${alpha * 0.4})`
+            : `rgba(255,200,50,${alpha * 0.5})`;
+        ctx.beginPath();
+        ctx.arc(cx, cy, radius, 0, Math.PI * 2);
+        ctx.fill();
+    }
+}
+
+/* ============================================================
+   DRAW: EXPLOSIONS (debris, glow, particles)
+   ============================================================ */
+function drawExplosions() {
+    for (let i = explosions.length - 1; i >= 0; i--) {
+        const e = explosions[i];
+        if (e.life <= 0) { explosions.splice(i, 1); continue; }
+
+        const alpha = e.life / e.maxLife;
+        const cx = toCanvasX(e.x);
+        const cy = toCanvasY(e.y);
+
+        switch (e.type) {
+        case 'debris':
+            // Expanding debris lines
+            ctx.strokeStyle = `rgba(255,200,100,${alpha})`;
+            ctx.lineWidth = 1;
+            ctx.beginPath();
+            ctx.moveTo(cx, cy);
+            ctx.lineTo(cx + (Math.random() - 0.5) * 8, cy + (Math.random() - 0.5) * 8);
+            ctx.stroke();
+            break;
+        case 'glow':
+            const glowRadius = (1 - alpha) * 40 + 10;
+            const glowColor = e.color || '#ff8800';
+            ctx.fillStyle = glowColor.replace(')', `,${alpha * 0.3})`).replace('rgb', 'rgba').replace('rgba(', 'rgba(').replace('#', '');
+            // Convert hex to rgba for glow
+            ctx.fillStyle = `rgba(255,136,0,${alpha * 0.2})`;
+            ctx.beginPath();
+            ctx.arc(cx, cy, glowRadius, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+        case 'particle':
+            ctx.fillStyle = `rgba(255,${Math.floor(150 + alpha * 105)},${Math.floor(alpha * 100)},${alpha})`;
+            ctx.beginPath();
+            ctx.arc(cx, cy, 1 + alpha, 0, Math.PI * 2);
+            ctx.fill();
+            break;
+        }
+    }
+}
+
+/* ============================================================
+   DRAW: FLOATING DAMAGE NUMBERS
+   ============================================================ */
+function drawDamageNumbers() {
+    for (let i = damageNumbers.length - 1; i >= 0; i--) {
+        const d = damageNumbers[i];
+        if (d.life <= 0) { damageNumbers.splice(i, 1); continue; }
+
+        const alpha = Math.min(1, d.life / 12);
+        const cx = toCanvasX(d.x);
+        const cy = toCanvasY(d.y) - (25 - d.life) * 1.0; // float upward
+
+        const isMiss = d.text === 'MISS';
+        ctx.font = isMiss ? 'bold 11px Courier New' : 'bold 12px Courier New';
+
+        if (d.color) {
+            ctx.fillStyle = d.color.replace('ALPHA', alpha.toFixed(2));
+        } else {
+            // Legacy: shield boolean
+            ctx.fillStyle = d.shield
+                ? `rgba(0,170,255,${alpha})`
+                : `rgba(255,100,50,${alpha})`;
+        }
+        ctx.textAlign = 'center';
+        ctx.fillText(d.text, cx, cy);
+    }
+}
+
+/* ============================================================
+   UPDATE EFFECTS
+   ============================================================ */
+function updateEffects(dt) {
+    const tickDt = dt * TICKS_PER_SECOND * playbackSpeed;
+
+    for (const b of beams) b.life -= tickDt * 0.8;
+    for (const f of impactFlashes) f.life -= tickDt * 0.8;
+    for (const d of damageNumbers) {
+        d.life -= tickDt * 0.5;
+        d.y -= 20 * dt;
+    }
+    for (const e of explosions) {
+        e.life -= tickDt * 0.5;
+        e.x += e.vx * dt;
+        e.y += e.vy * dt;
+        e.vx *= 0.98;
+        e.vy *= 0.98;
+    }
+}
+
+/* ============================================================
+   UI UPDATES
+   ============================================================ */
+function updateTickDisplay() {
+    document.getElementById('tickDisplay').textContent = `TICK ${currentTick} / ${maxTick}`;
+    const seconds = currentTick / TICKS_PER_SECOND;
+    document.getElementById('timeDisplay').textContent = seconds.toFixed(1) + 's';
+}
+
+function updateProgressBar() {
+    const pct = maxTick > 0 ? (currentTick / maxTick * 100) : 0;
+    document.getElementById('progressFill').style.width = pct + '%';
+    document.getElementById('progressHandle').style.left = pct + '%';
+}
+
+function updatePlayButton() {
+    const btn = document.getElementById('btnPlayPause');
+    btn.textContent = isPlaying ? 'PAUSE' : 'PLAY';
+    btn.classList.toggle('active', isPlaying);
+}
+
+/* ============================================================
+   PLAYBACK CONTROLS
+   ============================================================ */
+function togglePlay() {
+    if (currentTick >= maxTick && !isPlaying) {
+        seekToTick(0);
+    }
+    isPlaying = !isPlaying;
+    updatePlayButton();
+}
+
+function stepForward(steps) {
+    isPlaying = false;
+    updatePlayButton();
+    seekToTick(currentTick + steps);
+}
+
+function stepBack(steps) {
+    isPlaying = false;
+    updatePlayButton();
+    seekToTick(currentTick - steps);
+}
+
+function skipStart() {
+    isPlaying = false;
+    updatePlayButton();
+    seekToTick(0);
+}
+
+function skipEnd() {
+    isPlaying = false;
+    updatePlayButton();
+    seekToTick(maxTick);
+}
+
+function setSpeed(speed) {
+    playbackSpeed = speed;
+    document.querySelectorAll('.speed-btn').forEach(b => {
+        b.classList.toggle('active', parseFloat(b.dataset.speed) === speed);
+    });
+}
+
+/* ============================================================
+   PROGRESS BAR SCRUBBING
+   ============================================================ */
+(function setupScrubbing() {
+    const track = document.getElementById('progressTrack');
+    let dragging = false;
+
+    function scrubTo(clientX) {
+        const rect = track.getBoundingClientRect();
+        const pct = Math.max(0, Math.min(1, (clientX - rect.left) / rect.width));
+        const tick = Math.round(pct * maxTick);
+        seekToTick(tick);
+    }
+
+    track.addEventListener('mousedown', e => {
+        dragging = true;
+        isPlaying = false;
+        updatePlayButton();
+        scrubTo(e.clientX);
+    });
+
+    document.addEventListener('mousemove', e => {
+        if (dragging) scrubTo(e.clientX);
+    });
+
+    document.addEventListener('mouseup', () => { dragging = false; });
+})();
+
+/* ============================================================
+   BUTTON HANDLERS
+   ============================================================ */
+document.getElementById('btnPlayPause').addEventListener('click', togglePlay);
+document.getElementById('btnSkipStart').addEventListener('click', skipStart);
+document.getElementById('btnSkipEnd').addEventListener('click', skipEnd);
+document.getElementById('btnStepForward').addEventListener('click', () => stepForward(1));
+document.getElementById('btnStepBack').addEventListener('click', () => stepBack(1));
+
+document.querySelectorAll('.speed-btn').forEach(btn => {
+    btn.addEventListener('click', () => setSpeed(parseFloat(btn.dataset.speed)));
+});
+
+/* ============================================================
+   KEYBOARD SHORTCUTS
+   ============================================================ */
+document.addEventListener('keydown', e => {
+    switch (e.code) {
+    case 'Space':
+        e.preventDefault();
+        togglePlay();
+        break;
+    case 'ArrowRight':
+        e.preventDefault();
+        stepForward(e.shiftKey ? 10 : 1);
+        break;
+    case 'ArrowLeft':
+        e.preventDefault();
+        stepBack(e.shiftKey ? 10 : 1);
+        break;
+    case 'Home':
+        e.preventDefault();
+        skipStart();
+        break;
+    case 'End':
+        e.preventDefault();
+        skipEnd();
+        break;
+    case 'BracketLeft':
+        e.preventDefault();
+        { const idx = SPEED_OPTIONS.indexOf(playbackSpeed);
+          if (idx > 0) setSpeed(SPEED_OPTIONS[idx - 1]); }
+        break;
+    case 'BracketRight':
+        e.preventDefault();
+        { const idx = SPEED_OPTIONS.indexOf(playbackSpeed);
+          if (idx < SPEED_OPTIONS.length - 1) setSpeed(SPEED_OPTIONS[idx + 1]); }
+        break;
+    case 'Digit1': setSpeed(0.25); break;
+    case 'Digit2': setSpeed(0.5); break;
+    case 'Digit3': setSpeed(1); break;
+    case 'Digit4': setSpeed(2); break;
+    case 'Digit5': setSpeed(4); break;
+    case 'Digit6': setSpeed(8); break;
+    case 'Digit7': setSpeed(16); break;
+    }
+});
+
+/* ============================================================
+   WINDOW RESIZE
+   ============================================================ */
+window.addEventListener('resize', resizeCanvas);
+
+/* ============================================================
+   HOVER: Canvas → find nearest ship under mouse
+   ============================================================ */
+canvas.addEventListener('mousemove', e => {
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left;
+    const my = e.clientY - rect.top;
+
+    let closest = null;
+    let closestDist = 30; // pixel threshold for hover detection
+    for (const id of Object.keys(shipStates)) {
+        const s = shipStates[id];
+        if (!s.alive && !s.fled) continue;
+        const sx = toCanvasX(s.x);
+        const sy = toCanvasY(s.y);
+        const dist = Math.sqrt((mx - sx) ** 2 + (my - sy) ** 2);
+        if (dist < closestDist) {
+            closestDist = dist;
+            closest = id;
+        }
+    }
+    setHoveredShip(closest);
+});
+
+canvas.addEventListener('mouseleave', () => {
+    setHoveredShip(null);
+});
+
+function setHoveredShip(shipId) {
+    if (hoveredShipId === shipId) return;
+
+    // Remove old tile highlight
+    if (hoveredShipId) {
+        const oldTile = document.getElementById('stat-' + hoveredShipId);
+        if (oldTile) oldTile.classList.remove('highlighted');
+    }
+
+    hoveredShipId = shipId;
+
+    // Add new tile highlight
+    if (hoveredShipId) {
+        const newTile = document.getElementById('stat-' + hoveredShipId);
+        if (newTile) newTile.classList.add('highlighted');
+    }
+}
+
+/* ============================================================
+   HOVER: Tile → highlight matching ship on canvas
+   ============================================================ */
+function wireUpTileHoverListeners() {
+    for (const id of Object.keys(shipLoadouts)) {
+        const tile = document.getElementById('stat-' + id);
+        if (!tile) continue;
+        tile.addEventListener('mouseenter', () => setHoveredShip(id));
+        tile.addEventListener('mouseleave', () => setHoveredShip(null));
+    }
+}
+
+/* ============================================================
+   INIT
+   ============================================================ */
+resizeCanvas();
+loadReplayData();
+
+})();
+</script>
+</body>
+</html>

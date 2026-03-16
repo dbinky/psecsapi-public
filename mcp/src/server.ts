@@ -1,11 +1,18 @@
 #!/usr/bin/env node
 
+import { fileURLToPath } from "node:url";
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import express from "express";
 import { loadConfig } from "./config.js";
 import { PsecsClient } from "./client.js";
+import {
+  loadOAuthConfig,
+  validateAccessToken,
+  provisionApiKey,
+  type OAuthConfig,
+} from "./oauth.js";
 import { registerRawTools } from "./generated/raw-tools.js";
 import { registerAccountTools } from "./tools/account.js";
 import { registerFleetTools } from "./tools/fleet.js";
@@ -29,6 +36,29 @@ import { registerPrompts } from "./prompts/game-guide.js";
 
 const SERVER_NAME = "psecs";
 const SERVER_VERSION = "0.0.1";
+
+/**
+ * Handle an incoming MCP request: create a per-request server+transport,
+ * process the request, and tear down on response close.
+ */
+async function handleMcpRequest(
+  client: PsecsClient,
+  req: express.Request,
+  res: express.Response
+): Promise<void> {
+  const server = createServer(client);
+  const transport = new StreamableHTTPServerTransport({
+    sessionIdGenerator: undefined,
+  });
+
+  await server.connect(transport);
+  await transport.handleRequest(req, res, req.body);
+
+  res.on("close", () => {
+    transport.close().catch(() => {});
+    server.close().catch(() => {});
+  });
+}
 
 /**
  * Create and configure an McpServer with all registered tools.
@@ -97,18 +127,7 @@ async function startHttp(
   // MCP endpoint — handles POST, GET, DELETE for the Streamable HTTP protocol
   app.all("/mcp", async (req, res) => {
     try {
-      const server = createServer(client);
-      const transport = new StreamableHTTPServerTransport({
-        sessionIdGenerator: undefined,
-      });
-
-      await server.connect(transport);
-      await transport.handleRequest(req, res, req.body);
-
-      res.on("close", () => {
-        transport.close().catch(() => {});
-        server.close().catch(() => {});
-      });
+      await handleMcpRequest(client, req, res);
     } catch (err) {
       console.error("[psecs-mcp] Error handling /mcp request:", err);
       if (!res.headersSent) {
@@ -130,14 +149,124 @@ async function startHttp(
 }
 
 /**
+ * Register all OAuth routes on the given Express app.
+ * Exported for testing — does not bind a port.
+ */
+export function setupOAuthRoutes(
+  app: ReturnType<typeof express>,
+  oauthConfig: OAuthConfig,
+  apiKeyCache: Map<string, string>
+): void {
+  app.get("/.well-known/oauth-protected-resource", (_req, res) => {
+    res.json({
+      resource: oauthConfig.auth0Audience,
+      authorization_servers: [oauthConfig.issuerUrl],
+      scopes_supported: ["psecs:play"],
+      bearer_methods_supported: ["header"],
+    });
+  });
+
+  app.head("/mcp", (_req, res) => {
+    res.status(200).end();
+  });
+
+  app.all("/mcp", async (req, res) => {
+    const authHeader = req.headers.authorization;
+    // RFC 6750 / RFC 9110: auth-scheme is case-insensitive; "bearer" and "BEARER" are valid.
+    const token =
+      authHeader && authHeader.toLowerCase().startsWith("bearer ")
+        ? authHeader.slice(7)
+        : undefined;
+
+    if (!token) {
+      res.setHeader(
+        "WWW-Authenticate",
+        `Bearer resource_metadata="${oauthConfig.auth0Audience}/.well-known/oauth-protected-resource", scope="psecs:play"`
+      );
+      res.status(401).json({ error: "Authentication required" });
+      return;
+    }
+
+    const tokenResult = await validateAccessToken(token, oauthConfig);
+    if (!tokenResult.ok) {
+      console.error(`[psecs-mcp] Token validation failed: ${tokenResult.error}`);
+      res.setHeader(
+        "WWW-Authenticate",
+        `Bearer error="invalid_token", error_description="Token validation failed"`
+      );
+      res.status(401).json({ error: "Token validation failed" });
+      return;
+    }
+
+    let apiKey = apiKeyCache.get(tokenResult.userId);
+    if (!apiKey) {
+      const provisionResult = await provisionApiKey(
+        tokenResult.userId,
+        oauthConfig
+      );
+      if (!provisionResult.ok) {
+        console.error(
+          `[psecs-mcp] API key provisioning failed for ${tokenResult.userId}: ${provisionResult.error}`
+        );
+        res.status(502).json({
+          error: "Failed to provision API access. Please try again.",
+        });
+        return;
+      }
+      apiKey = provisionResult.apiKey;
+      apiKeyCache.set(tokenResult.userId, apiKey);
+    }
+
+    try {
+      const client = new PsecsClient({
+        apiKey,
+        baseUrl: oauthConfig.psecsBaseUrl,
+      });
+      await handleMcpRequest(client, req, res);
+    } catch (err) {
+      console.error("[psecs-mcp] Error handling /mcp request:", err);
+      if (!res.headersSent) {
+        res.status(500).json({ error: "Internal server error" });
+      }
+    }
+  });
+
+  app.get("/health", (_req, res) => {
+    res.json({ status: "ok", version: SERVER_VERSION, mode: "oauth" });
+  });
+}
+
+/**
+ * Start the MCP server in OAuth HTTP mode.
+ * Validates Auth0 JWTs, provisions API keys per user, and creates
+ * per-request PsecsClient instances with the provisioned key.
+ */
+async function startHttpOAuth(
+  oauthConfig: OAuthConfig,
+  port: number,
+  host: string
+): Promise<void> {
+  const app = express();
+  app.use(express.json());
+
+  setupOAuthRoutes(app, oauthConfig, new Map<string, string>());
+
+  app.listen(port, host, () => {
+    console.error(
+      `[psecs-mcp] OAuth HTTP server listening on ${host}:${port}`
+    );
+    console.error(`[psecs-mcp] Auth0 issuer: ${oauthConfig.issuerUrl}`);
+    console.error(`[psecs-mcp] Audience: ${oauthConfig.auth0Audience}`);
+  });
+}
+
+/**
  * Parse CLI args and start the server in the appropriate mode.
  */
 async function main(): Promise<void> {
-  const config = loadConfig();
-  const client = new PsecsClient(config);
-
   const args = process.argv.slice(2);
   const httpFlag = args.includes("--http");
+  const oauthFlag = args.includes("--oauth");
 
   const portIndex = args.indexOf("--port");
   const portArg = portIndex !== -1 ? parseInt(args[portIndex + 1], 10) : 3001;
@@ -150,14 +279,27 @@ async function main(): Promise<void> {
   const hostIndex = args.indexOf("--host");
   const host = hostIndex !== -1 ? args[hostIndex + 1] : "127.0.0.1";
 
-  if (httpFlag) {
+  if (oauthFlag) {
+    if (!httpFlag) {
+      throw new Error("--oauth requires --http (OAuth mode only works with HTTP transport)");
+    }
+    const oauthConfig = loadOAuthConfig();
+    await startHttpOAuth(oauthConfig, portArg, host);
+  } else if (httpFlag) {
+    const config = loadConfig();
+    const client = new PsecsClient(config);
     await startHttp(client, portArg, host);
   } else {
+    const config = loadConfig();
+    const client = new PsecsClient(config);
     await startStdio(client);
   }
 }
 
-main().catch((err) => {
-  console.error("[psecs-mcp] Fatal error:", err);
-  process.exit(1);
-});
+// Only run main() when this file is the process entry point, not when imported by tests.
+if (process.argv[1] === fileURLToPath(import.meta.url)) {
+  main().catch((err) => {
+    console.error("[psecs-mcp] Fatal error:", err);
+    process.exit(1);
+  });
+}

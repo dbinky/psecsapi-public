@@ -1,5 +1,7 @@
 using System.CommandLine;
 using System.Text.Json;
+using psecsapi.Console.Commands.Combat.Simulation;
+using psecsapi.Console.Commands.Combat.Visualization;
 using psecsapi.Console.Infrastructure.Configuration;
 using psecsapi.Console.Infrastructure.Http;
 
@@ -27,6 +29,9 @@ namespace psecsapi.Console.Commands.Combat
             command.AddCommand(BuildHistoryCommand());
             command.AddCommand(BuildReplayCommand());
             command.AddCommand(new CombatScriptSubCommand(_client, _config).Build());
+            command.AddCommand(CombatSimulateCommand.Build());
+            command.AddCommand(new CombatExportFleetCommand(_client, _config).Build());
+            command.AddCommand(CombatVisualizeCommand.Build());
 
             return command;
         }

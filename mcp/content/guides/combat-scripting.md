@@ -44,9 +44,11 @@ Passed to both `onStart` and `onTick`:
 | Field | Type | Description |
 |-------|------|-------------|
 | `state.tick` | number | Current simulation tick number |
-| `state.myShip` | object | Your ship's current state (see below) |
-| `state.enemies` | array | All enemy ships (see below) |
-| `state.friendlies` | array | Your other fleet ships (see below) |
+| `state.myShip` | object | Your ship's full state (see below) |
+| `state.myFleet` | array | All friendly ships including yours (see fleet ship fields) |
+| `state.enemyFleet` | array | All visible enemy ships (see fleet ship fields) |
+| `state.terrain` | array | Terrain obstacles on the grid (see terrain fields) |
+| `state.grid` | object | Grid dimensions (see grid fields) |
 
 ### `state.myShip`
 | Field | Type | Description |
@@ -57,19 +59,64 @@ Passed to both `onStart` and `onTick`:
 | `facing` | number | Current facing angle in radians |
 | `speed` | number | Current speed |
 | `maxSpeed` | number | Maximum speed |
-| `structurePoints` | number | Current HP |
-| `maxStructurePoints` | number | Maximum HP |
+| `maxAcceleration` | number | Maximum acceleration |
+| `structurePoints` | number | Current structure HP |
+| `maxStructurePoints` | number | Maximum structure HP |
 | `shieldEffectiveness` | number | Shield damage reduction (0.0-1.0) |
 | `armorEffectiveness` | number | Armor damage reduction (0.0-1.0) |
-| `isAlive` | boolean | Whether this ship is still alive |
+| `weapons` | array | Weapon modules (see weapon fields) |
+| `modules` | array | All modules (see module fields) |
+| `computeCapacity` | number | Ship's compute capacity |
+| `mass` | number | Ship mass |
+| `cargo` | array | Cargo entries `{assetId, type}` |
 
-### `state.enemies[]` and `state.friendlies[]`
+### `state.myShip.weapons[]`
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Weapon module ID (use with `commands.fire`) |
+| `type` | string | Damage type (e.g., "Kinetic", "Energy") |
+| `damage` | number | Base damage per shot |
+| `range` | number | Maximum firing range |
+| `cooldownTicks` | number | Ticks between shots |
+| `coneAngle` | number | Firing arc angle |
+| `condition` | number | Module condition (0.0-1.0) |
+
+### `state.myShip.modules[]`
+| Field | Type | Description |
+|-------|------|-------------|
+| `id` | string | Module ID |
+| `name` | string | Module name |
+| `condition` | number | Module condition (0.0-1.0) |
+| `capabilities` | string[] | Capability types |
+
+### `state.myFleet[]` and `state.enemyFleet[]`
 | Field | Type | Description |
 |-------|------|-------------|
 | `id` | string | Ship ID |
 | `position` | `{x, y}` | Current position |
-| `velocity` | `{x, y}` | Current velocity (enemies only) |
-| `isAlive` | boolean | Whether this ship is alive |
+| `velocity` | `{x, y}` | Current velocity vector |
+| `facing` | number | Current facing angle in radians |
+| `structurePoints` | number | Current structure HP |
+| `maxStructurePoints` | number | Maximum structure HP |
+| `mass` | number | Ship mass |
+
+### `state.terrain[]`
+| Field | Type | Description |
+|-------|------|-------------|
+| `x` | number | Obstacle X position |
+| `y` | number | Obstacle Y position |
+| `radius` | number | Obstacle radius |
+| `type` | string | Obstacle type |
+
+### `state.grid`
+| Field | Type | Description |
+|-------|------|-------------|
+| `width` | number | Grid width |
+| `height` | number | Grid height |
+| `minX` | number | Minimum X boundary |
+| `minY` | number | Minimum Y boundary |
+| `maxX` | number | Maximum X boundary |
+| `maxY` | number | Maximum Y boundary |
 
 ## Commands API (`commands`)
 Issue commands to control your ship. Multiple commands per tick are allowed.
@@ -93,11 +140,17 @@ Issue commands to control your ship. Multiple commands per tick are allowed.
 | `leadTarget` | `utils.leadTarget(myShip, enemy, projectileSpeed)` | Predicts intercept point, returns `{x, y}` |
 
 ## Sandbox Constraints
-- **Step limit**: Scripts are limited in execution steps per tick (prevents infinite loops)
-- **Memory limit**: 4MB allocation limit
-- **No external access**: No network, filesystem, or .NET CLR access
-- **Error handling**: Syntax errors or runtime exceptions cause the ship to fall back to auto-fire + flee
+- **Step limit**: 10,000 Jint execution steps per tick (prevents infinite loops). If exceeded, commands issued before the limit are still executed.
+- **Memory limit**: 4MB allocation limit per script engine instance
+- **Script size limit**: 16KB per compute capacity point on the ship (a ship with compute capacity 2 allows 32KB scripts)
+- **No external access**: No network, filesystem, or .NET CLR access — the Jint sandbox blocks all system calls
+- **Error handling**:
+  - **Syntax errors** during script parsing: ship falls back to default flee behavior for the entire combat
+  - **Runtime errors** during `onTick`/`onStart`: that tick's commands are discarded; ship continues with last successful commands
+  - **Memory limit exceeded**: tick's commands are discarded
+  - **Step limit exceeded**: commands issued before the limit are kept
 - Scripts persist across ticks — variables set in `onStart` are available in `onTick`
+- The Jint engine is reused across ticks for the same ship, preserving script-level state
 
 ## Combat Script Management Tools
 - `psecs_raw_corp_scripts` — List all scripts in your corp library
