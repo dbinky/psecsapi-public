@@ -1,155 +1,123 @@
-import { createRemoteJWKSet, createLocalJWKSet, jwtVerify, type JWK } from "jose";
-
 export type ProvisionResult =
   | { ok: true; apiKey: string }
   | { ok: false; error: string };
 
-export type TokenResult =
-  | { ok: true; userId: string }
-  | { ok: false; error: string };
-
-export interface OAuthConfig {
+export interface OAuthProxyConfig {
   auth0Domain: string;
-  auth0Audience: string;
+  auth0ClientId: string;
+  auth0ClientSecret: string;
   serviceSecret: string;
   psecsBaseUrl: string;
-  issuerUrl: string;
-  jwksUrl: string;
+  auth0IssuerUrl: string;
+  mcpBaseUrl: string;
 }
 
-const DEFAULT_BASE_URL = "https://api.psecs.io";
+// Note: previous default was "https://api.psecs.io" — updated to match current prod domain
+const DEFAULT_PSECS_BASE_URL = "https://api.psecsapi.com";
+const DEFAULT_MCP_BASE_URL = "https://mcp.psecsapi.com";
 
-export function loadOAuthConfig(): OAuthConfig {
-  const auth0Domain = process.env.AUTH0_DOMAIN;
-  if (!auth0Domain) {
-    throw new Error(
-      "AUTH0_DOMAIN environment variable is required in OAuth mode. " +
-        "Set it to your Auth0 tenant domain (e.g., myapp.us.auth0.com)."
-    );
-  }
-  if (
-    auth0Domain.includes("://") ||
-    auth0Domain.includes("/") ||
-    auth0Domain.includes("?") ||
-    auth0Domain.includes("@")
-  ) {
-    throw new Error(
-      `AUTH0_DOMAIN must be a plain hostname with no protocol or path (e.g., myapp.us.auth0.com). ` +
-        `Do not include "https://". Got: "${auth0Domain}"`
-    );
-  }
-
-  const auth0Audience = process.env.AUTH0_AUDIENCE;
-  if (!auth0Audience) {
-    throw new Error(
-      "AUTH0_AUDIENCE environment variable is required in OAuth mode. " +
-        "Set it to the Auth0 API identifier (e.g., https://mcp.psecs.io)."
-    );
-  }
-
-  const serviceSecret = process.env.MCP_SERVICE_SECRET;
-  if (!serviceSecret) {
-    throw new Error(
-      "MCP_SERVICE_SECRET environment variable is required in OAuth mode. " +
-        "This shared secret authenticates the MCP server to the PSECS API."
-    );
-  }
-
-  const psecsBaseUrl = (process.env.PSECS_BASE_URL ?? DEFAULT_BASE_URL).replace(
-    /\/+$/,
-    ""
-  );
-
-  const issuerUrl = `https://${auth0Domain}/`;
-  const jwksUrl = `https://${auth0Domain}/.well-known/jwks.json`;
+export function loadOAuthProxyConfig(): OAuthProxyConfig {
+  const auth0Domain = requireEnv("AUTH0_DOMAIN");
+  validateAuth0Domain(auth0Domain);
 
   return {
     auth0Domain,
-    auth0Audience,
-    serviceSecret,
-    psecsBaseUrl,
-    issuerUrl,
-    jwksUrl,
+    auth0ClientId: requireEnv("AUTH0_CLIENT_ID"),
+    auth0ClientSecret: requireEnv("AUTH0_CLIENT_SECRET"),
+    serviceSecret: requireEnv("MCP_SERVICE_SECRET"),
+    psecsBaseUrl: cleanUrl(process.env.PSECS_BASE_URL ?? DEFAULT_PSECS_BASE_URL),
+    auth0IssuerUrl: `https://${auth0Domain}/`,
+    mcpBaseUrl: cleanUrl(process.env.MCP_BASE_URL ?? DEFAULT_MCP_BASE_URL),
   };
 }
 
-// Cache the JWKS fetcher per domain (lives for process lifetime)
-const jwksCache = new Map<string, ReturnType<typeof createRemoteJWKSet>>();
-
-function getJwks(jwksUrl: string): ReturnType<typeof createRemoteJWKSet> {
-  let jwks = jwksCache.get(jwksUrl);
-  if (!jwks) {
-    jwks = createRemoteJWKSet(new URL(jwksUrl));
-    jwksCache.set(jwksUrl, jwks);
+function requireEnv(name: string): string {
+  const value = process.env[name];
+  if (!value) {
+    throw new Error(`${name} environment variable is required in OAuth proxy mode.`);
   }
-  return jwks;
+  return value;
+}
+
+function validateAuth0Domain(domain: string): void {
+  if (domain.includes("://") || domain.includes("/") || domain.includes("?") || domain.includes("@")) {
+    throw new Error(
+      `AUTH0_DOMAIN must be a plain hostname (e.g., myapp.us.auth0.com). Got: "${domain}"`
+    );
+  }
+}
+
+function cleanUrl(url: string): string {
+  return url.replace(/\/+$/, "");
 }
 
 /**
- * Validate an Auth0 access token (RS256 JWT).
- *
- * @param token - The raw Bearer token string (without "Bearer " prefix)
- * @param config - OAuth configuration with issuer and audience
- * @param testJwks - Optional JWKS for testing (bypasses remote fetch)
+ * Exchange an Auth0 authorization code for tokens (server-to-server).
+ * Returns the ID token's `sub` claim (the user's Auth0 ID).
  */
-export async function validateAccessToken(
-  token: string | undefined,
-  config: OAuthConfig,
-  testJwks?: { keys: JWK[] }
-): Promise<TokenResult> {
-  if (!token) {
-    return { ok: false, error: "Access token missing" };
-  }
-
+export async function exchangeAuth0Code(
+  code: string,
+  config: OAuthProxyConfig
+): Promise<{ ok: true; userId: string } | { ok: false; error: string }> {
   try {
-    const keySource = testJwks
-      ? createLocalJWKSet(testJwks)
-      : getJwks(config.jwksUrl);
-
-    const { payload } = await jwtVerify(token, keySource, {
-      issuer: config.issuerUrl,
-      audience: config.auth0Audience,
-      algorithms: ["RS256"],
+    const response = await fetch(`${config.auth0IssuerUrl}oauth/token`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        grant_type: "authorization_code",
+        client_id: config.auth0ClientId,
+        client_secret: config.auth0ClientSecret,
+        code,
+        redirect_uri: `${config.mcpBaseUrl}/oauth/callback`,
+      }),
     });
 
-    const userId = payload.sub;
-    if (!userId) {
-      return { ok: false, error: "Token missing sub claim" };
+    if (!response.ok) {
+      const body = await response.text();
+      return { ok: false, error: `Auth0 token exchange failed: HTTP ${response.status} — ${body}` };
     }
 
-    return { ok: true, userId };
+    const body = (await response.json()) as { id_token?: string };
+    if (!body.id_token) {
+      return { ok: false, error: "Auth0 response missing id_token" };
+    }
+
+    // Decode the ID token to get the sub claim.
+    // We trust it because it came directly from Auth0 over HTTPS using our client_secret.
+    const [, payloadB64] = body.id_token.split(".");
+    const payload = JSON.parse(Buffer.from(payloadB64, "base64url").toString());
+    if (!payload.sub) {
+      return { ok: false, error: "Auth0 id_token missing sub claim" };
+    }
+
+    return { ok: true, userId: payload.sub };
   } catch (err) {
-    const message = err instanceof Error ? err.message : "Token validation failed";
-    return { ok: false, error: message };
+    return {
+      ok: false,
+      error: err instanceof Error ? err.message : "Auth0 code exchange failed",
+    };
   }
 }
 
 /**
  * Call the PSECS API internal endpoint to get or create an API key for a user.
- * Uses the MCP service secret for authentication (not the user's token).
  */
 export async function provisionApiKey(
   userId: string,
-  config: OAuthConfig
+  config: { psecsBaseUrl: string; serviceSecret: string }
 ): Promise<ProvisionResult> {
   try {
-    const response = await fetch(
-      `${config.psecsBaseUrl}/internal/mcp/api-key`,
-      {
-        method: "POST",
-        headers: {
-          "X-Service-Key": config.serviceSecret,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ userId }),
-      }
-    );
+    const response = await fetch(`${config.psecsBaseUrl}/internal/mcp/api-key`, {
+      method: "POST",
+      headers: {
+        "X-Service-Key": config.serviceSecret,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ userId }),
+    });
 
     if (!response.ok) {
-      return {
-        ok: false,
-        error: `API key provisioning failed: HTTP ${response.status}`,
-      };
+      return { ok: false, error: `API key provisioning failed: HTTP ${response.status}` };
     }
 
     const body = (await response.json()) as { apiKey?: unknown };
@@ -161,10 +129,7 @@ export async function provisionApiKey(
   } catch (err) {
     return {
       ok: false,
-      error:
-        err instanceof Error
-          ? err.message
-          : "API key provisioning network error",
+      error: err instanceof Error ? err.message : "API key provisioning network error",
     };
   }
 }

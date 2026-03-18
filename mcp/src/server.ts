@@ -5,14 +5,13 @@ import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { StreamableHTTPServerTransport } from "@modelcontextprotocol/sdk/server/streamableHttp.js";
 import express from "express";
+import cors from "cors";
 import { loadConfig } from "./config.js";
 import { PsecsClient } from "./client.js";
-import {
-  loadOAuthConfig,
-  validateAccessToken,
-  provisionApiKey,
-  type OAuthConfig,
-} from "./oauth.js";
+import { loadOAuthProxyConfig } from "./oauth.js";
+import { JwtIssuer } from "./jwt-issuer.js";
+import { OAuthStore } from "./oauth-store.js";
+import { setupOAuthProxy } from "./oauth-proxy.js";
 import { registerRawTools } from "./generated/raw-tools.js";
 import { registerAccountTools } from "./tools/account.js";
 import { registerFleetTools } from "./tools/fleet.js";
@@ -149,30 +148,39 @@ async function startHttp(
 }
 
 /**
- * Register all OAuth routes on the given Express app.
- * Exported for testing — does not bind a port.
+ * Start the MCP server in OAuth HTTP mode.
+ * Acts as an OAuth proxy: presents its own authorization server to MCP clients,
+ * delegates user authentication to Auth0, provisions API keys, and issues
+ * self-signed JWTs that the /mcp endpoint validates.
  */
-export function setupOAuthRoutes(
-  app: ReturnType<typeof express>,
-  oauthConfig: OAuthConfig,
-  apiKeyCache: Map<string, string>
-): void {
-  app.get("/.well-known/oauth-protected-resource", (_req, res) => {
-    res.json({
-      resource: oauthConfig.auth0Audience,
-      authorization_servers: [oauthConfig.issuerUrl],
-      scopes_supported: ["psecs:play"],
-      bearer_methods_supported: ["header"],
-    });
+async function startHttpOAuth(port: number, host: string): Promise<void> {
+  const config = loadOAuthProxyConfig();
+  const store = OAuthStore.createInMemory();
+  const issuer = await JwtIssuer.create();
+
+  const app = express();
+  app.use(cors());
+  app.use(express.json());
+  app.use(express.urlencoded({ extended: true }));
+
+  // Request logging — every inbound request
+  app.use((req, _res, next) => {
+    const auth = req.headers.authorization ? `Bearer ${req.headers.authorization.slice(7, 20)}...` : "none";
+    console.error(`[psecs-mcp] ${req.method} ${req.path} auth=${auth} ip=${req.ip}`);
+    next();
   });
 
-  app.head("/mcp", (_req, res) => {
+  setupOAuthProxy(app, config, store, issuer);
+
+  // Authenticated /mcp endpoint — validates self-issued JWTs,
+  // looks up the cached API key, and handles the MCP request.
+  // Support both /mcp and /v1/mcp (alias for cache-busting stale tokens)
+  app.head(["/mcp", "/v1/mcp"], (_req, res) => {
     res.status(200).end();
   });
 
-  app.all("/mcp", async (req, res) => {
+  app.all(["/mcp", "/v1/mcp"], async (req, res) => {
     const authHeader = req.headers.authorization;
-    // RFC 6750 / RFC 9110: auth-scheme is case-insensitive; "bearer" and "BEARER" are valid.
     const token =
       authHeader && authHeader.toLowerCase().startsWith("bearer ")
         ? authHeader.slice(7)
@@ -181,82 +189,61 @@ export function setupOAuthRoutes(
     if (!token) {
       res.setHeader(
         "WWW-Authenticate",
-        `Bearer resource_metadata="${oauthConfig.auth0Audience}/.well-known/oauth-protected-resource", scope="psecs:play"`
+        `Bearer resource_metadata="${config.mcpBaseUrl}/.well-known/oauth-protected-resource", scope="psecs:play"`
       );
       res.status(401).json({ error: "Authentication required" });
       return;
     }
 
-    const tokenResult = await validateAccessToken(token, oauthConfig);
-    if (!tokenResult.ok) {
-      console.error(`[psecs-mcp] Token validation failed: ${tokenResult.error}`);
-      res.setHeader(
-        "WWW-Authenticate",
-        `Bearer error="invalid_token", error_description="Token validation failed"`
-      );
-      res.status(401).json({ error: "Token validation failed" });
-      return;
-    }
+    try {
+      const { jwtVerify, createLocalJWKSet } = await import("jose");
+      const jwks = issuer.getJwks();
+      const keySet = createLocalJWKSet(jwks);
+      const { payload } = await jwtVerify(token, keySet, {
+        issuer: config.mcpBaseUrl,
+        audience: config.mcpBaseUrl,
+        algorithms: ["RS256"],
+      });
 
-    let apiKey = apiKeyCache.get(tokenResult.userId);
-    if (!apiKey) {
-      const provisionResult = await provisionApiKey(
-        tokenResult.userId,
-        oauthConfig
-      );
-      if (!provisionResult.ok) {
-        console.error(
-          `[psecs-mcp] API key provisioning failed for ${tokenResult.userId}: ${provisionResult.error}`
-        );
-        res.status(502).json({
-          error: "Failed to provision API access. Please try again.",
-        });
+      if (!payload.sub) {
+        res.status(401).json({ error: "Token missing sub claim" });
         return;
       }
-      apiKey = provisionResult.apiKey;
-      apiKeyCache.set(tokenResult.userId, apiKey);
-    }
 
-    try {
+      const apiKey = await store.getApiKey(payload.sub);
+      if (!apiKey) {
+        res.status(401).json({ error: "No API key found for user" });
+        return;
+      }
+
       const client = new PsecsClient({
         apiKey,
-        baseUrl: oauthConfig.psecsBaseUrl,
+        baseUrl: config.psecsBaseUrl,
       });
       await handleMcpRequest(client, req, res);
     } catch (err) {
-      console.error("[psecs-mcp] Error handling /mcp request:", err);
-      if (!res.headersSent) {
-        res.status(500).json({ error: "Internal server error" });
-      }
+      console.error(
+        "[psecs-mcp] Token validation failed:",
+        err instanceof Error ? err.message : err
+      );
+      res.setHeader(
+        "WWW-Authenticate",
+        'Bearer error="invalid_token", error_description="Token validation failed"'
+      );
+      res.status(401).json({ error: "Token validation failed" });
     }
   });
 
   app.get("/health", (_req, res) => {
     res.json({ status: "ok", version: SERVER_VERSION, mode: "oauth" });
   });
-}
-
-/**
- * Start the MCP server in OAuth HTTP mode.
- * Validates Auth0 JWTs, provisions API keys per user, and creates
- * per-request PsecsClient instances with the provisioned key.
- */
-async function startHttpOAuth(
-  oauthConfig: OAuthConfig,
-  port: number,
-  host: string
-): Promise<void> {
-  const app = express();
-  app.use(express.json());
-
-  setupOAuthRoutes(app, oauthConfig, new Map<string, string>());
 
   app.listen(port, host, () => {
     console.error(
       `[psecs-mcp] OAuth HTTP server listening on ${host}:${port}`
     );
-    console.error(`[psecs-mcp] Auth0 issuer: ${oauthConfig.issuerUrl}`);
-    console.error(`[psecs-mcp] Audience: ${oauthConfig.auth0Audience}`);
+    console.error(`[psecs-mcp] MCP Base URL: ${config.mcpBaseUrl}`);
+    console.error(`[psecs-mcp] Auth0 domain: ${config.auth0Domain}`);
   });
 }
 
@@ -283,8 +270,7 @@ async function main(): Promise<void> {
     if (!httpFlag) {
       throw new Error("--oauth requires --http (OAuth mode only works with HTTP transport)");
     }
-    const oauthConfig = loadOAuthConfig();
-    await startHttpOAuth(oauthConfig, portArg, host);
+    await startHttpOAuth(portArg, host);
   } else if (httpFlag) {
     const config = loadConfig();
     const client = new PsecsClient(config);
