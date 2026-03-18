@@ -175,11 +175,11 @@ async function startHttpOAuth(port: number, host: string): Promise<void> {
   // Authenticated /mcp endpoint — validates self-issued JWTs,
   // looks up the cached API key, and handles the MCP request.
   // Support both /mcp and /v1/mcp (alias for cache-busting stale tokens)
-  app.head(["/mcp", "/v1/mcp"], (_req, res) => {
+  app.head(["/mcp", "/v1/mcp", "/v2/mcp"], (_req, res) => {
     res.status(200).end();
   });
 
-  app.all(["/mcp", "/v1/mcp"], async (req, res) => {
+  app.all(["/mcp", "/v1/mcp", "/v2/mcp"], async (req, res) => {
     const authHeader = req.headers.authorization;
     const token =
       authHeader && authHeader.toLowerCase().startsWith("bearer ")
