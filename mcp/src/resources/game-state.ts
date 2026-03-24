@@ -62,6 +62,45 @@ export function registerGameStateResources(
             );
           }
         }
+
+        // New-player detection: check research status first (short-circuit)
+        let isNewPlayer = false;
+        try {
+          const researchResult = await client.get<ResearchStatusResponseModel>(
+            "/api/Research/status"
+          );
+          if (researchResult.ok) {
+            const research = researchResult.data;
+            const hasResearch = (research.activeProjects ?? []).length > 0 ||
+              (research.totalAllocation ?? 0) > 0;
+
+            if (!hasResearch) {
+              // No research — check if they've ever left the starting sector
+              // UserMap returns a flat array of sectors, not a wrapped object
+              const mapResult = await client.get<unknown[]>(
+                "/api/UserMap",
+                { query: { type: "*" } }
+              );
+              if (mapResult.ok) {
+                const sectorCount = mapResult.data.length;
+                if (sectorCount <= 1) {
+                  isNewPlayer = true;
+                }
+              }
+            }
+          }
+        } catch {
+          // Detection failed — treat as established player
+        }
+
+        if (isNewPlayer) {
+          hints.unshift(
+            "🆕 NEW PLAYER DETECTED: This player is just getting started. " +
+            "Read the first-session guide at psecs://guide/first-session and follow it step by step. " +
+            "Prioritize: allocate research to 100%, transit a conduit to expand the map, " +
+            "and build a visual HTML dashboard."
+          );
+        }
       } else {
         hints.push(
           "No corporation yet. Use psecs_create_corp to start playing."

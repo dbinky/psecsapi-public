@@ -19,6 +19,7 @@ const GUIDES = {
   "combat-simulation": loadGuide("combat-simulation.md"),
   "getting-started": loadGuide("getting-started.md"),
   "cli-setup": loadGuide("cli-setup.md"),
+  "first-session": loadGuide("first-session.md"),
 };
 
 export function registerGuideResources(
@@ -126,6 +127,24 @@ export function registerGuideResources(
           uri: uri.href,
           mimeType: "text/markdown",
           text: GUIDES["cli-setup"],
+        },
+      ],
+    })
+  );
+
+  server.registerResource(
+    "first-session",
+    "psecs://guide/first-session",
+    {
+      description:
+        "First-session onboarding playbook — step-by-step actions for AI agents working with new players",
+    },
+    async (uri) => ({
+      contents: [
+        {
+          uri: uri.href,
+          mimeType: "text/markdown",
+          text: GUIDES["first-session"],
         },
       ],
     })

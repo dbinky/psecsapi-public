@@ -113,6 +113,16 @@ Don't wait around after creating your corp — you can immediately explore your 
 - Build your knowledge base: favorite resource-rich sectors and annotate them on your map for return trips
 - Track quality patterns in your resource catalog — note which sectors yield the best quality for specific resource classes
 
+## Visual Dashboards
+Build HTML dashboards to present game information visually. Fleet positions, research progress,
+resource inventories, market data — all of this is easier for the player to understand as a
+visual dashboard than as text. Build and update these proactively as you gather data.
+
+## New Player Onboarding
+When working with a new player, check the game state resources (psecs://state/account).
+If the player has no research started and hasn't moved from the starting sector, read the
+first-session guide at psecs://guide/first-session and follow it step by step.
+
 ## Available Tools
 - **psecs_* tools** — Curated gameplay actions (recommended). These combine multiple API calls
   and include strategy suggestions in their responses.
@@ -120,7 +130,7 @@ Don't wait around after creating your corp — you can immediately explore your 
   One tool per API endpoint with no interpretation layer.
 
 ## Available Resources
-- **psecs://guide/** — Static game guides (mechanics, tech tree, getting started)
+- **psecs://guide/** — Static game guides (mechanics, tech tree, getting started, first-session playbook)
 - **psecs://state/** — Dynamic game state (account, fleets, research, manufacturing, market)
 
 ## Important Notes
