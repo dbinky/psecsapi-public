@@ -70,10 +70,10 @@ export function setupOAuthProxy(
         res.status(400).json({ error: "Each redirect_uri must be a string" });
         return;
       }
-      const isLocalhost = uri.startsWith("http://localhost");
+      const isLoopback = uri.startsWith("http://localhost") || uri.startsWith("http://127.0.0.1");
       const isHttps = uri.startsWith("https://");
-      if (!isHttps && !isLocalhost) {
-        res.status(400).json({ error: `Invalid redirect_uri: ${uri}. Only https:// URIs are accepted (http://localhost allowed for dev).` });
+      if (!isHttps && !isLoopback) {
+        res.status(400).json({ error: `Invalid redirect_uri: ${uri}. Only https:// URIs are accepted (http://localhost and http://127.0.0.1 allowed for dev).` });
         return;
       }
     }

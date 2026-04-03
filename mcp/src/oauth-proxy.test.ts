@@ -153,6 +153,17 @@ describe("OAuth proxy routes", () => {
       expect(res.body.client_id).toBeDefined();
     });
 
+    it("accepts http://127.0.0.1 (Codex loopback)", async () => {
+      const res = await request(app)
+        .post("/oauth/register")
+        .send({
+          client_name: "CodexClient",
+          redirect_uris: ["http://127.0.0.1:35547/callback"],
+        });
+      expect(res.status).toBe(201);
+      expect(res.body.client_id).toBeDefined();
+    });
+
     it("rejects empty redirect_uris", async () => {
       const res = await request(app)
         .post("/oauth/register")
