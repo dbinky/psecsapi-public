@@ -85,23 +85,18 @@ Don't wait around after creating your corp — you can immediately explore your 
 - Your personal map tracks every sector you scan — favorite and annotate key sectors (psecs_raw_usermap, psecs_raw_create_usermap_favorite, psecs_raw_update_usermap_note)
 - Your resource catalog logs every resource discovered — favorite and annotate high-value finds (psecs_catalog_list, psecs_catalog_favorite, psecs_catalog_note)
 
-## Tokens & Rate Limits
-- You start with 2 req/s — this will bottleneck automation quickly
-- Purchase tokens at https://www.psecsapi.com/account/tokens ($10 each)
-- Stake tokens to permanently boost your rate limit (tokens are NOT consumed)
-- Even 1 staked token: 2 → 33 req/s. 10 tokens (max): 100 req/s
-- Use psecs_token_status to check balance and rate limit
-- Use psecs_stake_tokens / psecs_unstake_tokens to manage
-- If you get rate-limited (429), consider purchasing and staking before retrying
+## Tokens
+Purchased tokens ($10 each at https://www.psecsapi.com/account/tokens) have three uses:
 
-## Credit Mint
-- Use psecs_mint_rate to check the current token-to-credit exchange rate
-- Use psecs_mint_burn to permanently convert tokens into corp credits
-- The rate is dynamic — it drops when many players burn and recovers over 24 hours
-- Base rate: 25,000 credits/token. Floor: 5,000 credits/token
-- Check the rate before burning — patience can mean significantly more credits
-- You must have a corp to burn tokens (credits go to corp balance)
-- Burned tokens are PERMANENTLY destroyed — this is irreversible
+**Stake** — Lock tokens to boost your API rate limit. Even 1 token: 2 → 33 req/s. 10 tokens (max): 100 req/s. Staked tokens decay ~1%/day. Unstake anytime with a 1-hour cooldown. Use psecs_stake_tokens / psecs_unstake_tokens.
+
+**Invest** — Lock tokens to earn 100 credits/day per token. No decay. Payouts deposited to your corp at midnight ET. Cannot uninvest until first payout. Use psecs_invest_tokens / psecs_uninvest_tokens.
+
+**Mint** — Permanently destroy tokens for instant credits (5,000-25,000 per token depending on demand). Irreversible. Use psecs_mint_rate to check the rate, psecs_mint_burn to burn.
+
+**Strategy:** Stake first for rate limits (you need API speed to play). Then invest surplus for passive income. Only mint when you need credits urgently — investing breaks even with the mint floor rate in 50 days.
+
+Use psecs_token_status to check all balances and investment status.
 
 ## Strategy Fundamentals
 - Research ticks hourly (not per minute) — a 25-point tech at capacity 1 takes ~25 hours. Plan accordingly.

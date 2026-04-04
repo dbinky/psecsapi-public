@@ -20,11 +20,13 @@ namespace psecsapi.Console.Commands.Tokens
 
         public Command Build()
         {
-            var command = new Command("tokens", "Token management commands (balance, buy, purchases)");
+            var command = new Command("tokens", "Token management commands (balance, buy, invest, uninvest, purchases)");
 
             command.AddCommand(BuildBalanceCommand());
             command.AddCommand(BuildBuyCommand());
             command.AddCommand(BuildPurchasesCommand());
+            command.AddCommand(BuildInvestCommand());
+            command.AddCommand(BuildUninvestCommand());
 
             return command;
         }
@@ -55,11 +57,13 @@ namespace psecsapi.Console.Commands.Tokens
                 var data = JsonSerializer.Deserialize<JsonElement>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
                 var available = data.GetProperty("availableTokens").GetDecimal();
                 var staked = data.GetProperty("stakedTokens").GetDecimal();
+                var invested = data.GetProperty("investedTokens").GetDecimal();
                 var total = data.GetProperty("tokens").GetDecimal();
 
                 System.Console.WriteLine();
-                System.Console.WriteLine($"  Available: {available}");
-                System.Console.WriteLine($"  Staked:    {staked}");
+                System.Console.WriteLine($"  Available:  {available}");
+                System.Console.WriteLine($"  Staked:     {staked}");
+                System.Console.WriteLine($"  Invested:   {invested}");
                 System.Console.WriteLine($"  Total:     {total}");
                 System.Console.WriteLine();
             }, jsonOption);
@@ -180,6 +184,108 @@ namespace psecsapi.Console.Commands.Tokens
 
                 System.Console.WriteLine();
             }, jsonOption);
+
+            return command;
+        }
+
+        private Command BuildInvestCommand()
+        {
+            var amountOption = new Option<decimal>("--amount", "Amount of tokens to invest (min 0.1)");
+            amountOption.AddAlias("-a");
+            amountOption.IsRequired = true;
+
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+            var command = new Command("invest", "Invest tokens to earn 100 credits/day per token");
+            command.AddOption(amountOption);
+            command.AddOption(jsonOption);
+
+            command.SetHandler(async (decimal amount, bool json) =>
+            {
+                if (amount < 0.1m)
+                {
+                    System.Console.WriteLine("Amount must be at least 0.1 tokens.");
+                    return;
+                }
+
+                var response = await _client.PostAsync("/api/user/invest-tokens", new { amount });
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine($"Error {(int)response.StatusCode}: {content}");
+                    return;
+                }
+
+                if (json)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                var data = JsonSerializer.Deserialize<JsonElement>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var newInvested = data.GetProperty("newInvestedTotal").GetDecimal();
+                var newAvailable = data.GetProperty("newAvailableTokens").GetDecimal();
+                var trancheCount = data.GetProperty("trancheCount").GetInt32();
+                var dailyYield = newInvested * 100;
+
+                System.Console.WriteLine();
+                System.Console.WriteLine($"  Invested:       {newInvested} tokens");
+                System.Console.WriteLine($"  Available:      {newAvailable} tokens");
+                System.Console.WriteLine($"  Tranches:       {trancheCount}");
+                System.Console.WriteLine($"  Est. daily yield: {dailyYield:N0} credits");
+                System.Console.WriteLine();
+            }, amountOption, jsonOption);
+
+            return command;
+        }
+
+        private Command BuildUninvestCommand()
+        {
+            var amountOption = new Option<decimal>("--amount", "Amount of tokens to uninvest");
+            amountOption.AddAlias("-a");
+            amountOption.IsRequired = true;
+
+            var jsonOption = new Option<bool>("--json", "Output as raw JSON");
+
+            var command = new Command("uninvest", "Return invested tokens to available balance (FIFO, oldest first)");
+            command.AddOption(amountOption);
+            command.AddOption(jsonOption);
+
+            command.SetHandler(async (decimal amount, bool json) =>
+            {
+                if (amount <= 0)
+                {
+                    System.Console.WriteLine("Amount must be greater than zero.");
+                    return;
+                }
+
+                var response = await _client.PostAsync("/api/user/uninvest-tokens", new { amount });
+                var content = await response.Content.ReadAsStringAsync();
+
+                if (!response.IsSuccessStatusCode)
+                {
+                    System.Console.WriteLine($"Error {(int)response.StatusCode}: {content}");
+                    return;
+                }
+
+                if (json)
+                {
+                    System.Console.WriteLine(content);
+                    return;
+                }
+
+                var data = JsonSerializer.Deserialize<JsonElement>(content, new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+                var tokensUninvested = data.GetProperty("tokensUninvested").GetDecimal();
+                var newInvested = data.GetProperty("newInvestedTotal").GetDecimal();
+                var newAvailable = data.GetProperty("newAvailableTokens").GetDecimal();
+
+                System.Console.WriteLine();
+                System.Console.WriteLine($"  Uninvested: {tokensUninvested} tokens");
+                System.Console.WriteLine($"  Invested:   {newInvested} tokens");
+                System.Console.WriteLine($"  Available:  {newAvailable} tokens");
+                System.Console.WriteLine();
+            }, amountOption, jsonOption);
 
             return command;
         }
