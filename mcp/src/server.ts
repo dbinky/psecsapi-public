@@ -165,8 +165,16 @@ async function startHttpOAuth(port: number, host: string): Promise<void> {
 
   // Request logging — every inbound request
   app.use((req, _res, next) => {
-    const auth = req.headers.authorization ? `Bearer ${req.headers.authorization.slice(7, 20)}...` : "none";
-    console.error(`[psecs-mcp] ${req.method} ${req.path} auth=${auth} ip=${req.ip}`);
+    let sub = "anon";
+    const authHeader = req.headers.authorization;
+    if (authHeader?.startsWith("Bearer ")) {
+      try {
+        const payload = JSON.parse(Buffer.from(authHeader.slice(7).split(".")[1], "base64url").toString());
+        sub = payload.sub ?? "unknown";
+      } catch { sub = "invalid"; }
+    }
+    const ip = (req.headers["x-forwarded-for"] as string | undefined)?.split(",")[0]?.trim() ?? req.ip;
+    console.error(`[psecs-mcp] ${req.method} ${req.path} sub=${sub} ip=${ip}`);
     next();
   });
 
