@@ -9,7 +9,7 @@
       "tier": 1,
       "name": "Foundational Biology",
       "description": "Core principles of biological systems and life sciences",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -19,7 +19,7 @@
       "tier": 1,
       "name": "Biochemical Processing",
       "description": "Chemical techniques applied to biological material extraction and processing",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -29,7 +29,7 @@
       "tier": 1,
       "name": "Metabolic Systems",
       "description": "Energy principles applied to biological metabolism and biofuel extraction",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -39,7 +39,7 @@
       "tier": 1,
       "name": "Genetic Computation",
       "description": "Informatics techniques applied to genetic sequencing and bio-data analysis",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -49,7 +49,7 @@
       "tier": 1,
       "name": "Biomechanical Engineering",
       "description": "Mechanical precision applied to biological sample collection and processing",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -59,7 +59,7 @@
       "tier": 1,
       "name": "Biophysical Sciences",
       "description": "Physics principles applied to cellular and molecular biology",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -69,7 +69,7 @@
       "tier": 1,
       "name": "Crew Biology",
       "description": "Organizational approaches to crew health and biological optimization",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -79,7 +79,7 @@
       "tier": 1,
       "name": "Organic Chemistry",
       "description": "Biological insights applied to carbon-based compound synthesis",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -89,7 +89,7 @@
       "tier": 1,
       "name": "Foundational Chemistry",
       "description": "Core principles of chemical reactions and molecular structures",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -99,7 +99,7 @@
       "tier": 1,
       "name": "Electrochemistry",
       "description": "Energy principles applied to chemical storage and fuel cell design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -109,7 +109,7 @@
       "tier": 1,
       "name": "Computational Chemistry",
       "description": "Informatics techniques applied to molecular modeling and simulation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -119,7 +119,7 @@
       "tier": 1,
       "name": "Materials Science",
       "description": "Mechanical principles applied to alloy formulation and composite design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -129,7 +129,7 @@
       "tier": 1,
       "name": "Physical Chemistry",
       "description": "Physics principles applied to reaction kinetics and thermodynamics",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -139,7 +139,7 @@
       "tier": 1,
       "name": "Industrial Chemistry",
       "description": "Organizational methods applied to large-scale chemical production",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -149,7 +149,7 @@
       "tier": 1,
       "name": "Bioenergy",
       "description": "Biological processes applied to organic fuel extraction and processing",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -159,7 +159,7 @@
       "tier": 1,
       "name": "Fuel Chemistry",
       "description": "Chemical techniques applied to propellant refinement and fuel synthesis",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -169,7 +169,7 @@
       "tier": 1,
       "name": "Foundational Energetics",
       "description": "Core principles of energy generation, storage, and distribution",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -179,7 +179,7 @@
       "tier": 1,
       "name": "Power Informatics",
       "description": "Informatics techniques applied to smart grid design and load optimization",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -189,7 +189,7 @@
       "tier": 1,
       "name": "Power Machinery",
       "description": "Mechanical engineering applied to generators and power transmission",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -199,7 +199,7 @@
       "tier": 1,
       "name": "Plasma Physics",
       "description": "Physics principles applied to plasma containment and high-energy systems",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -209,7 +209,7 @@
       "tier": 1,
       "name": "Energy Economics",
       "description": "Organizational methods applied to power allocation and distribution networks",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -219,7 +219,7 @@
       "tier": 1,
       "name": "Biosensor Networks",
       "description": "Biological detection applied to sensor array design and life sign scanning",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -229,7 +229,7 @@
       "tier": 1,
       "name": "Chemical Informatics",
       "description": "Chemical analysis applied to automated spectral scanning and compound ID",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -239,7 +239,7 @@
       "tier": 1,
       "name": "Energy Informatics",
       "description": "Energy monitoring applied to power diagnostics and efficiency analysis",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -249,7 +249,7 @@
       "tier": 1,
       "name": "Foundational Informatics",
       "description": "Core principles of data processing, computation, and information systems",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -259,7 +259,7 @@
       "tier": 1,
       "name": "Structural Informatics",
       "description": "Mechanical modeling applied to CAD/CAM and fabrication optimization",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -269,7 +269,7 @@
       "tier": 1,
       "name": "Physics Simulation",
       "description": "Physics modeling applied to trajectory calculation and field simulation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -279,7 +279,7 @@
       "tier": 1,
       "name": "Social Informatics",
       "description": "Organizational insights applied to knowledge networks and research collaboration",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -289,7 +289,7 @@
       "tier": 1,
       "name": "Bioengineered Structures",
       "description": "Biological materials applied to organic composites and self-healing structures",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -299,7 +299,7 @@
       "tier": 1,
       "name": "Chemical Processing",
       "description": "Chemical techniques applied to refineries and material transformation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -309,7 +309,7 @@
       "tier": 1,
       "name": "Electromechanical Systems",
       "description": "Energy principles applied to power transmission and generator design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -319,7 +319,7 @@
       "tier": 1,
       "name": "Automated Fabrication",
       "description": "Informatics applied to CNC precision and robotic assembly systems",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -329,7 +329,7 @@
       "tier": 1,
       "name": "Foundational Mechanics",
       "description": "Core principles of mechanical engineering, fabrication, and structural design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -339,7 +339,7 @@
       "tier": 1,
       "name": "Field Mechanics",
       "description": "Physics principles applied to gravitational systems and warp nacelle design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -349,7 +349,7 @@
       "tier": 1,
       "name": "Production Management",
       "description": "Organizational methods applied to labor efficiency and modular design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -359,7 +359,7 @@
       "tier": 1,
       "name": "Radiation Biology",
       "description": "Biological insights applied to radiation effects and cellular manipulation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -369,7 +369,7 @@
       "tier": 1,
       "name": "Quantum Chemistry",
       "description": "Chemical principles applied to quantum bonding and exotic materials",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -379,7 +379,7 @@
       "tier": 1,
       "name": "Fusion Physics",
       "description": "Energy principles applied to fusion theory and reactor design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -389,7 +389,7 @@
       "tier": 1,
       "name": "Quantum Computing",
       "description": "Informatics applied to quantum algorithms and parallel processing",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -399,7 +399,7 @@
       "tier": 1,
       "name": "Applied Physics",
       "description": "Mechanical engineering applied to warp field generators and structural fields",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -409,7 +409,7 @@
       "tier": 1,
       "name": "Foundational Physics",
       "description": "Core principles of fundamental forces, particles, and field theory",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -419,7 +419,7 @@
       "tier": 1,
       "name": "Research Methodology",
       "description": "Organizational methods applied to scientific discovery and collaboration",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -429,7 +429,7 @@
       "tier": 1,
       "name": "Crew Wellness",
       "description": "Biological insights applied to crew health programs and performance optimization",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -439,7 +439,7 @@
       "tier": 1,
       "name": "Resource Logistics",
       "description": "Chemical handling applied to supply chain management and material distribution",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -449,7 +449,7 @@
       "tier": 1,
       "name": "Power Management",
       "description": "Energy allocation applied to rationing systems and priority scheduling",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -459,7 +459,7 @@
       "tier": 1,
       "name": "Knowledge Systems",
       "description": "Informatics applied to training programs and information networks",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -469,7 +469,7 @@
       "tier": 1,
       "name": "Labor Engineering",
       "description": "Mechanical workflow applied to shift optimization and crew ergonomics",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -479,7 +479,7 @@
       "tier": 1,
       "name": "Research Organization",
       "description": "Physics research methods applied to team structures and discovery culture",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     },
     {
@@ -489,7 +489,7 @@
       "tier": 1,
       "name": "Foundational Sociology",
       "description": "Core principles of organizational dynamics, culture, and social systems",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": []
     }
   ],
@@ -500,7 +500,7 @@
       "letter": "a",
       "name": "Enzymatic Catalysis",
       "description": "Engineered enzyme solutions accelerate organic material breakdown",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -514,7 +514,7 @@
       "letter": "a",
       "name": "Metabolic Siphoning",
       "description": "Bioenergetic feedback loops optimize organic energy capture from living systems.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -528,7 +528,7 @@
       "letter": "a",
       "name": "Genomic Indexing",
       "description": "Computational gene mapping accelerates biological research simulations.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -542,7 +542,7 @@
       "letter": "b",
       "name": "Culture Vat Assembly",
       "description": "Fusing amorphous glass into a sealed growth chamber and flooding it with nutrient solution over a structural frame",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "BI1a"
       ],
@@ -592,7 +592,7 @@
       "letter": "c",
       "name": "Bio Extractor Assembly",
       "description": "Mounting culture vats into a thermally regulated metal chassis with nutrient feed lines for continuous organic harvesting",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "BI1a"
       ],
@@ -649,7 +649,7 @@
       "letter": "a",
       "name": "Precision Harvesters",
       "description": "Mechanical precision reduces damage to delicate organic samples",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -663,7 +663,7 @@
       "letter": "a",
       "name": "Cellular Resonance",
       "description": "Resonant frequencies optimize cellular extraction efficiency",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -677,7 +677,7 @@
       "letter": "a",
       "name": "Health Protocols",
       "description": "Standardized health monitoring improves crew performance",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -691,7 +691,7 @@
       "letter": "a",
       "name": "Reagent Distillation",
       "description": "Bio-organic solvents improve chemical separation and reagent purity.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -705,7 +705,7 @@
       "letter": "a",
       "name": "Electrolyte Optimization",
       "description": "Improved electrolyte formulations reduce power cell material waste",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -719,7 +719,7 @@
       "letter": "b",
       "name": "Capacitor Bank Assembly",
       "description": "Interleaving conductive metal plates with dielectric fluid layers inside a non-ferromagnetic casing to form stackable charge cells",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "CE1a"
       ],
@@ -769,7 +769,7 @@
       "letter": "a",
       "name": "Molecular Scanning",
       "description": "Automated molecular analysis identifies optimal extraction targets in chemical deposits.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -783,7 +783,7 @@
       "letter": "a",
       "name": "Alloy Formulation",
       "description": "Precise alloy ratios minimize material loss during fabrication",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -797,7 +797,7 @@
       "letter": "b",
       "name": "Alloy Frame Fabrication",
       "description": "Hot-pressing metal stock over reinforcing ore cores to forge load-bearing structural beams",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "CM1a"
       ],
@@ -840,7 +840,7 @@
       "letter": "a",
       "name": "Reaction Kinetics",
       "description": "Accelerated reaction rates speed production cycles",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -854,7 +854,7 @@
       "letter": "a",
       "name": "Process Standardization",
       "description": "Standardized chemical processes reduce production time",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -868,7 +868,7 @@
       "letter": "a",
       "name": "Thermal Harvesting",
       "description": "Bioenergetic thermal gradients improve energetic resource capture efficiency.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -882,7 +882,7 @@
       "letter": "a",
       "name": "Propellant Refinement",
       "description": "Refined fuel compounds accelerate high-temperature fabrication",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -896,7 +896,7 @@
       "letter": "b",
       "name": "Ion Chamber Assembly",
       "description": "Shaping a metal housing around a reactive gas reservoir and lining it with ceramic insulation for stable ionization",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "EC1a"
       ],
@@ -946,7 +946,7 @@
       "letter": "c",
       "name": "Ion Drive Assembly",
       "description": "Coupling ion chambers to power conduits inside a reinforced metal housing for basic sublight thrust",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "EC1a"
       ],
@@ -996,7 +996,7 @@
       "letter": "a",
       "name": "Load Balancing",
       "description": "Intelligent power distribution maximizes fabrication throughput",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1010,7 +1010,7 @@
       "letter": "a",
       "name": "Generator Tuning",
       "description": "Optimized generator output stabilizes manufacturing power supply",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1024,7 +1024,7 @@
       "letter": "b",
       "name": "Copper Conduit Fabrication",
       "description": "Drawing non-ferromagnetic wire through calibrated dies and jacketing it in polymer insulation for shipboard power routing",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "EM1a"
       ],
@@ -1067,7 +1067,7 @@
       "letter": "c",
       "name": "Micro Reactor Assembly",
       "description": "Wiring capacitor banks through copper conduits to a heat-sinked reactor housing for compact shipboard power generation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "EM1a"
       ],
@@ -1123,7 +1123,7 @@
       "letter": "a",
       "name": "Containment Theory",
       "description": "Plasma containment principles improve warp field stability",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1137,7 +1137,7 @@
       "letter": "a",
       "name": "Distribution Networks",
       "description": "Efficient energy allocation reduces production bottlenecks",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1151,7 +1151,7 @@
       "letter": "a",
       "name": "Life Sign Detection",
       "description": "Biosensors identify optimal harvesting targets in organic fields",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1165,7 +1165,7 @@
       "letter": "a",
       "name": "Spectral Analysis",
       "description": "Automated spectral scanning identifies high-yield mineral deposits",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1179,7 +1179,7 @@
       "letter": "a",
       "name": "Power Diagnostics",
       "description": "Real-time power monitoring eliminates inefficient cycles",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1193,7 +1193,7 @@
       "letter": "a",
       "name": "Stress Modeling",
       "description": "Computational stress analysis improves structural component design",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1207,7 +1207,7 @@
       "letter": "b",
       "name": "Logic Array Fabrication",
       "description": "Etching conductive traces onto crystalline substrates and bonding them with ferromagnetic adhesive into layered circuit boards",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "IM1a"
       ],
@@ -1257,7 +1257,7 @@
       "letter": "a",
       "name": "Trajectory Modeling",
       "description": "Simulated trajectory optimization reduces conduit transit time",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1271,7 +1271,7 @@
       "letter": "b",
       "name": "Sensor Array Assembly",
       "description": "Aligning precision lens arrays and a signal-processing logic board inside a shielded metal housing for multi-spectrum scanning",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "IP1a"
       ],
@@ -1321,7 +1321,7 @@
       "letter": "a",
       "name": "Knowledge Networks",
       "description": "Shared knowledge databases improve baseline research outcomes",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1335,7 +1335,7 @@
       "letter": "b",
       "name": "Processing Core Assembly",
       "description": "Stacking logic array boards into a ventilated metal chassis and wiring them into a unified compute bus",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "IS1a"
       ],
@@ -1379,7 +1379,7 @@
       "letter": "a",
       "name": "Drill Calibration",
       "description": "Bio-responsive drill feedback reduces sample damage during mineral extraction.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1393,7 +1393,7 @@
       "letter": "a",
       "name": "Refinery Optimization",
       "description": "Mechanical refinement processes maximize mineral recovery rates",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1407,7 +1407,7 @@
       "letter": "a",
       "name": "Power Transmission",
       "description": "Efficient mechanical power transfer accelerates fabrication",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1421,7 +1421,7 @@
       "letter": "b",
       "name": "Heat Sink Fabrication",
       "description": "Extruding non-ferromagnetic fins and coating them with radiative ore compound for passive thermal dissipation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "ME1a"
       ],
@@ -1464,7 +1464,7 @@
       "letter": "a",
       "name": "CNC Precision",
       "description": "Computer-controlled tooling improves component tolerances",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1478,7 +1478,7 @@
       "letter": "b",
       "name": "Fabrication Bay Assembly",
       "description": "Bolting alloy frames together around a CNC-controlled work platform, routing power cables and logic circuits throughout",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "MI1a"
       ],
@@ -1535,7 +1535,7 @@
       "letter": "a",
       "name": "Field Stabilization",
       "description": "Mechanical dampeners improve warp field coherence",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1549,7 +1549,7 @@
       "letter": "b",
       "name": "Scout Chassis Blueprint",
       "description": "Unlocks the manufacture of Scout-class ship chassis at nexus station shipyards.",
-      "researchCost": 50,
+      "researchCost": 9,
       "prerequisites": [
         "MP1a"
       ],
@@ -1617,7 +1617,7 @@
       "letter": "a",
       "name": "Shift Optimization",
       "description": "Coordinated work schedules maximize fabrication uptime",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1631,7 +1631,7 @@
       "letter": "a",
       "name": "Irradiation Control",
       "description": "Precision radiation dosing improves material treatment and manufacturing quality.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1645,7 +1645,7 @@
       "letter": "a",
       "name": "Quantum Bonding",
       "description": "Quantum-level analysis improves molecular assembly precision",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1659,7 +1659,7 @@
       "letter": "a",
       "name": "Ignition Theory",
       "description": "Fusion reaction principles enable high-temperature processing",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1673,7 +1673,7 @@
       "letter": "b",
       "name": "Directed Energy Focus",
       "description": "Magnetic lensing concentrates particle beams into tighter impact profiles",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "PE1a"
       ],
@@ -1689,7 +1689,7 @@
       "letter": "a",
       "name": "Parallel Processing",
       "description": "Quantum parallelism expands research outcome possibilities",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1703,7 +1703,7 @@
       "letter": "a",
       "name": "Warp Field Theory",
       "description": "Fundamental warp mechanics improve conduit navigation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1717,7 +1717,7 @@
       "letter": "b",
       "name": "Lens Array Fabrication",
       "description": "Grinding crystalline gemstone into precision lenses, polishing with compound, and seating them in a metal mounting frame",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "PM1a"
       ],
@@ -1767,7 +1767,7 @@
       "letter": "c",
       "name": "Field Reinforcement",
       "description": "Layered electromagnetic containment fields absorb and disperse incoming energy",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "PM1a"
       ],
@@ -1783,7 +1783,7 @@
       "letter": "a",
       "name": "Discovery Protocols",
       "description": "Systematic research methods ensure consistent baseline quality",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1797,7 +1797,7 @@
       "letter": "b",
       "name": "Research Collaboration",
       "description": "Formalized collaboration structures accelerate discovery",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "PS1a"
       ],
@@ -1813,7 +1813,7 @@
       "letter": "a",
       "name": "Health Programs",
       "description": "Preventive health initiatives improve overall crew performance",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1827,7 +1827,7 @@
       "letter": "b",
       "name": "Biometric Conditioning",
       "description": "Physiological monitoring tailors crew training programs to individual performance profiles.",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "SB1a"
       ],
@@ -1843,7 +1843,7 @@
       "letter": "a",
       "name": "Supply Chain Management",
       "description": "Optimized logistics reduce material waste in production pipelines",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1857,7 +1857,7 @@
       "letter": "a",
       "name": "Power Rationing",
       "description": "Prioritized power allocation keeps critical systems at full capacity",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1871,7 +1871,7 @@
       "letter": "a",
       "name": "Training Programs",
       "description": "Structured training improves baseline research competency",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1885,7 +1885,7 @@
       "letter": "b",
       "name": "Knowledge Sharing",
       "description": "Cross-training initiatives create a more capable workforce",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "SI1a"
       ],
@@ -1901,7 +1901,7 @@
       "letter": "a",
       "name": "Extraction Crews",
       "description": "Specialized mining teams maximize extraction efficiency",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1915,7 +1915,7 @@
       "letter": "b",
       "name": "Tactical Core Assembly",
       "description": "Wiring logic arrays and capacitor banks through crystalline comm relays inside a hardened housing for fleet coordination",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "SM1a"
       ],
@@ -1972,7 +1972,7 @@
       "letter": "a",
       "name": "Team Structures",
       "description": "Optimized research team organization accelerates discovery",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "modifier",
       "modifier": {
@@ -1986,7 +1986,7 @@
       "letter": "b",
       "name": "Peer Review",
       "description": "Collaborative review processes catch errors before they compound",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "SP1a"
       ],
@@ -2002,7 +2002,7 @@
       "letter": "c",
       "name": "Structural Hardening",
       "description": "Strategic analysis of kinetic threat vectors improves hull reinforcement",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "SM1a"
       ],
@@ -2018,7 +2018,7 @@
       "letter": "a",
       "name": "Duranium Formulation",
       "description": "Fundamental alloy combining metallic strength with mineral hardness",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [],
       "type": "blueprint",
       "blueprint": {
@@ -2074,7 +2074,7 @@
       "letter": "b",
       "name": "Conductite Synthesis",
       "description": "Conductive alloy optimized for energy transfer and signal propagation",
-      "researchCost": 25,
+      "researchCost": 3,
       "prerequisites": [
         "CC1a"
       ],

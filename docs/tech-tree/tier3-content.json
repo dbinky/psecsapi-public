@@ -9,7 +9,7 @@
       "tier": 3,
       "name": "Synthetic Biology",
       "description": "Engineering biological systems from fundamental building blocks for novel applications",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BB2"
       ]
@@ -21,7 +21,7 @@
       "tier": 3,
       "name": "Xenometabolic Engineering",
       "description": "Designing custom metabolic pathways using alien biochemistry",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BC2",
         "BB3",
@@ -35,7 +35,7 @@
       "tier": 3,
       "name": "Bioluminescent Power",
       "description": "Harvesting photonic energy from engineered bioluminescent organisms",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BE2",
         "BB3",
@@ -49,7 +49,7 @@
       "tier": 3,
       "name": "Genetic Programming",
       "description": "Treating DNA as executable code for biological computation",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BI2",
         "BB3",
@@ -63,7 +63,7 @@
       "tier": 3,
       "name": "Bioprinting Systems",
       "description": "Layer-by-layer fabrication of complex biological structures",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BM2",
         "BB3",
@@ -77,7 +77,7 @@
       "tier": 3,
       "name": "Quantum Biophysics",
       "description": "Quantum effects in photosynthesis and enzyme catalysis",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BP2",
         "BB3",
@@ -91,7 +91,7 @@
       "tier": 3,
       "name": "Crew Augmentation",
       "description": "Organizational approaches to biological enhancement integration",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BS2",
         "BB3",
@@ -105,7 +105,7 @@
       "tier": 3,
       "name": "Enzymatic Manufacturing",
       "description": "Using engineered enzymes as precision manufacturing catalysts",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CB2",
         "CC3",
@@ -119,7 +119,7 @@
       "tier": 3,
       "name": "Molecular Architecture",
       "description": "Designing and assembling molecules with atomic precision",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CC2"
       ]
@@ -131,7 +131,7 @@
       "tier": 3,
       "name": "Plasma Electrochemistry",
       "description": "Chemical reactions driven by plasma energy states",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CE2",
         "CC3",
@@ -145,7 +145,7 @@
       "tier": 3,
       "name": "Predictive Synthesis",
       "description": "AI-driven prediction of novel compound properties before synthesis",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CI2",
         "CC3",
@@ -159,7 +159,7 @@
       "tier": 3,
       "name": "Metamaterial Engineering",
       "description": "Designing materials with properties not found in nature",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CM2",
         "CC3",
@@ -173,7 +173,7 @@
       "tier": 3,
       "name": "Plasma Chemistry",
       "description": "Chemical transformations using ionized matter states",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CP2",
         "CC3",
@@ -187,7 +187,7 @@
       "tier": 3,
       "name": "Chemical Automation",
       "description": "Fully autonomous chemical production with zero human oversight",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CS2",
         "CC3",
@@ -201,7 +201,7 @@
       "tier": 3,
       "name": "Photosynthetic Arrays",
       "description": "Engineered photosynthetic organisms for direct solar power conversion",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EB2",
         "EE3",
@@ -215,7 +215,7 @@
       "tier": 3,
       "name": "Plasma Propellants",
       "description": "Chemically-enhanced plasma for extreme thrust applications",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EC2",
         "EE3",
@@ -229,7 +229,7 @@
       "tier": 3,
       "name": "Plasma Dynamics",
       "description": "High-energy plasma containment and directed energy systems",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EE2"
       ]
@@ -241,7 +241,7 @@
       "tier": 3,
       "name": "Quantum Power Networks",
       "description": "Quantum-entangled sensors for instantaneous grid optimization",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EI2",
         "EE3",
@@ -255,7 +255,7 @@
       "tier": 3,
       "name": "Plasma Machinery",
       "description": "Mechanical systems designed to channel and shape plasma flows",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EM2",
         "EE3",
@@ -269,7 +269,7 @@
       "tier": 3,
       "name": "Tokamak Engineering",
       "description": "Practical implementation of sustained fusion power generation",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EP2",
         "EE3",
@@ -283,7 +283,7 @@
       "tier": 3,
       "name": "Energy Sovereignty",
       "description": "Self-sustaining power infrastructure requiring no external inputs",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "ES2",
         "EE3",
@@ -297,7 +297,7 @@
       "tier": 3,
       "name": "Neural Interface",
       "description": "Direct biological-digital communication pathways",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IB2",
         "II3",
@@ -311,7 +311,7 @@
       "tier": 3,
       "name": "Molecular Computing",
       "description": "Using molecular reactions as computational substrates",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IC2",
         "II3",
@@ -325,7 +325,7 @@
       "tier": 3,
       "name": "Autonomous Power AI",
       "description": "Self-evolving algorithms for energy system optimization",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IE2",
         "II3",
@@ -339,7 +339,7 @@
       "tier": 3,
       "name": "Cognitive Systems",
       "description": "Self-improving AI architectures with emergent reasoning capabilities",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "II2"
       ]
@@ -351,7 +351,7 @@
       "tier": 3,
       "name": "Self-Replicating Fabrication",
       "description": "Manufacturing systems capable of producing their own components",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IM2",
         "II3",
@@ -365,7 +365,7 @@
       "tier": 3,
       "name": "Quantum Simulation",
       "description": "Simulating quantum systems using quantum computational resources",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IP2",
         "II3",
@@ -379,7 +379,7 @@
       "tier": 3,
       "name": "Collective Intelligence",
       "description": "Network architectures enabling emergent group cognition",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IS2",
         "II3",
@@ -393,7 +393,7 @@
       "tier": 3,
       "name": "Biomechanical Synthesis",
       "description": "Growing mechanical components using biological processes",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MB2",
         "MM3",
@@ -407,7 +407,7 @@
       "tier": 3,
       "name": "Plasma Refining",
       "description": "Using plasma states for ultra-pure material separation",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MC2",
         "MM3",
@@ -421,7 +421,7 @@
       "tier": 3,
       "name": "Plasma Engines",
       "description": "Mechanical systems for directing high-energy plasma thrust",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "ME2",
         "MM3",
@@ -435,7 +435,7 @@
       "tier": 3,
       "name": "Swarm Manufacturing",
       "description": "Coordinated micro-fabricators working as unified systems",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MI2",
         "MM3",
@@ -449,7 +449,7 @@
       "tier": 3,
       "name": "Precision Engineering",
       "description": "Atomic-scale manufacturing tolerances and assembly techniques",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MM2"
       ]
@@ -461,7 +461,7 @@
       "tier": 3,
       "name": "Field Manipulation",
       "description": "Mechanical systems for shaping and directing force fields",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MP2",
         "MM3",
@@ -475,7 +475,7 @@
       "tier": 3,
       "name": "Autonomous Production",
       "description": "Self-organizing manufacturing with minimal human oversight",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MS2",
         "MM3",
@@ -489,7 +489,7 @@
       "tier": 3,
       "name": "Radiation Adaptation",
       "description": "Engineering organisms to thrive in high-radiation environments",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PB2",
         "PP3",
@@ -503,7 +503,7 @@
       "tier": 3,
       "name": "Transmutation Chemistry",
       "description": "Nuclear processes for elemental transformation",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PC2",
         "PP3",
@@ -517,7 +517,7 @@
       "tier": 3,
       "name": "Fusion Mastery",
       "description": "Complete control over sustained fusion reactions",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PE2",
         "PP3",
@@ -531,7 +531,7 @@
       "tier": 3,
       "name": "Quantum Cryptography",
       "description": "Information security based on quantum mechanical principles",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PI2",
         "PP3",
@@ -545,7 +545,7 @@
       "tier": 3,
       "name": "Field Emitter Design",
       "description": "Advanced field generators for shields and weapons",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PM2",
         "PP3",
@@ -559,7 +559,7 @@
       "tier": 3,
       "name": "Field Theory",
       "description": "Unified understanding of force field generation and manipulation",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PP2"
       ]
@@ -571,7 +571,7 @@
       "tier": 3,
       "name": "Research Consortiums",
       "description": "Multi-organizational collaboration for breakthrough discoveries",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PS2",
         "PP3",
@@ -585,7 +585,7 @@
       "tier": 3,
       "name": "Regenerative Medicine",
       "description": "Organizational integration of advanced healing technologies",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SB2",
         "SS3",
@@ -599,7 +599,7 @@
       "tier": 3,
       "name": "Molecular Logistics",
       "description": "Tracking and managing resources at the molecular level",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SC2",
         "SS3",
@@ -613,7 +613,7 @@
       "tier": 3,
       "name": "Grid Resilience",
       "description": "Self-healing power networks with predictive failure avoidance",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SE2",
         "SS3",
@@ -627,7 +627,7 @@
       "tier": 3,
       "name": "Adaptive Training",
       "description": "AI-driven personalized learning for accelerated skill acquisition",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SI2",
         "SS3",
@@ -641,7 +641,7 @@
       "tier": 3,
       "name": "Autonomous Workforce",
       "description": "Human-machine collaboration optimized through organizational design",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SM2",
         "SS3",
@@ -655,7 +655,7 @@
       "tier": 3,
       "name": "Discovery Networks",
       "description": "Global collaboration infrastructure for breakthrough physics research",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SP2",
         "SS3",
@@ -669,7 +669,7 @@
       "tier": 3,
       "name": "Organizational Excellence",
       "description": "Peak efficiency in crew management and fleet coordination",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SS2"
       ]
@@ -682,7 +682,7 @@
       "letter": "a",
       "name": "Xenometabolic Catalysis",
       "description": "Alien enzyme pathways achieve unprecedented extraction rates",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BC2a"
       ],
@@ -698,7 +698,7 @@
       "letter": "b",
       "name": "Bioreactor Chamber Assembly",
       "description": "Cultivating engineered microbiomes inside temperature-cycled fermentation vessels lined with nutrient-wicking membranes",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BC3a",
         "BI2b"
@@ -757,7 +757,7 @@
       "letter": "a",
       "name": "Advanced Capture",
       "description": "Symbiotic energy-harvesting organisms tuned to specific radiation bands achieve unprecedented energetic extraction efficiency from stellar and geothermal sources.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BE2a"
       ],
@@ -773,7 +773,7 @@
       "letter": "a",
       "name": "Protein Fold Computing",
       "description": "Synthetic protein lattices execute massively parallel fold-state computations that outpace silicon for research simulations.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BI2a"
       ],
@@ -789,7 +789,7 @@
       "letter": "b",
       "name": "Gene Sequencer Array Assembly",
       "description": "Arraying parallel gene-reading heads across a cryo-cooled optical bus for high-throughput sequence analysis",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BI2b",
         "IM2b"
@@ -853,7 +853,7 @@
       "letter": "a",
       "name": "Bioprinting Precision",
       "description": "Layer-by-layer construction maximizes biological sample recovery",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BM2a"
       ],
@@ -869,7 +869,7 @@
       "letter": "a",
       "name": "Quantum Catalysis",
       "description": "Quantum tunneling effects accelerate enzymatic extraction",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BP2a"
       ],
@@ -885,7 +885,7 @@
       "letter": "a",
       "name": "Augmentation Integration",
       "description": "Biological enhancements seamlessly integrated into crew operations",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BS2a"
       ],
@@ -901,7 +901,7 @@
       "letter": "b",
       "name": "Medical Bay Assembly",
       "description": "Installing surgical suites and regeneration pods within a hermetically sealed, gravity-stabilized hull compartment",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BS2b",
         "SB2a"
@@ -965,7 +965,7 @@
       "letter": "a",
       "name": "Phage-Assisted Separation",
       "description": "Engineered bacteriophages selectively bind target compounds, pulling them from raw slurries with near-perfect specificity.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CB2a"
       ],
@@ -981,7 +981,7 @@
       "letter": "a",
       "name": "Plasma Electrolysis",
       "description": "Plasma-driven reactions create ultra-dense energy storage",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CE2a"
       ],
@@ -997,7 +997,7 @@
       "letter": "b",
       "name": "Zero-Point Core Assembly",
       "description": "Suspending a vacuum-fluctuation harvester inside nested electromagnetic containment shells",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CE2b",
         "PE2b"
@@ -1056,7 +1056,7 @@
       "letter": "a",
       "name": "Reaction Path Optimization",
       "description": "Computational chemistry identifies the lowest-energy reaction pathways, eliminating wasted reagent in extraction cycles.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CI2a"
       ],
@@ -1072,7 +1072,7 @@
       "letter": "a",
       "name": "Metamaterial Synthesis",
       "description": "Designer materials with impossible natural properties",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CM2a"
       ],
@@ -1088,7 +1088,7 @@
       "letter": "b",
       "name": "Crystalline Lattice Assembly",
       "description": "Growing crystal seed layers atom by atom in a zero-gravity deposition chamber",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CM2b",
         "PM2b"
@@ -1141,7 +1141,7 @@
       "letter": "a",
       "name": "Plasma Catalysis",
       "description": "Ionized matter states accelerate high-temperature fabrication",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CP2a"
       ],
@@ -1157,7 +1157,7 @@
       "letter": "a",
       "name": "Autonomous Chemistry",
       "description": "Self-managing chemical plants with zero manual intervention",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CS2a"
       ],
@@ -1173,7 +1173,7 @@
       "letter": "a",
       "name": "Photosynthetic Collectors",
       "description": "Engineered chloroplast arrays convert stellar radiation into harvestable energy with living-system efficiency.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EB2a"
       ],
@@ -1189,7 +1189,7 @@
       "letter": "a",
       "name": "Plasma Injection",
       "description": "Chemically-enhanced plasma dramatically accelerates production",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EC2a"
       ],
@@ -1205,7 +1205,7 @@
       "letter": "b",
       "name": "Plasma Nozzle Assembly",
       "description": "Extreme-performance propulsion component for high-thrust applications",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EC2b",
         "EP2a"
@@ -1264,7 +1264,7 @@
       "letter": "a",
       "name": "Quantum Grid Optimization",
       "description": "Quantum-entangled sensors enable instantaneous power redistribution",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EI2a"
       ],
@@ -1280,7 +1280,7 @@
       "letter": "a",
       "name": "Plasma Turbines",
       "description": "Plasma-driven rotating machinery for extreme power output",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EM2a"
       ],
@@ -1296,7 +1296,7 @@
       "letter": "b",
       "name": "Quantum Conduit Assembly",
       "description": "Establishing quantum-tunneling junctions between superconductor segments in a magnetically shielded conduit sleeve",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EM2b",
         "PI2a"
@@ -1349,7 +1349,7 @@
       "letter": "a",
       "name": "Tokamak Optimization",
       "description": "Optimized toroidal geometry maximizes warp field efficiency",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EP2a"
       ],
@@ -1365,7 +1365,7 @@
       "letter": "b",
       "name": "Pulse Laser Assembly",
       "description": "Focusing a gain medium between resonant mirrors and coupling the output to a beam-steering gimbal",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EP3a",
         "PM3b"
@@ -1438,7 +1438,7 @@
       "letter": "a",
       "name": "Self-Sustaining Grids",
       "description": "Power networks that maintain themselves indefinitely",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "ES2a"
       ],
@@ -1454,7 +1454,7 @@
       "letter": "a",
       "name": "Neural Targeting",
       "description": "Direct neural link enables pinpoint biological extraction",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IB2a"
       ],
@@ -1470,7 +1470,7 @@
       "letter": "a",
       "name": "Molecular Computation",
       "description": "Chemical reactions as computational substrates for mining analysis",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IC2a"
       ],
@@ -1486,7 +1486,7 @@
       "letter": "b",
       "name": "Deep Scanner Assembly",
       "description": "Stacking molecular-resolution sensor planes behind an adaptive optics array with vibration-compensating mounts",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IC2b",
         "PM2b"
@@ -1550,7 +1550,7 @@
       "letter": "a",
       "name": "Autonomous Power Management",
       "description": "Self-evolving AI optimizes power for peak manufacturing throughput",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IE2a"
       ],
@@ -1566,7 +1566,7 @@
       "letter": "a",
       "name": "Self-Replicating Tools",
       "description": "Manufacturing systems that produce their own replacement parts",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IM2a"
       ],
@@ -1582,7 +1582,7 @@
       "letter": "b",
       "name": "Quantum Lattice Fabrication",
       "description": "Etching quantum logic gates onto crystalline substrates in a particle-free vacuum forge",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IM2b",
         "PI2a"
@@ -1635,7 +1635,7 @@
       "letter": "a",
       "name": "Quantum Field Simulation",
       "description": "Simulating warp fields in quantum space before generation",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IP2a"
       ],
@@ -1651,7 +1651,7 @@
       "letter": "a",
       "name": "Emergent Intelligence",
       "description": "Network effects multiply individual researcher contributions",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IS2a"
       ],
@@ -1667,7 +1667,7 @@
       "letter": "b",
       "name": "Quantum Research Lab Assembly",
       "description": "Integrating quantum processors and holographic data stores into a shielded research module chassis",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IS2b",
         "PI2a"
@@ -1731,7 +1731,7 @@
       "letter": "a",
       "name": "Tremor-Sense Drilling",
       "description": "Bio-acoustic feedback loops guide drill heads along natural fracture lines to maximize ore recovery.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MB2a"
       ],
@@ -1747,7 +1747,7 @@
       "letter": "a",
       "name": "Plasma Separation",
       "description": "Plasma states enable atomic-level mineral purification",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MC2a"
       ],
@@ -1763,7 +1763,7 @@
       "letter": "b",
       "name": "Plasma Drill Assembly",
       "description": "Channeling plasma through magnetic nozzles into a refractory-lined extraction head",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MC2b",
         "EP2a"
@@ -1833,7 +1833,7 @@
       "letter": "a",
       "name": "Plasma Drive Tuning",
       "description": "Optimized plasma channeling maximizes propulsion efficiency",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "ME2a"
       ],
@@ -1849,7 +1849,7 @@
       "letter": "b",
       "name": "Active Thermal Array Assembly",
       "description": "Embedding phase-change heat pipes in an actively pumped radiator manifold with dynamic fin geometry",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "ME2b",
         "EM2b"
@@ -1908,7 +1908,7 @@
       "letter": "a",
       "name": "Swarm Precision",
       "description": "Coordinated micro-fabricators achieve unprecedented accuracy",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MI2a"
       ],
@@ -1924,7 +1924,7 @@
       "letter": "b",
       "name": "Molecular Assembler Assembly",
       "description": "Programming molecular manipulator arms and sealing them inside an atomically clean assembly chamber",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MI2b",
         "IM3b"
@@ -1988,7 +1988,7 @@
       "letter": "a",
       "name": "Field Geometry",
       "description": "Optimized field shapes dramatically improve warp stability",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MP2a"
       ],
@@ -2004,7 +2004,7 @@
       "letter": "a",
       "name": "Self-Organization",
       "description": "Manufacturing systems that optimize themselves continuously",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MS2a"
       ],
@@ -2020,7 +2020,7 @@
       "letter": "a",
       "name": "Advanced Optimization",
       "description": "Merges Physics and Biology to improve manufacturing precision and material quality.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PB2a"
       ],
@@ -2036,7 +2036,7 @@
       "letter": "a",
       "name": "Transmutation Catalysts",
       "description": "Elemental transformation dramatically improves quality",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PC2a"
       ],
@@ -2052,7 +2052,7 @@
       "letter": "a",
       "name": "Sustained Fusion Manufacturing",
       "description": "Perfect fusion control enables maximum manufacturing speed",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PE2a"
       ],
@@ -2068,7 +2068,7 @@
       "letter": "b",
       "name": "Fusion Reactor Assembly",
       "description": "Confining deuterium-tritium plasma in a toroidal magnetic bottle with superconducting field coils",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PE2b",
         "EP3a"
@@ -2145,7 +2145,7 @@
       "letter": "c",
       "name": "Coherent Beams",
       "description": "Phase-locked emitter arrays produce perfectly coherent beams that resist atmospheric scattering",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PE3a"
       ],
@@ -2161,7 +2161,7 @@
       "letter": "a",
       "name": "Quantum Verification",
       "description": "Quantum-secured research data expands discovery potential",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PI2a"
       ],
@@ -2177,7 +2177,7 @@
       "letter": "a",
       "name": "Field Emitter Tuning",
       "description": "Precision field generators maximize warp efficiency",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PM2a"
       ],
@@ -2193,7 +2193,7 @@
       "letter": "b",
       "name": "Field Emitter Assembly",
       "description": "Winding field-shaping coils around a resonant cavity and calibrating emitter phase alignment",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PM2b",
         "EP2a"
@@ -2252,7 +2252,7 @@
       "letter": "c",
       "name": "Mass Driver Assembly",
       "description": "Magnetically-accelerated projectile weapon for ship mounting",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PM3a"
       ],
@@ -2315,7 +2315,7 @@
       "letter": "d",
       "name": "Field Harmonization",
       "description": "Synchronized field oscillations create constructive interference patterns that nullify incoming energy",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PM3a"
       ],
@@ -2331,7 +2331,7 @@
       "letter": "a",
       "name": "Consortium Review",
       "description": "Multi-organization review ensures research breakthrough quality",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PS2a"
       ],
@@ -2347,7 +2347,7 @@
       "letter": "b",
       "name": "Research Accelerator Networks",
       "description": "Interconnected facilities dramatically speed discovery",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PS2b"
       ],
@@ -2363,7 +2363,7 @@
       "letter": "a",
       "name": "Regenerative Protocols",
       "description": "Advanced healing technologies minimize crew downtime",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SB2a"
       ],
@@ -2379,7 +2379,7 @@
       "letter": "b",
       "name": "Immersive Combat Sims",
       "description": "Full-body neural simulations compress years of operational experience into weeks of accelerated training.",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SB2b"
       ],
@@ -2395,7 +2395,7 @@
       "letter": "a",
       "name": "Molecular Tracking",
       "description": "Tracking resources at the molecular level eliminates all waste",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SC2a"
       ],
@@ -2411,7 +2411,7 @@
       "letter": "a",
       "name": "Self-Healing Networks",
       "description": "Power networks that automatically repair and optimize",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SE2a"
       ],
@@ -2427,7 +2427,7 @@
       "letter": "a",
       "name": "Personalized Learning",
       "description": "AI-driven training adapts to each crew member's needs",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SI2a"
       ],
@@ -2443,7 +2443,7 @@
       "letter": "b",
       "name": "Elite Training Programs",
       "description": "Peak performance training creates exceptional crews",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SI2b"
       ],
@@ -2459,7 +2459,7 @@
       "letter": "a",
       "name": "Human-Machine Teams",
       "description": "Optimal human-robot collaboration maximizes extraction yield",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SM2a"
       ],
@@ -2475,7 +2475,7 @@
       "letter": "b",
       "name": "Fleet Command Center Assembly",
       "description": "Networking tactical processors through redundant quantum-encrypted links in a hardened command module",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SM2b",
         "IS3b"
@@ -2539,7 +2539,7 @@
       "letter": "a",
       "name": "Global Networks",
       "description": "Interstellar collaboration accelerates breakthrough research",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SP2a"
       ],
@@ -2555,7 +2555,7 @@
       "letter": "b",
       "name": "Rigor Standards",
       "description": "Extreme verification standards maximize research potential",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "SP2b"
       ],
@@ -2571,7 +2571,7 @@
       "letter": "c",
       "name": "Targeting Array Assembly",
       "description": "Synchronizing sensor feeds through a ballistic computer with predictive trajectory modeling",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "IC3a",
         "PM2b"
@@ -2629,7 +2629,7 @@
       "letter": "b",
       "name": "Chemical Processor Assembly",
       "description": "Plumbing multi-stage reaction columns with automated reagent dosing and thermal feedback loops",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CS2b",
         "CI2a"
@@ -2693,7 +2693,7 @@
       "letter": "c",
       "name": "Energetic Collector Assembly",
       "description": "Deploying magnetic funnels and plasma scoops around a shielded collection manifold",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EC2c",
         "ME3a"
@@ -2757,7 +2757,7 @@
       "letter": "c",
       "name": "Reinforced Hull Assembly",
       "description": "Laminating metamaterial layers onto a stress-tested frame with impact-dispersing interlayers",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CM2c",
         "CM3a"
@@ -2815,7 +2815,7 @@
       "letter": "c",
       "name": "Fusion Drive Assembly",
       "description": "Compact fusion propulsion delivering meaningful speed gains",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "EM3a"
       ],
@@ -2878,7 +2878,7 @@
       "letter": "c",
       "name": "Magnetic Focusing",
       "description": "Mechanical precision applied to magnetic acceleration systems",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "MP3a"
       ],
@@ -2894,7 +2894,7 @@
       "letter": "d",
       "name": "Corvette Chassis Blueprint",
       "description": "Unlocks the manufacture of Corvette-class ship chassis at nexus station shipyards.",
-      "researchCost": 200,
+      "researchCost": 330,
       "prerequisites": [
         "MC2c",
         "MP3a"
@@ -3018,7 +3018,7 @@
       "letter": "e",
       "name": "Frigate Chassis Blueprint",
       "description": "Unlocks the manufacture of Frigate-class ship chassis at nexus station shipyards.",
-      "researchCost": 200,
+      "researchCost": 330,
       "prerequisites": [
         "MP3d"
       ],
@@ -3164,7 +3164,7 @@
       "letter": "c",
       "name": "Quantum Disruption Theory",
       "description": "Theoretical frameworks for destabilizing matter through quantum effects",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PI3a"
       ],
@@ -3180,7 +3180,7 @@
       "letter": "c",
       "name": "Quantum Stabilizer Assembly",
       "description": "Stabilizes local quantum fields to resist quantum disruption",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BP3a"
       ],
@@ -3245,7 +3245,7 @@
       "letter": "d",
       "name": "Quantum Dampening Field",
       "description": "Advanced physics principles enhance quantum resistance",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "BP3a"
       ],
@@ -3261,7 +3261,7 @@
       "letter": "d",
       "name": "Reactive Plating Composites",
       "description": "Advanced material science creates composites that redirect kinetic energy",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CM3a"
       ],
@@ -3277,7 +3277,7 @@
       "letter": "e",
       "name": "Magnetic Accelerator Assembly",
       "description": "Winding precision electromagnetic coils around a superconductor-lined barrel with staged capacitor banks",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CM3a"
       ],
@@ -3327,7 +3327,7 @@
       "letter": "f",
       "name": "Quantum Stabilizer Core Assembly",
       "description": "Tuning resonance dampeners around a quantum-locked core using interferometric calibration",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CM3a"
       ],
@@ -3377,7 +3377,7 @@
       "letter": "e",
       "name": "Deflector Array Assembly",
       "description": "Overlapping energy fields that scatter incoming beam weapons across harmless frequencies",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "PM3a"
       ],
@@ -3433,7 +3433,7 @@
       "letter": "a",
       "name": "Ferrosite Synthesis",
       "description": "Magnetically aligned alloy with exceptional tensile strength from ferromagnetic bonds",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [],
       "type": "blueprint",
       "blueprint": {
@@ -3489,7 +3489,7 @@
       "letter": "b",
       "name": "Crystalide Refinement",
       "description": "Crystalline lattice alloy with high energy damping from gemstone molecular structures",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CC3a"
       ],
@@ -3547,7 +3547,7 @@
       "letter": "c",
       "name": "Volatite Distillation",
       "description": "Volatile compound alloy harnessing reactive gas energy for enhanced penetration",
-      "researchCost": 156,
+      "researchCost": 110,
       "prerequisites": [
         "CC3a"
       ],
