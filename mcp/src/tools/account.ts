@@ -8,31 +8,26 @@ interface UserProfile {
   name?: string;
   ownedCorps?: string[];
   tokens?: number;
-  [key: string]: unknown;
 }
 
 interface CorpDetails {
   entityId?: string;
   name?: string;
   credits?: number;
-  [key: string]: unknown;
 }
 
 interface CorpFleetsData {
   corpFleets?: string[];
-  [key: string]: unknown;
 }
 
 interface AccountResearchStatus {
-  activeProjects?: Array<{ targetId: string; allocationPercent: number; [key: string]: unknown }>;
+  activeProjects?: Array<{ targetId: string; allocationPercent: number; }>;
   totalCapacity?: number;
   totalAllocation?: number;
-  [key: string]: unknown;
 }
 
 interface ManufacturingStatus {
-  jobs?: Array<{ jobId: string; [key: string]: unknown }>;
-  [key: string]: unknown;
+  jobs?: Array<{ jobId: string; }>;
 }
 
 export function registerAccountTools(
@@ -245,10 +240,8 @@ export function registerAccountTools(
           source?: string;
           id?: string;
           data?: Record<string, unknown>;
-          [key: string]: unknown;
         }>;
         cursor?: string | null;
-        [key: string]: unknown;
       }
 
       const queryOptions: { query?: Record<string, string | number> } = { query: {} };

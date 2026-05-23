@@ -1,7 +1,6 @@
-namespace psecsapi.api.models.Market
+namespace psecsapi.api.models.Market;
+
+public class PlaceBidRequest
 {
-    public class PlaceBidRequest
-    {
-        public long Amount { get; set; }
-    }
+    public long Amount { get; set; }
 }

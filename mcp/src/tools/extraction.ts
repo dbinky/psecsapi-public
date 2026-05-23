@@ -9,7 +9,6 @@ interface ExtractionFleetInfo {
   sectorId?: string;
   status?: string;
   ships?: string[];
-  [key: string]: unknown;
 }
 
 interface ExtractionJobStatus {
@@ -20,7 +19,6 @@ interface ExtractionJobStatus {
   accumulatedQuantity?: number;
   quantityLimit?: number;
   startTime?: string;
-  [key: string]: unknown;
 }
 
 interface ExtractionStartResult {
@@ -31,7 +29,6 @@ interface ExtractionStartResult {
   accumulatedQuantity?: number;
   quantityLimit?: number;
   startTime?: string;
-  [key: string]: unknown;
 }
 
 interface DeepScanResource {
@@ -43,12 +40,10 @@ interface DeepScanResource {
   density?: number;
   propertyAssessments?: Record<string, string>;
   propertyValues?: Record<string, number>;
-  [key: string]: unknown;
 }
 
 interface ExtractionModifiers {
   modifiers?: Record<string, number>;
-  [key: string]: unknown;
 }
 
 interface MaterializationResult {
@@ -57,7 +52,6 @@ interface MaterializationResult {
   rawResourceId?: string;
   resourceName?: string;
   materializedQuantity?: number;
-  [key: string]: unknown;
 }
 
 export function registerExtractionTools(

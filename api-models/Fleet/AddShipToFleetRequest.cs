@@ -1,10 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace psecsapi.api.models.Fleet
+namespace psecsapi.api.models.Fleet;
+
+public class AddShipToFleetRequest
 {
-    public class AddShipToFleetRequest
-    {
-        [Required]
-        public Guid ShipId { get; set; }
-    }
+    [Required]
+    public Guid ShipId { get; set; }
 }

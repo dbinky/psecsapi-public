@@ -1,4 +1,4 @@
-namespace psecsapi.api.Models.Mint;
+namespace psecsapi.api.models.Mint;
 
 [Serializable]
 public class MintBurnResponseModel

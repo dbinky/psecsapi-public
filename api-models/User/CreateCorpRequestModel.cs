@@ -1,4 +1,4 @@
-﻿namespace psecsapi.api.Models.User
+﻿namespace psecsapi.api.models.User
 {
     public class CreateCorpRequestModel
     {

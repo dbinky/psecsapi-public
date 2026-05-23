@@ -1,7 +1,6 @@
-namespace psecsapi.api.models.Research
+namespace psecsapi.api.models.Research;
+
+public class ResearchModifiersResponseModel
 {
-    public class ResearchModifiersResponseModel
-    {
-        public Dictionary<string, decimal> Modifiers { get; set; } = new();
-    }
+    public Dictionary<string, decimal> Modifiers { get; set; } = new();
 }

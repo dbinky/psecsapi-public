@@ -8,7 +8,6 @@ interface FleetInfo {
   sectorId?: string;
   status?: string;
   ships?: string[];
-  [key: string]: unknown;
 }
 
 interface LootField {
@@ -18,11 +17,9 @@ interface LootField {
   itemCount?: number;
   isExclusive?: boolean;
   expiresAt?: string;
-  [key: string]: unknown;
 }
 
 interface PickupResult {
-  [key: string]: unknown;
 }
 
 export function registerLootTools(

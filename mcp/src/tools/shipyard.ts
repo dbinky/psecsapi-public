@@ -13,7 +13,6 @@ interface ShipCatalogEntry {
   baseStructurePoints?: number;
   baseHullPoints?: number;
   baseMass?: number;
-  [key: string]: unknown;
 }
 
 interface ShipyardQueueEntry {
@@ -23,14 +22,12 @@ interface ShipyardQueueEntry {
   estimatedMinutesRemaining?: number;
   isOwnOrder?: boolean;
   placedTimestamp?: string;
-  [key: string]: unknown;
 }
 
 interface ShipyardQueueResponse {
   currentBuild?: ShipyardQueueEntry;
   queuedBuilds?: ShipyardQueueEntry[];
   totalQueueDepth?: number;
-  [key: string]: unknown;
 }
 
 interface CompletedOrderEntry {
@@ -42,29 +39,26 @@ interface CompletedOrderEntry {
   exteriorSlots?: number;
   totalSlots?: number;
   completedTimestamp?: string;
-  [key: string]: unknown;
 }
 
 interface CompletedOrdersResponse {
   orders?: CompletedOrderEntry[];
   total?: number;
-  [key: string]: unknown;
 }
 
 interface ChassisBlueprintDetail {
   blueprintId?: string;
   chassisClass?: string;
   baseWorkUnitsPerSlot?: number;
-  baseInputResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; [key: string]: unknown }>;
-  baseInputComponents?: Array<{ label?: string; componentType?: string; quantity?: number; [key: string]: unknown }>;
-  perInteriorSlotInputResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; [key: string]: unknown }>;
-  perInteriorSlotInputComponents?: Array<{ label?: string; componentType?: string; quantity?: number; [key: string]: unknown }>;
-  perExteriorSlotInputResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; [key: string]: unknown }>;
-  perExteriorSlotInputComponents?: Array<{ label?: string; componentType?: string; quantity?: number; [key: string]: unknown }>;
-  calculatedTotalResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; [key: string]: unknown }>;
-  calculatedTotalComponents?: Array<{ label?: string; componentType?: string; quantity?: number; [key: string]: unknown }>;
+  baseInputResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; }>;
+  baseInputComponents?: Array<{ label?: string; componentType?: string; quantity?: number; }>;
+  perInteriorSlotInputResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; }>;
+  perInteriorSlotInputComponents?: Array<{ label?: string; componentType?: string; quantity?: number; }>;
+  perExteriorSlotInputResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; }>;
+  perExteriorSlotInputComponents?: Array<{ label?: string; componentType?: string; quantity?: number; }>;
+  calculatedTotalResources?: Array<{ label?: string; qualifier?: string; value?: string; quantity?: number; }>;
+  calculatedTotalComponents?: Array<{ label?: string; componentType?: string; quantity?: number; }>;
   calculatedTotalWorkUnits?: number;
-  [key: string]: unknown;
 }
 
 interface BuildOrderResult {
@@ -75,7 +69,6 @@ interface BuildOrderResult {
   queuePosition?: number;
   estimatedMinutes?: number;
   buildFee?: number;
-  [key: string]: unknown;
 }
 
 interface PickupResult {
@@ -83,7 +76,6 @@ interface PickupResult {
   errorMessage?: string;
   shipId?: string;
   shipDetail?: Record<string, unknown>;
-  [key: string]: unknown;
 }
 
 export function registerShipyardTools(

@@ -1,9 +1,8 @@
-namespace psecsapi.api.models.Fleet
+namespace psecsapi.api.models.Fleet;
+
+public class FleetSummaryResponseModel
 {
-    public class FleetSummaryResponseModel
-    {
-        public Guid FleetId { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public int ShipCount { get; set; }
-    }
+    public Guid FleetId { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public int ShipCount { get; set; }
 }

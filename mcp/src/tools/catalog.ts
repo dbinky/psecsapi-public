@@ -6,7 +6,6 @@ import { formatToolResult, formatToolError } from "../tool-utils.js";
 interface UserProfile {
   entityId?: string;
   ownedCorps?: string[];
-  [key: string]: unknown;
 }
 
 interface CatalogEntry {
@@ -27,7 +26,6 @@ interface CatalogEntry {
   discoveredByUserId?: string;
   isFavorite?: boolean;
   note?: string | null;
-  [key: string]: unknown;
 }
 
 export function registerCatalogTools(

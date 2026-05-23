@@ -6,14 +6,12 @@ import { formatToolResult, formatToolError } from "../tool-utils.js";
 interface CargoTransferResult {
   success?: boolean;
   errorMessage?: string;
-  [key: string]: unknown;
 }
 
 interface CargoSplitResult {
   success?: boolean;
   newAssetId?: string;
   errorMessage?: string;
-  [key: string]: unknown;
 }
 
 export function registerCargoTools(

@@ -23,7 +23,6 @@ interface ShipDetail {
     isEnabled?: boolean;
     interiorSlotsRequired?: number;
     exteriorSlotsRequired?: number;
-    [key: string]: unknown;
   }>;
   capabilities?: unknown[];
   requirements?: unknown[];
@@ -31,7 +30,6 @@ interface ShipDetail {
   totalInteriorSlots?: number;
   totalExteriorSlots?: number;
   shipMass?: number;
-  [key: string]: unknown;
 }
 
 interface ModuleInstallResult {
@@ -42,7 +40,6 @@ interface ModuleInstallResult {
   exteriorSlotsUsed?: number;
   interiorSlotsAvailable?: number;
   exteriorSlotsAvailable?: number;
-  [key: string]: unknown;
 }
 
 interface ModuleUninstallResult {
@@ -50,7 +47,6 @@ interface ModuleUninstallResult {
   errorMessage?: string;
   uninstalledModuleNames?: string[];
   boxedModuleIds?: string[];
-  [key: string]: unknown;
 }
 
 interface CargoItem {
@@ -59,7 +55,6 @@ interface CargoItem {
   name?: string;
   quantity?: number;
   mass?: number;
-  [key: string]: unknown;
 }
 
 interface CargoInspectResult {
@@ -77,7 +72,6 @@ interface CargoInspectResult {
   moduleCapabilities?: unknown[];
   moduleRequirements?: unknown[];
   alloyProperties?: Record<string, number>;
-  [key: string]: unknown;
 }
 
 export function registerShipTools(

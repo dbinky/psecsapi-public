@@ -1,7 +1,6 @@
-namespace psecsapi.api.models.Research
+namespace psecsapi.api.models.Research;
+
+public class ResearchStopRequestModel
 {
-    public class ResearchStopRequestModel
-    {
-        public string TargetId { get; set; } = string.Empty;
-    }
+    public string TargetId { get; set; } = string.Empty;
 }

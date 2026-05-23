@@ -7,13 +7,11 @@ interface EngageCombatResult {
   success?: boolean;
   combatId?: string;
   errorMessage?: string;
-  [key: string]: unknown;
 }
 
 interface CombatStatus {
   combatId?: string;
   status?: string;
-  [key: string]: unknown;
 }
 
 interface CombatSummary {
@@ -28,7 +26,6 @@ interface CombatSummary {
   shipsDestroyed?: string[];
   shipsFled?: string[];
   timestamp?: string;
-  [key: string]: unknown;
 }
 
 export function registerCombatTools(

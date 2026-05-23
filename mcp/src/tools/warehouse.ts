@@ -16,7 +16,6 @@ interface WarehouseItem {
   depositRemaining?: number;
   nextBillingTime?: string;
   gracePeriodStart?: string | null;
-  [key: string]: unknown;
 }
 
 interface WarehouseContents {
@@ -25,7 +24,6 @@ interface WarehouseContents {
   freeTierCapacity?: number;
   freeTierUsed?: number;
   paidTierUsed?: number;
-  [key: string]: unknown;
 }
 
 interface WarehouseSummary {
@@ -36,7 +34,6 @@ interface WarehouseSummary {
   paidTierUsed?: number;
   dailyBillingTotal?: number;
   itemsInGracePeriod?: number;
-  [key: string]: unknown;
 }
 
 interface WarehouseDepositResponse {
@@ -45,7 +42,6 @@ interface WarehouseDepositResponse {
   massDeposited?: number;
   creditsCharged?: number;
   errorMessage?: string;
-  [key: string]: unknown;
 }
 
 interface WarehouseWithdrawResponse {
@@ -54,7 +50,6 @@ interface WarehouseWithdrawResponse {
   itemsPromoted?: number;
   promotionRefund?: number;
   errorMessage?: string;
-  [key: string]: unknown;
 }
 
 function formatItem(item: WarehouseItem) {

@@ -16,7 +16,6 @@ interface MarketListingItem {
   expiresAt?: string;
   timeRemaining?: string;
   description?: string;
-  [key: string]: unknown;
 }
 
 interface MarketListingResponse {
@@ -25,7 +24,6 @@ interface MarketListingResponse {
   pageSize?: number;
   totalItems?: number;
   totalPages?: number;
-  [key: string]: unknown;
 }
 
 interface MyBidsItem {
@@ -39,7 +37,6 @@ interface MyBidsItem {
   timeRemaining?: string;
   yourBidAmount?: number;
   bidStatus?: string;
-  [key: string]: unknown;
 }
 
 interface SaleDetails {
@@ -63,7 +60,6 @@ interface SaleDetails {
   pickupWindowEndsAt?: string;
   timeRemaining?: string;
   storageFeesPaid?: number;
-  [key: string]: unknown;
 }
 
 interface SaleResult {
@@ -76,7 +72,6 @@ interface SaleResult {
   creditsTransferred?: number;
   expiresAt?: string;
   pickupWindowEndsAt?: string;
-  [key: string]: unknown;
 }
 
 export function registerMarketTools(

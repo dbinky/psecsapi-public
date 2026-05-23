@@ -5,11 +5,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace psecsapi.api.models.Fleet
+namespace psecsapi.api.models.Fleet;
+
+public class FleetScanResponseModel
 {
-    public class FleetScanResponseModel
-    {
-        public SpaceSectorResponseModel? Sector { get; set; }
-        public List<ConduitResponseModel> Conduits { get; set; } = new List<ConduitResponseModel>();
-    }
+    public SpaceSectorResponseModel? Sector { get; set; }
+    public List<ConduitResponseModel> Conduits { get; set; } = new List<ConduitResponseModel>();
 }

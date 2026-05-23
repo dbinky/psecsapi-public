@@ -1,28 +1,27 @@
 using System.Text.Json.Serialization;
 
-namespace psecsapi.api.models.Events
+namespace psecsapi.api.models.Events;
+
+public class CloudEventModel
 {
-    public class CloudEventModel
-    {
-        [JsonPropertyName("specversion")]
-        public string SpecVersion { get; set; } = "1.0";
+    [JsonPropertyName("specversion")]
+    public string SpecVersion { get; set; } = "1.0";
 
-        [JsonPropertyName("id")]
-        public string Id { get; set; } = string.Empty;
+    [JsonPropertyName("id")]
+    public string Id { get; set; } = string.Empty;
 
-        [JsonPropertyName("source")]
-        public string Source { get; set; } = string.Empty;
+    [JsonPropertyName("source")]
+    public string Source { get; set; } = string.Empty;
 
-        [JsonPropertyName("type")]
-        public string Type { get; set; } = string.Empty;
+    [JsonPropertyName("type")]
+    public string Type { get; set; } = string.Empty;
 
-        [JsonPropertyName("time")]
-        public DateTime Time { get; set; }
+    [JsonPropertyName("time")]
+    public DateTime Time { get; set; }
 
-        [JsonPropertyName("datacontenttype")]
-        public string DataContentType { get; set; } = "application/json";
+    [JsonPropertyName("datacontenttype")]
+    public string DataContentType { get; set; } = "application/json";
 
-        [JsonPropertyName("data")]
-        public object? Data { get; set; }
-    }
+    [JsonPropertyName("data")]
+    public object? Data { get; set; }
 }

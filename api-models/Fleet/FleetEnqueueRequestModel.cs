@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace psecsapi.api.models.Fleet
+namespace psecsapi.api.models.Fleet;
+
+public class FleetEnqueueRequestModel
 {
-    public class FleetEnqueueRequestModel
-    {
-        public Guid ConduitId { get; set; }
-    }
+    public Guid ConduitId { get; set; }
 }

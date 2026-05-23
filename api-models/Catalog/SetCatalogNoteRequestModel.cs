@@ -1,7 +1,6 @@
-namespace psecsapi.api.models.Catalog
+namespace psecsapi.api.models.Catalog;
+
+public class SetCatalogNoteRequestModel
 {
-    public class SetCatalogNoteRequestModel
-    {
-        public string Content { get; set; } = string.Empty;
-    }
+    public string Content { get; set; } = string.Empty;
 }

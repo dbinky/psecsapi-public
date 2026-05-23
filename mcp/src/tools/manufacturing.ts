@@ -18,14 +18,12 @@ interface ManufacturingJob {
   outputType?: string;
   estimatedCompletion?: string;
   autoResume?: boolean;
-  [key: string]: unknown;
 }
 
 interface ManufacturingStatusResponse {
   jobs?: ManufacturingJob[];
   totalActive?: number;
   totalPaused?: number;
-  [key: string]: unknown;
 }
 
 interface OwnedBlueprint {
@@ -36,7 +34,6 @@ interface OwnedBlueprint {
   acquiredAt?: string;
   outputType?: string;
   outputName?: string;
-  [key: string]: unknown;
 }
 
 interface BlueprintDetail {
@@ -50,22 +47,18 @@ interface BlueprintDetail {
     value?: string;
     quantity?: number;
     inputKind?: string;
-    [key: string]: unknown;
   }>;
   inputComponents?: Array<{
     label?: string;
     componentType?: string;
     quantity?: number;
-    [key: string]: unknown;
   }>;
   qualityProperties?: string[];
   capabilities?: Array<{
     type?: string;
     baseValue?: number;
     qualitySource?: string;
-    [key: string]: unknown;
   }>;
-  [key: string]: unknown;
 }
 
 interface CargoHoldSummary {
@@ -73,9 +66,7 @@ interface CargoHoldSummary {
     boxedAssetId?: string;
     name?: string;
     quantity?: number;
-    [key: string]: unknown;
   }>;
-  [key: string]: unknown;
 }
 
 interface ManufacturingStartResult {
@@ -84,7 +75,6 @@ interface ManufacturingStartResult {
   status?: string;
   nextTickAt?: string;
   errorMessage?: string;
-  [key: string]: unknown;
 }
 
 export function registerManufacturingTools(

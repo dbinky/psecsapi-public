@@ -16,13 +16,11 @@ interface FleetDetails {
     queueLength?: number;
     queuePosition?: number;
     enqueuedTimestamp?: string;
-    [key: string]: unknown;
   };
   transitETA?: string;
   fleetSpeed?: number;
   activeCombatId?: string;
   assignedCombatScriptId?: string;
-  [key: string]: unknown;
 }
 
 interface ShipDetails {
@@ -30,7 +28,6 @@ interface ShipDetails {
   name?: string;
   modules?: unknown[];
   cargoHolds?: unknown[];
-  [key: string]: unknown;
 }
 
 interface ScanResult {
@@ -43,10 +40,8 @@ interface ScanResult {
     endpointSectorId?: string;
     width?: number;
     length?: number;
-    [key: string]: unknown;
   }>;
   orbitals?: Record<string, string>;
-  [key: string]: unknown;
 }
 
 interface FleetDeepScanResource {
@@ -57,7 +52,6 @@ interface FleetDeepScanResource {
   order?: string;
   propertyAssessments?: Record<string, string>;
   propertyValues?: Record<string, number>;
-  [key: string]: unknown;
 }
 
 interface SurveyResult {
@@ -65,9 +59,7 @@ interface SurveyResult {
     fleetId: string;
     name?: string;
     shipCount?: number;
-    [key: string]: unknown;
   }>;
-  [key: string]: unknown;
 }
 
 export function registerFleetTools(

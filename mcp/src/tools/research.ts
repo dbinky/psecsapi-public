@@ -15,9 +15,7 @@ interface ResearchStatus {
     allocationPercent?: number;
     nextTickAt?: string;
     startedAt?: string;
-    [key: string]: unknown;
   }>;
-  [key: string]: unknown;
 }
 
 interface ResearchListResponse {
@@ -31,7 +29,6 @@ interface ResearchListResponse {
     prerequisites?: string[];
     isResearched?: boolean;
     isVisible?: boolean;
-    [key: string]: unknown;
   }>;
   applications?: Array<{
     id: string;
@@ -42,9 +39,7 @@ interface ResearchListResponse {
     prerequisites?: string[];
     isResearched?: boolean;
     isVisible?: boolean;
-    [key: string]: unknown;
   }>;
-  [key: string]: unknown;
 }
 
 interface ResearchCompletedResponse {
@@ -55,14 +50,11 @@ interface ResearchCompletedResponse {
     name?: string;
     quality?: number;
     completedAt?: string;
-    [key: string]: unknown;
   }>;
-  [key: string]: unknown;
 }
 
 interface ResearchModifiers {
   modifiers?: Record<string, number>;
-  [key: string]: unknown;
 }
 
 interface ResearchAllocateResult {
@@ -75,9 +67,7 @@ interface ResearchAllocateResult {
     currentPoints?: number;
     requiredPoints?: number;
     allocationPercent?: number;
-    [key: string]: unknown;
   };
-  [key: string]: unknown;
 }
 
 export function registerResearchTools(
