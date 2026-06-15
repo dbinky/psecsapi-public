@@ -11,7 +11,9 @@ import { PsecsClient } from "./client.js";
 import { loadOAuthProxyConfig } from "./oauth.js";
 import { JwtIssuer } from "./jwt-issuer.js";
 import { OAuthStore } from "./oauth-store.js";
+import { PersistentOAuthStore } from "./persistent-oauth-store.js";
 import { setupOAuthProxy } from "./oauth-proxy.js";
+import path from "node:path";
 import { registerRawTools } from "./generated/raw-tools.js";
 import { registerAccountTools } from "./tools/account.js";
 import { registerFleetTools } from "./tools/fleet.js";
@@ -155,7 +157,16 @@ async function startHttp(
  */
 async function startHttpOAuth(port: number, host: string): Promise<void> {
   const config = loadOAuthProxyConfig();
-  const store = OAuthStore.createInMemory();
+  // Persist OAuth state to disk when MCP_DATA_DIR is set (production), so DCR
+  // clients and refresh tokens survive container restarts. Falls back to an
+  // in-memory store for local/dev runs.
+  const dataDir = process.env.MCP_DATA_DIR;
+  const store = dataDir
+    ? PersistentOAuthStore.createPersistent(path.join(dataDir, "oauth-store.json"))
+    : OAuthStore.createInMemory();
+  if (dataDir) {
+    console.error(`[psecs-mcp] OAuth store persisting to ${path.join(dataDir, "oauth-store.json")}`);
+  }
   const issuer = await JwtIssuer.create();
 
   const app = express();
@@ -163,8 +174,9 @@ async function startHttpOAuth(port: number, host: string): Promise<void> {
   app.use(express.json());
   app.use(express.urlencoded({ extended: true }));
 
-  // Request logging — every inbound request
-  app.use((req, _res, next) => {
+  // Request logging — every inbound request, with the response status code so
+  // OAuth failures (e.g. a rejected client registration) are visible in logs.
+  app.use((req, res, next) => {
     let sub = "anon";
     const authHeader = req.headers.authorization;
     if (authHeader?.startsWith("Bearer ")) {
@@ -174,7 +186,9 @@ async function startHttpOAuth(port: number, host: string): Promise<void> {
       } catch { sub = "invalid"; }
     }
     const ip = (req.headers["x-forwarded-for"] as string | undefined)?.split(",")[0]?.trim() ?? req.ip;
-    console.error(`[psecs-mcp] ${req.method} ${req.path} sub=${sub} ip=${ip}`);
+    res.on("finish", () => {
+      console.error(`[psecs-mcp] ${req.method} ${req.path} -> ${res.statusCode} sub=${sub} ip=${ip}`);
+    });
     next();
   });
 

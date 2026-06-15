@@ -37,12 +37,15 @@ const DCR_CLIENT_MAX_ENTRIES = 10_000;
 const SWEEP_INTERVAL_MS = 60_000;
 
 export class OAuthStore {
-  private clients = new Map<string, DcrClient>();
+  // Durable state (worth surviving a restart) is `protected` so a persistent
+  // subclass can serialize it. The rest is ephemeral (sub-minute auth sessions
+  // and codes) and is intentionally not persisted.
+  protected clients = new Map<string, DcrClient>();
   private authSessions = new Map<string, AuthSession>();
   private authCodes = new Map<string, AuthCodeData>();
-  private apiKeys = new Map<string, string>();
-  private refreshTokens = new Map<string, RefreshTokenData>();
-  private consumedTokens = new Map<string, string>();
+  protected apiKeys = new Map<string, string>();
+  protected refreshTokens = new Map<string, RefreshTokenData>();
+  protected consumedTokens = new Map<string, string>();
   private sweepTimer: ReturnType<typeof setInterval> | null = null;
 
   protected constructor() {}
@@ -57,6 +60,31 @@ export class OAuthStore {
     this.sweepTimer = setInterval(() => this.sweep(), SWEEP_INTERVAL_MS);
   }
 
+  // --- Durable-state persistence hooks (no-ops in the in-memory store) ---
+
+  /** Called after any mutation to durable state. Overridden to persist. */
+  protected onDurableChange(): void {}
+
+  /** Snapshot of durable state as a JSON-serializable object. */
+  protected exportDurable(): unknown {
+    return {
+      clients: [...this.clients.entries()],
+      apiKeys: [...this.apiKeys.entries()],
+      refreshTokens: [...this.refreshTokens.entries()],
+      consumedTokens: [...this.consumedTokens.entries()],
+    };
+  }
+
+  /** Restore durable state from a previously exported snapshot. Tolerant of junk. */
+  protected importDurable(data: unknown): void {
+    if (!data || typeof data !== "object") return;
+    const d = data as Record<string, unknown>;
+    if (Array.isArray(d.clients)) this.clients = new Map(d.clients as [string, DcrClient][]);
+    if (Array.isArray(d.apiKeys)) this.apiKeys = new Map(d.apiKeys as [string, string][]);
+    if (Array.isArray(d.refreshTokens)) this.refreshTokens = new Map(d.refreshTokens as [string, RefreshTokenData][]);
+    if (Array.isArray(d.consumedTokens)) this.consumedTokens = new Map(d.consumedTokens as [string, string][]);
+  }
+
   // --- DCR Clients ---
   registerClient(client: DcrClient): string {
     if (this.clients.size >= DCR_CLIENT_MAX_ENTRIES) {
@@ -64,6 +92,7 @@ export class OAuthStore {
     }
     const clientId = crypto.randomUUID();
     this.clients.set(clientId, client);
+    this.onDurableChange();
     return clientId;
   }
 
@@ -120,6 +149,7 @@ export class OAuthStore {
 
   async setApiKey(userId: string, apiKey: string): Promise<void> {
     this.apiKeys.set(userId, apiKey);
+    this.onDurableChange();
   }
 
   // --- Refresh Tokens ---
@@ -127,6 +157,7 @@ export class OAuthStore {
     const token = crypto.randomBytes(32).toString("base64url");
     const hash = this.hashToken(token);
     this.refreshTokens.set(hash, data);
+    this.onDurableChange();
     return token;
   }
 
@@ -141,6 +172,7 @@ export class OAuthStore {
     if (!data) return undefined;
     this.refreshTokens.delete(hash);
     this.consumedTokens.set(hash, data.userId);
+    this.onDurableChange();
     return data;
   }
 
@@ -148,6 +180,7 @@ export class OAuthStore {
     for (const [hash, data] of this.refreshTokens) {
       if (data.userId === userId) this.refreshTokens.delete(hash);
     }
+    this.onDurableChange();
   }
 
   protected hashToken(token: string): string {

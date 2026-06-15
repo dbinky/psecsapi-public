@@ -58,22 +58,29 @@ export function setupOAuthProxy(
   // --- Dynamic Client Registration ---
 
   app.post("/oauth/register", express.json(), (req, res) => {
-    const { client_name, redirect_uris, token_endpoint_auth_method } = req.body ?? {};
+    const { client_name, redirect_uris, grant_types, response_types } = req.body ?? {};
+    console.error(
+      `[psecs-mcp] DCR register: name=${client_name} redirect_uris=${JSON.stringify(redirect_uris)} auth_method=${req.body?.token_endpoint_auth_method}`
+    );
 
     if (!Array.isArray(redirect_uris) || redirect_uris.length === 0) {
-      res.status(400).json({ error: "redirect_uris must be a non-empty array" });
+      res.status(400).json({ error: "invalid_redirect_uri", error_description: "redirect_uris must be a non-empty array" });
       return;
     }
 
     for (const uri of redirect_uris) {
       if (typeof uri !== "string") {
-        res.status(400).json({ error: "Each redirect_uri must be a string" });
+        res.status(400).json({ error: "invalid_redirect_uri", error_description: "Each redirect_uri must be a string" });
         return;
       }
-      const isLoopback = uri.startsWith("http://localhost") || uri.startsWith("http://127.0.0.1");
+      // Accept https plus loopback (IPv4, IPv6, and localhost) for native-app clients.
+      const isLoopback =
+        uri.startsWith("http://localhost") ||
+        uri.startsWith("http://127.0.0.1") ||
+        uri.startsWith("http://[::1]");
       const isHttps = uri.startsWith("https://");
       if (!isHttps && !isLoopback) {
-        res.status(400).json({ error: `Invalid redirect_uri: ${uri}. Only https:// URIs are accepted (http://localhost and http://127.0.0.1 allowed for dev).` });
+        res.status(400).json({ error: "invalid_redirect_uri", error_description: `Invalid redirect_uri: ${uri}. Only https and loopback URIs are accepted.` });
         return;
       }
     }
@@ -83,11 +90,17 @@ export function setupOAuthProxy(
       redirectUris: redirect_uris,
     });
 
+    // RFC 7591 client information response — echo what we support so strict
+    // clients can confirm the grant/response types before starting the flow.
     res.status(201).json({
       client_id: clientId,
+      client_id_issued_at: Math.floor(Date.now() / 1000),
       client_name: client_name ?? "unnamed",
       redirect_uris,
+      grant_types: Array.isArray(grant_types) ? grant_types : ["authorization_code", "refresh_token"],
+      response_types: Array.isArray(response_types) ? response_types : ["code"],
       token_endpoint_auth_method: "none",
+      scope: "psecs:play",
     });
   });
 
