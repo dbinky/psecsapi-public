@@ -51,13 +51,24 @@ export function setupOAuthProxy(
     res.json(authServerMetadata);
   });
 
+  // Some clients (e.g. Claude) probe OIDC discovery instead of (or before) the
+  // OAuth 2.0 AS metadata. Serve the same endpoint metadata here so they find
+  // our registration/authorize/token endpoints rather than falling back to
+  // guessed default paths.
+  app.get("/.well-known/openid-configuration", (_req, res) => {
+    res.json(authServerMetadata);
+  });
+  app.get("/.well-known/openid-configuration/*", (_req, res) => {
+    res.json(authServerMetadata);
+  });
+
   app.get("/.well-known/jwks.json", (_req, res) => {
     res.json(issuer.getJwks());
   });
 
   // --- Dynamic Client Registration ---
 
-  app.post("/oauth/register", express.json(), (req, res) => {
+  app.post(["/oauth/register", "/register"], express.json(), (req, res) => {
     const { client_name, redirect_uris, grant_types, response_types } = req.body ?? {};
     console.error(
       `[psecs-mcp] DCR register: name=${client_name} redirect_uris=${JSON.stringify(redirect_uris)} auth_method=${req.body?.token_endpoint_auth_method}`
@@ -106,7 +117,7 @@ export function setupOAuthProxy(
 
   // --- Authorize ---
 
-  app.get("/oauth/authorize", (req, res) => {
+  app.get(["/oauth/authorize", "/authorize"], (req, res) => {
     const {
       response_type,
       client_id,
@@ -244,7 +255,7 @@ export function setupOAuthProxy(
 
   // --- Token ---
 
-  app.post("/oauth/token", express.urlencoded({ extended: true }), async (req, res) => {
+  app.post(["/oauth/token", "/token"], express.urlencoded({ extended: true }), async (req, res) => {
     try {
       const { grant_type } = req.body;
 

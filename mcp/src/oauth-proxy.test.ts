@@ -100,6 +100,27 @@ describe("OAuth proxy routes", () => {
     });
   });
 
+  describe("GET /.well-known/openid-configuration", () => {
+    it("serves the same endpoint metadata as the OAuth AS doc", async () => {
+      const res = await request(app).get("/.well-known/openid-configuration");
+      expect(res.status).toBe(200);
+      expect(res.body.issuer).toBe("https://mcp.psecsapi.com");
+      expect(res.body.registration_endpoint).toBe("https://mcp.psecsapi.com/oauth/register");
+      expect(res.body.authorization_endpoint).toBe("https://mcp.psecsapi.com/oauth/authorize");
+      expect(res.body.token_endpoint).toBe("https://mcp.psecsapi.com/oauth/token");
+    });
+  });
+
+  describe("POST /register (bare alias)", () => {
+    it("registers a client like /oauth/register", async () => {
+      const res = await request(app)
+        .post("/register")
+        .send({ client_name: "AliasClient", redirect_uris: ["https://example.com/cb"] });
+      expect(res.status).toBe(201);
+      expect(res.body.client_id).toBeDefined();
+    });
+  });
+
   describe("GET /.well-known/jwks.json", () => {
     it("returns public key without private key material", async () => {
       const res = await request(app).get("/.well-known/jwks.json");
