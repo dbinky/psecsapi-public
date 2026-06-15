@@ -25,6 +25,11 @@ COPY --from=build /app/node_modules node_modules/
 
 EXPOSE 3001
 
+# Create the OAuth-store data dir owned by the non-root user, so a freshly
+# created named volume mounted here inherits node ownership and is writable
+# (MCP_DATA_DIR=/data). Must run before USER node.
+RUN mkdir -p /data && chown node:node /data
+
 # Run as non-root user to limit container compromise blast radius
 USER node
 
